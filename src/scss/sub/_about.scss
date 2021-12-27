@@ -1,0 +1,36 @@
+.inner{
+    .intro{
+        display: flex;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ddd;
+        justify-content: space-between;
+    }
+    .intro-first{
+        width: 33%;
+        h2 {
+            font: 20px/1 'Roboto';
+            margin-bottom: 10px;
+        }
+        h3 {
+            font: 18px/1 'Roboto';
+            margin-bottom: 20px;
+            color: #bbb;
+        }
+    }
+    .intro-second{
+        width: 33%;
+        p {
+            font: 14px/1.2 'Roboto Slab';
+            padding-bottom: 20px;
+            padding-right: 20px;
+        }
+    }
+    .intro-third{
+        width: 33%;
+        p {
+            font: 14px/1.2 'Roboto Slab';
+            padding-bottom: 40px;
+            padding-right: 20px;
+        }
+    }
+}

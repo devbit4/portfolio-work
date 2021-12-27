@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+header {
+  width: 100%;
+  padding: 0 12vw;
+  background: #fff; }
+  header .inner {
+    height: 10vh;
+    position: relative; }
+    header .inner h1 {
+      position: absolute;
+      top: 20%;
+      left: 0; }
+      header .inner h1 a {
+        font: bold 22px/1 'Roboto';
+        color: #324B4C; }
+    header .inner #gnb {
+      position: absolute;
+      top: 40%;
+      right: 0px; }
+      header .inner #gnb li {
+        float: left; }
+        header .inner #gnb li a {
+          display: inline-block;
+          padding: 0 20px;
+          font: 14px/1 'Roboto';
+          color: #bbb; }
+
+.content {
+  padding: 150px 0; }
+  .content .inner {
+    padding: 0 12vw; }
+    .content .inner > h1 {
+      font: bold 30px/1 'Roboto';
+      color: #324B4C;
+      margin-bottom: 60px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd; }
+
+.main {
+  display: flex;
+  flex-wrap: wrap; }
+  .main .left {
+    width: 80%;
+    height: 70vh;
+    background: #e2e3e5;
+    position: relative; }
+    .main .left .main-title {
+      width: 500px;
+      height: 300px;
+      padding: 50px;
+      position: absolute;
+      top: 15%;
+      right: -550px;
+      margin-right: 400px;
+      background: #484848;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      color: #fff; }
+      .main .left .main-title h2 {
+        font: 14px/1 'Roboto';
+        margin-bottom: 40px; }
+      .main .left .main-title h1 {
+        font: bold 24px/1 'Roboto';
+        margin-bottom: 10px; }
+      .main .left .main-title p {
+        font: 300 14px/1.4 'Roboto';
+        margin-bottom: 40px; }
+      .main .left .main-title a {
+        color: #fff;
+        font: 300 14px/1 'Roboto'; }
+  .main .right {
+    width: 20%;
+    height: 70vh;
+    background: #f5f5f5;
+    position: relative; }
+  .main .bottom {
+    width: 100%;
+    height: 20vh;
+    background: #f5f5f5; }
+    .main .bottom .pics {
+      display: flex; }
+      .main .bottom .pics .pic {
+        width: 250px;
+        height: 150px;
+        background: #959595;
+        margin-right: 20px;
+        position: relative;
+        top: -60px; }
+
+.welcome {
+  padding: 100px 0; }
+  .welcome .inner {
+    text-align: center; }
+    .welcome .inner h2 {
+      font: 300 16px/1 'Roboto';
+      margin-bottom: 10px; }
+    .welcome .inner h1 {
+      font: bold 18px/1 'Roboto'; }
+    .welcome .inner .about {
+      display: flex;
+      justify-content: center; }
+      .welcome .inner .about .box {
+        width: 32%; }
+        .welcome .inner .about .box i {
+          width: 40px;
+          height: 40px;
+          font-size: 15px;
+          line-height: 40px;
+          border: 1px solid #000;
+          border-radius: 50%;
+          margin: 20px 0 40px 0; }
+        .welcome .inner .about .box h3 {
+          font: bold 16px/1 'Roboto';
+          margin-bottom: 10px; }
+        .welcome .inner .about .box p {
+          font: 300 14px/1.2 'Roboto';
+          padding: 0 20px;
+          margin-bottom: 20px; }
+        .welcome .inner .about .box span {
+          font: 300 14px/1 'Roboto';
+          cursor: pointer; }
+
+.intrdouction {
+  display: flex; }
+  .intrdouction .left-video {
+    width: 50%;
+    background: #959595; }
+  .intrdouction .right-text {
+    width: 50%;
+    padding: 80px 40px; }
+    .intrdouction .right-text h2 {
+      font: 300 16px/1 'Roboto';
+      margin-bottom: 10px; }
+    .intrdouction .right-text h1 {
+      font: bold 18px/1 'Roboto';
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd; }
+    .intrdouction .right-text p {
+      font: 300 14px/1.2 'Roboto';
+      margin-bottom: 20px; }
+    .intrdouction .right-text a {
+      font: 300 14px/1 'Roboto'; }
+
+.achievement {
+  padding: 80px 0;
+  background: #f5f5f5; }
+  .achievement .inner .blocks {
+    display: flex;
+    justify-content: space-between; }
+    .achievement .inner .blocks .block {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .achievement .inner .blocks .block i {
+        width: 40px;
+        font-size: 20px; }
+      .achievement .inner .blocks .block .text {
+        display: flex;
+        flex-direction: column; }
+        .achievement .inner .blocks .block .text span {
+          font: 300 14px/1 'Roboto'; }
+        .achievement .inner .blocks .block .text strong {
+          font: bold 16px/1 'Roboto'; }
+
+.process {
+  padding: 50px 0; }
+  .process .inner {
+    text-align: center; }
+    .process .inner h2 {
+      font: 300 16px/1 'Roboto';
+      margin-bottom: 10px; }
+    .process .inner h1 {
+      font: bold 18px/1 'Roboto'; }
+    .process .inner .round {
+      height: 240px;
+      display: flex;
+      margin-bottom: 20px;
+      padding: 0 80px; }
+      .process .inner .round:nth-of-type(2) {
+        flex-direction: row-reverse; }
+      .process .inner .round .left-pic {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .process .inner .round .left-pic img {
+          width: 50%;
+          height: 100%;
+          border-radius: 50%;
+          background: #484848; }
+      .process .inner .round .right-text {
+        width: 50%;
+        padding: 40px 0;
+        text-align: left; }
+        .process .inner .round .right-text h2 {
+          font: 300 16px/1 'Roboto'; }
+        .process .inner .round .right-text h1 {
+          font: bold 18px/1 'Roboto';
+          margin-bottom: 20px; }
+        .process .inner .round .right-text p {
+          font: 300 14px/1.2 'Roboto';
+          margin-bottom: 20px; }
+        .process .inner .round .right-text span {
+          font: 300 14px/1 'Roboto';
+          cursor: pointer; }
+
+.banner {
+  padding: 80px 0;
+  background: #e2e3e5; }
+  .banner .inner {
+    display: flex;
+    align-items: center; }
+    .banner .inner .banner-left {
+      width: 50%; }
+      .banner .inner .banner-left h1 {
+        font: bold 18px/1 'Roboto';
+        margin-bottom: 10px; }
+      .banner .inner .banner-left h2 {
+        font: 300 14px/1 'Roboto'; }
+    .banner .inner .banner-right {
+      width: 50%;
+      text-align: center; }
+      .banner .inner .banner-right input {
+        width: 80%; }
+
+.testimonials {
+  padding: 50px 0; }
+  .testimonials .inner {
+    text-align: center; }
+    .testimonials .inner h2 {
+      font: 300 16px/1 'Roboto';
+      margin-bottom: 10px; }
+    .testimonials .inner h1 {
+      font: bold 18px/1 'Roboto'; }
+    .testimonials .inner .reviews {
+      display: flex;
+      justify-content: space-around; }
+      .testimonials .inner .reviews .review {
+        width: 30%;
+        padding: 60px 30px;
+        background: #f5f5f5;
+        border-radius: 10px; }
+        .testimonials .inner .reviews .review i {
+          font-size: 25px;
+          margin-bottom: 40px; }
+        .testimonials .inner .reviews .review p {
+          font: 300 14px/1.2 'Roboto';
+          margin-bottom: 40px; }
+        .testimonials .inner .reviews .review .writer {
+          display: flex;
+          align-items: center;
+          padding: 0 40px; }
+          .testimonials .inner .reviews .review .writer .left-pic {
+            width: 50px;
+            height: 50px;
+            background-color: #000; }
+          .testimonials .inner .reviews .review .writer .right-name {
+            width: 70%;
+            display: flex;
+            flex-direction: column; }
+            .testimonials .inner .reviews .review .writer .right-name strong {
+              font: 14px/1 'Roboto'; }
+            .testimonials .inner .reviews .review .writer .right-name span {
+              font: 300 12px/1 'Roboto'; }
+
+.community .inner article {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #bbb;
+  margin-bottom: 20px; }
+
+.inner .intro {
+  display: flex;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd; }
+  .inner .intro .intro-left {
+    width: 50%;
+    padding-right: 20px; }
+    .inner .intro .intro-left h2 {
+      font: 20px/1 'Roboto';
+      margin-bottom: 10px; }
+    .inner .intro .intro-left h3 {
+      font: 18px/1 'Roboto';
+      margin-bottom: 20px;
+      color: #bbb; }
+    .inner .intro .intro-left p {
+      font: 14px/1.2 'Roboto Slab';
+      padding-bottom: 40px; }
+  .inner .intro .intro-right {
+    width: 50%; }
+    .inner .intro .intro-right p {
+      font: 14px/1.2 'Roboto Slab';
+      padding-bottom: 40px; }
+    .inner .intro .intro-right .searchbox {
+      float: right; }
+      .inner .intro .intro-right .searchbox input {
+        height: 25px;
+        margin-right: 10px;
+        background: #f5f5f5;
+        border: 1px solid #324b4c; }
+      .inner .intro .intro-right .searchbox button {
+        outline: none;
+        border: none;
+        padding: 4px 10px;
+        background-color: #324b4c;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        font-family: "Roboto"; }
+.inner .list {
+  width: 100%;
+  margin: 40px auto;
+  column-count: 4;
+  column-gap: 40px; }
+  .inner .list .photo {
+    width: 100%;
+    margin: 0 0 40px 0;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+    overflow: hidden; }
+    .inner .list .photo .pic {
+      width: 100%; }
+      .inner .list .photo .pic img {
+        width: 100%;
+        object-fit: cover; }
+    .inner .list .photo .text {
+      padding: 20px;
+      text-align: center; }
+      .inner .list .photo .text h2 {
+        font: bold 16px/1 'Roboto';
+        margin-bottom: 5px; }
+      .inner .list .photo .text h3 {
+        font: 16px/1 'Roboto';
+        color: #bbb;
+        margin-bottom: 10px; }
+      .inner .list .photo .text p {
+        font: 14px/1 'Roboto Slab';
+        margin-bottom: 30px; }
+      .inner .list .photo .text .btn {
+        background: #608080;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px;
+        color: #fff;
+        cursor: pointer;
+        font: 12px/1 'Roboto'; }
+
+@media screen and (max-width: 1179px) {
+  .list {
+    column-count: 3; } }
+@media screen and (max-width: 700px) {
+  .list {
+    column-count: 2; } }
+@media screen and (max-width: 539px) {
+  .list {
+    column-count: 1; } }
+.inner .intro {
+  display: flex;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between; }
+.inner .intro-first {
+  width: 33%; }
+  .inner .intro-first h2 {
+    font: 20px/1 'Roboto';
+    margin-bottom: 10px; }
+  .inner .intro-first h3 {
+    font: 18px/1 'Roboto';
+    margin-bottom: 20px;
+    color: #bbb; }
+.inner .intro-second {
+  width: 33%; }
+  .inner .intro-second p {
+    font: 14px/1.2 'Roboto Slab';
+    padding-bottom: 20px;
+    padding-right: 20px; }
+.inner .intro-third {
+  width: 33%; }
+  .inner .intro-third p {
+    font: 14px/1.2 'Roboto Slab';
+    padding-bottom: 40px;
+    padding-right: 20px; }
+
+/*# sourceMappingURL=style.css.map */

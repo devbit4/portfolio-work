@@ -1,0 +1,33 @@
+header {
+	width: 100%;
+    padding: 0 12vw;
+	background: #fff;
+
+	.inner {
+        height: 10vh;
+		position: relative;
+		h1 {
+			position: absolute;
+            top: 20%;
+			left: 0;
+            a{
+                font: bold 22px/1 'Roboto';
+                color: #324B4C;
+            }
+		}
+        #gnb{
+            position: absolute;
+            top: 40%;
+            right: 0px;
+            li{
+                float: left;
+                a{
+                    display: inline-block;
+                    padding: 0 20px;
+                    font: 14px/1 'Roboto';
+                    color:#bbb;
+                }
+            }
+        }
+	}
+}

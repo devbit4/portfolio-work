@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom';
+import './css/style.css';
+
+import Footer from './common/Footer';
+import Header from './common/Header';
+
+import Home from './sub/Home';
+import About from './sub/About';
+import Youtube from './sub/Youtube';
+import Gallery from './sub/Gallery';
+import Community from './sub/Community';
+import Contact from './sub/Contact';
+import Join from './sub/Join';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header></Header>
+      <Route exact path="/" component={Home}></Route>
+      <Route exact path="/about" component={About}></Route>
+      <Route exact path="/youtube" component={Youtube}></Route>
+      <Route exact path="/gallery" component={Gallery}></Route>
+      <Route exact path="/community" component={Community}></Route>
+      <Route exact path="/contact" component={Contact}></Route>
+      <Route exact path="/join" component={Join}></Route>
+
+
+      <Footer></Footer>
+    </>
   );
 }
 
