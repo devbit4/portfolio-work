@@ -36,6 +36,36 @@ header {
           font: 14px/1 'Roboto';
           color: #bbb; }
 
+footer {
+  width: 100%;
+  padding: 0 12vw;
+  background: #484848;
+  color: #fff; }
+  footer .inner {
+    padding: 80px 0;
+    display: flex;
+    align-items: center; }
+    footer .inner .footer-left {
+      width: 70%;
+      padding-right: 20px; }
+      footer .inner .footer-left h1 {
+        font: bold 18px/1 'Roboto';
+        margin-bottom: 20px; }
+      footer .inner .footer-left p {
+        font: 300 14px/1.2 'Roboto'; }
+    footer .inner .footer-right {
+      width: 30%;
+      display: flex;
+      flex-direction: column; }
+      footer .inner .footer-right span {
+        font: 300 14px/1 'Roboto';
+        margin-bottom: 5px; }
+      footer .inner .footer-right h2 {
+        font: bold 20px/1 'Roboto';
+        margin-bottom: 10px; }
+      footer .inner .footer-right strong {
+        font: 300 14px/1 'Roboto'; }
+
 .content {
   padding: 150px 0; }
   .content .inner {
@@ -277,6 +307,21 @@ header {
             .testimonials .inner .reviews .review .writer .right-name span {
               font: 300 12px/1 'Roboto'; }
 
+.sponsor {
+  padding: 50px 0;
+  background: #f5f5f5; }
+  .sponsor .companies {
+    display: flex;
+    flex-wrap: wrap; }
+    .sponsor .companies .company {
+      width: 20%;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ddd; }
+      .sponsor .companies .company img {
+        width: 100%;
+        height: 100%; }
+
 .community .inner article {
   width: 100%;
   padding: 20px;
@@ -298,12 +343,12 @@ header {
       margin-bottom: 20px;
       color: #bbb; }
     .inner .intro .intro-left p {
-      font: 14px/1.2 'Roboto Slab';
+      font: 300 14px/1.2 'Roboto';
       padding-bottom: 40px; }
   .inner .intro .intro-right {
     width: 50%; }
     .inner .intro .intro-right p {
-      font: 14px/1.2 'Roboto Slab';
+      font: 300 14px/1.2 'Roboto';
       padding-bottom: 40px; }
     .inner .intro .intro-right .searchbox {
       float: right; }
@@ -386,13 +431,13 @@ header {
 .inner .intro-second {
   width: 33%; }
   .inner .intro-second p {
-    font: 14px/1.2 'Roboto Slab';
+    font: 300 14px/1.2 'Roboto';
     padding-bottom: 20px;
     padding-right: 20px; }
 .inner .intro-third {
   width: 33%; }
   .inner .intro-third p {
-    font: 14px/1.2 'Roboto Slab';
+    font: 300 14px/1.2 'Roboto';
     padding-bottom: 40px;
     padding-right: 20px; }
 

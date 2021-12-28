@@ -252,36 +252,38 @@ const Home = (props) => {
                     </div>
                 </div>
             </section>
-            <section className="sponsor">
-                <div className="company">
-                    <img src="" alt="" />
-                </div>
-                <div className="company">
-                    <img src="" alt="" />
-                </div>
-                <div className="company">
-                    <img src="" alt="" />
-                </div>
-                <div className="company">
-                    <img src="" alt="" />
-                </div>
-                <div className="company">
-                    <img src="" alt="" />
-                </div>
-                <div className="company">
-                    <img src="" alt="" />
-                </div>
-                <div className="company">
-                    <img src="" alt="" />
-                </div>
-                <div className="company">
-                    <img src="" alt="" />
-                </div>
-                <div className="company">
-                    <img src="" alt="" />
-                </div>
-                <div className="company">
-                    <img src="" alt="" />
+            <section className="content sponsor">
+                <div className='inner companies'>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="company">
+                        <img src="" alt="" />
+                    </div>
                 </div>
             </section>
         </>
