@@ -1,8 +1,9 @@
 .inner {
 	.intro {
 		display: flex;
+		align-items: center;
 		padding-bottom: 40px;
-        border-bottom: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
 		.intro-left {
 			width: 50%;
 			padding-right: 20px;
@@ -18,79 +19,69 @@
 			p {
 				font: 300 14px/1.2 'Roboto';
 				padding-bottom: 40px;
+				width: 100%;
 			}
 		}
 		.intro-right {
 			width: 50%;
 			p {
-                font: 300 14px/1.2 'Roboto';
+				font: 300 14px/1.2 'Roboto';
 				padding-bottom: 40px;
 			}
-            .searchbox{
-                float: right;
-                input{
-                    height: 25px;
-                    margin-right: 10px;
+			.searchbox {
+				float: right;
+				input {
+					height: 25px;
+					margin-right: 10px;
 					background: #f5f5f5;
 					border: 1px solid #324b4c;
-                }
-                button{
-                    outline: none;
-                    border: none;
-                    padding: 4px 10px;
-                    background-color: #324b4c;
-                    border-radius: 4px;
-                    color: #fff;
-                    cursor: pointer;
-					font-family: "Roboto";
-                }
-            }
+				}
+				button {
+					outline: none;
+					border: none;
+					padding: 4px 10px;
+					background-color: #324b4c;
+					border-radius: 4px;
+					color: #fff;
+					cursor: pointer;
+					font-family: 'Roboto';
+				}
+			}
 		}
 	}
 	.list {
-		width: 100%;
-		margin: 40px auto;
-		column-count: 4;
-		column-gap: 40px;
+		opacity: 0;
+		transform: translateY(200px);
+		transition: 1s;
+		position: relative;
 
-		.photo {
+		&.on{
+			opacity: 1;
+			transform: translateY(0px);
+		}
+
+		ul {
 			width: 100%;
-			margin: 0 0 40px 0;
-			border: 1px solid #ddd;
-			break-inside: avoid;
-			overflow: hidden;
+			display: flex;
+			flex-wrap: wrap;
 			.pic {
-				width: 100%;
-				img {
+				width: 25%;
+				padding: 10px;
+				.inner {
 					width: 100%;
-					object-fit: cover;
-				}
-			}
-			.text {
-				padding: 20px;
-				text-align: center;
-				h2 {
-					font: bold 16px/1 'Roboto';
-					margin-bottom: 5px;
-				}
-				h3 {
-					font: 16px/1 'Roboto';
-					color: #bbb;
-					margin-bottom: 10px;
-				}
-				p {
-					font: 14px/1 'Roboto Slab';
-					margin-bottom: 30px;
-				}
-				.btn {
-					background: #608080;
-					outline: none;
-					border: none;
-					border-radius: 4px;
-					padding: 5px 10px;
-					color: #fff;
-					cursor: pointer;
-					font: 12px/1 'Roboto';
+					padding: 12px;
+					background: #fff;
+					box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+					img {
+						width: 100%;
+						margin-bottom: 10px;
+					}
+					h2 {
+						font: normal 12px/1.2 'Roboto';
+						color: #777;
+						margin-bottom: 20px;
+						text-align: center;
+					}
 				}
 			}
 		}
@@ -98,19 +89,37 @@
 }
 
 @media screen and (max-width: 1179px) {
-	.list {
-		column-count: 3;
+	.inner {
+		.list {
+			ul {
+				.pic {
+					width: 33.3333%;
+				}
+			}
+		}
 	}
 }
 
 @media screen and (max-width: 700px) {
-	.list {
-		column-count: 2;
+	.inner {
+		.list {
+			ul {
+				.pic {
+					width: 50%;
+				}
+			}
+		}
 	}
 }
 
 @media screen and (max-width: 539px) {
-	.list {
-		column-count: 1;
+	.inner {
+		.list {
+			ul {
+				.pic {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
