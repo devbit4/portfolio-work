@@ -10,8 +10,8 @@ function Youtube() {
     let [trends, setTrends] = useState([]);
 
 
-    const api_key = "AIzaSyB7VIAECTixPlj0sr-goHwkmNRFIwxZntA";
-    const playListId = "PLYOPkdUKSFgX5CgKf68RJzJHec0XEdBNd";
+    const api_key = "AIzaSyDsfN60C3q050t7aRRi2gw5CcR9CkegDz8";
+    const playListId = "PL1fBkO2q3tOee1NUg1rw49pFNBK-uCEI1";
     const num = 4;
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${playListId}&maxResults=${num}`;
 
@@ -103,7 +103,7 @@ function Youtube() {
                                         <article key={index}>
                                             <h2>{feature.title}</h2>
                                             <p>{feature.desc}</p>
-                                            <span>{"- " + feature.date}</span>
+                                            <span>{feature.date}</span>
                                         </article>
                                     )
                                 })
@@ -117,7 +117,7 @@ function Youtube() {
                                         <article key={index}>
                                             <h2>{trend.title}</h2>
                                             <p>{trend.desc}</p>
-                                            <span>{"- " + trend.date}</span>
+                                            <span>{trend.date}</span>
                                         </article>
                                     )
                                 })
