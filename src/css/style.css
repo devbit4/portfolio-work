@@ -68,7 +68,7 @@ footer {
         font: 300 14px/1 'Roboto'; }
 
 .content {
-  padding: 150px 0; }
+  padding: 120px 0; }
   .content > .inner {
     padding: 0 12vw; }
     .content > .inner > h1 {
@@ -435,7 +435,7 @@ footer {
             margin-bottom: 20px;
             text-align: left; }
           .gallery .inner .list ul .pic .inner p {
-            font: normal 10px/1.2 'Roboto';
+            font: 300 10px/1.2 'Roboto';
             margin-bottom: 20px; }
           .gallery .inner .list ul .pic .inner strong {
             font: normal 10px/1 'Roboto';
@@ -516,12 +516,12 @@ footer {
         font: 12px/1 'Roboto'; }
     .youtube .inner .news article .inner .txt {
       width: 60%;
-      padding: 0 10px; }
+      padding: 0 20px; }
       .youtube .inner .news article .inner .txt h2 {
         font: bold 16px/1 'Roboto';
         margin-bottom: 10px; }
       .youtube .inner .news article .inner .txt p {
-        font: 12px/1.4 'Roboto'; }
+        font: 300 12px/1.4 'Roboto'; }
     .youtube .inner .news article .inner .pic {
       width: 25%;
       height: 150px;
@@ -574,7 +574,7 @@ footer {
           .youtube .inner .library .inner .right .right-lower .box h2 {
             font: 16px/1 'Roboto'; }
           .youtube .inner .library .inner .right .right-lower .box span {
-            font: 12px/1 'Roboto'; }
+            font: 300 12px/1 'Roboto'; }
 .youtube .inner .issue .inner {
   display: flex;
   justify-content: space-between; }
@@ -596,7 +596,7 @@ footer {
         font: bold 16px/1 'Roboto';
         margin-bottom: 10px; }
       .youtube .inner .issue .inner .text article p {
-        font: 12px/1.4 'Roboto';
+        font: 300 12px/1.4 'Roboto';
         margin-bottom: 10px; }
       .youtube .inner .issue .inner .text article span {
         font: 12px/1.4 'Roboto'; }
