@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react';
 import Masonry from 'react-masonry-component';
 
+const path = process.env.PUBLIC_URL;
+
 const masonryOptions = {
     fitWidth: false,
     gutter: 0,
@@ -101,7 +103,7 @@ const Gallery = (props) => {
                     </div>
                 </div>
 
-                {loading ? <img className="loading" src="/img/loading.gif" /> : ''}
+                {loading ? <img className="loading" src={path + "/img/loading.gif"} /> : ''}
 
                 <div className="list" ref={list}>
                     <Masonry

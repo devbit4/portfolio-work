@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Route exact path="/" component={Home}></Route>
+      <Route exact path={['/portfolio-work/', '/']} component={Home}></Route>
       <Route exact path="/about" component={About}></Route>
       <Route exact path="/youtube" component={Youtube}></Route>
       <Route exact path="/gallery" component={Gallery}></Route>
