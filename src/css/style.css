@@ -83,7 +83,7 @@ footer {
   .main .left {
     width: 80%;
     height: 70vh;
-    background: #e2e3e5;
+    background: url(/public/img/20.jpeg) no-repeat center/cover;
     position: relative; }
     .main .left .main-title {
       width: 500px;
@@ -328,74 +328,107 @@ footer {
   border: 1px solid #bbb;
   margin-bottom: 20px; }
 
-.inner .intro {
-  display: flex;
-  align-items: center;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #ddd; }
-  .inner .intro .intro-left {
-    width: 50%;
-    padding-right: 20px; }
-    .inner .intro .intro-left h2 {
-      font: 20px/1 'Roboto';
-      margin-bottom: 10px; }
-    .inner .intro .intro-left h3 {
-      font: 18px/1 'Roboto';
-      margin-bottom: 20px;
-      color: #bbb; }
-    .inner .intro .intro-left p {
-      font: 300 14px/1.2 'Roboto';
-      padding-bottom: 40px;
-      width: 100%; }
-  .inner .intro .intro-right {
-    width: 50%; }
-    .inner .intro .intro-right p {
-      font: 300 14px/1.2 'Roboto';
-      padding-bottom: 40px; }
-    .inner .intro .intro-right .searchbox {
-      float: right; }
-      .inner .intro .intro-right .searchbox input {
-        height: 25px;
-        margin-right: 10px;
-        background: #f5f5f5;
-        border: 1px solid #324b4c; }
-      .inner .intro .intro-right .searchbox button {
-        outline: none;
-        border: none;
-        padding: 4px 10px;
-        background-color: #324b4c;
-        border-radius: 4px;
-        color: #fff;
-        cursor: pointer;
-        font-family: 'Roboto'; }
-.inner .list {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: 1s;
+.inner {
   position: relative; }
-  .inner .list.on {
-    opacity: 1;
-    transform: translateY(0px); }
-  .inner .list ul {
-    width: 100%;
+  .inner .intro {
     display: flex;
-    flex-wrap: wrap; }
-    .inner .list ul .pic {
-      width: 25%;
-      padding: 10px; }
-      .inner .list ul .pic .inner {
-        width: 100%;
-        padding: 12px;
-        background: #fff;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); }
-        .inner .list ul .pic .inner img {
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd; }
+    .inner .intro .intro-left {
+      width: 50%;
+      padding-right: 20px; }
+      .inner .intro .intro-left h2 {
+        font: 20px/1 'Roboto';
+        margin-bottom: 10px; }
+      .inner .intro .intro-left h3 {
+        font: 18px/1 'Roboto';
+        margin-bottom: 20px;
+        color: #bbb; }
+      .inner .intro .intro-left p {
+        font: 300 14px/1.2 'Roboto';
+        padding-bottom: 40px;
+        width: 100%; }
+    .inner .intro .intro-right {
+      width: 50%; }
+      .inner .intro .intro-right p {
+        font: 300 14px/1.2 'Roboto';
+        padding-bottom: 40px; }
+      .inner .intro .intro-right .searchbox {
+        float: right; }
+        .inner .intro .intro-right .searchbox input {
+          height: 25px;
+          margin-right: 10px;
+          background: #f5f5f5;
+          border: 1px solid #324b4c; }
+        .inner .intro .intro-right .searchbox button {
+          outline: none;
+          border: none;
+          padding: 4px 10px;
+          background-color: #324b4c;
+          border-radius: 4px;
+          color: #fff;
+          cursor: pointer;
+          font-family: 'Roboto'; }
+  .inner .loading {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .inner .list {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: 1s;
+    position: relative; }
+    .inner .list.on {
+      opacity: 1;
+      transform: translateY(0px); }
+    .inner .list ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .inner .list ul .pic {
+        width: 25%;
+        padding: 10px;
+        transition: all 0.3s; }
+        .inner .list ul .pic:hover {
+          transform: scale(1.02);
+          z-index: 10; }
+        .inner .list ul .pic .inner {
           width: 100%;
-          margin-bottom: 10px; }
-        .inner .list ul .pic .inner h2 {
-          font: normal 12px/1.2 'Roboto';
-          color: #777;
-          margin-bottom: 20px;
-          text-align: center; }
+          padding: 12px;
+          background: #fff;
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); }
+          .inner .list ul .pic .inner img {
+            width: 100%;
+            margin-bottom: 40px; }
+          .inner .list ul .pic .inner .type {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #777; }
+            .inner .list ul .pic .inner .type span {
+              font: 12px/1 'Roboto'; }
+              .inner .list ul .pic .inner .type span i {
+                padding: 2px;
+                font-size: 10px;
+                color: #777;
+                margin-left: 4px;
+                cursor: pointer; }
+          .inner .list ul .pic .inner h2 {
+            font: bold 14px/1.2 'Roboto';
+            color: #000;
+            margin-bottom: 20px;
+            text-align: left; }
+          .inner .list ul .pic .inner p {
+            font: normal 10px/1.2 'Roboto';
+            margin-bottom: 20px; }
+          .inner .list ul .pic .inner strong {
+            font: normal 10px/1 'Roboto';
+            color: #999; }
 
 @media screen and (max-width: 1179px) {
   .inner .list ul .pic {

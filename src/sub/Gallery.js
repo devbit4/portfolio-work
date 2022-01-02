@@ -82,8 +82,14 @@ const Gallery = (props) => {
                                 return (
                                     <li key={index} className='pic'>
                                         <div className="inner">
+                                            <div className="type">
+                                                <span>Art,fashion</span>
+                                                <span><i className="far fa-sticky-note"></i><i className="fas fa-sign-in-alt"></i></span>
+                                            </div>
                                             <img src={imgM} alt="IMG" />
                                             <h2>{pic.title}</h2>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque necessitatibus illum laudantium maiores dolor praesentium impedit consequuntur enim aspernatur veritatis.</p>
+                                            <strong>By Andrew Kim</strong>
                                         </div>
                                     </li>
                                 )
@@ -92,7 +98,7 @@ const Gallery = (props) => {
                     </Masonry>
                 </div>
             </div>
-        </section>
+        </section >
     );
 
 
@@ -104,7 +110,7 @@ const Gallery = (props) => {
         const method = 'flickr.interestingness.getList';
         const method2 = 'flickr.photos.search';
         const key = '7867f2d006615cd9c7c79d1275688a01';
-        const per_page = 5;
+        const per_page = 15;
         const format = 'json';
 
         if (opt.type === "interest") {

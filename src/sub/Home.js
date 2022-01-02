@@ -6,8 +6,8 @@ const Home = (props) => {
             <section className="main">
                 <div className="left">
                     <div className="main-title">
-                        <h2>Dream Big Company</h2>
-                        <h1>Spread Your Dream</h1>
+                        <h2>Life Company</h2>
+                        <h1>Share Your Life Story</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
                             incidunt quidem veritatis corrupti quam et fugiat excepturi
