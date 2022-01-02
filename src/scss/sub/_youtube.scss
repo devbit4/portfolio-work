@@ -1,0 +1,225 @@
+.youtube{
+    .inner{
+        .news{
+            h1{
+                font: 20px/1 'Roboto';
+                margin-bottom: 40px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            article{
+                margin-bottom: 20px;
+                .inner{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:flex-start;
+                    .circle{
+                        width: 5%;
+                        font-size: 16px;
+                    }
+                    .num{
+                        width: 10%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        strong{
+                            font: bold 28px/1 'Roboto';
+                            margin-bottom: 4px;
+                        }
+                        span{
+                            font: 12px/1 'Roboto';
+                        }
+                    }
+                    .txt{
+                        width: 60%;
+                        padding: 0 10px;
+                        h2{
+                            font: bold 16px/1 'Roboto';
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            font: 12px/1.4 'Roboto';
+                        }
+
+                    }
+                    .pic{
+                        width: 25%;
+                        height: 150px;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            cursor: pointer;
+                        }
+                        i{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            color: #fff;
+                            font-size: 40px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .library{
+            margin-bottom: 60px;
+            h1{
+                font: 20px/1 'Roboto';
+                margin-bottom: 40px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            .inner{
+                display: flex;
+                .left{
+                    width: 50%;
+                    background: #ddd;
+                }
+                .right{
+                    width: 50%;
+                    background: #eee;
+                    display: flex;
+                    flex-direction: column;
+                    .right-upper{
+                        width: 100%;
+                        height: 150px;
+                    }
+                    .right-lower{
+                        width: 100%;
+                        height: 150px;
+                        display: flex;
+                        background: #333;
+                        .box{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content:space-between;
+                            color: #fff;
+                            border-right: 1px solid #fff;
+                            padding: 10px;
+                            h2{
+                                font: 16px/1 'Roboto';
+                            }
+                            span{
+                                font: 12px/1 'Roboto';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .issue{
+           .inner{
+               display: flex;
+               justify-content: space-between;
+               .text{
+                   width: 48%;
+
+                h1{
+                    font: 20px/1 'Roboto';
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #ddd;
+                    span{
+                        float: right;
+                        i{
+                            color: #ddd;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                article{
+                    margin-bottom: 20px;
+                    h2{
+                        font: bold 16px/1 'Roboto';
+                        margin-bottom: 10px;
+
+                    }
+                    p{
+                        font: 12px/1.4 'Roboto';
+                        margin-bottom: 10px;
+                    }
+                    span{
+                        font: 12px/1.4 'Roboto';
+
+
+                    }
+                }
+               }
+           }
+        }
+
+        .pop {
+            width: 100%; height: 100vh; position: fixed; top: 0px; left: 0px; background: rgba(0,0,0,.9); padding: 5vw;
+
+            iframe {
+              border: none; width: 100%; height: 100%;
+            }
+
+            span {
+              position: absolute; top: 3vw; right: 5vw;
+              font: bold 14px/1 "arial"; color: #fff; cursor: pointer;
+            }
+          }
+    }
+}
+@media screen and (max-width: 620px){
+    .youtube{
+        .inner{
+            .news{
+                article{
+                    margin-bottom: 40px;
+                    .inner{
+                        flex-wrap: wrap;
+                        .circle{
+                            width: 10%;
+
+                        }
+                        .num{
+                            width: 20%;
+
+                        }
+                        .txt{
+                            width: 70%;
+                            word-break: break-all;
+
+                        }
+                        .pic{
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+            .library{
+
+                .inner{
+                    flex-direction: column;
+                    .left{
+                        width: 100%;
+                        height: 300px;
+                    }
+                    .right{
+                        width: 100%;
+                    }
+                }
+            }
+            .issue{
+                .inner{
+                    flex-direction: column;
+                    .text{
+                        width: 100%;
+                        margin-bottom: 40px;
+                    }
+                }
+             }
+
+
+
+        }
+    }
+
+}

@@ -14,7 +14,7 @@ const Community = (props) => {
     return (
         <section className="content community">
             <div className="inner">
-                <h1>Community</h1>
+                <h1>COMMUNITY</h1>
                 {
                     posts.slice(0).reverse().map((post, index) => {
                         return (

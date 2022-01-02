@@ -3,10 +3,10 @@ import React from 'react';
 const About = (props) => (
     <section className='content'>
         <div className="inner">
-            <h1>About</h1>
+            <h1>ABOUT</h1>
             <div className='intro'>
                 <div className="intro-first">
-                    <h2>Bucket List</h2>
+                    <h2>ABOUT US</h2>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
                 <div className="intro-second">
