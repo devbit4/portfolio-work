@@ -1,28 +1,20 @@
 {
     "data": [
         {
-            "title": "loremdkaf;k;efkddddda;mfdcms;",
-            "writer": "Davidsaaa",
-            "date": "2022-01-01",
-            "like": 4
+            "question": "Lorem ipsum consectetur adipisicing elit?",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod?"
         },
         {
-            "title": "loremdksssssf;k;efka;mfdcms;",
-            "writer": "David",
-            "date": "2022-01-01",
-            "like": 4
+            "question": "Lorem adipisicing elit?",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod?"
         },
         {
-            "title": "loremdkassssf;k;efka;mfdcms;",
-            "writer": "David",
-            "date": "2022-01-01",
-            "like": 4
+            "question": "Lorem ipsum adipisicing elit?",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod?"
         },
         {
-            "title": "loremdkaf;k;efka;mfdcms;",
-            "writer": "David",
-            "date": "2022-01-01",
-            "like": 4
+            "question": "lLorem ipsum consectetur adipisicing elit?",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod?"
         }
     ]
 }
