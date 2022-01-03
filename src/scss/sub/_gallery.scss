@@ -10,6 +10,7 @@
 		padding-bottom: 40px;
 		border-bottom: 1px solid #ddd;
 		margin-bottom: 20px;
+		animation: fade 1s ease-in-out;
 		.intro-left {
 			width: 50%;
 			padding-right: 20px;
@@ -38,18 +39,20 @@
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
+
 				input {
 					height: 25px;
-					margin-right: 10px;
+					margin-right: 5px;
 					background: #f5f5f5;
-					border: 1px solid #777;
+					border: none;
+					outline: none;
+
 				}
 				button {
 					outline: none;
 					border: none;
 					padding: 4px 10px;
 					background-color: #324b4c;
-					border-radius: 4px;
 					color: #fff;
 					cursor: pointer;
 					font-family: 'Roboto';
@@ -67,7 +70,7 @@
 	}
 	.list {
 		opacity: 0;
-		transform: translateY(200px);
+		transform: translateY(-100px);
 		transition: 1s;
 		position: relative;
 
@@ -88,7 +91,6 @@
 				&:hover{
 					transform:scale(1.02);
 					z-index:10;
-					border: 1px solid #777;
 				}
 				.inner {
 					width: 100%;
@@ -97,9 +99,30 @@
 					box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 					word-break: break-all;
 
+					&:hover{
+						background: #efefef;
+						.click{
+							display: block;
+						}
+
+					}
 					img {
 						width: 100%;
 						margin-bottom: 30px;
+						position: relative;
+
+					}
+					.click{
+						display: block;
+						position: absolute;
+						top: 30%;
+						left: 50%;
+						transform: translateX(-50%);
+						color: #efefef;
+						font: 12px/1 'Roboto';
+						z-index: 2;
+						display: none;
+						transition: all 3s;
 					}
 					.type{
 						display: flex;
@@ -107,6 +130,7 @@
 						align-items: center;
 						margin-bottom:10px;
 						color: #777;
+
 
 						span{
 							font: 12px/1 'Roboto';
@@ -128,7 +152,7 @@
 						text-align: left;
 					}
 					p{
-						font: 300 10px/1.2 'Roboto';
+						font: 300 12px/1.2 'Roboto';
 						margin-bottom:20px;
 					}
 					strong{

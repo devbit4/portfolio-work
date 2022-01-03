@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react';
 
 const Community = (props) => {
 
-    let [posts, setPosts] = useState([]);
+    let [problems, setProblems] = useState([]);
     useEffect(() => {
         axios.get("./dbs/board.json")
             .then(data => {
-                setPosts(data.data.data)
+                setProblems(data.data.data)
             })
     })
 
@@ -15,22 +15,31 @@ const Community = (props) => {
         <section className="content community">
             <div className="inner">
                 <h1>COMMUNITY</h1>
-                {
-                    posts.slice(0).reverse().map((post, index) => {
-                        return (
-                            <article key={index}>
-                                <h1>{posts.length - index}</h1>
-                                <h2>{post.title}</h2>
-                                <strong>{post.writer}</strong>
-                                <span>{post.date}</span>
-                                <em>{post.like}</em>
-
-                            </article>
-                        )
-                    })
-                }
+                <div className="faq">
+                    <h1 className='title'>FAQ</h1>
+                    {
+                        problems.map((problem, index) => {
+                            return (
+                                <article className="active" key={index}>
+                                    <div className="question" onClick={(e) => {
+                                        e.target.closest("article").classList.toggle("active");
+                                    }}>
+                                        <div className='question-front'>
+                                            <i className="far fa-circle"></i>
+                                            <h2>{problem.question}</h2>
+                                        </div>
+                                        <i className="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div className="answer">
+                                        <p>{problem.answer}</p>
+                                    </div>
+                                </article>
+                            )
+                        })
+                    }
+                </div>
             </div>
-        </section>
+        </section >
     );
 };
 export default Community;

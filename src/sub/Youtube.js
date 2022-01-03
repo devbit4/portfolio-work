@@ -56,7 +56,10 @@ function Youtube() {
                                             <span>March</span>
                                         </div>
                                         <div className="txt">
-                                            <h2>{(tit_len > 30) ? tit = tit.substr(0, 30) + "..." : tit}</h2>
+                                            <h2 onClick={() => {
+                                                setIsPop(true);
+                                                setIndex(index);
+                                            }}>{(tit_len > 30) ? tit = tit.substr(0, 30) + "..." : tit}</h2>
                                             <p>{(desc_len > 250) ? desc = desc.substr(0, 250) + "..." : desc}</p>
                                         </div>
                                         <div className="pic" onClick={() => {

@@ -24,6 +24,7 @@ header {
       left: 0; }
       header .inner h1 a {
         font: bold 22px/1 'Roboto';
+        letter-spacing: 4px;
         color: #324B4C; }
     header .inner #gnb {
       position: absolute;
@@ -250,23 +251,43 @@ footer {
           cursor: pointer; }
 
 .banner {
-  padding: 80px 0;
-  background: #e2e3e5; }
-  .banner .inner {
-    display: flex;
-    align-items: center; }
-    .banner .inner .banner-left {
-      width: 50%; }
-      .banner .inner .banner-left h1 {
-        font: bold 18px/1 'Roboto';
-        margin-bottom: 10px; }
-      .banner .inner .banner-left h2 {
-        font: 300 14px/1 'Roboto'; }
-    .banner .inner .banner-right {
-      width: 50%;
-      text-align: center; }
-      .banner .inner .banner-right input {
-        width: 80%; }
+  width: 100%;
+  background: #e2e3e5;
+  position: relative;
+  display: inline-block; }
+  .banner img {
+    max-width: 100%; }
+  .banner span.text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center; }
+  .banner::before, .banner::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .8s;
+    width: 95%;
+    height: 80%; }
+  .banner::before {
+    border-top: 2px solid #fff;
+    border-bottom: 3px solid #fff;
+    width: 0; }
+  .banner::after {
+    border-left: 2px solid #fff;
+    border-right: 3px solid #fff;
+    height: 0; }
+  .banner:hover::before {
+    width: calc(95% + 4px); }
+  .banner:hover::after {
+    height: calc(80% + 4px); }
 
 .testimonials {
   padding: 50px 0; }
@@ -323,11 +344,49 @@ footer {
         width: 100%;
         height: 100%; }
 
-.community .inner article {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #bbb;
-  margin-bottom: 20px; }
+.community .inner .faq {
+  animation: fade 1s ease-in-out; }
+  .community .inner .faq h1 {
+    font: 20px/1 'Roboto';
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd; }
+  .community .inner .faq article {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #999;
+    cursor: pointer; }
+    .community .inner .faq article:hover {
+      background: #efefef; }
+    .community .inner .faq article.active .answer {
+      max-height: 300px;
+      animation: fade 1s ease-in-out; }
+    .community .inner .faq article.active i {
+      transform: rotate(180deg); }
+    .community .inner .faq article .question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem; }
+      .community .inner .faq article .question .question-front {
+        display: flex; }
+        .community .inner .faq article .question .question-front h2 {
+          margin-left: 20px;
+          font: bold 16px/1 'Roboto'; }
+        .community .inner .faq article .question .question-front i {
+          margin-left: 10px; }
+      .community .inner .faq article .question i {
+        transition: transform 0.8s ease-in-out;
+        margin-right: 10px; }
+    .community .inner .faq article .answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.8s ease-in-out; }
+      .community .inner .faq article .answer p {
+        padding-top: 2rem;
+        padding-left: 40px;
+        font: 14px/1.4 'Roboto';
+        color: #aaa; }
 
 .gallery .inner {
   position: relative; }
@@ -338,7 +397,8 @@ footer {
     align-items: top;
     padding-bottom: 40px;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    animation: fade 1s ease-in-out; }
     .gallery .inner .intro .intro-left {
       width: 50%;
       padding-right: 20px; }
@@ -364,15 +424,15 @@ footer {
         align-items: center; }
         .gallery .inner .intro .intro-right .searchbox input {
           height: 25px;
-          margin-right: 10px;
+          margin-right: 5px;
           background: #f5f5f5;
-          border: 1px solid #777; }
+          border: none;
+          outline: none; }
         .gallery .inner .intro .intro-right .searchbox button {
           outline: none;
           border: none;
           padding: 4px 10px;
           background-color: #324b4c;
-          border-radius: 4px;
           color: #fff;
           cursor: pointer;
           font-family: 'Roboto'; }
@@ -385,7 +445,7 @@ footer {
     transform: translate(-50%, -50%); }
   .gallery .inner .list {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(-100px);
     transition: 1s;
     position: relative; }
     .gallery .inner .list.on {
@@ -402,17 +462,32 @@ footer {
         margin-bottom: 20px; }
         .gallery .inner .list ul .pic:hover {
           transform: scale(1.02);
-          z-index: 10;
-          border: 1px solid #777; }
+          z-index: 10; }
         .gallery .inner .list ul .pic .inner {
           width: 100%;
           padding: 20px;
           background: #fff;
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
           word-break: break-all; }
+          .gallery .inner .list ul .pic .inner:hover {
+            background: #efefef; }
+            .gallery .inner .list ul .pic .inner:hover .click {
+              display: block; }
           .gallery .inner .list ul .pic .inner img {
             width: 100%;
-            margin-bottom: 30px; }
+            margin-bottom: 30px;
+            position: relative; }
+          .gallery .inner .list ul .pic .inner .click {
+            display: block;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #efefef;
+            font: 12px/1 'Roboto';
+            z-index: 2;
+            display: none;
+            transition: all 3s; }
           .gallery .inner .list ul .pic .inner .type {
             display: flex;
             justify-content: space-between;
@@ -435,7 +510,7 @@ footer {
             margin-bottom: 20px;
             text-align: left; }
           .gallery .inner .list ul .pic .inner p {
-            font: 300 10px/1.2 'Roboto';
+            font: 300 12px/1.2 'Roboto';
             margin-bottom: 20px; }
           .gallery .inner .list ul .pic .inner strong {
             font: normal 10px/1 'Roboto';
@@ -490,55 +565,62 @@ footer {
 @media screen and (max-width: 539px) {
   .gallery .inner .list ul .pic {
     width: 100%; } }
-.youtube .inner .news h1 {
-  font: 20px/1 'Roboto';
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ddd; }
-.youtube .inner .news article {
-  margin-bottom: 20px; }
-  .youtube .inner .news article .inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; }
-    .youtube .inner .news article .inner .circle {
-      width: 5%;
-      font-size: 16px; }
-    .youtube .inner .news article .inner .num {
-      width: 10%;
+.youtube .inner .news {
+  animation: fade 1s ease-in-out; }
+  .youtube .inner .news h1 {
+    font: 20px/1 'Roboto';
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd; }
+  .youtube .inner .news article {
+    margin-bottom: 20px; }
+    .youtube .inner .news article .inner {
       display: flex;
-      flex-direction: column;
-      text-align: center; }
-      .youtube .inner .news article .inner .num strong {
-        font: bold 28px/1 'Roboto';
-        margin-bottom: 4px; }
-      .youtube .inner .news article .inner .num span {
-        font: 12px/1 'Roboto'; }
-    .youtube .inner .news article .inner .txt {
-      width: 60%;
-      padding: 0 20px; }
-      .youtube .inner .news article .inner .txt h2 {
-        font: bold 16px/1 'Roboto';
-        margin-bottom: 10px; }
-      .youtube .inner .news article .inner .txt p {
-        font: 300 12px/1.4 'Roboto'; }
-    .youtube .inner .news article .inner .pic {
-      width: 25%;
-      height: 150px;
-      position: relative; }
-      .youtube .inner .news article .inner .pic img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        cursor: pointer; }
-      .youtube .inner .news article .inner .pic i {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 40px;
-        cursor: pointer; }
+      justify-content: space-between;
+      align-items: flex-start; }
+      .youtube .inner .news article .inner .circle {
+        width: 5%;
+        font-size: 16px; }
+      .youtube .inner .news article .inner .num {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        .youtube .inner .news article .inner .num strong {
+          font: bold 28px/1 'Roboto';
+          margin-bottom: 4px; }
+        .youtube .inner .news article .inner .num span {
+          font: 12px/1 'Roboto'; }
+      .youtube .inner .news article .inner .txt {
+        width: 60%;
+        padding: 0 20px; }
+        .youtube .inner .news article .inner .txt h2 {
+          font: bold 16px/1 'Roboto';
+          margin-bottom: 10px;
+          cursor: pointer; }
+        .youtube .inner .news article .inner .txt p {
+          font: 300 14px/1.4 'Roboto'; }
+      .youtube .inner .news article .inner .pic {
+        width: 25%;
+        height: 150px;
+        position: relative;
+        overflow: hidden; }
+        .youtube .inner .news article .inner .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          cursor: pointer;
+          transition: all 0.5s; }
+          .youtube .inner .news article .inner .pic img:hover {
+            transform: scale(1.1); }
+        .youtube .inner .news article .inner .pic i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          font-size: 40px;
+          cursor: pointer; }
 .youtube .inner .library {
   margin-bottom: 60px; }
   .youtube .inner .library h1 {
@@ -596,7 +678,7 @@ footer {
         font: bold 16px/1 'Roboto';
         margin-bottom: 10px; }
       .youtube .inner .issue .inner .text article p {
-        font: 300 12px/1.4 'Roboto';
+        font: 300 14px/1.4 'Roboto';
         margin-bottom: 10px; }
       .youtube .inner .issue .inner .text article span {
         font: 12px/1.4 'Roboto'; }
@@ -651,7 +733,8 @@ footer {
   display: flex;
   padding-bottom: 40px;
   border-bottom: 1px solid #ddd;
-  justify-content: space-between; }
+  justify-content: space-between;
+  animation: fade 1s ease-in-out; }
 .inner .intro-first {
   width: 33%; }
   .inner .intro-first h2 {
@@ -673,5 +756,13 @@ footer {
     font: 300 14px/1.2 'Roboto';
     padding-bottom: 40px;
     padding-right: 20px; }
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
 
 /*# sourceMappingURL=style.css.map */

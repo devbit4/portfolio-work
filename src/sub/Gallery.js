@@ -116,7 +116,10 @@ const Gallery = (props) => {
                         {pics.map((pic, index) => {
                             const imgM = `https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`;
                             return (
-                                <li key={index} className="pic">
+                                <li key={index} className="pic" onClick={() => {
+                                    setPopup(true);
+                                    setIndex(index);
+                                }}>
                                     <div className="inner">
                                         <div className="type">
                                             <span>Art,fashion</span>
@@ -128,11 +131,9 @@ const Gallery = (props) => {
                                         <img
                                             src={imgM}
                                             alt="IMG"
-                                            onClick={() => {
-                                                setPopup(true);
-                                                setIndex(index);
-                                            }}
-                                        />
+                                        ></img>
+                                        <strong className='click'>click!</strong>
+
                                         <h2>{pic.title.toUpperCase()}</h2>
                                         <p>
                                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -199,8 +200,7 @@ const Gallery = (props) => {
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
                         exercitationem rem? Quis similique sint iste, explicabo architecto
-                        neque ipsum modi reprehenderit quo distinctio ratione. Ipsa
-                        perferendis nihil explicabo error amet.
+                        neque ipsum modi.
                     </p>
                 </div>
                 <span

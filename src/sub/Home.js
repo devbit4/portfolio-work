@@ -171,16 +171,8 @@ const Home = (props) => {
             </section>
             <section className="content banner">
                 <div className="inner">
-                    <div className="banner-left">
-                        <h1>LET'S START A PROJECT</h1>
-                        <h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-                            doloremque.
-                        </h2>
-                    </div>
-                    <div className="banner-right">
-                        <input type="text" />
-                    </div>
+                    <img src="#" alt="" />
+                    <span className="text">배너에 글씨가 나타나는 부분</span>
                 </div>
             </section>
             <section className="content testimonials">
