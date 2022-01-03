@@ -138,10 +138,9 @@ const Gallery = (props) => {
                                         <p>
                                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                             Doloremque necessitatibus illum laudantium maiores dolor
-                                            praesentium impedit consequuntur enim aspernatur
-                                            veritatis.
+                                            praesentium impedit consequuntur.
                                         </p>
-                                        <strong>By Andrew Kim</strong>
+                                        <strong>{"By " + pic.owner}</strong>
                                     </div>
                                 </li>
                             );
