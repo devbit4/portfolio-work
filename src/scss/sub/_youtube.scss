@@ -73,6 +73,7 @@
             }
         }
         .library{
+            animation: fade 1s ease-in-out;
             margin-bottom: 60px;
             h1{
                 font: 20px/1 'Roboto';
@@ -119,6 +120,7 @@
             }
         }
         .issue{
+            animation: fade 1s ease-in-out;
            .inner{
                display: flex;
                justify-content: space-between;

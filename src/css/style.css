@@ -622,6 +622,7 @@ footer {
           font-size: 40px;
           cursor: pointer; }
 .youtube .inner .library {
+  animation: fade 1s ease-in-out;
   margin-bottom: 60px; }
   .youtube .inner .library h1 {
     font: 20px/1 'Roboto';
@@ -657,31 +658,33 @@ footer {
             font: 16px/1 'Roboto'; }
           .youtube .inner .library .inner .right .right-lower .box span {
             font: 300 12px/1 'Roboto'; }
-.youtube .inner .issue .inner {
-  display: flex;
-  justify-content: space-between; }
-  .youtube .inner .issue .inner .text {
-    width: 48%; }
-    .youtube .inner .issue .inner .text h1 {
-      font: 20px/1 'Roboto';
-      margin-bottom: 40px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd; }
-      .youtube .inner .issue .inner .text h1 span {
-        float: right; }
-        .youtube .inner .issue .inner .text h1 span i {
-          color: #ddd;
-          cursor: pointer; }
-    .youtube .inner .issue .inner .text article {
-      margin-bottom: 20px; }
-      .youtube .inner .issue .inner .text article h2 {
-        font: bold 16px/1 'Roboto';
-        margin-bottom: 10px; }
-      .youtube .inner .issue .inner .text article p {
-        font: 300 14px/1.4 'Roboto';
-        margin-bottom: 10px; }
-      .youtube .inner .issue .inner .text article span {
-        font: 12px/1.4 'Roboto'; }
+.youtube .inner .issue {
+  animation: fade 1s ease-in-out; }
+  .youtube .inner .issue .inner {
+    display: flex;
+    justify-content: space-between; }
+    .youtube .inner .issue .inner .text {
+      width: 48%; }
+      .youtube .inner .issue .inner .text h1 {
+        font: 20px/1 'Roboto';
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd; }
+        .youtube .inner .issue .inner .text h1 span {
+          float: right; }
+          .youtube .inner .issue .inner .text h1 span i {
+            color: #ddd;
+            cursor: pointer; }
+      .youtube .inner .issue .inner .text article {
+        margin-bottom: 20px; }
+        .youtube .inner .issue .inner .text article h2 {
+          font: bold 16px/1 'Roboto';
+          margin-bottom: 10px; }
+        .youtube .inner .issue .inner .text article p {
+          font: 300 14px/1.4 'Roboto';
+          margin-bottom: 10px; }
+        .youtube .inner .issue .inner .text article span {
+          font: 12px/1.4 'Roboto'; }
 .youtube .inner .pop {
   width: 100%;
   height: 100vh;
