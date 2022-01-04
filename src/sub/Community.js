@@ -30,7 +30,9 @@ const Community = (props) => {
                                         </div>
                                         <i className="fas fa-chevron-down"></i>
                                     </div>
-                                    <div className="answer">
+                                    <div className="answer" onClick={(e) => {
+                                        e.target.closest("article").classList.toggle("active");
+                                    }}>
                                         <p>{problem.answer}</p>
                                     </div>
                                 </article>

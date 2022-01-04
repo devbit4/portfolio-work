@@ -7,6 +7,7 @@
                 margin-bottom: 40px;
                 padding-bottom: 20px;
                 border-bottom: 1px solid #ddd;
+                color: #555;
             }
             article{
                 padding-bottom: 1rem;
@@ -29,17 +30,21 @@
                     justify-content: space-between;
                     align-items: center;
                     padding-top: 1rem;
+                    cursor: pointer;
                     .question-front{
                         display: flex;
                     h2{
                         margin-left: 20px;
                         font: bold 16px/1 'Roboto';
+                        cursor: pointer;
                     }
-                    i{margin-left: 10px;}
+                    i{margin-left: 10px;
+                        cursor: pointer;}
                 }
                     i{
                         transition: transform 0.8s ease-in-out;
                         margin-right: 10px;
+                        cursor: pointer;
                     }
                 }
                 .answer{
@@ -49,7 +54,7 @@
                     p{
                         padding-top: 2rem;
                         padding-left: 40px;
-                        font: 14px/1.4 'Roboto';
+                        font: 300 14px/1.4 'Roboto';
                         color: #aaa;
                     }
                 }

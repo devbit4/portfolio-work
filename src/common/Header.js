@@ -6,7 +6,7 @@ const Header = (props) => {
     return (
         <header>
             <div className="inner">
-                <h1><NavLink exact to="/">LIVING</NavLink></h1>
+                <h1><NavLink exact to="/">STORIES</NavLink></h1>
                 <ul id="gnb">
                     <li><NavLink exact activeStyle={active} to="/about">ABOUT</NavLink></li>
                     <li><NavLink exact activeStyle={active} to="/youtube">YOUTUBE</NavLink></li>

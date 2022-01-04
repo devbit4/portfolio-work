@@ -17,6 +17,7 @@
 			h2 {
 				font: 20px/1 'Roboto';
 				margin-bottom: 10px;
+				color: #555;
 			}
 			h3 {
 				font: 18px/1 'Roboto';
@@ -88,6 +89,7 @@
 				padding: 10px;
 				transition: all 0.3s;
 				margin-bottom: 20px;
+
 				&:hover{
 					transform:scale(1.02);
 					z-index:10;
@@ -98,6 +100,7 @@
 					background: #fff;
 					box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 					word-break: break-all;
+					cursor: pointer;
 
 					&:hover{
 						background: #efefef;
