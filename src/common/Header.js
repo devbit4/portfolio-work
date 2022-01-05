@@ -2,7 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
-    const active = { color: "#324B4C" }
+    const active = {
+        color: "#324B4C", fontWeight: "bold"
+    }
     return (
         <header>
             <div className="inner">

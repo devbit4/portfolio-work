@@ -25,7 +25,7 @@ header {
       header .inner h1 a {
         font: bold 22px/1 'Roboto';
         letter-spacing: 4px;
-        color: #324B4C;
+        color: #1e3a2be7;
         cursor: pointer; }
     header .inner #gnb {
       position: absolute;
@@ -83,56 +83,85 @@ footer {
       border-bottom: 1px solid #ccc; }
 
 .main {
-  display: flex;
-  flex-wrap: wrap; }
-  .main .left {
-    width: 80%;
-    height: 70vh;
+  animation: fade 1s ease-in-out; }
+  .main .top {
+    width: 100%;
+    height: 82vh;
     background: #ddd;
     position: relative; }
-    .main .left .main-title {
-      width: 500px;
-      height: 300px;
+    .main .top img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scaleX(-1);
+      filter: brightness(110%); }
+    .main .top .main-title {
+      width: 480px;
+      height: 280px;
       padding: 50px;
+      margin: 0 auto;
       position: absolute;
-      top: 15%;
-      right: -550px;
-      margin-right: 400px;
-      background: #484848;
+      top: 20%;
+      right: 20%;
       display: flex;
       flex-direction: column;
       z-index: 1;
-      color: #fff; }
-      .main .left .main-title h2 {
+      color: #1e3a2be7; }
+      .main .top .main-title h2 {
         font: 14px/1 'Roboto';
-        margin-bottom: 40px; }
-      .main .left .main-title h1 {
-        font: bold 24px/1 'Roboto';
+        padding-bottom: 4px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #efefef; }
+      .main .top .main-title h1 {
+        font: bold 28px/1 'Roboto';
         margin-bottom: 10px; }
-      .main .left .main-title p {
+      .main .top .main-title p {
         font: 300 14px/1.4 'Roboto';
-        margin-bottom: 40px; }
-      .main .left .main-title a {
+        margin-bottom: 20px; }
+      .main .top .main-title a {
+        display: inline-block;
+        width: fit-content;
+        padding: 8px 50px;
+        background-color: #1e3a2be7;
+        border-radius: 4px;
         color: #fff;
-        font: 300 14px/1 'Roboto'; }
-  .main .right {
-    width: 20%;
-    height: 70vh;
-    background: #ddd;
-    position: relative; }
+        font: 300 12px/1 'Roboto';
+        text-align: left; }
   .main .bottom {
     width: 100%;
-    height: 20vh;
-    background: #f5f5f5; }
+    height: 8vh;
+    background: #efefef;
+    position: relative; }
     .main .bottom .pics {
-      display: flex; }
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 40px;
+      right: 0px; }
       .main .bottom .pics .pic {
-        width: 250px;
+        width: 32%;
         height: 150px;
         background: #959595;
-        margin-right: 20px;
+        margin-left: 15px;
+        overflow: hidden;
         position: relative;
-        top: -60px; }
+        border: 2px solid #fff; }
+        .main .bottom .pics .pic::after {
+          content: "";
+          display: block;
+          background-color: rgba(255, 255, 255, 0.171);
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .main .bottom .pics .pic:hover::after {
+          background: none; }
+        .main .bottom .pics .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: relative; }
 
 .welcome {
   padding: 100px 0; }
@@ -147,7 +176,10 @@ footer {
       display: flex;
       justify-content: center; }
       .welcome .inner .about .box {
-        width: 32%; }
+        width: 32%;
+        padding-bottom: 20px; }
+        .welcome .inner .about .box:hover {
+          background: #efefef; }
         .welcome .inner .about .box i {
           width: 40px;
           height: 40px;
@@ -168,10 +200,18 @@ footer {
           cursor: pointer; }
 
 .intrdouction {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   .intrdouction .left-video {
     width: 50%;
-    background: #efefef; }
+    height: 340px;
+    background: #f5f3f5; }
+    .intrdouction .left-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(100%);
+      opacity: 0.8; }
   .intrdouction .right-text {
     width: 50%;
     padding: 80px 40px; }
@@ -221,22 +261,27 @@ footer {
     .process .inner h1 {
       font: bold 18px/1 'Roboto'; }
     .process .inner .round {
-      height: 240px;
+      width: 100%;
+      height: 280px;
       display: flex;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 20px;
       padding: 0 80px; }
       .process .inner .round:nth-of-type(2) {
         flex-direction: row-reverse; }
       .process .inner .round .left-pic {
         width: 50%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center; }
         .process .inner .round .left-pic img {
-          width: 50%;
+          width: 100%;
           height: 100%;
+          padding: 0 20%;
           border-radius: 50%;
-          background: #484848; }
+          object-fit: cover; }
       .process .inner .round .right-text {
         width: 50%;
         padding: 40px 0;
@@ -255,11 +300,11 @@ footer {
 
 .banner {
   width: 100%;
+  height: 240px;
   background: #e2e3e5;
   position: relative;
-  display: inline-block; }
-  .banner img {
-    max-width: 100%; }
+  display: inline-block;
+  background: url("/public/img/11.jpg") no-repeat center/cover fixed; }
   .banner span.text {
     position: absolute;
     top: 50%;
@@ -334,18 +379,19 @@ footer {
 
 .sponsor {
   padding: 50px 0;
-  background: #f5f5f5; }
+  background: #fff; }
   .sponsor .companies {
     display: flex;
     flex-wrap: wrap; }
     .sponsor .companies .company {
       width: 20%;
       height: 100px;
-      padding: 10px;
+      padding: 20px;
       border: 1px solid #ddd; }
       .sponsor .companies .company img {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        object-fit: contain; }
 
 .community .inner .faq {
   animation: fade 1s ease-in-out; }
@@ -584,7 +630,8 @@ footer {
     border-bottom: 1px solid #ddd;
     color: #555; }
   .youtube .inner .news article {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-bottom: 1px solid #efefef; }
     .youtube .inner .news article:hover {
       background: #efefef; }
     .youtube .inner .news article .inner {

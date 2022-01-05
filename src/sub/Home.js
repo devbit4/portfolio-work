@@ -4,7 +4,8 @@ const Home = (props) => {
     return (
         <>
             <section className="main">
-                <div className="left">
+                <div className="top">
+                    <img src="./img/35.jpg" alt="" />
                     <div className="main-title">
                         <h2>Life Company</h2>
                         <h1>Share Your Life Story</h1>
@@ -13,20 +14,19 @@ const Home = (props) => {
                             incidunt quidem veritatis corrupti quam et fugiat excepturi
                             explicabo laboriosam nisi?
                         </p>
-                        <a href="#">Read More</a>
+                        <a href="#">Read More <i className="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
-                <div className="right"></div>
                 <div className="bottom">
                     <div className="pics">
                         <div className="pic">
-                            <img src="" alt="" />
+                            <img src="./img/15.jpg" alt="pic1" />
                         </div>
                         <div className="pic">
-                            <img src="" alt="" />
+                            <img src="./img/13.jpg" alt="pic2" />
                         </div>
                         <div className="pic">
-                            <img src="" alt="" />
+                            <img src="./img/5.jpg" alt="pic3" />
                         </div>
                     </div>
                 </div>
@@ -37,8 +37,8 @@ const Home = (props) => {
                     <h1>YOU ARE WELCOME</h1>
                     <div className="about">
                         <div className="box">
-                            <i className="fas fa-angle-right"></i>
-                            <h3>CREATIVE CONCEPT</h3>
+                            <i className="fas fa-network-wired"></i>
+                            <h3>OUR NETWORK</h3>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Repellendus ipsam tempora ab blanditiis. Ipsam, dignissimos.
@@ -46,8 +46,8 @@ const Home = (props) => {
                             <span>READ MORE</span>
                         </div>
                         <div className="box">
-                            <i className="fas fa-angle-right"></i>
-                            <h3>CREATIVE CONCEPT</h3>
+                            <i className="fas fa-chart-line"></i>
+                            <h3>OUR ACTIVITY</h3>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Repellendus ipsam tempora ab blanditiis. Ipsam, dignissimos.
@@ -55,8 +55,8 @@ const Home = (props) => {
                             <span>READ MORE</span>
                         </div>
                         <div className="box">
-                            <i className="fas fa-angle-right"></i>
-                            <h3>CREATIVE CONCEPT</h3>
+                            <i className="fas fa-users"></i>
+                            <h3>OUR FRIENDS</h3>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Repellendus ipsam tempora ab blanditiis. Ipsam, dignissimos.
@@ -68,18 +68,14 @@ const Home = (props) => {
             </section>
             <section className="intrdouction">
                 <div className="left-video">
-                    <video src=""></video>
+                    <video src="./img/1.mp4" muted autoplay loop controls></video>
                 </div>
                 <div className="right-text">
                     <h2>CREATIVE IN MIND</h2>
-                    <h1>OUR DREAM HAS NO LIMIT</h1>
+                    <h1>OUR STORY HAS NO LIMIT</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                        ducimus.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-                        quae natus culpa vel doloribus nisi?
+                        ducimus. <br></br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br></br> Doloribus reprehenderit necessitatibus officia nostrum molestias sit mollitia culpa. <br></br>Quisquam ut, exercitationem praesentium optio aperiam esse. Error.
                     </p>
                     <a href="#">Read More</a>
                 </div>
@@ -124,7 +120,7 @@ const Home = (props) => {
                     <h1>OUR AMAZING WORKS</h1>
                     <div className="round">
                         <div className="left-pic">
-                            <img src="" alt="" />
+                            <img src="./img/11.jpg" alt="" />
                         </div>
                         <div className="right-text">
                             <h2>FIRST STEP</h2>
@@ -139,7 +135,7 @@ const Home = (props) => {
                     </div>
                     <div className="round">
                         <div className="left-pic">
-                            <img src="" alt="" />
+                            <img src="./img/19.jpg" alt="" />
                         </div>
                         <div className="right-text">
                             <h2>SECOND STEP</h2>
@@ -154,7 +150,7 @@ const Home = (props) => {
                     </div>
                     <div className="round">
                         <div className="left-pic">
-                            <img src="" alt="" />
+                            <img src="./img/9.jpg" alt="" />
                         </div>
                         <div className="right-text">
                             <h2>THIRD STEP</h2>
@@ -171,7 +167,6 @@ const Home = (props) => {
             </section>
             <section className="content banner">
                 <div className="inner">
-                    <img src="#" alt="" />
                     <span className="text">배너에 글씨가 나타나는 부분</span>
                 </div>
             </section>
@@ -247,13 +242,13 @@ const Home = (props) => {
             <section className="content sponsor">
                 <div className='inner companies'>
                     <div className="company">
-                        <img src="" alt="" />
+                        <img src="./img/42.png" alt="" />
                     </div>
                     <div className="company">
-                        <img src="" alt="" />
+                        <img src="./img/41.png" alt="" />
                     </div>
                     <div className="company">
-                        <img src="" alt="" />
+                        <img src="./img/40.png" alt="" />
                     </div>
                     <div className="company">
                         <img src="" alt="" />
