@@ -1,0 +1,22 @@
+{
+    "people": [
+        {
+            "name": "Lena Kim",
+            "job": "Teacher",
+            "say": "Lorem ipsum dolor sit amet",
+            "intro": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod?"
+        },
+        {
+            "name": "Mak Wang",
+            "job": "Developer",
+            "say": "Lorem ipsum dolor sit amet",
+            "intro": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod?"
+        },
+        {
+            "name": "Emma Kang",
+            "job": "Youtuber",
+            "say": "Lorem ipsum dolor sit amet",
+            "intro": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fuga! Voluptates velit eos ipsum, consequuntur nam labore nisi deserunt, eius impedit dolor necessitatibus repellendus magni maiores unde consectetur quas quod?"
+        }
+    ]
+}
