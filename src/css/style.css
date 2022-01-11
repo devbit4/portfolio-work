@@ -83,85 +83,43 @@ footer {
       border-bottom: 1px solid #ccc; }
 
 .main {
-  animation: fade 1s ease-in-out; }
-  .main .top {
-    width: 100%;
-    height: 82vh;
-    background: #ddd;
-    position: relative; }
-    .main .top img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scaleX(-1);
-      filter: brightness(110%); }
-    .main .top .main-title {
-      width: 480px;
-      height: 280px;
-      padding: 50px;
-      margin: 0 auto;
-      position: absolute;
-      top: 20%;
-      right: 20%;
-      display: flex;
-      flex-direction: column;
-      z-index: 1;
-      color: #1e3a2be7; }
-      .main .top .main-title h2 {
-        font: 14px/1 'Roboto';
-        padding-bottom: 4px;
-        margin-bottom: 30px;
-        border-bottom: 1px solid #efefef; }
-      .main .top .main-title h1 {
-        font: bold 28px/1 'Roboto';
-        margin-bottom: 10px; }
-      .main .top .main-title p {
-        font: 300 14px/1.4 'Roboto';
-        margin-bottom: 20px; }
-      .main .top .main-title a {
-        display: inline-block;
-        width: fit-content;
-        padding: 8px 50px;
-        background-color: #1e3a2be7;
-        border-radius: 4px;
-        color: #fff;
-        font: 300 12px/1 'Roboto';
-        text-align: left; }
-  .main .bottom {
-    width: 100%;
-    height: 8vh;
-    background: #efefef;
-    position: relative; }
-    .main .bottom .pics {
-      display: flex;
-      justify-content: flex-end;
-      position: absolute;
-      bottom: 40px;
-      right: 0px; }
-      .main .bottom .pics .pic {
-        width: 32%;
-        height: 150px;
-        background: #959595;
-        margin-left: 15px;
-        overflow: hidden;
-        position: relative;
-        border: 2px solid #fff; }
-        .main .bottom .pics .pic::after {
-          content: "";
-          display: block;
-          background-color: rgba(255, 255, 255, 0.171);
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0; }
-        .main .bottom .pics .pic:hover::after {
-          background: none; }
-        .main .bottom .pics .pic img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          position: relative; }
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: url("/src/img/bg2.jpeg") no-repeat center/cover;
+  opacity: 0.8; }
+  .main article {
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    padding-left: 12vw;
+    transform: translateY(-50%); }
+    .main article p {
+      font: 4vw/1 'arial';
+      color: #fff;
+      margin-bottom: 20px; }
+      .main article p strong {
+        opacity: 0.7; }
+    .main article em {
+      font: bold 14px/1.2 'arial';
+      color: #fff;
+      letter-spacing: 2px; }
+  .main figure {
+    width: 400px;
+    height: 800px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-33%);
+    background: url("/src/img/bgPhone.png") no-repeat center;
+    overflow: hidden; }
+  .main nav {
+    position: absolute;
+    top: 50%;
+    padding-left: 12vw; }
 
 .welcome {
   padding: 100px 0; }
@@ -321,7 +279,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all .8s;
+    transition: all 0.8s;
     width: 95%;
     height: 80%; }
   .banner::before {

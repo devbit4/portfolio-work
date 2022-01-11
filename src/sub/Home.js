@@ -1,36 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const Home = (props) => {
+    let bg1 = useRef();
     return (
         <>
-            <section className="main">
-                <div className="top">
-                    <img src="./img/35.jpg" alt="" />
-                    <div className="main-title">
-                        <h2>Life Company</h2>
-                        <h1>Share Your Life Story</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                            incidunt quidem veritatis corrupti quam et fugiat excepturi
-                            explicabo laboriosam nisi?
-                        </p>
-                        <a href="#">Read More <i className="fas fa-angle-double-right"></i></a>
+
+            <section className="main" ref={bg1}>
+                <article>
+                    <p><strong>lorem</strong>ipsum</p>
+                    <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, illum.</em>
+                </article>
+                <figure>
+                    <div className="phone">
                     </div>
-                </div>
-                <div className="bottom">
-                    <div className="pics">
-                        <div className="pic">
-                            <img src="./img/15.jpg" alt="pic1" />
-                        </div>
-                        <div className="pic">
-                            <img src="./img/13.jpg" alt="pic2" />
-                        </div>
-                        <div className="pic">
-                            <img src="./img/5.jpg" alt="pic3" />
-                        </div>
-                    </div>
-                </div>
+                </figure>
+                <nav>
+                    <span onClick={() => {
+
+                    }}>family</span>
+                    <span>friends</span>
+                    <span>travel</span>
+                </nav>
+
             </section>
+
             <section className="content welcome">
                 <div className="inner">
                     <h2>DREAM BIG INC</h2>
