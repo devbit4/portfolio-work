@@ -25,7 +25,7 @@ header {
       header .inner h1 a {
         font: bold 22px/1 'Roboto';
         letter-spacing: 4px;
-        color: #1e3a2be7;
+        color: #000;
         cursor: pointer; }
     header .inner #gnb {
       position: absolute;
@@ -43,7 +43,7 @@ header {
 footer {
   width: 100%;
   padding: 0 12vw;
-  background: #484848;
+  background: #000;
   color: #fff; }
   footer .inner {
     padding: 80px 0;
@@ -85,43 +85,96 @@ footer {
 .main {
   width: 100%;
   height: 90vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background: url("/src/img/bg2.jpeg") no-repeat center/cover;
-  opacity: 0.8; }
+  padding-bottom: 4vh; }
+  .main .custom-shape-divider-top-1641925326 {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; }
+  .main .custom-shape-divider-top-1641925326 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px; }
+  .main .custom-shape-divider-top-1641925326 .shape-fill {
+    fill: #FFFFFF; }
+  .main .inner {
+    width: 100%;
+    height: 100%;
+    border-bottom: 8px solid #fff; }
   .main article {
     width: 40vw;
     position: absolute;
-    top: 50%;
+    top: 55%;
     padding-left: 12vw;
     transform: translateY(-50%); }
     .main article p {
-      font: 4vw/1 'arial';
+      font: bold 4vw/1 'Roboto';
       color: #fff;
-      margin-bottom: 20px; }
-      .main article p strong {
-        opacity: 0.7; }
+      margin-bottom: 20px;
+      text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); }
+      .main article p::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        margin-top: 5px; }
+      .main article p span {
+        -webkit-text-stroke: 0.5px #fded5a;
+        -webkit-text-fill-color: transparent; }
     .main article em {
-      font: bold 14px/1.2 'arial';
-      color: #fff;
-      letter-spacing: 2px; }
-  .main figure {
-    width: 400px;
+      font: 300 14px/1.2 'Roboto';
+      color: #000; }
+    .main article a {
+      margin-top: 40px;
+      display: block;
+      padding: 10px;
+      font: 300 14px/1 'Roboto';
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9));
+      border-right: 8px solid #000;
+      display: flex;
+      align-items: center;
+      color: #000; }
+      .main article a i {
+        font-size: 10px;
+        margin-left: 10px; }
+  .main .phone {
+    width: 420px;
     height: 800px;
     z-index: 2;
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 12%;
     transform: translateY(-33%);
     background: url("/src/img/bgPhone.png") no-repeat center;
     overflow: hidden; }
-  .main nav {
-    position: absolute;
-    top: 50%;
-    padding-left: 12vw; }
+    .main .phone .screen {
+      position: absolute;
+      width: 256px;
+      height: 450px;
+      background-color: yellow;
+      overflow: hidden;
+      top: 402px;
+      left: 80px; }
+      .main .phone .screen .mySwiper {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow: hidden; }
+        .main .phone .screen .mySwiper .swiper-slide {
+          z-index: 1; }
+          .main .phone .screen .mySwiper .swiper-slide:nth-of-type(1) {
+            background: url("/src/img/bg2.jpeg") center/cover; }
 
 .welcome {
+  background-color: #fff;
   padding: 100px 0; }
   .welcome .inner {
     text-align: center; }
@@ -135,9 +188,12 @@ footer {
       justify-content: center; }
       .welcome .inner .about .box {
         width: 32%;
-        padding-bottom: 20px; }
-        .welcome .inner .about .box:hover {
+        padding: 20px;
+        transition: 0.3s; }
+        .welcome .inner .about .box.on {
           background: #efefef; }
+        .welcome .inner .about .box:hover {
+          transform: scale(1.04); }
         .welcome .inner .about .box i {
           width: 40px;
           height: 40px;
@@ -158,8 +214,11 @@ footer {
           cursor: pointer; }
 
 .intrdouction {
+  background-color: #fff;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
   .intrdouction .left-video {
     width: 50%;
     height: 340px;
@@ -210,6 +269,7 @@ footer {
           font: bold 16px/1 'Roboto'; }
 
 .process {
+  background-color: #fff;
   padding: 50px 0; }
   .process .inner {
     text-align: center; }
@@ -258,11 +318,9 @@ footer {
 
 .banner {
   width: 100%;
-  height: 240px;
-  background: #e2e3e5;
+  height: 300px;
   position: relative;
-  display: inline-block;
-  background: url("/public/img/11.jpg") no-repeat center/cover fixed; }
+  display: inline-block; }
   .banner span.text {
     position: absolute;
     top: 50%;
@@ -283,12 +341,12 @@ footer {
     width: 95%;
     height: 80%; }
   .banner::before {
-    border-top: 2px solid #fff;
-    border-bottom: 3px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     width: 0; }
   .banner::after {
-    border-left: 2px solid #fff;
-    border-right: 3px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
     height: 0; }
   .banner:hover::before {
     width: calc(95% + 4px); }
@@ -296,6 +354,7 @@ footer {
     height: calc(80% + 4px); }
 
 .testimonials {
+  background-color: #fff;
   padding: 50px 0; }
   .testimonials .inner {
     text-align: center; }

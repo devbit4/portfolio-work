@@ -1,56 +1,130 @@
 .main{
 	width: 100%;
 	height: 90vh;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background: url("/src/img/bg2.jpeg")no-repeat center/cover;
-	opacity: 0.8;
+	padding-bottom: 4vh;
+
+	.custom-shape-divider-top-1641925326 {
+		position: absolute;
+		top: 10vh;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+
+	}
+	.custom-shape-divider-top-1641925326 svg {
+		position: relative;
+		display: block;
+		width: calc(100% + 1.3px);
+		height: 100px;
+	}
+
+
+	.custom-shape-divider-top-1641925326 .shape-fill {
+		fill: #FFFFFF;
+	}
+
+	.inner{
+		width: 100%;
+		height: 100%;
+		border-bottom: 8px solid #fff;
+	}
 
 	article{
 		width: 40vw;
 		position: absolute;
-		top: 50%;
+		top: 55%;
 		padding-left: 12vw;
 		transform: translateY(-50%);
 		p{
-			font: 4vw/1 'arial';
+			font: bold 4vw/1 'Roboto';
 			color: #fff;
 			margin-bottom: 20px;
+			text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+			&::after{
+				content: "";
+				display: block;
+				width: 100%;
+				height: 1px;
+				background: #fff;
+				margin-top: 5px;
+			}
 			strong{
-				opacity: 0.7;
+
+			}
+			span{
+				-webkit-text-stroke: 0.5px rgb(253, 237, 90);
+				-webkit-text-fill-color: transparent;
 			}
 		}
 		em{
-			font: bold 14px/1.2 'arial';
-			color: #fff;
-			letter-spacing: 2px;
+			font: 300 14px/1.2 'Roboto';
+			color: #000;
+
 		}
+		a{
+			margin-top: 40px;
+			display: block;
+			padding: 10px ;
+			font: 300 14px/1 'Roboto';
+			// border: 1px solid #000;
+			background: linear-gradient(to right,rgba(255,255,255,0.3),rgba(255,255,255,0.9));
+			border-right: 8px solid #000;
+			display: flex;
+			align-items: center;
+			color: #000;
+			i{
+				font-size: 10px;
+				margin-left: 10px;
+			}
+		}
+
 	}
-	figure{
-			width: 400px;
+	.phone{
+			width: 420px;
 			height: 800px;
 			z-index: 2;
 			position: absolute;
 			top: 50%;
-			right: 10%;
+			right: 12%;
 			transform: translateY(-33%);
 			background: url("/src/img/bgPhone.png") no-repeat center ;
 			overflow: hidden;
-		.phone{
+			.screen{
+				position: absolute;
+				width: 256px;
+				height: 450px;
+				background-color: yellow;
+				overflow: hidden;
+				top: 402px;
+				left: 80px;
+				.mySwiper{
+					width: 100%;
+					height: 100%;
+					background-color: #fff;
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					left: 0;
+					overflow: hidden;
+					.swiper-slide{
+						&:nth-of-type(1){
+							background:url("/src/img/bg2.jpeg") center/cover;
+						}
+						z-index: 1;
+					}
 
-		}
-	}
-	nav{
-		position: absolute;
-		top: 50%;
-		padding-left: 12vw;
+				}
+
+			}
+
 	}
 
 }
 
 
 .welcome {
+	background-color: #fff;
 	padding: 100px 0;
 	.inner {
 		text-align: center;
@@ -60,15 +134,23 @@
 		}
 		h1 {
 			font: bold 18px/1 'Roboto';
+
 		}
 		.about {
 			display: flex;
 			justify-content: center;
 			.box {
 				width: 32%;
-				padding-bottom: 20px;
-				&:hover {
+				padding: 20px;
+				transition: 0.3s;
+				&.on{
 					background: #efefef;
+					// transform: scale(1.1);
+				}
+				&:hover {
+					// background: #efefef;
+					transform: scale(1.04);
+
 				}
 				i {
 					width: 40px;
@@ -97,8 +179,11 @@
 	}
 }
 .intrdouction {
+	background-color: #fff;
 	display: flex;
 	align-items: center;
+	border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
 	.left-video {
 		width: 50%;
 		height: 340px;
@@ -165,6 +250,7 @@
 	}
 }
 .process {
+	background-color: #fff;
 	padding: 50px 0;
 	.inner {
 		text-align: center;
@@ -226,11 +312,11 @@
 }
 .banner {
 	width: 100%;
-	height: 240px;
-	background: #e2e3e5;
+	height: 300px;
+	// background-color: #B0C4DE;
 	position: relative;
 	display: inline-block;
-	background: url('/public/img/11.jpg') no-repeat center/cover fixed;
+	// background: url('/public/img/11.jpg') no-repeat center/cover fixed;
 	span.text {
 		position: absolute;
 		top: 50%;
@@ -254,13 +340,13 @@
 		height: 80%;
 	}
 	&::before {
-		border-top: 2px solid #fff;
-		border-bottom: 3px solid #fff;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
 		width: 0;
 	}
 	&::after {
-		border-left: 2px solid #fff;
-		border-right: 3px solid #fff;
+		border-left: 1px solid #fff;
+		border-right: 1px solid #fff;
 		height: 0;
 	}
 	&:hover::before {
@@ -271,6 +357,7 @@
 	}
 }
 .testimonials {
+	background-color: #fff;
 	padding: 50px 0;
 	.inner {
 		text-align: center;
