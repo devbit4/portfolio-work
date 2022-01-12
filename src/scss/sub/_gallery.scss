@@ -147,18 +147,19 @@
 						}
 					}
 					h2 {
-						padding-bottom: 10px;
-						border-bottom: 1px solid #ddd;
+						padding:4px;
 						font: bold 14px/1.2 'Roboto';
 						color: #000;
 						margin-bottom: 20px;
 						text-align: left;
+						background-color: #f4ebeb;
 					}
 					p{
 						font: 300 12px/1.2 'Roboto';
 						margin-bottom:20px;
 					}
 					strong{
+						display: block;
 						font: normal 10px/1 'Roboto';
 						color: #999;
 					}

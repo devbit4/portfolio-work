@@ -17,7 +17,7 @@ const About = (props) => {
                 <h1>ABOUT</h1>
                 <div className='intro'>
                     <div className="intro-first">
-                        <h2>ABOUT US</h2>
+                        <h2>#ABOUT US</h2>
                         <h3>Lorem, ipsum dolor.</h3>
                     </div>
                     <div className="intro-second">
@@ -30,8 +30,8 @@ const About = (props) => {
                 </div>
                 <div className="history">
                     <div className="text">
-                        <h2>HISTORY</h2>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <h2>#HISTORY</h2>
+                        <h3>Lorem ipsum dolor sit.</h3>
                     </div>
                     <ul className="items">
                         <li className="item num">
@@ -58,13 +58,13 @@ const About = (props) => {
                 </div>
                 <div className="description">
                     <div className="boxes upper">
-                        <div className="box left">
+                        <div className="box top-left">
                             <span>FALL 2016</span>
                             <h2>Lorem, ipsum dolor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea nemo inventore nobis perferendis eveniet!</p>
                             <button>READ MORE</button>
                         </div>
-                        <div className="box right">
+                        <div className="box top-right">
                             <span>FALL 2016</span>
                             <h2>Lorem, ipsum dolor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea nemo inventore nobis perferendis eveniet!</p>
@@ -72,14 +72,14 @@ const About = (props) => {
                         </div>
                     </div>
                     <div className="boxes lower">
-                        <div className="box left">
+                        <div className="box lower-left">
                             <span>FALL 2016</span>
                             <h2>Lorem, ipsum dolor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea nemo inventore nobis perferendis eveniet!</p>
                             <input type="text" />
                             <button>SEND</button>
                         </div>
-                        <div className="box right">
+                        <div className="box lower-right">
                             <span>FALL 2016</span>
                             <h2>Lorem, ipsum dolor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea nemo inventore nobis perferendis eveniet!</p>
@@ -89,7 +89,7 @@ const About = (props) => {
                 </div>
                 <div className="people">
                     <div className="text">
-                        <h2>Influencers</h2>
+                        <h2>#INFLUNCERS</h2>
                     </div>
                     <div className="list">
                         {

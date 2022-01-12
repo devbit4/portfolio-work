@@ -7,7 +7,7 @@
         justify-content: space-between;
 
         .intro-first{
-            width: 33%;
+            width: 25%;
             h2 {
                 font: 20px/1 'Roboto';
                 margin-bottom: 10px;
@@ -20,7 +20,7 @@
             }
         }
         .intro-second{
-            width: 33%;
+            width: 37.5%;
             p {
                 font: 300 14px/1.2 'Roboto';
                 padding-bottom: 20px;
@@ -28,7 +28,7 @@
             }
         }
         .intro-third{
-            width: 33%;
+            width: 37.5%;
             p {
                 font: 300 14px/1.2 'Roboto';
                 padding-bottom: 40px;
@@ -43,18 +43,21 @@
         padding: 100px 0;
         text-align: center;
         .text{
-            width: 20%;
-            h2{
-                font: bold 16px/1 'Roboto';
-                margin-bottom: 20px;
+            text-align: left;
+            width: 25%;
+            h2 {
+                font: 20px/1 'Roboto';
+                margin-bottom: 10px;
+                color: #555;
             }
-            p{
-                font: 300 14px/1 'Roboto';
-                color: #777;
+            h3 {
+                font: 18px/1 'Roboto';
+                margin-bottom: 20px;
+                color: #ccc;
             }
         }
         .items{
-            width: 80%;
+            width: 75%;
             display: flex;
 
             .item{
@@ -62,6 +65,7 @@
                 width: 25%;
                 display: flex;
                 flex-direction: column;
+                transition: all 0.3s;
 
 
                 i{
@@ -82,14 +86,13 @@
                 }
 
                 &:hover::before{
-                    background-color: #efefef;
-                    box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+                    box-shadow: 0px 0px 25px 3px rgba(253, 237, 90, 0.363);
 
                 }
             &::before{
                 content: "";
                 border: 1px solid #ccc;
-
+                transition: all 0.5s;
                 border-radius: 50%;
                 position: absolute;
                 top: 50%;
@@ -98,7 +101,7 @@
                 width: 60%;
                 height: 180%;
                 z-index: -1;
-                box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.1)
+                box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
             }
             }
             .last{
@@ -109,15 +112,13 @@
         }
     }
     .description{
-        padding-bottom: 40px;
+        padding-bottom: 100px;
         .boxes{
             display: flex;
             justify-content: space-between;
             .box{
                 width: 50%;
                 padding: 40px 80px;
-                border: 1px solid #ddd;
-                background: #efefef;
                 span{
                     font: 14px/1 'Roboto';
 
@@ -146,9 +147,31 @@
                     cursor: pointer;
                 }
             }
-            .left{
+            .top-left{
                 text-align: right;
+                border-top: 1px solid #ddd;
+
             }
+            .top-right{
+                border-top: 1px solid #ddd;
+                background: url(/public/img/15.jpg) center/cover ;
+                h2{
+                    color: #fff;
+                }
+            }
+            .lower-left{
+                text-align: right;
+                background: #efefef;
+                background: url(/public/img/14.jpg) center/cover ;
+                h2{
+                    color: #fff;
+                }
+
+            }
+            .lower-right{
+                border-bottom: 1px solid #ddd;
+            }
+
         }
     }
     .people{
@@ -156,7 +179,7 @@
             h2{
                 font: 20px/1 'Roboto';
                 color: #555;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
                 padding-bottom: 20px;
                 border-bottom: 1px solid #ddd;
             }
@@ -183,10 +206,10 @@
                    padding: 2rem 1rem;
                    border-radius: 8px;
                    backface-visibility: hidden;
-                   background-color: #efefef;
                    color: #000;
                    position: absolute;
                    text-align: center;
+                   background: #d5b3b342;
                 .pic{
                     width: 80%;
                     height: 50%;
@@ -214,8 +237,8 @@
                     h4{
                         font: 300 14px/1 'Roboto';
                         padding-bottom: 1rem;
-                        margin-bottom: 3rem;
-                        border-bottom: 1px solid #ddd;
+                        margin-bottom: 2rem;
+                        border-bottom: 3px dashed #fff;
                     }
                     p{
                         font: 300 14px/1 'Roboto';
@@ -224,9 +247,8 @@
                     button{
                         font: 300 14px/1 'Roboto';
                         border: none;
-                        i{
-                            color: #000;
-                        }
+                        background: none;
+
                     }
                }
                .back{
@@ -251,7 +273,7 @@
                     margin-top: 4rem;
                     i{
                         padding: 10px;
-                        border: 1px solid #ddd;
+                        border: 3px solid #fff;
                         margin: 0 20px;
                         border-radius: 4px;
                         font-size: 18px;

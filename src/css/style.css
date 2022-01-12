@@ -76,7 +76,7 @@ footer {
     padding: 0 12vw; }
     .content > .inner > h1 {
       font: bold 30px/1 'Roboto';
-      -webkit-text-stroke: 1px #ccc;
+      -webkit-text-stroke: 1px #d5b3b3;
       -webkit-text-fill-color: transparent;
       margin-bottom: 60px;
       padding-bottom: 20px;
@@ -85,7 +85,8 @@ footer {
 .main {
   width: 100%;
   height: 90vh;
-  padding-bottom: 4vh; }
+  padding-bottom: 4vh;
+  padding-top: 4vh; }
   .main .custom-shape-divider-top-1641925326 {
     position: absolute;
     top: 10vh;
@@ -103,7 +104,8 @@ footer {
   .main .inner {
     width: 100%;
     height: 100%;
-    border-bottom: 8px solid #fff; }
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff; }
   .main article {
     width: 40vw;
     position: absolute;
@@ -134,10 +136,10 @@ footer {
       padding: 10px;
       font: 300 14px/1 'Roboto';
       background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9));
-      border-right: 8px solid #000;
+      border-right: 8px solid #777;
       display: flex;
       align-items: center;
-      color: #000; }
+      color: #333; }
       .main article a i {
         font-size: 10px;
         margin-left: 10px; }
@@ -320,7 +322,8 @@ footer {
   width: 100%;
   height: 300px;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
   .banner span.text {
     position: absolute;
     top: 50%;
@@ -341,12 +344,12 @@ footer {
     width: 95%;
     height: 80%; }
   .banner::before {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
     width: 0; }
   .banner::after {
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
     height: 0; }
   .banner:hover::before {
     width: calc(95% + 4px); }
@@ -576,16 +579,17 @@ footer {
                 margin-left: 4px;
                 cursor: pointer; }
           .gallery .inner .list ul .pic .inner h2 {
-            padding-bottom: 10px;
-            border-bottom: 1px solid #ddd;
+            padding: 4px;
             font: bold 14px/1.2 'Roboto';
             color: #000;
             margin-bottom: 20px;
-            text-align: left; }
+            text-align: left;
+            background-color: #f4ebeb; }
           .gallery .inner .list ul .pic .inner p {
             font: 300 12px/1.2 'Roboto';
             margin-bottom: 20px; }
           .gallery .inner .list ul .pic .inner strong {
+            display: block;
             font: normal 10px/1 'Roboto';
             color: #999; }
 .gallery .popup {
@@ -823,7 +827,7 @@ footer {
     border-bottom: 1px solid #ddd;
     justify-content: space-between; }
     .inner .intro .intro-first {
-      width: 33%; }
+      width: 25%; }
       .inner .intro .intro-first h2 {
         font: 20px/1 'Roboto';
         margin-bottom: 10px;
@@ -833,13 +837,13 @@ footer {
         margin-bottom: 20px;
         color: #ccc; }
     .inner .intro .intro-second {
-      width: 33%; }
+      width: 37.5%; }
       .inner .intro .intro-second p {
         font: 300 14px/1.2 'Roboto';
         padding-bottom: 20px;
         padding-right: 20px; }
     .inner .intro .intro-third {
-      width: 33%; }
+      width: 37.5%; }
       .inner .intro .intro-third p {
         font: 300 14px/1.2 'Roboto';
         padding-bottom: 40px;
@@ -851,21 +855,25 @@ footer {
     padding: 100px 0;
     text-align: center; }
     .inner .history .text {
-      width: 20%; }
+      text-align: left;
+      width: 25%; }
       .inner .history .text h2 {
-        font: bold 16px/1 'Roboto';
-        margin-bottom: 20px; }
-      .inner .history .text p {
-        font: 300 14px/1 'Roboto';
-        color: #777; }
+        font: 20px/1 'Roboto';
+        margin-bottom: 10px;
+        color: #555; }
+      .inner .history .text h3 {
+        font: 18px/1 'Roboto';
+        margin-bottom: 20px;
+        color: #ccc; }
     .inner .history .items {
-      width: 80%;
+      width: 75%;
       display: flex; }
       .inner .history .items .item {
         position: relative;
         width: 25%;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        transition: all 0.3s; }
         .inner .history .items .item i {
           font-size: 24px;
           margin-bottom: 5px;
@@ -879,11 +887,11 @@ footer {
           font: 300 14px/1 'Roboto';
           color: #777; }
         .inner .history .items .item:hover::before {
-          background-color: #efefef;
-          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); }
+          box-shadow: 0px 0px 25px 3px rgba(253, 237, 90, 0.363); }
         .inner .history .items .item::before {
           content: "";
           border: 1px solid #ccc;
+          transition: all 0.5s;
           border-radius: 50%;
           position: absolute;
           top: 50%;
@@ -892,19 +900,17 @@ footer {
           width: 60%;
           height: 180%;
           z-index: -1;
-          box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.1); }
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); }
       .inner .history .items .last strong {
         border-right: none; }
   .inner .description {
-    padding-bottom: 40px; }
+    padding-bottom: 100px; }
     .inner .description .boxes {
       display: flex;
       justify-content: space-between; }
       .inner .description .boxes .box {
         width: 50%;
-        padding: 40px 80px;
-        border: 1px solid #ddd;
-        background: #efefef; }
+        padding: 40px 80px; }
         .inner .description .boxes .box span {
           font: 14px/1 'Roboto'; }
         .inner .description .boxes .box h2 {
@@ -925,12 +931,26 @@ footer {
           color: #fff;
           font: 12px/1 'Roboto';
           cursor: pointer; }
-      .inner .description .boxes .left {
-        text-align: right; }
+      .inner .description .boxes .top-left {
+        text-align: right;
+        border-top: 1px solid #ddd; }
+      .inner .description .boxes .top-right {
+        border-top: 1px solid #ddd;
+        background: url(/public/img/15.jpg) center/cover; }
+        .inner .description .boxes .top-right h2 {
+          color: #fff; }
+      .inner .description .boxes .lower-left {
+        text-align: right;
+        background: #efefef;
+        background: url(/public/img/14.jpg) center/cover; }
+        .inner .description .boxes .lower-left h2 {
+          color: #fff; }
+      .inner .description .boxes .lower-right {
+        border-bottom: 1px solid #ddd; }
   .inner .people .text h2 {
     font: 20px/1 'Roboto';
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd; }
   .inner .people .list {
@@ -954,10 +974,10 @@ footer {
           padding: 2rem 1rem;
           border-radius: 8px;
           backface-visibility: hidden;
-          background-color: #efefef;
           color: #000;
           position: absolute;
-          text-align: center; }
+          text-align: center;
+          background: #d5b3b342; }
           .inner .people .list .card-container .card .front .pic, .inner .people .list .card-container .card .back .pic {
             width: 80%;
             height: 50%;
@@ -978,16 +998,15 @@ footer {
           .inner .people .list .card-container .card .front h4 {
             font: 300 14px/1 'Roboto';
             padding-bottom: 1rem;
-            margin-bottom: 3rem;
-            border-bottom: 1px solid #ddd; }
+            margin-bottom: 2rem;
+            border-bottom: 3px dashed #fff; }
           .inner .people .list .card-container .card .front p {
             font: 300 14px/1 'Roboto';
             margin-bottom: 10px; }
           .inner .people .list .card-container .card .front button {
             font: 300 14px/1 'Roboto';
-            border: none; }
-            .inner .people .list .card-container .card .front button i {
-              color: #000; }
+            border: none;
+            background: none; }
         .inner .people .list .card-container .card .back {
           transform: rotateY(180deg);
           display: flex;
@@ -1005,7 +1024,7 @@ footer {
             margin-top: 4rem; }
             .inner .people .list .card-container .card .back .sns i {
               padding: 10px;
-              border: 1px solid #ddd;
+              border: 3px solid #fff;
               margin: 0 20px;
               border-radius: 4px;
               font-size: 18px;
