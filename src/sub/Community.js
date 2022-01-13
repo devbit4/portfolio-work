@@ -9,7 +9,7 @@ const Community = (props) => {
             .then(data => {
                 setProblems(data.data.data)
             })
-    })
+    }, []);
 
     return (
         <section className="content community">

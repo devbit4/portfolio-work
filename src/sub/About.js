@@ -8,7 +8,7 @@ const About = (props) => {
             .then(data => {
                 setPeople(data.data.people)
             })
-    })
+    }, []);
 
     return (
 
