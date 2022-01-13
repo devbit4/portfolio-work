@@ -99,7 +99,7 @@ const About = (props) => {
                                         <figure className="card">
                                             <div className="front">
                                                 <div className='pic'>
-                                                    <img src={person.pic} alt="" />
+                                                    <img src="#" alt="" />
                                                 </div>
                                                 <div className='txt'>
                                                     <h3>{person.name}</h3>

@@ -733,7 +733,6 @@ footer {
     display: flex; }
     .youtube .inner .library .inner .left {
       width: 50%;
-      background: url(/public/img/16.jpg) center/cover no-repeat;
       filter: grayscale(50%); }
     .youtube .inner .library .inner .right {
       width: 50%;
@@ -741,8 +740,7 @@ footer {
       flex-direction: column; }
       .youtube .inner .library .inner .right .right-upper {
         width: 100%;
-        height: 150px;
-        background: url(/public/img/35.jpg) center/cover no-repeat; }
+        height: 150px; }
       .youtube .inner .library .inner .right .right-lower {
         width: 100%;
         height: 150px;
@@ -952,8 +950,7 @@ footer {
         text-align: right;
         border-top: 1px solid #ddd; }
       .inner .description .boxes .top-right {
-        border-top: 1px solid #ddd;
-        background: url(/public/img/15.jpg) center/cover; }
+        border-top: 1px solid #ddd; }
         .inner .description .boxes .top-right h2 {
           color: #fff; }
       .inner .description .boxes .lower-left {

@@ -188,7 +188,7 @@ const Home = (props) => {
             </section>
             <section className="intrdouction">
                 <div className="left-video">
-                    <video src="./img/10.mov" muted autoPlay loop controls></video>
+                    <video src="#" muted autoPlay loop controls></video>
                 </div>
                 <div className="right-text">
                     <h2>CREATIVE IN MIND</h2>
@@ -243,7 +243,7 @@ const Home = (props) => {
                     <h1>OUR AMAZING WORKS</h1>
                     <div className="round">
                         <div className="left-pic">
-                            <img src="./img/11.jpg" alt="" />
+                            <img src="#" alt="" />
                         </div>
                         <div className="right-text">
                             <h2>FIRST STEP</h2>
@@ -258,7 +258,7 @@ const Home = (props) => {
                     </div>
                     <div className="round">
                         <div className="left-pic">
-                            <img src="./img/13.jpg" alt="" />
+                            <img src="#" alt="" />
                         </div>
                         <div className="right-text">
                             <h2>SECOND STEP</h2>
@@ -273,7 +273,7 @@ const Home = (props) => {
                     </div>
                     <div className="round">
                         <div className="left-pic">
-                            <img src="./img/9.jpg" alt="" />
+                            <img src="#" alt="" />
                         </div>
                         <div className="right-text">
                             <h2>THIRD STEP</h2>
@@ -309,7 +309,7 @@ const Home = (props) => {
                             </p>
                             <div className="writer">
                                 <div className="left-pic">
-                                    <img src="./img/person1.jpg" alt="" />
+                                    <img src="#" alt="" />
                                 </div>
                                 <div className="right-name">
                                     <strong>SOPHIA LIM</strong>
@@ -328,7 +328,7 @@ const Home = (props) => {
                             </p>
                             <div className="writer">
                                 <div className="left-pic">
-                                    <img src="./img/person2.jpg" alt="" />
+                                    <img src="#" alt="" />
                                 </div>
                                 <div className="right-name">
                                     <strong>SOPHIA LIM</strong>
@@ -347,7 +347,7 @@ const Home = (props) => {
                             </p>
                             <div className="writer">
                                 <div className="left-pic">
-                                    <img src="./img/person3.jpg" alt="" />
+                                    <img src="#" alt="" />
                                 </div>
                                 <div className="right-name">
                                     <strong>SOPHIA LIM</strong>
@@ -361,13 +361,13 @@ const Home = (props) => {
             <section className="content sponsor">
                 <div className="inner companies">
                     <div className="company">
-                        <img src="./img/42.png" alt="" />
+                        <img src="#" alt="" />
                     </div>
                     <div className="company">
-                        <img src="./img/41.png" alt="" />
+                        <img src="#" alt="" />
                     </div>
                     <div className="company">
-                        <img src="./img/40.png" alt="" />
+                        <img src="#" alt="" />
                     </div>
                     <div className="company">
                         <img src="" alt="" />
