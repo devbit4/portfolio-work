@@ -39,7 +39,7 @@ function Youtube() {
                 <h1>YOUTUBE</h1>
 
                 <div className="news">
-                    <h1>#WHAT'S NEWS?</h1>
+                    <h1># WHAT'S NEWS?</h1>
                     {
                         data.map((item, index) => {
                             let tit = item.snippet.title;
@@ -77,7 +77,7 @@ function Youtube() {
                 </div>
 
                 <div className="library">
-                    <h1>#LIBRARY</h1>
+                    <h1># LIBRARY</h1>
                     <div className='inner'>
                         <div className="left"></div>
                         <div className="right">
@@ -99,7 +99,7 @@ function Youtube() {
                 <div className="issue">
                     <div className='inner'>
                         <div className='text'>
-                            <h1>#Featured<span><i className="fas fa-ellipsis-h"></i></span></h1>
+                            <h1># Featured<span><i className="fas fa-ellipsis-h"></i></span></h1>
                             {
                                 features.map((feature, index) => {
                                     return (
@@ -113,7 +113,7 @@ function Youtube() {
                             }
                         </div>
                         <div className='text'>
-                            <h1>#Trending<span><i className="fas fa-ellipsis-h"></i></span></h1>
+                            <h1># Trending<span><i className="fas fa-ellipsis-h"></i></span></h1>
                             {
                                 trends.map((trend, index) => {
                                     return (

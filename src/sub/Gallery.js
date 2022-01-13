@@ -44,7 +44,7 @@ const Gallery = (props) => {
                 </h1>
                 <div className="intro">
                     <div className="intro-left">
-                        <h2>OUR STORIES</h2>
+                        <h2># OUR STORIES</h2>
                         <h3>Lorem, ipsum dolor.</h3>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius

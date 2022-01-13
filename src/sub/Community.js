@@ -16,7 +16,7 @@ const Community = (props) => {
             <div className="inner">
                 <h1>COMMUNITY</h1>
                 <div className="faq">
-                    <h1 className='title'>FAQ</h1>
+                    <h1 className='title'># FAQ</h1>
                     {
                         problems.map((problem, index) => {
                             return (

@@ -17,7 +17,7 @@ const About = (props) => {
                 <h1>ABOUT</h1>
                 <div className='intro'>
                     <div className="intro-first">
-                        <h2>#ABOUT US</h2>
+                        <h2># ABOUT US</h2>
                         <h3>Lorem, ipsum dolor.</h3>
                     </div>
                     <div className="intro-second">
@@ -30,7 +30,7 @@ const About = (props) => {
                 </div>
                 <div className="history">
                     <div className="text">
-                        <h2>#HISTORY</h2>
+                        <h2># HISTORY</h2>
                         <h3>Lorem ipsum dolor sit.</h3>
                     </div>
                     <ul className="items">
@@ -110,7 +110,7 @@ const About = (props) => {
                                             </div>
                                             <div className="back">
                                                 <h3>{person.say}</h3>
-                                                <p>{person.intro}</p>
+                                              <p>{person.intro}</p>
                                                 <div className="sns">
                                                     <i className="fab fa-facebook-square"></i>
                                                     <i className="fab fa-instagram"></i>

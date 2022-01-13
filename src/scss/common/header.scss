@@ -43,18 +43,43 @@ header {
 		}
 	}
 }
+.custom-shape-divider-top-1642087422 {
+    position: absolute;
+    top: 9vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+
+}
+.custom-shape-divider-top-1642087422 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 200px;
+}
+
+
+
+.custom-shape-divider-top-1642087422 .shape-fill {
+    fill: #FFFFFF;
+}
 
 @media screen and (max-width: 1179px) {
 	header {
 		width: 100%;
 		height: auto;
 		flex-direction: column;
+		padding: 0vw;
 
 		h1 {
 			padding: 15px 0;
 		}
 
 		#gnb {
+			width: 100%;
+			text-align: center;
 			border-top: 1px solid #ddd;
 			display: none;
 			li {

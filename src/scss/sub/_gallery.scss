@@ -98,7 +98,7 @@
 					width: 100%;
 					padding: 20px;
 					background: #fff;
-					box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+					box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.1);
 					word-break: break-all;
 					cursor: pointer;
 
@@ -148,7 +148,7 @@
 					}
 					h2 {
 						padding:4px;
-						font: bold 14px/1.2 'Roboto';
+						font: bold 12px/1.2 'Roboto';
 						color: #000;
 						margin-bottom: 20px;
 						text-align: left;

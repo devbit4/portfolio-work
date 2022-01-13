@@ -47,14 +47,34 @@ header {
       color: #000;
       cursor: pointer; }
 
+.custom-shape-divider-top-1642087422 {
+  position: absolute;
+  top: 9vh;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0; }
+
+.custom-shape-divider-top-1642087422 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px; }
+
+.custom-shape-divider-top-1642087422 .shape-fill {
+  fill: #FFFFFF; }
+
 @media screen and (max-width: 1179px) {
   header {
     width: 100%;
     height: auto;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 0vw; }
     header h1 {
       padding: 15px 0; }
     header #gnb {
+      width: 100%;
+      text-align: center;
       border-top: 1px solid #ddd;
       display: none; }
       header #gnb li {
@@ -76,7 +96,7 @@ header {
     display: block;
     right: 80px; } }
 .footer {
-  background-color: #000;
+  background-color: #333;
   color: #fff; }
   .footer .wrap {
     padding: 7vh 12vw; }
@@ -126,7 +146,6 @@ header {
   .main .inner {
     width: 100%;
     height: 100%;
-    border-top: 5px solid #fff;
     border-bottom: 5px solid #fff; }
   .main article {
     width: 40vw;
@@ -145,10 +164,11 @@ header {
         -webkit-text-fill-color: transparent; }
     .main article em {
       font: 300 14px/1.2 'Roboto';
-      color: #000; }
+      color: #fff; }
     .main article a {
       margin-top: 40px;
       display: block;
+      width: 100%;
       padding: 10px;
       font: 300 14px/1 'Roboto';
       background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9));
@@ -167,7 +187,7 @@ header {
     z-index: 0;
     position: absolute;
     top: 50%;
-    right: 11%;
+    right: 13%;
     transform: translateY(-35%);
     background: url("/src/img/bgPhone.png") no-repeat center/contain; }
     .main .phone .screen {
@@ -189,8 +209,6 @@ header {
         overflow: hidden; }
         .main .phone .screen .mySwiper .swiper-slide {
           z-index: 1; }
-          .main .phone .screen .mySwiper .swiper-slide:nth-of-type(1) {
-            background: url("/src/img/bg2.jpeg") center/cover; }
     .main .phone .big-speech {
       position: absolute;
       top: 180px;
@@ -421,7 +439,7 @@ header {
           margin-bottom: 40px; }
         .testimonials .inner .reviews .review .writer {
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
           align-items: center; }
           .testimonials .inner .reviews .review .writer .left-pic {
             width: 50px;
@@ -434,7 +452,7 @@ header {
               height: 100%;
               object-fit: cover; }
           .testimonials .inner .reviews .review .writer .right-name {
-            width: 70%;
+            width: 50%;
             display: flex;
             flex-direction: column; }
             .testimonials .inner .reviews .review .writer .right-name strong {
@@ -672,7 +690,7 @@ header {
           width: 100%;
           padding: 20px;
           background: #fff;
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.1);
           word-break: break-all;
           cursor: pointer; }
           .gallery .inner .list ul .pic .inner:hover {
@@ -710,7 +728,7 @@ header {
                 cursor: pointer; }
           .gallery .inner .list ul .pic .inner h2 {
             padding: 4px;
-            font: bold 14px/1.2 'Roboto';
+            font: bold 12px/1.2 'Roboto';
             color: #000;
             margin-bottom: 20px;
             text-align: left;
@@ -847,8 +865,7 @@ header {
     display: flex; }
     .youtube .inner .library .inner .left {
       width: 50%;
-      background: url(/public/img/youtube/youtube1.jpg) center/cover no-repeat;
-      filter: grayscale(50%); }
+      background: url(/public/img/208.jpg) center/cover no-repeat; }
     .youtube .inner .library .inner .right {
       width: 50%;
       display: flex;
@@ -983,7 +1000,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 0;
+    padding: 60px 0;
     text-align: center; }
     .inner .history .text {
       text-align: left;
@@ -1010,17 +1027,19 @@ header {
           margin-bottom: 5px;
           color: #777; }
         .inner .history .items .item strong {
-          font: bold 24px/1 'Roboto';
+          font: bold 20px/1 'Roboto';
           margin-bottom: 5px;
           color: #333;
           border-right: 2px solid #ddd; }
         .inner .history .items .item span {
-          font: 300 14px/1 'Roboto';
+          font: 300 12px/1 'Roboto';
           color: #777; }
         .inner .history .items .item:hover::before {
           box-shadow: 0px 0px 25px 3px rgba(253, 237, 90, 0.363); }
         .inner .history .items .item::before {
           content: '';
+          width: 100px;
+          height: 100px;
           border: 1px solid #ccc;
           transition: all 0.5s;
           border-radius: 50%;
@@ -1028,10 +1047,8 @@ header {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 60%;
-          height: 180%;
           z-index: -1;
-          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); }
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); }
       .inner .history .items .last strong {
         border-right: none; }
   .inner .description {
@@ -1066,20 +1083,19 @@ header {
         text-align: right;
         border-top: 1px solid #ddd; }
       .inner .description .boxes .top-right {
-        border-top: 1px solid #ddd; }
-        .inner .description .boxes .top-right h2 {
-          color: #fff; }
+        border-top: 1px solid #ddd;
+        background: url(/public/img/208.jpg) center/cover; }
       .inner .description .boxes .lower-left {
         text-align: right;
-        background: #c6c1c3; }
+        background: linear-gradient(to left, #eee, #fff); }
         .inner .description .boxes .lower-left h2 {
-          color: #fff; }
+          color: #ccc; }
       .inner .description .boxes .lower-right {
         border-bottom: 1px solid #ddd; }
   .inner .people .text h2 {
     font: 20px/1 'Roboto';
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd; }
   .inner .people .list {
@@ -1106,7 +1122,8 @@ header {
           position: absolute;
           text-align: center;
           border: 1px solid #c6c1c3;
-          background: #fff; }
+          background: #fff;
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); }
           .inner .people .list .card-container .card .front .pic,
           .inner .people .list .card-container .card .back .pic {
             width: 100%;
@@ -1122,8 +1139,7 @@ header {
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
-          padding: 20px;
-          background: #c6c1c348; }
+          padding: 20px; }
           .inner .people .list .card-container .card .front h3 {
             font: bold 16px/1 'Roboto';
             margin: 10px 0; }
@@ -1150,17 +1166,70 @@ header {
             text-decoration: underline; }
           .inner .people .list .card-container .card .back p {
             font: 300 12px/1.4 'Roboto';
-            margin-top: 4rem;
+            margin-top: 40px;
             text-align: center; }
           .inner .people .list .card-container .card .back .sns {
-            margin-top: 4rem; }
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px; }
             .inner .people .list .card-container .card .back .sns i {
-              padding: 10px;
-              margin: 0 20px;
               border-radius: 4px;
               font-size: 18px;
               cursor: pointer; }
 
+@media screen and (max-width: 950px) {
+  .inner .intro {
+    flex-wrap: wrap; }
+    .inner .intro .intro-first {
+      width: 100%; }
+    .inner .intro .intro-second {
+      width: 100%; }
+    .inner .intro .intro-third {
+      width: 100%; }
+  .inner .history {
+    flex-direction: column; }
+    .inner .history .text {
+      margin-bottom: 40px;
+      width: 100%; }
+    .inner .history .items {
+      width: 100%; }
+      .inner .history .items .item i {
+        font-size: 18px; }
+      .inner .history .items .item strong {
+        font: bold 18px/1 'Roboto'; }
+      .inner .history .items .item span {
+        font: 300 12px/1 'Roboto'; }
+      .inner .history .items .item::before {
+        content: '';
+        width: 80px;
+        height: 80px; }
+  .inner .description .boxes .box {
+    padding: 40px; }
+    .inner .description .boxes .box input {
+      display: none; }
+  .inner .people .list .card-container {
+    width: 32%;
+    height: 400px; } }
+@media screen and (max-width: 720px) {
+  .inner .people .list .card-container {
+    width: 33%;
+    height: 440px; } }
+@media screen and (max-width: 539px) {
+  .inner .history {
+    padding: 40px 0 0 0; }
+    .inner .history .items {
+      flex-wrap: wrap; }
+      .inner .history .items .item {
+        width: 50%;
+        margin-bottom: 80px; }
+  .inner .description .boxes .box {
+    padding: 20px; }
+  .inner .people .list {
+    flex-wrap: wrap; }
+    .inner .people .list .card-container {
+      width: 100%;
+      height: 340px;
+      margin-bottom: 40px; } }
 @keyframes fade {
   from {
     opacity: 0;
