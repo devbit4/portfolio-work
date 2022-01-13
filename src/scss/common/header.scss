@@ -56,6 +56,7 @@ header {
 
 		#gnb {
 			border-top: 1px solid #ddd;
+			display: none;
 			li {
 				padding: 20px 10px;
 				font: 14px/1 'Roboto';
@@ -64,7 +65,8 @@ header {
 		}
 
 		#gnb.on{
-			display: none;
+			display: block;
+
 		}
 		.toggle {
 			display: block;
@@ -76,7 +78,6 @@ header {
 	header {
 
 		#gnb {
-			display: flex;
 			li {
 				display: inline-block;
 				padding: 20px 5px;

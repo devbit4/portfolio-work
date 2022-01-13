@@ -365,13 +365,13 @@ const Home = (props) => {
             <section className="content sponsor">
                 <div className="inner companies">
                     <div className="company">
-                        <img src="#" alt="" />
+                        <img src="./img/home/logo1.png" alt="logo1" />
                     </div>
                     <div className="company">
-                        <img src="#" alt="" />
+                        <img src="./img/home/logo2.png" alt="logo2" />
                     </div>
                     <div className="company">
-                        <img src="#" alt="" />
+                        <img src="./img/home/logo3.png" alt="logo3" />
                     </div>
                     <div className="company">
                         <img src="" alt="" />
