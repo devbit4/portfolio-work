@@ -89,7 +89,7 @@ const About = (props) => {
                 </div>
                 <div className="people">
                     <div className="text">
-                        <h2>#INFLUNCERS</h2>
+                        <h2>#INFLUENCERS</h2>
                     </div>
                     <div className="list">
                         {
@@ -99,7 +99,7 @@ const About = (props) => {
                                         <figure className="card">
                                             <div className="front">
                                                 <div className='pic'>
-                                                    <img src="#" alt="" />
+                                                    <img src={person.pic} alt="" />
                                                 </div>
                                                 <div className='txt'>
                                                     <h3>{person.name}</h3>

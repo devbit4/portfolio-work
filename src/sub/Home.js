@@ -146,6 +146,8 @@ const Home = (props) => {
                             <SwiperSlide>Slide 3</SwiperSlide>
                         </Swiper>
                     </article >
+                    <i className="far fa-comment-dots big-speech"></i>
+                    <i className="far fa-comment-dots small-speech"></i>
                 </figure>
             </section>
 
@@ -307,7 +309,7 @@ const Home = (props) => {
                             </p>
                             <div className="writer">
                                 <div className="left-pic">
-                                    <img src="" alt="" />
+                                    <img src="./img/person1.jpg" alt="" />
                                 </div>
                                 <div className="right-name">
                                     <strong>SOPHIA LIM</strong>
@@ -326,7 +328,7 @@ const Home = (props) => {
                             </p>
                             <div className="writer">
                                 <div className="left-pic">
-                                    <img src="" alt="" />
+                                    <img src="./img/person2.jpg" alt="" />
                                 </div>
                                 <div className="right-name">
                                     <strong>SOPHIA LIM</strong>
@@ -345,7 +347,7 @@ const Home = (props) => {
                             </p>
                             <div className="writer">
                                 <div className="left-pic">
-                                    <img src="" alt="" />
+                                    <img src="./img/person3.jpg" alt="" />
                                 </div>
                                 <div className="right-name">
                                     <strong>SOPHIA LIM</strong>

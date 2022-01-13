@@ -117,13 +117,6 @@ footer {
       color: #fff;
       margin-bottom: 20px;
       text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); }
-      .main article p::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background: #fff;
-        margin-top: 5px; }
       .main article p span {
         -webkit-text-stroke: 0.5px #fded5a;
         -webkit-text-fill-color: transparent; }
@@ -140,6 +133,8 @@ footer {
       display: flex;
       align-items: center;
       color: #333; }
+      .main article a:hover {
+        background: rgba(255, 255, 255, 0.9); }
       .main article a i {
         font-size: 10px;
         margin-left: 10px; }
@@ -149,18 +144,17 @@ footer {
     z-index: 2;
     position: absolute;
     top: 50%;
-    right: 12%;
-    transform: translateY(-33%);
-    background: url("/src/img/bgPhone.png") no-repeat center;
-    overflow: hidden; }
+    right: 11%;
+    transform: translateY(-35%);
+    background: url("/src/img/bgPhone.png") no-repeat center/contain; }
     .main .phone .screen {
       position: absolute;
-      width: 256px;
-      height: 450px;
+      width: 240px;
+      height: 420px;
       background-color: yellow;
       overflow: hidden;
-      top: 402px;
-      left: 80px; }
+      top: 401px;
+      left: 89px; }
       .main .phone .screen .mySwiper {
         width: 100%;
         height: 100%;
@@ -174,6 +168,22 @@ footer {
           z-index: 1; }
           .main .phone .screen .mySwiper .swiper-slide:nth-of-type(1) {
             background: url("/src/img/bg2.jpeg") center/cover; }
+    .main .phone .big-speech {
+      position: absolute;
+      top: 180px;
+      left: -80px;
+      font-size: 180px;
+      color: #fff;
+      transform: scaleX(-1);
+      text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); }
+    .main .phone .small-speech {
+      position: absolute;
+      top: 400px;
+      right: -20px;
+      font-size: 120px;
+      color: #fff;
+      transform: scaleX(1);
+      text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); }
 
 .welcome {
   background-color: #fff;
@@ -191,10 +201,10 @@ footer {
       .welcome .inner .about .box {
         width: 32%;
         padding: 20px;
-        transition: 0.3s; }
-        .welcome .inner .about .box.on {
-          background: #efefef; }
+        transition: 0.3s;
+        border-radius: 10px; }
         .welcome .inner .about .box:hover {
+          background: #efefef;
           transform: scale(1.04); }
         .welcome .inner .about .box i {
           width: 40px;
@@ -387,7 +397,13 @@ footer {
           .testimonials .inner .reviews .review .writer .left-pic {
             width: 50px;
             height: 50px;
+            border-radius: 10px;
+            overflow: hidden;
             background-color: #000; }
+            .testimonials .inner .reviews .review .writer .left-pic img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
           .testimonials .inner .reviews .review .writer .right-name {
             width: 70%;
             display: flex;
@@ -584,7 +600,7 @@ footer {
             color: #000;
             margin-bottom: 20px;
             text-align: left;
-            background-color: #f4ebeb; }
+            background-color: #c6c1c334; }
           .gallery .inner .list ul .pic .inner p {
             font: 300 12px/1.2 'Roboto';
             margin-bottom: 20px; }
@@ -717,15 +733,16 @@ footer {
     display: flex; }
     .youtube .inner .library .inner .left {
       width: 50%;
-      background: #ddd; }
+      background: url(/public/img/16.jpg) center/cover no-repeat;
+      filter: grayscale(50%); }
     .youtube .inner .library .inner .right {
       width: 50%;
-      background: #eee;
       display: flex;
       flex-direction: column; }
       .youtube .inner .library .inner .right .right-upper {
         width: 100%;
-        height: 150px; }
+        height: 150px;
+        background: url(/public/img/35.jpg) center/cover no-repeat; }
       .youtube .inner .library .inner .right .right-lower {
         width: 100%;
         height: 150px;
@@ -879,7 +896,7 @@ footer {
           margin-bottom: 5px;
           color: #777; }
         .inner .history .items .item strong {
-          font: bold 28px/1 'Roboto';
+          font: bold 24px/1 'Roboto';
           margin-bottom: 5px;
           color: #333;
           border-right: 2px solid #ddd; }
@@ -889,7 +906,7 @@ footer {
         .inner .history .items .item:hover::before {
           box-shadow: 0px 0px 25px 3px rgba(253, 237, 90, 0.363); }
         .inner .history .items .item::before {
-          content: "";
+          content: '';
           border: 1px solid #ccc;
           transition: all 0.5s;
           border-radius: 50%;
@@ -904,7 +921,7 @@ footer {
       .inner .history .items .last strong {
         border-right: none; }
   .inner .description {
-    padding-bottom: 100px; }
+    padding-bottom: 80px; }
     .inner .description .boxes {
       display: flex;
       justify-content: space-between; }
@@ -941,8 +958,7 @@ footer {
           color: #fff; }
       .inner .description .boxes .lower-left {
         text-align: right;
-        background: #efefef;
-        background: url(/public/img/14.jpg) center/cover; }
+        background: #c6c1c3; }
         .inner .description .boxes .lower-left h2 {
           color: #fff; }
       .inner .description .boxes .lower-right {
@@ -950,15 +966,15 @@ footer {
   .inner .people .text h2 {
     font: 20px/1 'Roboto';
     color: #555;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd; }
   .inner .people .list {
     display: flex;
     justify-content: space-between; }
     .inner .people .list .card-container {
-      width: 30%;
-      height: 28rem;
+      width: 28%;
+      height: 24rem;
       perspective: 1000px; }
       .inner .people .list .card-container:hover .card {
         transform: rotateY(180deg); }
@@ -968,43 +984,46 @@ footer {
         height: 100%;
         transform-style: preserve-3d;
         transition: transform 0.7s ease; }
-        .inner .people .list .card-container .card .front, .inner .people .list .card-container .card .back {
+        .inner .people .list .card-container .card .front,
+        .inner .people .list .card-container .card .back {
           width: 100%;
           height: 100%;
-          padding: 2rem 1rem;
-          border-radius: 8px;
           backface-visibility: hidden;
           color: #000;
           position: absolute;
           text-align: center;
-          background: #d5b3b342; }
-          .inner .people .list .card-container .card .front .pic, .inner .people .list .card-container .card .back .pic {
-            width: 80%;
-            height: 50%;
-            margin-bottom: 20px; }
-            .inner .people .list .card-container .card .front .pic img, .inner .people .list .card-container .card .back .pic img {
+          border: 1px solid #c6c1c3;
+          background: #fff; }
+          .inner .people .list .card-container .card .front .pic,
+          .inner .people .list .card-container .card .back .pic {
+            width: 100%;
+            height: 60%;
+            margin-bottom: 20px;
+            overflow: hidden; }
+            .inner .people .list .card-container .card .front .pic img,
+            .inner .people .list .card-container .card .back .pic img {
               width: 100%;
-              height: 100%;
-              background: #fff; }
+              height: 100%; }
         .inner .people .list .card-container .card .front {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
-          padding: 40px 0; }
+          padding: 20px;
+          background: #c6c1c348; }
           .inner .people .list .card-container .card .front h3 {
             font: bold 16px/1 'Roboto';
             margin: 10px 0; }
           .inner .people .list .card-container .card .front h4 {
             font: 300 14px/1 'Roboto';
             padding-bottom: 1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 20px;
             border-bottom: 3px dashed #fff; }
           .inner .people .list .card-container .card .front p {
-            font: 300 14px/1 'Roboto';
+            font: 300 12px/1 'Roboto';
             margin-bottom: 10px; }
           .inner .people .list .card-container .card .front button {
-            font: 300 14px/1 'Roboto';
+            font: 300 12px/1 'Roboto';
             border: none;
             background: none; }
         .inner .people .list .card-container .card .back {
@@ -1012,19 +1031,18 @@ footer {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding: 0 40px; }
+          padding: 20px; }
           .inner .people .list .card-container .card .back h3 {
-            font: bold 16px/1 'Roboto';
+            font: bold 14px/1 'Roboto';
             text-decoration: underline; }
           .inner .people .list .card-container .card .back p {
-            font: 300 14px/1.4 'Roboto';
+            font: 300 12px/1.4 'Roboto';
             margin-top: 4rem;
             text-align: center; }
           .inner .people .list .card-container .card .back .sns {
             margin-top: 4rem; }
             .inner .people .list .card-container .card .back .sns i {
               padding: 10px;
-              border: 3px solid #fff;
               margin: 0 20px;
               border-radius: 4px;
               font-size: 18px;

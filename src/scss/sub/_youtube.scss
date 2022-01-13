@@ -99,16 +99,18 @@
                 display: flex;
                 .left{
                     width: 50%;
-                    background: #ddd;
+                    background: url(/public/img/16.jpg) center/cover no-repeat;
+                    filter: grayscale(50%);
                 }
                 .right{
                     width: 50%;
-                    background: #eee;
+
                     display: flex;
                     flex-direction: column;
                     .right-upper{
                         width: 100%;
                         height: 150px;
+                        background: url(/public/img/35.jpg) center/cover no-repeat;
                     }
                     .right-lower{
                         width: 100%;
