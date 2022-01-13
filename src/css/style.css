@@ -209,6 +209,8 @@ header {
         overflow: hidden; }
         .main .phone .screen .mySwiper .swiper-slide {
           z-index: 1; }
+          .main .phone .screen .mySwiper .swiper-slide:nth-of-type(1) {
+            background: #312c2c; }
     .main .phone .big-speech {
       position: absolute;
       top: 180px;

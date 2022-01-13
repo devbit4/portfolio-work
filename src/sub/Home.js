@@ -28,19 +28,19 @@ const Home = (props) => {
                     },
                     interactivity: {
                         events: {
+                            // onClick: {
+                            //     enable: true,
+                            //     mode: 'push',
+                            // },
                             onClick: {
-                                enable: true,
-                                mode: 'push',
-                            },
-                            onDiv: {
                                 selectors: '#repulse-div',
                                 mode: 'repulse',
                             },
                             onHover: {
                                 enable: true,
-                                mode: 'connect',
+                                mode: 'repulse',
                                 parallax: {
-                                    force: 60,
+                                    force: 1,
                                 },
                             },
                         },
@@ -54,6 +54,10 @@ const Home = (props) => {
                             grab: {
                                 distance: 400,
                             },
+                            repulse: {
+                                distance: 100,
+                                duration: 0.4
+                            }
                         },
                     },
                     particles: {
