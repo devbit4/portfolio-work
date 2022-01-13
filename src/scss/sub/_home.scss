@@ -274,11 +274,17 @@
 				justify-content: center;
 				align-items: center;
 				overflow: hidden;
+				box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
 
 				img {
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
+					transition: all 0.3s;
+
+					&:hover{
+						transform: scale(1.1);
+					}
 				}
 			}
 			.right-text {
@@ -307,22 +313,22 @@
 .banner {
 	width: 100%;
 	height: 300px;
-	// background-color: #B0C4DE;
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
-	// background: url('/public/img/11.jpg') no-repeat center/cover fixed;
-	span.text {
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
-		width: 100%;
-		font-size: 30px;
-		color: #fff;
-		font-weight: 900;
+	.banner-inner{
 		text-align: center;
+		color: #fff;
+		h1{
+			font: bold 20px/1 'Roboto';
+			margin-bottom: 20px;
+		}
+		p{
+			font: 300 14px/1.2 'Roboto';
+		}
 	}
+
+
 	&::before,
 	&::after {
 		content: '';
@@ -345,10 +351,10 @@
 		height: 0;
 	}
 	&:hover::before {
-		width: calc(95% + 4px);
+		width: calc(95% + 10px);
 	}
 	&:hover::after {
-		height: calc(80% + 4px);
+		height: calc(80% + 10px);
 	}
 }
 .testimonials {
@@ -381,8 +387,8 @@
 				}
 				.writer {
 					display: flex;
+					justify-content: space-between;
 					align-items: center;
-					padding: 0 40px;
 					.left-pic {
 						width: 50px;
 						height: 50px;
@@ -401,9 +407,11 @@
 						flex-direction: column;
 						strong {
 							font: 14px/1 'Roboto';
+
 						}
 						span {
 							font: 300 12px/1 'Roboto';
+
 						}
 					}
 				}
@@ -419,7 +427,7 @@
 		flex-wrap: wrap;
 
 		.company {
-			width: 20%;
+			width: 25%;
 			height: 100px;
 			padding: 20px;
 			border: 1px solid #ddd;
@@ -479,6 +487,40 @@
 				}
 				.right-text {
 					padding:20px;
+				}
+			}
+		}
+	}
+	.banner {
+
+		.banner-inner{
+
+			h1{
+				font: bold 18px/1 'Roboto';
+
+			}
+			p{
+				padding: 0 40px;
+			}
+		}
+
+	}
+	.testimonials {
+		.inner {
+			.reviews {
+				flex-wrap: wrap;
+				flex-direction: column;
+				.review {
+					width: 100%;
+					padding: 40px 30px;
+					margin-bottom: 20px;
+					.writer {
+						justify-content: center;
+
+						.right-name {
+							width: 30%;
+						}
+					}
 				}
 			}
 		}
@@ -563,6 +605,16 @@
 					width: 100%;
 					padding:0px;
 				}
+			}
+		}
+	}
+	.sponsor {
+		padding: 0 0 50px 0;
+
+		.companies {
+
+			.company {
+				width: 50%;
 			}
 		}
 	}
