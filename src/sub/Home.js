@@ -117,11 +117,11 @@ const Home = (props) => {
                 }}
             />
             <section className="main" >
-                <div class="custom-shape-divider-top-1641925326">
+                <div className="custom-shape-divider-top-1641925326">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <rect x="1200" height="3.6"></rect>
                         <rect height="3.6"></rect>
-                        <path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z" class="shape-fill"></path>
+                        <path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z" className="shape-fill"></path>
                     </svg>
                 </div>
                 <div className="inner"></div>
@@ -134,7 +134,7 @@ const Home = (props) => {
                         incidunt quidem veritatis corrupti quam et fugiat excepturi
                         explicabo laboriosam nisi?
                     </em>
-                    <a href="#">Read More <i class="fas fa-plus"></i></a>
+                    <a href="#">Read More <i className="fas fa-plus"></i></a>
                 </article>
                 <figure className="phone">
                     <article className='screen'>
@@ -299,7 +299,7 @@ const Home = (props) => {
                     <h1>WHAT PEOPLE SAY</h1>
                     <div className="reviews">
                         <div className="review">
-                            <i class="fas fa-quote-right"></i>
+                            <i className="fas fa-quote-right"></i>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Similique tempora repellat aspernatur nam libero sit quis
@@ -318,7 +318,7 @@ const Home = (props) => {
                             </div>
                         </div>
                         <div className="review">
-                            <i class="fas fa-quote-right"></i>
+                            <i className="fas fa-quote-right"></i>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Similique tempora repellat aspernatur nam libero sit quis
@@ -337,7 +337,7 @@ const Home = (props) => {
                             </div>
                         </div>
                         <div className="review">
-                            <i class="fas fa-quote-right"></i>
+                            <i className="fas fa-quote-right"></i>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Similique tempora repellat aspernatur nam libero sit quis
