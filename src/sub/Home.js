@@ -189,7 +189,7 @@ const Home = (props) => {
             </section>
             <section className="intrdouction">
                 <div className="left-video">
-                    <video src="./img/home/vid1.mov" muted autoPlay loop controls></video>
+                    <video src={`${process.env.PUBLIC_URL}/img/home/vid1.mov`} muted autoPlay loop controls></video>
                 </div>
                 <div className="right-text">
                     <h2>CREATIVE IN MIND</h2>
@@ -246,7 +246,7 @@ const Home = (props) => {
                     <h1>OUR AMAZING WORKS</h1>
                     <div className="round">
                         <div className="left-pic">
-                            <img src="./img/home/process1.jpg" alt="process1" />
+                            <img src={`${process.env.PUBLIC_URL}/img/home/process1.jpg`} alt="process1" />
                         </div>
                         <div className="right-text">
                             <h2>FIRST STEP</h2>
@@ -261,7 +261,7 @@ const Home = (props) => {
                     </div>
                     <div className="round">
                         <div className="left-pic">
-                            <img src="./img/home/process2.jpg" alt="process2" />
+                            <img src={`${process.env.PUBLIC_URL}/img/home/process2.jpg`} alt="process2" />
                         </div>
                         <div className="right-text">
                             <h2>SECOND STEP</h2>
@@ -276,7 +276,7 @@ const Home = (props) => {
                     </div>
                     <div className="round">
                         <div className="left-pic">
-                            <img src="./img/home/process3.jpg" alt="process3" />
+                            <img src={`${process.env.PUBLIC_URL}/img/home/process3.jpg`} alt="process3" />
                         </div>
                         <div className="right-text">
                             <h2>THIRD STEP</h2>
@@ -317,7 +317,7 @@ const Home = (props) => {
                             </p>
                             <div className="writer">
                                 <div className="left-pic">
-                                    <img src="./img/home/person1.jpg" alt="person1" />
+                                    <img src={`${process.env.PUBLIC_URL}/img/home/person1.jpg`} alt="person1" />
                                 </div>
                                 <div className="right-name">
                                     <strong>Tim</strong>
@@ -336,7 +336,7 @@ const Home = (props) => {
                             </p>
                             <div className="writer">
                                 <div className="left-pic">
-                                    <img src="./img/home/person2.jpg" alt="person2" />
+                                    <img src={`${process.env.PUBLIC_URL}/img/home/person2.jpg`} alt="person2" />
                                 </div>
                                 <div className="right-name">
                                     <strong>Alex</strong>
@@ -355,7 +355,7 @@ const Home = (props) => {
                             </p>
                             <div className="writer">
                                 <div className="left-pic">
-                                    <img src="./img/home/person3.jpg" alt="person3" />
+                                    <img src={`${process.env.PUBLIC_URL}/img/home/person3.jpg`} alt="person3" />
                                 </div>
                                 <div className="right-name">
                                     <strong>SOPHIA LIM</strong>
@@ -369,13 +369,13 @@ const Home = (props) => {
             <section className="content sponsor">
                 <div className="inner companies">
                     <div className="company">
-                        <img src="./img/home/logo1.png" alt="logo1" />
+                        <img src={`${process.env.PUBLIC_URL}/img/home/logo1.png`} alt="logo1" />
                     </div>
                     <div className="company">
-                        <img src="./img/home/logo2.png" alt="logo2" />
+                        <img src={`${process.env.PUBLIC_URL}/img/home/logo2.png`} alt="logo2" />
                     </div>
                     <div className="company">
-                        <img src="./img/home/logo3.png" alt="logo3" />
+                        <img src={`${process.env.PUBLIC_URL}/img/home/logo3.png`} alt="logo3" />
                     </div>
                     <div className="company">
                         <img src="" alt="" />
