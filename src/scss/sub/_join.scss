@@ -1,313 +1,314 @@
-// joinInForm
 
-.joinForm{
-    .joinForm-inner{
-        // SignUpForm
-        .signUp{
-            width: 100%;
-            // height: 500px;
-            display: flex;
-            border-radius: 10px;
-            overflow: hidden;
-            border: 1px solid #ccc;
 
-            .signUp-left{
-                width: 50%;
-                // height: 100%;
-                background: #c6a6a6;
-                padding: 4vh 4vw;
-                position: relative;
-                .logo{
-                    font: 300 16px/1 'Roboto';
-                    color: #fff;
-                    padding-bottom: 10px;
-                    border-bottom: 1px solid #fff;
-                    i{
-                        font-size: 16px;
-                        margin-right: 10px;
-                    }
-                }
-                .text{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
+
+.join{
+    .inner{
+
+        .joinForm{
+            animation: fade 1s ease-in-out;
+            .joinForm-inner{
+                // SignUpForm
+                .signUp{
+                    width: 100%;
+                    // height: 500px;
                     display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    h2{
-                        font: bold 32px/1 'Roboto';
-                        margin-bottom: 20px;
-                        color: #fff;
-                    }
-                    p{
-                        font: 300 16px/1.2 'Roboto';
-                        margin-bottom: 40px;
-                        color: #fff;
-                    }
-                    a{
-                        width:180px;
-                        margin: 0 auto;
-                        padding: 10px 0px;
-                        border: 1px solid #fff;
-                        border-radius: 30px;
-                        transition: all 0.3s;
-                        span{
-                            font: 14px/1 'Roboto';
+                    border-radius: 10px;
+                    overflow: hidden;
+                    border: 1px solid #ccc;
+
+                    .signUp-left{
+                        width: 50%;
+                        // height: 100%;
+                        background: #c6a6a6;
+                        padding: 4vh 4vw;
+                        position: relative;
+                        .logo{
+                            font: 300 16px/1 'Roboto';
                             color: #fff;
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid #fff;
+                            i{
+                                font-size: 16px;
+                                margin-right: 10px;
+                            }
                         }
-                        &:hover{
-                            background: #fff;
+                        .text{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            h2{
+                                font: bold 32px/1 'Roboto';
+                                margin-bottom: 20px;
+                                color: #fff;
+                            }
+                            p{
+                                font: 300 16px/1.2 'Roboto';
+                                margin-bottom: 40px;
+                                color: #fff;
+                            }
+                            a{
+                                width:180px;
+                                margin: 0 auto;
+                                padding: 10px 0px;
+                                border: 1px solid #fff;
+                                border-radius: 30px;
+                                transition: all 0.3s;
+                                span{
+                                    font: 14px/1 'Roboto';
+                                    color: #fff;
+                                }
+                                &:hover{
+                                    background: #fff;
+                                    span{
+                                        color: #c6a6a6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .signUp-right{
+                        width: 50%;
+                        // height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        padding: 4vh 4vw;
+                        h2{font: bold 20px/1 'Roboto';
+                            margin-bottom: 20px;
+                        }
+                        .platforms{
+                            i{
+                                width: 30px;
+                                height: 30px;
+                                line-height: 30px;
+                                border: 1px solid #ccc;
+                                border-radius: 50%;
+                                margin: 4px;
+                                margin-bottom: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                        p{
+                            font: 300 14px/1.2 'Roboto';
+                            margin-bottom: 20px;
+                        }
+
+                        table{
+                            width: 100%;
                             span{
-                                color: #c6a6a6;
+                                font: 14px/1 'Roboto';
+                                margin-right: 10px;
+
+                            }
+
+                            td{
+                                width: 100%;
+                                padding: 5px 20px;
+                                font: 14px/1 'Roboto';
+                                input[type=text],input[type=password]{
+                                    width: 100%;
+                                    height: 100%;
+                                    padding: 10px;
+                                    background: #efefef;
+                                    border: none;
+                                }
+                                .err{
+                                    font: 300 12px/1 'Roboto';
+                                    color: red;
+                                    margin: 5px 0 0 0 ;
+                                }
+                                label{
+                                    font: 14px/1 'Roboto';
+                                }
+                                input[type=radio]{
+                                    margin: 0 10px;
+                                }
+
+                            }
+                            input[type=submit]{
+                                width:180px;
+                                margin: 0 auto;
+                                padding: 10px 0;
+                                border-radius: 30px;
+                                font: 14px/1 'Roboto';
+                                margin-top: 30px;
+                                background: #c6a6a6;
+                                color: #fff;
+                                border: none;
+                                cursor: pointer;
                             }
                         }
                     }
                 }
-            }
-            .signUp-right{
-                width: 50%;
-                // height: 100%;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                padding: 4vh 4vw;
-                h2{font: bold 20px/1 'Roboto';
-                    margin-bottom: 20px;
-                }
-                .platforms{
-                    i{
-                        width: 30px;
-                        height: 30px;
-                        line-height: 30px;
-                        border: 1px solid #ccc;
-                        border-radius: 50%;
-                        margin: 4px;
-                        margin-bottom: 20px;
-                        cursor: pointer;
-                    }
-                }
-                p{
-                    font: 300 14px/1.2 'Roboto';
-                    margin-bottom: 20px;
-                }
-
-                table{
+                .signIn{
                     width: 100%;
-                    span{
-                        font: 14px/1 'Roboto';
-                        margin-right: 10px;
-
-                    }
-
-                    td{
-                        width: 100%;
-                        padding: 5px 20px;
-                        font: 14px/1 'Roboto';
-                        input[type=text],input[type=password]{
+                    height: 500px;
+                    display: flex;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    border: 1px solid #ccc;
+                    .signIn-left{
+                        width: 50%;
+                        height: 100%;
+                        position: relative;
+                        text-align: center;
+                        .inner{
                             width: 100%;
                             height: 100%;
-                            padding: 10px;
-                            background: #efefef;
-                            border: none;
-                        }
-                        .err{
-                            font: 300 12px/1 'Roboto';
-                            color: red;
-                            margin: 5px 0 0 0 ;
-                        }
-                        label{
-                            font: 14px/1 'Roboto';
-                        }
-                        input[type=radio]{
-                            margin: 0 10px;
-                        }
+                            padding: 4vh 4vw;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            h2{
+                                font: bold 20px/1 'Roboto';
+                                margin-bottom: 20px;
+                            }
+                            .platforms{
+                                i{
+                                    width: 30px;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    border: 1px solid #ccc;
+                                    border-radius: 50%;
+                                    margin: 4px;
+                                    margin-bottom: 20px;
+                                    cursor: pointer;
+                                }
+                            }
+                            p{
+                                font: 300 14px/1.2 'Roboto';
+                                margin-bottom: 30px;
+                            }
 
-                    }
-                    input[type=submit]{
-                        width:180px;
-                        margin: 0 auto;
-                        padding: 10px 0;
-                        border-radius: 30px;
-                        font: 14px/1 'Roboto';
-                        margin-top: 30px;
-                        background: #c6a6a6;
-                        color: #fff;
-                        border: none;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-        // SignInForm
-
-
-    }
-}
-
-
-
-.joinForm{
-    .joinForm-inner{
-
-
-        .signIn{
-            width: 100%;
-            height: 500px;
-            display: flex;
-            border-radius: 10px;
-            overflow: hidden;
-            border: 1px solid #ccc;
-            .signIn-left{
-                width: 50%;
-                height: 100%;
-                position: relative;
-                text-align: center;
-                .inner{
-                    width: 100%;
-                    height: 100%;
-                    padding: 4vh 4vw;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    h2{
-                        font: bold 20px/1 'Roboto';
-                        margin-bottom: 20px;
-                    }
-                    .platforms{
-                        i{
-                            width: 30px;
-                            height: 30px;
-                            line-height: 30px;
-                            border: 1px solid #ccc;
-                            border-radius: 50%;
-                            margin: 4px;
-                            margin-bottom: 20px;
-                            cursor: pointer;
-                        }
-                    }
-                    p{
-                        font: 300 14px/1.2 'Roboto';
-                        margin-bottom: 30px;
-                    }
-
-                    table{
-                        width: 100%;
-                        span{
-                            font: 14px/1 'Roboto';
-                            margin-right: 10px;
-
-                        }
-
-                        td{
-                            width: 100%;
-                            padding: 5px 20px;
-                            font: 14px/1 'Roboto';
-                            input[type=text],input[type=password]{
+                            table{
                                 width: 100%;
-                                height: 100%;
-                                padding: 10px;
-                                background: #efefef;
-                                border: none;
+                                span{
+                                    font: 14px/1 'Roboto';
+                                    margin-right: 10px;
+
+                                }
+
+                                td{
+                                    width: 100%;
+                                    padding: 5px 20px;
+                                    font: 14px/1 'Roboto';
+                                    input[type=text],input[type=password]{
+                                        width: 100%;
+                                        height: 100%;
+                                        padding: 10px;
+                                        background: #efefef;
+                                        border: none;
+                                    }
+                                    .err{
+                                        font: 300 12px/1 'Roboto';
+                                        color: red;
+                                        margin: 5px 0 0 0 ;
+                                    }
+                                    label{
+                                        font: 14px/1 'Roboto';
+                                    }
+                                    input[type=radio]{
+                                        margin: 0 10px;
+                                    }
+
+                                }
+                                input[type=submit]{
+                                    width:180px;
+                                    margin: 0 auto;
+                                    padding: 10px 0;
+                                    border-radius: 30px;
+                                    font: 14px/1 'Roboto';
+                                    margin-top: 30px;
+                                    background: #c6a6a6;
+                                    color: #fff;
+                                    border: none;
+                                    cursor: pointer;
+
+                                }
+
                             }
-                            .err{
-                                font: 300 12px/1 'Roboto';
-                                color: red;
-                                margin: 5px 0 0 0 ;
-                            }
-                            label{
-                                font: 14px/1 'Roboto';
-                            }
-                            input[type=radio]{
-                                margin: 0 10px;
+                            a{
+                                display: block;
+                                margin-top: 10px;
+                                span{
+                                    font: 14px/1 'Roboto';
+                                    text-decoration: underline;
+                                }
                             }
 
                         }
-                        input[type=submit]{
-                            width:180px;
-                            margin: 0 auto;
-                            padding: 10px 0;
-                            border-radius: 30px;
-                            font: 14px/1 'Roboto';
-                            margin-top: 30px;
-                            background: #c6a6a6;
+
+                    }
+                    .signIn-right{
+                        width: 50%;
+                        height: 100%;
+                        padding: 4vh 4vw;
+                        position: relative;
+                        background: #c6a6a6;
+                        .logo{
+                            font: 300 16px/1 'Roboto';
                             color: #fff;
-                            border: none;
-                            cursor: pointer;
-
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid #fff;
+                            text-align: right;
+                            i{
+                                font-size: 16px;
+                                margin-right: 10px;
+                            }
                         }
-
-                    }
-                    a{
-                        display: block;
-                        margin-top: 10px;
-                        span{
-                            font: 14px/1 'Roboto';
-                            text-decoration: underline;
-                        }
-                    }
-
-                }
-
-            }
-            .signIn-right{
-                width: 50%;
-                height: 100%;
-                padding: 4vh 4vw;
-                position: relative;
-                background: #c6a6a6;
-                .logo{
-                    font: 300 16px/1 'Roboto';
-                    color: #fff;
-                    padding-bottom: 10px;
-                    border-bottom: 1px solid #fff;
-                    text-align: right;
-                    i{
-                        font-size: 16px;
-                        margin-right: 10px;
-                    }
-                }
-                .text{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    h2{
-                        font: bold 32px/1 'Roboto';
-                        margin-bottom: 20px;
-                        color: #fff;
-                    }
-                    p{
-                        font: 300 16px/1.2 'Roboto';
-                        margin-bottom: 40px;
-                        color: #fff;
-                    }
-                    a{
-                        width:180px;
-                        margin: 0 auto;
-                        padding: 10px 0px;
-                        border: 1px solid #fff;
-                        border-radius: 30px;
-                        transition: all 0.3s;
-                        span{
-                            font: 14px/1 'Roboto';
-                            color: #fff;
-                        }
-                        &:hover{
-                            background: #fff;
-                            span{
-                                color: #c6a6a6;
+                        .text{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            h2{
+                                font: bold 32px/1 'Roboto';
+                                margin-bottom: 20px;
+                                color: #fff;
+                            }
+                            p{
+                                font: 300 16px/1.2 'Roboto';
+                                margin-bottom: 40px;
+                                color: #fff;
+                            }
+                            a{
+                                width:180px;
+                                margin: 0 auto;
+                                padding: 10px 0px;
+                                border: 1px solid #fff;
+                                border-radius: 30px;
+                                transition: all 0.3s;
+                                span{
+                                    font: 14px/1 'Roboto';
+                                    color: #fff;
+                                }
+                                &:hover{
+                                    background: #fff;
+                                    span{
+                                        color: #c6a6a6;
+                                    }
+                                }
                             }
                         }
                     }
                 }
+
+
             }
         }
+
     }
 }
+
+
+
 
 

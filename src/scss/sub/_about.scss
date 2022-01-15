@@ -1,6 +1,8 @@
 .about{
 .inner {
-	animation: fade 1s ease-in-out;
+
+	.about-content{
+		animation: fade 1s ease-in-out;
 	.intro {
 		display: flex;
 		padding-bottom: 40px;
@@ -278,12 +280,14 @@
 	}
 }
 }
+}
 
 
 @media screen and (max-width:950px){
 
 	.about{
 	.inner{
+		.about-content{
 	.intro {
 		flex-wrap: wrap;
 		.intro-first {
@@ -355,6 +359,7 @@
 			}
 		}
 	}
+}
 
 
 }
@@ -365,6 +370,7 @@
 
 .about{
 	.inner{
+		.about-content{
 	.people {
 
 		.list {
@@ -377,10 +383,12 @@
 }
 }
 }
+}
 
 @media screen and (max-width:539px){
 .about{
 	.inner{
+		.about-content{
 	.history {
 		padding: 40px 0 0 0 ;
 		.items {
@@ -417,6 +425,7 @@
 			}
 		}
 	}
+}
 }
 }
 }

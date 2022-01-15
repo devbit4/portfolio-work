@@ -6,7 +6,7 @@ const Join = (props) => {
     const [signUp, setSignUp] = useState(true);
 
 
-    return (<section className='content'>
+    return (<section className='content join'>
         <div className="inner">
             <h1>JOIN</h1>
             <span onClick={() => {

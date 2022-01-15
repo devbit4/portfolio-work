@@ -585,76 +585,76 @@ header {
     padding: 0 0 50px 0; }
     .sponsor .companies .company {
       width: 50%; } }
-.about .inner {
+.about .inner .about-content {
   animation: fade 1s ease-in-out; }
-  .about .inner .intro {
+  .about .inner .about-content .intro {
     display: flex;
     padding-bottom: 40px;
     border-bottom: 1px solid #ddd;
     justify-content: space-between; }
-    .about .inner .intro .intro-first {
+    .about .inner .about-content .intro .intro-first {
       width: 25%; }
-      .about .inner .intro .intro-first h2 {
+      .about .inner .about-content .intro .intro-first h2 {
         font: 20px/1 'Roboto';
         margin-bottom: 10px;
         color: #555; }
-      .about .inner .intro .intro-first h3 {
+      .about .inner .about-content .intro .intro-first h3 {
         font: 18px/1 'Roboto';
         margin-bottom: 20px;
         color: #ccc; }
-    .about .inner .intro .intro-second {
+    .about .inner .about-content .intro .intro-second {
       width: 37.5%; }
-      .about .inner .intro .intro-second p {
+      .about .inner .about-content .intro .intro-second p {
         font: 300 14px/1.2 'Roboto';
         padding-bottom: 20px;
         padding-right: 20px; }
-    .about .inner .intro .intro-third {
+    .about .inner .about-content .intro .intro-third {
       width: 37.5%; }
-      .about .inner .intro .intro-third p {
+      .about .inner .about-content .intro .intro-third p {
         font: 300 14px/1.2 'Roboto';
         padding-bottom: 40px;
         padding-right: 20px; }
-  .about .inner .history {
+  .about .inner .about-content .history {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
     text-align: center; }
-    .about .inner .history .text {
+    .about .inner .about-content .history .text {
       text-align: left;
       width: 25%; }
-      .about .inner .history .text h2 {
+      .about .inner .about-content .history .text h2 {
         font: 20px/1 'Roboto';
         margin-bottom: 10px;
         color: #555; }
-      .about .inner .history .text h3 {
+      .about .inner .about-content .history .text h3 {
         font: 18px/1 'Roboto';
         margin-bottom: 20px;
         color: #ccc; }
-    .about .inner .history .items {
+    .about .inner .about-content .history .items {
       width: 75%;
       display: flex; }
-      .about .inner .history .items .item {
+      .about .inner .about-content .history .items .item {
         position: relative;
         width: 25%;
         display: flex;
         flex-direction: column;
         transition: all 0.3s; }
-        .about .inner .history .items .item i {
+        .about .inner .about-content .history .items .item i {
           font-size: 24px;
           margin-bottom: 5px;
           color: #777; }
-        .about .inner .history .items .item strong {
+        .about .inner .about-content .history .items .item strong {
           font: bold 20px/1 'Roboto';
           margin-bottom: 5px;
           color: #333;
           border-right: 2px solid #ddd; }
-        .about .inner .history .items .item span {
+        .about .inner .about-content .history .items .item span {
           font: 300 12px/1 'Roboto';
           color: #777; }
-        .about .inner .history .items .item:hover::before {
+        .about .inner .about-content .history .items .item:hover::before {
           box-shadow: 0px 0px 25px 3px rgba(253, 237, 90, 0.363); }
-        .about .inner .history .items .item::before {
+        .about .inner .about-content .history .items .item::before {
           content: '';
           width: 100px;
           height: 100px;
@@ -667,72 +667,72 @@ header {
           transform: translate(-50%, -50%);
           z-index: -1;
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); }
-      .about .inner .history .items .last strong {
+      .about .inner .about-content .history .items .last strong {
         border-right: none; }
-  .about .inner .description {
+  .about .inner .about-content .description {
     padding-bottom: 80px; }
-    .about .inner .description .boxes {
+    .about .inner .about-content .description .boxes {
       display: flex;
       justify-content: space-between; }
-      .about .inner .description .boxes .box {
+      .about .inner .about-content .description .boxes .box {
         width: 50%;
         padding: 40px 80px; }
-        .about .inner .description .boxes .box span {
+        .about .inner .about-content .description .boxes .box span {
           font: 14px/1 'Roboto'; }
-        .about .inner .description .boxes .box h2 {
+        .about .inner .about-content .description .boxes .box h2 {
           font: bold 16px/1 'Roboto';
           margin: 10px 0; }
-        .about .inner .description .boxes .box p {
+        .about .inner .about-content .description .boxes .box p {
           font: 300 12px/1.2 'Roboto';
           margin-bottom: 10px; }
-        .about .inner .description .boxes .box input {
+        .about .inner .about-content .description .boxes .box input {
           margin-right: 5px;
           outline: none;
           border: none;
           padding: 2px 0; }
-        .about .inner .description .boxes .box button {
+        .about .inner .about-content .description .boxes .box button {
           padding: 5px 20px;
           border: none;
           background: #777;
           color: #fff;
           font: 12px/1 'Roboto';
           cursor: pointer; }
-      .about .inner .description .boxes .top-left {
+      .about .inner .about-content .description .boxes .top-left {
         text-align: right;
         border-top: 1px solid #ddd; }
-      .about .inner .description .boxes .top-right {
+      .about .inner .about-content .description .boxes .top-right {
         border-top: 1px solid #ddd;
         background: url(/public/img/208.jpg) center/cover; }
-      .about .inner .description .boxes .lower-left {
+      .about .inner .about-content .description .boxes .lower-left {
         text-align: right;
         background: linear-gradient(to left, #eee, #fff); }
-        .about .inner .description .boxes .lower-left h2 {
+        .about .inner .about-content .description .boxes .lower-left h2 {
           color: #ccc; }
-      .about .inner .description .boxes .lower-right {
+      .about .inner .about-content .description .boxes .lower-right {
         border-bottom: 1px solid #ddd; }
-  .about .inner .people .text h2 {
+  .about .inner .about-content .people .text h2 {
     font: 20px/1 'Roboto';
     color: #555;
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd; }
-  .about .inner .people .list {
+  .about .inner .about-content .people .list {
     display: flex;
     justify-content: space-between; }
-    .about .inner .people .list .card-container {
+    .about .inner .about-content .people .list .card-container {
       width: 28%;
       height: 24rem;
       perspective: 1000px; }
-      .about .inner .people .list .card-container:hover .card {
+      .about .inner .about-content .people .list .card-container:hover .card {
         transform: rotateY(180deg); }
-      .about .inner .people .list .card-container .card {
+      .about .inner .about-content .people .list .card-container .card {
         position: relative;
         width: 100%;
         height: 100%;
         transform-style: preserve-3d;
         transition: transform 0.7s ease; }
-        .about .inner .people .list .card-container .card .front,
-        .about .inner .people .list .card-container .card .back {
+        .about .inner .about-content .people .list .card-container .card .front,
+        .about .inner .about-content .people .list .card-container .card .back {
           width: 100%;
           height: 100%;
           backface-visibility: hidden;
@@ -742,109 +742,109 @@ header {
           border: 1px solid #c6c1c3;
           background: #fff;
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); }
-          .about .inner .people .list .card-container .card .front .pic,
-          .about .inner .people .list .card-container .card .back .pic {
+          .about .inner .about-content .people .list .card-container .card .front .pic,
+          .about .inner .about-content .people .list .card-container .card .back .pic {
             width: 100%;
             height: 60%;
             margin-bottom: 20px;
             overflow: hidden; }
-            .about .inner .people .list .card-container .card .front .pic img,
-            .about .inner .people .list .card-container .card .back .pic img {
+            .about .inner .about-content .people .list .card-container .card .front .pic img,
+            .about .inner .about-content .people .list .card-container .card .back .pic img {
               width: 100%;
               height: 100%; }
-        .about .inner .people .list .card-container .card .front {
+        .about .inner .about-content .people .list .card-container .card .front {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
           padding: 20px; }
-          .about .inner .people .list .card-container .card .front h3 {
+          .about .inner .about-content .people .list .card-container .card .front h3 {
             font: bold 16px/1 'Roboto';
             margin: 10px 0; }
-          .about .inner .people .list .card-container .card .front h4 {
+          .about .inner .about-content .people .list .card-container .card .front h4 {
             font: 300 14px/1 'Roboto';
             padding-bottom: 1rem;
             margin-bottom: 20px;
             border-bottom: 3px dashed #fff; }
-          .about .inner .people .list .card-container .card .front p {
+          .about .inner .about-content .people .list .card-container .card .front p {
             font: 300 12px/1 'Roboto';
             margin-bottom: 10px; }
-          .about .inner .people .list .card-container .card .front button {
+          .about .inner .about-content .people .list .card-container .card .front button {
             font: 300 12px/1 'Roboto';
             border: none;
             background: none; }
-        .about .inner .people .list .card-container .card .back {
+        .about .inner .about-content .people .list .card-container .card .back {
           transform: rotateY(180deg);
           display: flex;
           flex-direction: column;
           justify-content: center;
           padding: 20px; }
-          .about .inner .people .list .card-container .card .back h3 {
+          .about .inner .about-content .people .list .card-container .card .back h3 {
             font: bold 14px/1 'Roboto';
             text-decoration: underline; }
-          .about .inner .people .list .card-container .card .back p {
+          .about .inner .about-content .people .list .card-container .card .back p {
             font: 300 12px/1.4 'Roboto';
             margin-top: 40px;
             text-align: center; }
-          .about .inner .people .list .card-container .card .back .sns {
+          .about .inner .about-content .people .list .card-container .card .back .sns {
             display: flex;
             justify-content: space-around;
             margin-top: 40px; }
-            .about .inner .people .list .card-container .card .back .sns i {
+            .about .inner .about-content .people .list .card-container .card .back .sns i {
               border-radius: 4px;
               font-size: 18px;
               cursor: pointer; }
 
 @media screen and (max-width: 950px) {
-  .about .inner .intro {
+  .about .inner .about-content .intro {
     flex-wrap: wrap; }
-    .about .inner .intro .intro-first {
+    .about .inner .about-content .intro .intro-first {
       width: 100%; }
-    .about .inner .intro .intro-second {
+    .about .inner .about-content .intro .intro-second {
       width: 100%; }
-    .about .inner .intro .intro-third {
+    .about .inner .about-content .intro .intro-third {
       width: 100%; }
-  .about .inner .history {
+  .about .inner .about-content .history {
     flex-direction: column; }
-    .about .inner .history .text {
+    .about .inner .about-content .history .text {
       margin-bottom: 40px;
       width: 100%; }
-    .about .inner .history .items {
+    .about .inner .about-content .history .items {
       width: 100%; }
-      .about .inner .history .items .item i {
+      .about .inner .about-content .history .items .item i {
         font-size: 18px; }
-      .about .inner .history .items .item strong {
+      .about .inner .about-content .history .items .item strong {
         font: bold 18px/1 'Roboto'; }
-      .about .inner .history .items .item span {
+      .about .inner .about-content .history .items .item span {
         font: 300 12px/1 'Roboto'; }
-      .about .inner .history .items .item::before {
+      .about .inner .about-content .history .items .item::before {
         content: '';
         width: 80px;
         height: 80px; }
-  .about .inner .description .boxes .box {
+  .about .inner .about-content .description .boxes .box {
     padding: 40px; }
-    .about .inner .description .boxes .box input {
+    .about .inner .about-content .description .boxes .box input {
       display: none; }
-  .about .inner .people .list .card-container {
+  .about .inner .about-content .people .list .card-container {
     width: 32%;
     height: 400px; } }
 @media screen and (max-width: 720px) {
-  .about .inner .people .list .card-container {
+  .about .inner .about-content .people .list .card-container {
     width: 33%;
     height: 440px; } }
 @media screen and (max-width: 539px) {
-  .about .inner .history {
+  .about .inner .about-content .history {
     padding: 40px 0 0 0; }
-    .about .inner .history .items {
+    .about .inner .about-content .history .items {
       flex-wrap: wrap; }
-      .about .inner .history .items .item {
+      .about .inner .about-content .history .items .item {
         width: 50%;
         margin-bottom: 80px; }
-  .about .inner .description .boxes .box {
+  .about .inner .about-content .description .boxes .box {
     padding: 20px; }
-  .about .inner .people .list {
+  .about .inner .about-content .people .list {
     flex-wrap: wrap; }
-    .about .inner .people .list .card-container {
+    .about .inner .about-content .people .list .card-container {
       width: 100%;
       height: 340px;
       margin-bottom: 40px; } }
@@ -1257,135 +1257,67 @@ header {
         font: 300 14px/1.4 'Roboto';
         color: #aaa; }
 
-.joinForm .joinForm-inner .signUp {
-  width: 100%;
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #ccc; }
-  .joinForm .joinForm-inner .signUp .signUp-left {
-    width: 50%;
-    background: #c6a6a6;
-    padding: 4vh 4vw;
-    position: relative; }
-    .joinForm .joinForm-inner .signUp .signUp-left .logo {
-      font: 300 16px/1 'Roboto';
-      color: #fff;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #fff; }
-      .joinForm .joinForm-inner .signUp .signUp-left .logo i {
-        font-size: 16px;
-        margin-right: 10px; }
-    .joinForm .joinForm-inner .signUp .signUp-left .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+.join .inner .joinForm {
+  animation: fade 1s ease-in-out; }
+  .join .inner .joinForm .joinForm-inner .signUp {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc; }
+    .join .inner .joinForm .joinForm-inner .signUp .signUp-left {
+      width: 50%;
+      background: #c6a6a6;
+      padding: 4vh 4vw;
+      position: relative; }
+      .join .inner .joinForm .joinForm-inner .signUp .signUp-left .logo {
+        font: 300 16px/1 'Roboto';
+        color: #fff;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff; }
+        .join .inner .joinForm .joinForm-inner .signUp .signUp-left .logo i {
+          font-size: 16px;
+          margin-right: 10px; }
+      .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text h2 {
+          font: bold 32px/1 'Roboto';
+          margin-bottom: 20px;
+          color: #fff; }
+        .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text p {
+          font: 300 16px/1.2 'Roboto';
+          margin-bottom: 40px;
+          color: #fff; }
+        .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text a {
+          width: 180px;
+          margin: 0 auto;
+          padding: 10px 0px;
+          border: 1px solid #fff;
+          border-radius: 30px;
+          transition: all 0.3s; }
+          .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text a span {
+            font: 14px/1 'Roboto';
+            color: #fff; }
+          .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text a:hover {
+            background: #fff; }
+            .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text a:hover span {
+              color: #c6a6a6; }
+    .join .inner .joinForm .joinForm-inner .signUp .signUp-right {
+      width: 50%;
       display: flex;
       flex-direction: column;
-      text-align: center; }
-      .joinForm .joinForm-inner .signUp .signUp-left .text h2 {
-        font: bold 32px/1 'Roboto';
-        margin-bottom: 20px;
-        color: #fff; }
-      .joinForm .joinForm-inner .signUp .signUp-left .text p {
-        font: 300 16px/1.2 'Roboto';
-        margin-bottom: 40px;
-        color: #fff; }
-      .joinForm .joinForm-inner .signUp .signUp-left .text a {
-        width: 180px;
-        margin: 0 auto;
-        padding: 10px 0px;
-        border: 1px solid #fff;
-        border-radius: 30px;
-        transition: all 0.3s; }
-        .joinForm .joinForm-inner .signUp .signUp-left .text a span {
-          font: 14px/1 'Roboto';
-          color: #fff; }
-        .joinForm .joinForm-inner .signUp .signUp-left .text a:hover {
-          background: #fff; }
-          .joinForm .joinForm-inner .signUp .signUp-left .text a:hover span {
-            color: #c6a6a6; }
-  .joinForm .joinForm-inner .signUp .signUp-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 4vh 4vw; }
-    .joinForm .joinForm-inner .signUp .signUp-right h2 {
-      font: bold 20px/1 'Roboto';
-      margin-bottom: 20px; }
-    .joinForm .joinForm-inner .signUp .signUp-right .platforms i {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      border: 1px solid #ccc;
-      border-radius: 50%;
-      margin: 4px;
-      margin-bottom: 20px;
-      cursor: pointer; }
-    .joinForm .joinForm-inner .signUp .signUp-right p {
-      font: 300 14px/1.2 'Roboto';
-      margin-bottom: 20px; }
-    .joinForm .joinForm-inner .signUp .signUp-right table {
-      width: 100%; }
-      .joinForm .joinForm-inner .signUp .signUp-right table span {
-        font: 14px/1 'Roboto';
-        margin-right: 10px; }
-      .joinForm .joinForm-inner .signUp .signUp-right table td {
-        width: 100%;
-        padding: 5px 20px;
-        font: 14px/1 'Roboto'; }
-        .joinForm .joinForm-inner .signUp .signUp-right table td input[type=text], .joinForm .joinForm-inner .signUp .signUp-right table td input[type=password] {
-          width: 100%;
-          height: 100%;
-          padding: 10px;
-          background: #efefef;
-          border: none; }
-        .joinForm .joinForm-inner .signUp .signUp-right table td .err {
-          font: 300 12px/1 'Roboto';
-          color: red;
-          margin: 5px 0 0 0; }
-        .joinForm .joinForm-inner .signUp .signUp-right table td label {
-          font: 14px/1 'Roboto'; }
-        .joinForm .joinForm-inner .signUp .signUp-right table td input[type=radio] {
-          margin: 0 10px; }
-      .joinForm .joinForm-inner .signUp .signUp-right table input[type=submit] {
-        width: 180px;
-        margin: 0 auto;
-        padding: 10px 0;
-        border-radius: 30px;
-        font: 14px/1 'Roboto';
-        margin-top: 30px;
-        background: #c6a6a6;
-        color: #fff;
-        border: none;
-        cursor: pointer; }
-
-.joinForm .joinForm-inner .signIn {
-  width: 100%;
-  height: 500px;
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #ccc; }
-  .joinForm .joinForm-inner .signIn .signIn-left {
-    width: 50%;
-    height: 100%;
-    position: relative;
-    text-align: center; }
-    .joinForm .joinForm-inner .signIn .signIn-left .inner {
-      width: 100%;
-      height: 100%;
-      padding: 4vh 4vw;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-      .joinForm .joinForm-inner .signIn .signIn-left .inner h2 {
+      text-align: center;
+      padding: 4vh 4vw; }
+      .join .inner .joinForm .joinForm-inner .signUp .signUp-right h2 {
         font: bold 20px/1 'Roboto';
         margin-bottom: 20px; }
-      .joinForm .joinForm-inner .signIn .signIn-left .inner .platforms i {
+      .join .inner .joinForm .joinForm-inner .signUp .signUp-right .platforms i {
         width: 30px;
         height: 30px;
         line-height: 30px;
@@ -1394,33 +1326,33 @@ header {
         margin: 4px;
         margin-bottom: 20px;
         cursor: pointer; }
-      .joinForm .joinForm-inner .signIn .signIn-left .inner p {
+      .join .inner .joinForm .joinForm-inner .signUp .signUp-right p {
         font: 300 14px/1.2 'Roboto';
-        margin-bottom: 30px; }
-      .joinForm .joinForm-inner .signIn .signIn-left .inner table {
+        margin-bottom: 20px; }
+      .join .inner .joinForm .joinForm-inner .signUp .signUp-right table {
         width: 100%; }
-        .joinForm .joinForm-inner .signIn .signIn-left .inner table span {
+        .join .inner .joinForm .joinForm-inner .signUp .signUp-right table span {
           font: 14px/1 'Roboto';
           margin-right: 10px; }
-        .joinForm .joinForm-inner .signIn .signIn-left .inner table td {
+        .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td {
           width: 100%;
           padding: 5px 20px;
           font: 14px/1 'Roboto'; }
-          .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=text], .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=password] {
+          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type=text], .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type=password] {
             width: 100%;
             height: 100%;
             padding: 10px;
             background: #efefef;
             border: none; }
-          .joinForm .joinForm-inner .signIn .signIn-left .inner table td .err {
+          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td .err {
             font: 300 12px/1 'Roboto';
             color: red;
             margin: 5px 0 0 0; }
-          .joinForm .joinForm-inner .signIn .signIn-left .inner table td label {
+          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td label {
             font: 14px/1 'Roboto'; }
-          .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=radio] {
+          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type=radio] {
             margin: 0 10px; }
-        .joinForm .joinForm-inner .signIn .signIn-left .inner table input[type=submit] {
+        .join .inner .joinForm .joinForm-inner .signUp .signUp-right table input[type=submit] {
           width: 180px;
           margin: 0 auto;
           padding: 10px 0;
@@ -1431,56 +1363,125 @@ header {
           color: #fff;
           border: none;
           cursor: pointer; }
-      .joinForm .joinForm-inner .signIn .signIn-left .inner a {
-        display: block;
-        margin-top: 10px; }
-        .joinForm .joinForm-inner .signIn .signIn-left .inner a span {
-          font: 14px/1 'Roboto';
-          text-decoration: underline; }
-  .joinForm .joinForm-inner .signIn .signIn-right {
-    width: 50%;
-    height: 100%;
-    padding: 4vh 4vw;
-    position: relative;
-    background: #c6a6a6; }
-    .joinForm .joinForm-inner .signIn .signIn-right .logo {
-      font: 300 16px/1 'Roboto';
-      color: #fff;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #fff;
-      text-align: right; }
-      .joinForm .joinForm-inner .signIn .signIn-right .logo i {
-        font-size: 16px;
-        margin-right: 10px; }
-    .joinForm .joinForm-inner .signIn .signIn-right .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      flex-direction: column;
+  .join .inner .joinForm .joinForm-inner .signIn {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc; }
+    .join .inner .joinForm .joinForm-inner .signIn .signIn-left {
+      width: 50%;
+      height: 100%;
+      position: relative;
       text-align: center; }
-      .joinForm .joinForm-inner .signIn .signIn-right .text h2 {
-        font: bold 32px/1 'Roboto';
-        margin-bottom: 20px;
-        color: #fff; }
-      .joinForm .joinForm-inner .signIn .signIn-right .text p {
-        font: 300 16px/1.2 'Roboto';
-        margin-bottom: 40px;
-        color: #fff; }
-      .joinForm .joinForm-inner .signIn .signIn-right .text a {
-        width: 180px;
-        margin: 0 auto;
-        padding: 10px 0px;
-        border: 1px solid #fff;
-        border-radius: 30px;
-        transition: all 0.3s; }
-        .joinForm .joinForm-inner .signIn .signIn-right .text a span {
-          font: 14px/1 'Roboto';
+      .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner {
+        width: 100%;
+        height: 100%;
+        padding: 4vh 4vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner h2 {
+          font: bold 20px/1 'Roboto';
+          margin-bottom: 20px; }
+        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner .platforms i {
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border: 1px solid #ccc;
+          border-radius: 50%;
+          margin: 4px;
+          margin-bottom: 20px;
+          cursor: pointer; }
+        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner p {
+          font: 300 14px/1.2 'Roboto';
+          margin-bottom: 30px; }
+        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table {
+          width: 100%; }
+          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table span {
+            font: 14px/1 'Roboto';
+            margin-right: 10px; }
+          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td {
+            width: 100%;
+            padding: 5px 20px;
+            font: 14px/1 'Roboto'; }
+            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=text], .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=password] {
+              width: 100%;
+              height: 100%;
+              padding: 10px;
+              background: #efefef;
+              border: none; }
+            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td .err {
+              font: 300 12px/1 'Roboto';
+              color: red;
+              margin: 5px 0 0 0; }
+            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td label {
+              font: 14px/1 'Roboto'; }
+            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=radio] {
+              margin: 0 10px; }
+          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table input[type=submit] {
+            width: 180px;
+            margin: 0 auto;
+            padding: 10px 0;
+            border-radius: 30px;
+            font: 14px/1 'Roboto';
+            margin-top: 30px;
+            background: #c6a6a6;
+            color: #fff;
+            border: none;
+            cursor: pointer; }
+        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner a {
+          display: block;
+          margin-top: 10px; }
+          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner a span {
+            font: 14px/1 'Roboto';
+            text-decoration: underline; }
+    .join .inner .joinForm .joinForm-inner .signIn .signIn-right {
+      width: 50%;
+      height: 100%;
+      padding: 4vh 4vw;
+      position: relative;
+      background: #c6a6a6; }
+      .join .inner .joinForm .joinForm-inner .signIn .signIn-right .logo {
+        font: 300 16px/1 'Roboto';
+        color: #fff;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff;
+        text-align: right; }
+        .join .inner .joinForm .joinForm-inner .signIn .signIn-right .logo i {
+          font-size: 16px;
+          margin-right: 10px; }
+      .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text h2 {
+          font: bold 32px/1 'Roboto';
+          margin-bottom: 20px;
           color: #fff; }
-        .joinForm .joinForm-inner .signIn .signIn-right .text a:hover {
-          background: #fff; }
-          .joinForm .joinForm-inner .signIn .signIn-right .text a:hover span {
-            color: #c6a6a6; }
+        .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text p {
+          font: 300 16px/1.2 'Roboto';
+          margin-bottom: 40px;
+          color: #fff; }
+        .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text a {
+          width: 180px;
+          margin: 0 auto;
+          padding: 10px 0px;
+          border: 1px solid #fff;
+          border-radius: 30px;
+          transition: all 0.3s; }
+          .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text a span {
+            font: 14px/1 'Roboto';
+            color: #fff; }
+          .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text a:hover {
+            background: #fff; }
+            .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text a:hover span {
+              color: #c6a6a6; }
 
 /*# sourceMappingURL=style.css.map */
