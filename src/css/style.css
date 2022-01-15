@@ -585,76 +585,76 @@ header {
     padding: 0 0 50px 0; }
     .sponsor .companies .company {
       width: 50%; } }
-.inner {
+.about .inner {
   animation: fade 1s ease-in-out; }
-  .inner .intro {
+  .about .inner .intro {
     display: flex;
     padding-bottom: 40px;
     border-bottom: 1px solid #ddd;
     justify-content: space-between; }
-    .inner .intro .intro-first {
+    .about .inner .intro .intro-first {
       width: 25%; }
-      .inner .intro .intro-first h2 {
+      .about .inner .intro .intro-first h2 {
         font: 20px/1 'Roboto';
         margin-bottom: 10px;
         color: #555; }
-      .inner .intro .intro-first h3 {
+      .about .inner .intro .intro-first h3 {
         font: 18px/1 'Roboto';
         margin-bottom: 20px;
         color: #ccc; }
-    .inner .intro .intro-second {
+    .about .inner .intro .intro-second {
       width: 37.5%; }
-      .inner .intro .intro-second p {
+      .about .inner .intro .intro-second p {
         font: 300 14px/1.2 'Roboto';
         padding-bottom: 20px;
         padding-right: 20px; }
-    .inner .intro .intro-third {
+    .about .inner .intro .intro-third {
       width: 37.5%; }
-      .inner .intro .intro-third p {
+      .about .inner .intro .intro-third p {
         font: 300 14px/1.2 'Roboto';
         padding-bottom: 40px;
         padding-right: 20px; }
-  .inner .history {
+  .about .inner .history {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
     text-align: center; }
-    .inner .history .text {
+    .about .inner .history .text {
       text-align: left;
       width: 25%; }
-      .inner .history .text h2 {
+      .about .inner .history .text h2 {
         font: 20px/1 'Roboto';
         margin-bottom: 10px;
         color: #555; }
-      .inner .history .text h3 {
+      .about .inner .history .text h3 {
         font: 18px/1 'Roboto';
         margin-bottom: 20px;
         color: #ccc; }
-    .inner .history .items {
+    .about .inner .history .items {
       width: 75%;
       display: flex; }
-      .inner .history .items .item {
+      .about .inner .history .items .item {
         position: relative;
         width: 25%;
         display: flex;
         flex-direction: column;
         transition: all 0.3s; }
-        .inner .history .items .item i {
+        .about .inner .history .items .item i {
           font-size: 24px;
           margin-bottom: 5px;
           color: #777; }
-        .inner .history .items .item strong {
+        .about .inner .history .items .item strong {
           font: bold 20px/1 'Roboto';
           margin-bottom: 5px;
           color: #333;
           border-right: 2px solid #ddd; }
-        .inner .history .items .item span {
+        .about .inner .history .items .item span {
           font: 300 12px/1 'Roboto';
           color: #777; }
-        .inner .history .items .item:hover::before {
+        .about .inner .history .items .item:hover::before {
           box-shadow: 0px 0px 25px 3px rgba(253, 237, 90, 0.363); }
-        .inner .history .items .item::before {
+        .about .inner .history .items .item::before {
           content: '';
           width: 100px;
           height: 100px;
@@ -667,72 +667,72 @@ header {
           transform: translate(-50%, -50%);
           z-index: -1;
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); }
-      .inner .history .items .last strong {
+      .about .inner .history .items .last strong {
         border-right: none; }
-  .inner .description {
+  .about .inner .description {
     padding-bottom: 80px; }
-    .inner .description .boxes {
+    .about .inner .description .boxes {
       display: flex;
       justify-content: space-between; }
-      .inner .description .boxes .box {
+      .about .inner .description .boxes .box {
         width: 50%;
         padding: 40px 80px; }
-        .inner .description .boxes .box span {
+        .about .inner .description .boxes .box span {
           font: 14px/1 'Roboto'; }
-        .inner .description .boxes .box h2 {
+        .about .inner .description .boxes .box h2 {
           font: bold 16px/1 'Roboto';
           margin: 10px 0; }
-        .inner .description .boxes .box p {
+        .about .inner .description .boxes .box p {
           font: 300 12px/1.2 'Roboto';
           margin-bottom: 10px; }
-        .inner .description .boxes .box input {
+        .about .inner .description .boxes .box input {
           margin-right: 5px;
           outline: none;
           border: none;
           padding: 2px 0; }
-        .inner .description .boxes .box button {
+        .about .inner .description .boxes .box button {
           padding: 5px 20px;
           border: none;
           background: #777;
           color: #fff;
           font: 12px/1 'Roboto';
           cursor: pointer; }
-      .inner .description .boxes .top-left {
+      .about .inner .description .boxes .top-left {
         text-align: right;
         border-top: 1px solid #ddd; }
-      .inner .description .boxes .top-right {
+      .about .inner .description .boxes .top-right {
         border-top: 1px solid #ddd;
         background: url(/public/img/208.jpg) center/cover; }
-      .inner .description .boxes .lower-left {
+      .about .inner .description .boxes .lower-left {
         text-align: right;
         background: linear-gradient(to left, #eee, #fff); }
-        .inner .description .boxes .lower-left h2 {
+        .about .inner .description .boxes .lower-left h2 {
           color: #ccc; }
-      .inner .description .boxes .lower-right {
+      .about .inner .description .boxes .lower-right {
         border-bottom: 1px solid #ddd; }
-  .inner .people .text h2 {
+  .about .inner .people .text h2 {
     font: 20px/1 'Roboto';
     color: #555;
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd; }
-  .inner .people .list {
+  .about .inner .people .list {
     display: flex;
     justify-content: space-between; }
-    .inner .people .list .card-container {
+    .about .inner .people .list .card-container {
       width: 28%;
       height: 24rem;
       perspective: 1000px; }
-      .inner .people .list .card-container:hover .card {
+      .about .inner .people .list .card-container:hover .card {
         transform: rotateY(180deg); }
-      .inner .people .list .card-container .card {
+      .about .inner .people .list .card-container .card {
         position: relative;
         width: 100%;
         height: 100%;
         transform-style: preserve-3d;
         transition: transform 0.7s ease; }
-        .inner .people .list .card-container .card .front,
-        .inner .people .list .card-container .card .back {
+        .about .inner .people .list .card-container .card .front,
+        .about .inner .people .list .card-container .card .back {
           width: 100%;
           height: 100%;
           backface-visibility: hidden;
@@ -742,109 +742,109 @@ header {
           border: 1px solid #c6c1c3;
           background: #fff;
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); }
-          .inner .people .list .card-container .card .front .pic,
-          .inner .people .list .card-container .card .back .pic {
+          .about .inner .people .list .card-container .card .front .pic,
+          .about .inner .people .list .card-container .card .back .pic {
             width: 100%;
             height: 60%;
             margin-bottom: 20px;
             overflow: hidden; }
-            .inner .people .list .card-container .card .front .pic img,
-            .inner .people .list .card-container .card .back .pic img {
+            .about .inner .people .list .card-container .card .front .pic img,
+            .about .inner .people .list .card-container .card .back .pic img {
               width: 100%;
               height: 100%; }
-        .inner .people .list .card-container .card .front {
+        .about .inner .people .list .card-container .card .front {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
           padding: 20px; }
-          .inner .people .list .card-container .card .front h3 {
+          .about .inner .people .list .card-container .card .front h3 {
             font: bold 16px/1 'Roboto';
             margin: 10px 0; }
-          .inner .people .list .card-container .card .front h4 {
+          .about .inner .people .list .card-container .card .front h4 {
             font: 300 14px/1 'Roboto';
             padding-bottom: 1rem;
             margin-bottom: 20px;
             border-bottom: 3px dashed #fff; }
-          .inner .people .list .card-container .card .front p {
+          .about .inner .people .list .card-container .card .front p {
             font: 300 12px/1 'Roboto';
             margin-bottom: 10px; }
-          .inner .people .list .card-container .card .front button {
+          .about .inner .people .list .card-container .card .front button {
             font: 300 12px/1 'Roboto';
             border: none;
             background: none; }
-        .inner .people .list .card-container .card .back {
+        .about .inner .people .list .card-container .card .back {
           transform: rotateY(180deg);
           display: flex;
           flex-direction: column;
           justify-content: center;
           padding: 20px; }
-          .inner .people .list .card-container .card .back h3 {
+          .about .inner .people .list .card-container .card .back h3 {
             font: bold 14px/1 'Roboto';
             text-decoration: underline; }
-          .inner .people .list .card-container .card .back p {
+          .about .inner .people .list .card-container .card .back p {
             font: 300 12px/1.4 'Roboto';
             margin-top: 40px;
             text-align: center; }
-          .inner .people .list .card-container .card .back .sns {
+          .about .inner .people .list .card-container .card .back .sns {
             display: flex;
             justify-content: space-around;
             margin-top: 40px; }
-            .inner .people .list .card-container .card .back .sns i {
+            .about .inner .people .list .card-container .card .back .sns i {
               border-radius: 4px;
               font-size: 18px;
               cursor: pointer; }
 
 @media screen and (max-width: 950px) {
-  .inner .intro {
+  .about .inner .intro {
     flex-wrap: wrap; }
-    .inner .intro .intro-first {
+    .about .inner .intro .intro-first {
       width: 100%; }
-    .inner .intro .intro-second {
+    .about .inner .intro .intro-second {
       width: 100%; }
-    .inner .intro .intro-third {
+    .about .inner .intro .intro-third {
       width: 100%; }
-  .inner .history {
+  .about .inner .history {
     flex-direction: column; }
-    .inner .history .text {
+    .about .inner .history .text {
       margin-bottom: 40px;
       width: 100%; }
-    .inner .history .items {
+    .about .inner .history .items {
       width: 100%; }
-      .inner .history .items .item i {
+      .about .inner .history .items .item i {
         font-size: 18px; }
-      .inner .history .items .item strong {
+      .about .inner .history .items .item strong {
         font: bold 18px/1 'Roboto'; }
-      .inner .history .items .item span {
+      .about .inner .history .items .item span {
         font: 300 12px/1 'Roboto'; }
-      .inner .history .items .item::before {
+      .about .inner .history .items .item::before {
         content: '';
         width: 80px;
         height: 80px; }
-  .inner .description .boxes .box {
+  .about .inner .description .boxes .box {
     padding: 40px; }
-    .inner .description .boxes .box input {
+    .about .inner .description .boxes .box input {
       display: none; }
-  .inner .people .list .card-container {
+  .about .inner .people .list .card-container {
     width: 32%;
     height: 400px; } }
 @media screen and (max-width: 720px) {
-  .inner .people .list .card-container {
+  .about .inner .people .list .card-container {
     width: 33%;
     height: 440px; } }
 @media screen and (max-width: 539px) {
-  .inner .history {
+  .about .inner .history {
     padding: 40px 0 0 0; }
-    .inner .history .items {
+    .about .inner .history .items {
       flex-wrap: wrap; }
-      .inner .history .items .item {
+      .about .inner .history .items .item {
         width: 50%;
         margin-bottom: 80px; }
-  .inner .description .boxes .box {
+  .about .inner .description .boxes .box {
     padding: 20px; }
-  .inner .people .list {
+  .about .inner .people .list {
     flex-wrap: wrap; }
-    .inner .people .list .card-container {
+    .about .inner .people .list .card-container {
       width: 100%;
       height: 340px;
       margin-bottom: 40px; } }
@@ -1361,6 +1361,7 @@ header {
         color: #fff;
         border: none;
         cursor: pointer; }
+
 .joinForm .joinForm-inner .signIn {
   width: 100%;
   height: 500px;
@@ -1375,6 +1376,7 @@ header {
     text-align: center; }
     .joinForm .joinForm-inner .signIn .signIn-left .inner {
       width: 100%;
+      height: 100%;
       padding: 4vh 4vw;
       position: absolute;
       top: 50%;

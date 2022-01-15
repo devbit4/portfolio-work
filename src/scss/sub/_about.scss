@@ -1,3 +1,4 @@
+.about{
 .inner {
 	animation: fade 1s ease-in-out;
 	.intro {
@@ -276,9 +277,12 @@
 		}
 	}
 }
+}
 
 
 @media screen and (max-width:950px){
+
+	.about{
 	.inner{
 	.intro {
 		flex-wrap: wrap;
@@ -354,10 +358,13 @@
 
 
 }
+	}
 }
 
 @media screen and (max-width:720px){
-.inner{
+
+.about{
+	.inner{
 	.people {
 
 		.list {
@@ -369,9 +376,10 @@
 	}
 }
 }
+}
 
 @media screen and (max-width:539px){
-
+.about{
 	.inner{
 	.history {
 		padding: 40px 0 0 0 ;
@@ -409,6 +417,7 @@
 			}
 		}
 	}
+}
 }
 }
 

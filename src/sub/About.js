@@ -12,7 +12,7 @@ const About = (props) => {
 
     return (
 
-        <section className='content'>
+        <section className='content about'>
             <div className="inner">
                 <h1>ABOUT</h1>
                 <div className='intro'>
@@ -110,7 +110,7 @@ const About = (props) => {
                                             </div>
                                             <div className="back">
                                                 <h3>{person.say}</h3>
-                                              <p>{person.intro}</p>
+                                                <p>{person.intro}</p>
                                                 <div className="sns">
                                                     <i className="fab fa-facebook-square"></i>
                                                     <i className="fab fa-instagram"></i>

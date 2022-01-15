@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 
 function SignUpForm() {
     const frame = useRef(null);
+
+
     const initVal = {
         userid: '',
         pwd1: '',
@@ -25,7 +27,6 @@ function SignUpForm() {
         setVal({ ...val, [name]: isCheck });
     };
 
-    //submit이벤트 발생하면 실행되는 함수
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSubmit(true);
@@ -33,7 +34,6 @@ function SignUpForm() {
         console.log(val);
     };
 
-    //에러 객체를 반환하는 함수
     const check = (val) => {
         let errs = {};
         let eng = /[a-zA-Z]/;
@@ -206,79 +206,7 @@ function SignUpForm() {
                         </form>
                     </div>
                 </div>
-                <div className="signIn">
-                    <div className="signIn-left">
-                        <div className='inner'>
-                            <h2>Sign In to Stories</h2>
-                            <div className="platforms">
-                                <i className="fab fa-facebook-f"></i>
-                                <i className="fab fa-google"></i>
-                                <i className="fab fa-linkedin-in"></i>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <form>
-                                <fieldset>
-                                    <legend className="h">signUpForm</legend>
-                                    <table>
-                                        <caption className="h">signUpFormInput</caption>
-                                        <tbody>
-                                            {/* id */}
-                                            <tr>
-                                                <td>
-                                                    <input
-                                                        type="text"
-                                                        id="id"
-                                                        name="id"
-                                                        placeholder="USER ID"
-                                                    />
-                                                </td>
-                                            </tr>
 
-                                            {/* password */}
-                                            <tr>
-                                                <td>
-                                                    <input
-                                                        type="password"
-                                                        id="pwd"
-                                                        name="pwd"
-                                                        placeholder="PASSWORD"
-                                                    />
-                                                </td>
-                                            </tr>
-
-                                            {/* btn set */}
-                                            <tr>
-                                                <th colSpan="2" className="btnSet">
-                                                    <input type="submit" value="SIGN IN" />
-                                                </th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </fieldset>
-                            </form>
-                            <a href="#"><span>Forget your password?</span></a>
-                        </div>
-
-
-                    </div>
-
-                    <div className="signIn-right">
-                        <div className="logo">
-                            <i className="far fa-comments"></i>STORIES
-                        </div>
-                        <div className="text">
-                            <h2>Hello, Friend!</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Delectus iusto totam laudantium.
-                            </p>
-                            <a href="#">
-                                <span>SIGN UP</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </section>
     );
