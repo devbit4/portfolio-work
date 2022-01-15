@@ -7,18 +7,10 @@
 @import "common/layout";
 
 @import "sub/home";
-@import "sub/community";
-@import "sub/gallery";
-@import "sub/youtube";
 @import "sub/about";
+@import "sub/youtube";
+@import "sub/gallery";
+@import "sub/community";
+@import "sub/contact";
+@import "sub/join";
 
-@keyframes fade{
-    from{
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}

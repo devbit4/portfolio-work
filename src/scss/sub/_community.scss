@@ -16,6 +16,7 @@
                 cursor: pointer;
                 &:hover{
                     background: #efefef;
+                    border-radius: 4px;
                 }
 
                 &.active .answer{

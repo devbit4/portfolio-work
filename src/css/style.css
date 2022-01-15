@@ -11,6 +11,27 @@ a {
   text-decoration: none;
   color: #000; }
 
+table {
+  border-collapse: collapse;
+  border: none; }
+  table th, table td {
+    border: none; }
+
+fieldset {
+  border: none; }
+
+.h {
+  position: absolute;
+  top: -99999px;
+  opacity: 0; }
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
 header {
   width: 100%;
   height: 10vh;
@@ -471,8 +492,9 @@ header {
     .sponsor .companies .company {
       width: 25%;
       height: 100px;
-      padding: 20px;
-      border: 1px solid #ddd; }
+      padding: 28px;
+      border: 1px solid #ddd;
+      opacity: 0.8; }
       .sponsor .companies .company img {
         width: 100%;
         height: 100%;
@@ -563,412 +585,6 @@ header {
     padding: 0 0 50px 0; }
     .sponsor .companies .company {
       width: 50%; } }
-.community .inner .faq {
-  animation: fade 1s ease-in-out; }
-  .community .inner .faq h1 {
-    font: 20px/1 'Roboto';
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    color: #555; }
-  .community .inner .faq article {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #999;
-    cursor: pointer; }
-    .community .inner .faq article:hover {
-      background: #efefef; }
-    .community .inner .faq article.active .answer {
-      max-height: 300px;
-      animation: fade 1s ease-in-out; }
-    .community .inner .faq article.active i {
-      transform: rotate(180deg); }
-    .community .inner .faq article .question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 1rem;
-      cursor: pointer; }
-      .community .inner .faq article .question .question-front {
-        display: flex; }
-        .community .inner .faq article .question .question-front h2 {
-          margin-left: 20px;
-          font: bold 16px/1 'Roboto';
-          cursor: pointer; }
-        .community .inner .faq article .question .question-front i {
-          margin-left: 10px;
-          cursor: pointer; }
-      .community .inner .faq article .question i {
-        transition: transform 0.8s ease-in-out;
-        margin-right: 10px;
-        cursor: pointer; }
-    .community .inner .faq article .answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.8s ease-in-out; }
-      .community .inner .faq article .answer p {
-        padding-top: 2rem;
-        padding-left: 40px;
-        font: 300 14px/1.4 'Roboto';
-        color: #aaa; }
-
-.gallery .inner {
-  position: relative; }
-  .gallery .inner h1 {
-    cursor: pointer; }
-  .gallery .inner .intro {
-    display: flex;
-    align-items: top;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 60px;
-    animation: fade 1s ease-in-out; }
-    .gallery .inner .intro .intro-left {
-      width: 50%;
-      padding-right: 20px; }
-      .gallery .inner .intro .intro-left h2 {
-        font: 20px/1 'Roboto';
-        margin-bottom: 10px;
-        color: #555; }
-      .gallery .inner .intro .intro-left h3 {
-        font: 18px/1 'Roboto';
-        margin-bottom: 20px;
-        color: #bbb; }
-      .gallery .inner .intro .intro-left p {
-        font: 300 14px/1.2 'Roboto';
-        padding-bottom: 40px;
-        width: 100%; }
-    .gallery .inner .intro .intro-right {
-      width: 50%; }
-      .gallery .inner .intro .intro-right p {
-        font: 300 14px/1.2 'Roboto';
-        padding-bottom: 40px; }
-      .gallery .inner .intro .intro-right .searchbox {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center; }
-        .gallery .inner .intro .intro-right .searchbox input {
-          height: 25px;
-          margin-right: 5px;
-          background: #f5f5f5;
-          border: none;
-          outline: none; }
-        .gallery .inner .intro .intro-right .searchbox button {
-          outline: none;
-          border: none;
-          padding: 4px 10px;
-          background-color: #324b4c;
-          color: #fff;
-          cursor: pointer;
-          font-family: 'Roboto'; }
-  .gallery .inner .loading {
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .gallery .inner .list {
-    opacity: 0;
-    transform: translateY(-100px);
-    transition: 1s;
-    position: relative; }
-    .gallery .inner .list.on {
-      opacity: 1;
-      transform: translateY(0px); }
-    .gallery .inner .list ul {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap; }
-      .gallery .inner .list ul .pic {
-        width: 25%;
-        padding: 10px;
-        transition: all 0.3s;
-        margin-bottom: 20px; }
-        .gallery .inner .list ul .pic:hover {
-          transform: scale(1.02);
-          z-index: 10; }
-        .gallery .inner .list ul .pic .inner {
-          width: 100%;
-          padding: 20px;
-          background: #fff;
-          box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.1);
-          word-break: break-all;
-          cursor: pointer; }
-          .gallery .inner .list ul .pic .inner:hover {
-            background: #efefef; }
-            .gallery .inner .list ul .pic .inner:hover .click {
-              display: block; }
-          .gallery .inner .list ul .pic .inner img {
-            width: 100%;
-            margin-bottom: 30px;
-            position: relative; }
-          .gallery .inner .list ul .pic .inner .click {
-            display: block;
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #efefef;
-            font: 12px/1 'Roboto';
-            z-index: 2;
-            display: none;
-            transition: all 3s; }
-          .gallery .inner .list ul .pic .inner .type {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-            color: #777; }
-            .gallery .inner .list ul .pic .inner .type span {
-              font: 12px/1 'Roboto'; }
-              .gallery .inner .list ul .pic .inner .type span i {
-                padding: 2px;
-                font-size: 10px;
-                color: #777;
-                margin-left: 4px;
-                cursor: pointer; }
-          .gallery .inner .list ul .pic .inner h2 {
-            padding: 4px;
-            font: bold 12px/1.2 'Roboto';
-            color: #000;
-            margin-bottom: 20px;
-            text-align: left;
-            background-color: #c6c1c334; }
-          .gallery .inner .list ul .pic .inner p {
-            font: 300 12px/1.2 'Roboto';
-            margin-bottom: 20px; }
-          .gallery .inner .list ul .pic .inner strong {
-            display: block;
-            font: normal 10px/1 'Roboto';
-            color: #999; }
-.gallery .popup {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #000;
-  padding: 7vw;
-  display: flex;
-  align-items: flex-end; }
-  .gallery .popup .pic {
-    width: 60%;
-    height: 100%;
-    padding: 0 20px; }
-    .gallery .popup .pic img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .gallery .popup .text {
-    width: 40%;
-    padding: 0 20px; }
-    .gallery .popup .text h2 {
-      font: bold 20px 'Roboto';
-      color: #fff;
-      margin-bottom: 30px; }
-    .gallery .popup .text p {
-      font: 300 14px/1.2 'Roboto';
-      color: #fff;
-      margin-top: 10px; }
-  .gallery .popup span {
-    font: bold 14px/1 "arial";
-    color: #fff;
-    position: absolute;
-    top: 3vw;
-    right: 5vw;
-    cursor: pointer; }
-
-@media screen and (max-width: 1179px) {
-  .gallery .inner .list ul .pic {
-    width: 33.3333%; } }
-@media screen and (max-width: 700px) {
-  .gallery .inner .intro {
-    flex-direction: column; }
-    .gallery .inner .intro .intro-left, .gallery .inner .intro .intro-right {
-      width: 100%; }
-  .gallery .inner .list ul .pic {
-    width: 50%; } }
-@media screen and (max-width: 539px) {
-  .gallery .inner .list ul .pic {
-    width: 100%; } }
-.youtube .inner .news {
-  animation: fade 1s ease-in-out; }
-  .youtube .inner .news h1 {
-    font: 20px/1 'Roboto';
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    color: #555; }
-  .youtube .inner .news article {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #efefef; }
-    .youtube .inner .news article:hover {
-      background: #efefef; }
-    .youtube .inner .news article .inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start; }
-      .youtube .inner .news article .inner .circle {
-        padding-top: 10px;
-        padding-left: 5px;
-        width: 5%;
-        font-size: 16px; }
-      .youtube .inner .news article .inner .num {
-        padding-top: 10px;
-        width: 10%;
-        display: flex;
-        flex-direction: column;
-        text-align: center; }
-        .youtube .inner .news article .inner .num strong {
-          font: bold 28px/1 'Roboto';
-          margin-bottom: 4px; }
-        .youtube .inner .news article .inner .num span {
-          font: 12px/1 'Roboto'; }
-      .youtube .inner .news article .inner .txt {
-        width: 60%;
-        padding: 10px 20px; }
-        .youtube .inner .news article .inner .txt h2 {
-          font: bold 16px/1 'Roboto';
-          margin-bottom: 10px;
-          cursor: pointer; }
-        .youtube .inner .news article .inner .txt p {
-          font: 300 14px/1.4 'Roboto'; }
-      .youtube .inner .news article .inner .pic {
-        width: 25%;
-        height: 150px;
-        position: relative;
-        overflow: hidden; }
-        .youtube .inner .news article .inner .pic img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          cursor: pointer;
-          transition: all 0.5s; }
-          .youtube .inner .news article .inner .pic img:hover {
-            transform: scale(1.1); }
-        .youtube .inner .news article .inner .pic i {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: #fff;
-          font-size: 40px;
-          cursor: pointer; }
-.youtube .inner .library {
-  animation: fade 1s ease-in-out;
-  margin-bottom: 60px; }
-  .youtube .inner .library h1 {
-    font: 20px/1 'Roboto';
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd; }
-  .youtube .inner .library .inner {
-    display: flex; }
-    .youtube .inner .library .inner .left {
-      width: 50%;
-      background: url(/public/img/208.jpg) center/cover no-repeat; }
-    .youtube .inner .library .inner .right {
-      width: 50%;
-      display: flex;
-      flex-direction: column; }
-      .youtube .inner .library .inner .right .right-upper {
-        width: 100%;
-        height: 150px;
-        background: url(/public/img/youtube/youtube2.jpg) center/cover no-repeat; }
-      .youtube .inner .library .inner .right .right-lower {
-        width: 100%;
-        height: 150px;
-        display: flex;
-        background: #333; }
-        .youtube .inner .library .inner .right .right-lower .box {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          color: #fff;
-          border-right: 1px solid #fff;
-          padding: 10px; }
-          .youtube .inner .library .inner .right .right-lower .box h2 {
-            font: 16px/1 'Roboto'; }
-          .youtube .inner .library .inner .right .right-lower .box span {
-            font: 300 12px/1 'Roboto'; }
-.youtube .inner .issue {
-  animation: fade 1s ease-in-out; }
-  .youtube .inner .issue .inner {
-    display: flex;
-    justify-content: space-between; }
-    .youtube .inner .issue .inner .text {
-      width: 48%; }
-      .youtube .inner .issue .inner .text h1 {
-        font: 20px/1 'Roboto';
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #ddd; }
-        .youtube .inner .issue .inner .text h1 span {
-          float: right; }
-          .youtube .inner .issue .inner .text h1 span i {
-            color: #ddd;
-            cursor: pointer; }
-      .youtube .inner .issue .inner .text article {
-        margin-bottom: 20px;
-        padding: 2px; }
-        .youtube .inner .issue .inner .text article:hover {
-          background: #efefef; }
-        .youtube .inner .issue .inner .text article h2 {
-          font: bold 16px/1 'Roboto';
-          margin-bottom: 10px; }
-        .youtube .inner .issue .inner .text article p {
-          font: 300 14px/1.4 'Roboto';
-          margin-bottom: 10px; }
-        .youtube .inner .issue .inner .text article span {
-          font: 12px/1.4 'Roboto'; }
-.youtube .inner .pop {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.9);
-  padding: 5vw; }
-  .youtube .inner .pop iframe {
-    border: none;
-    width: 100%;
-    height: 100%; }
-  .youtube .inner .pop span {
-    position: absolute;
-    top: 3vw;
-    right: 5vw;
-    font: bold 14px/1 "arial";
-    color: #fff;
-    cursor: pointer; }
-
-@media screen and (max-width: 620px) {
-  .youtube .inner .news article {
-    margin-bottom: 40px; }
-    .youtube .inner .news article .inner {
-      flex-wrap: wrap; }
-      .youtube .inner .news article .inner .circle {
-        width: 10%; }
-      .youtube .inner .news article .inner .num {
-        width: 20%; }
-      .youtube .inner .news article .inner .txt {
-        width: 70%;
-        word-break: break-all; }
-      .youtube .inner .news article .inner .pic {
-        width: 100%;
-        margin-top: 20px; }
-  .youtube .inner .library .inner {
-    flex-direction: column; }
-    .youtube .inner .library .inner .left {
-      width: 100%;
-      height: 300px; }
-    .youtube .inner .library .inner .right {
-      width: 100%; }
-  .youtube .inner .issue .inner {
-    flex-direction: column; }
-    .youtube .inner .issue .inner .text {
-      width: 100%;
-      margin-bottom: 40px; } }
 .inner {
   animation: fade 1s ease-in-out; }
   .inner .intro {
@@ -1232,12 +848,637 @@ header {
       width: 100%;
       height: 340px;
       margin-bottom: 40px; } }
-@keyframes fade {
-  from {
+.youtube .inner .news {
+  animation: fade 1s ease-in-out; }
+  .youtube .inner .news h1 {
+    font: 20px/1 'Roboto';
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    color: #555; }
+  .youtube .inner .news article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #efefef; }
+    .youtube .inner .news article:hover {
+      background: #efefef;
+      border-radius: 4px; }
+    .youtube .inner .news article .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .youtube .inner .news article .inner .circle {
+        padding-top: 10px;
+        padding-left: 5px;
+        width: 5%;
+        font-size: 16px; }
+      .youtube .inner .news article .inner .num {
+        padding-top: 10px;
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        .youtube .inner .news article .inner .num strong {
+          font: bold 28px/1 'Roboto';
+          margin-bottom: 4px; }
+        .youtube .inner .news article .inner .num span {
+          font: 12px/1 'Roboto'; }
+      .youtube .inner .news article .inner .txt {
+        width: 60%;
+        padding: 10px 20px; }
+        .youtube .inner .news article .inner .txt h2 {
+          font: bold 16px/1 'Roboto';
+          margin-bottom: 10px;
+          cursor: pointer; }
+        .youtube .inner .news article .inner .txt p {
+          font: 300 14px/1.4 'Roboto'; }
+      .youtube .inner .news article .inner .pic {
+        width: 25%;
+        height: 150px;
+        position: relative;
+        overflow: hidden; }
+        .youtube .inner .news article .inner .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          cursor: pointer;
+          transition: all 0.5s; }
+          .youtube .inner .news article .inner .pic img:hover {
+            transform: scale(1.1); }
+        .youtube .inner .news article .inner .pic i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          font-size: 40px;
+          cursor: pointer; }
+.youtube .inner .library {
+  animation: fade 1s ease-in-out;
+  margin-bottom: 60px; }
+  .youtube .inner .library h1 {
+    font: 20px/1 'Roboto';
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd; }
+  .youtube .inner .library .inner {
+    display: flex; }
+    .youtube .inner .library .inner .left {
+      width: 50%;
+      background: linear-gradient(to right, #fff, #ccc); }
+    .youtube .inner .library .inner .right {
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      .youtube .inner .library .inner .right .right-upper {
+        width: 100%;
+        height: 150px;
+        background: url(/public/img/youtube/youtube2.jpg) center/cover no-repeat; }
+      .youtube .inner .library .inner .right .right-lower {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        background: #333; }
+        .youtube .inner .library .inner .right .right-lower .box {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          color: #fff;
+          border-right: 1px solid #fff;
+          padding: 10px; }
+          .youtube .inner .library .inner .right .right-lower .box h2 {
+            font: 16px/1 'Roboto'; }
+          .youtube .inner .library .inner .right .right-lower .box span {
+            font: 300 12px/1 'Roboto'; }
+.youtube .inner .issue {
+  animation: fade 1s ease-in-out; }
+  .youtube .inner .issue .inner {
+    display: flex;
+    justify-content: space-between; }
+    .youtube .inner .issue .inner .text {
+      width: 48%; }
+      .youtube .inner .issue .inner .text h1 {
+        font: 20px/1 'Roboto';
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd; }
+        .youtube .inner .issue .inner .text h1 span {
+          float: right; }
+          .youtube .inner .issue .inner .text h1 span i {
+            color: #ddd;
+            cursor: pointer; }
+      .youtube .inner .issue .inner .text article {
+        margin-bottom: 20px;
+        padding: 2px; }
+        .youtube .inner .issue .inner .text article:hover {
+          background: #efefef;
+          border-radius: 4px; }
+        .youtube .inner .issue .inner .text article h2 {
+          font: bold 16px/1 'Roboto';
+          margin-bottom: 10px; }
+        .youtube .inner .issue .inner .text article p {
+          font: 300 14px/1.4 'Roboto';
+          margin-bottom: 10px; }
+        .youtube .inner .issue .inner .text article span {
+          font: 12px/1.4 'Roboto'; }
+.youtube .inner .pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 5vw; }
+  .youtube .inner .pop iframe {
+    border: none;
+    width: 100%;
+    height: 100%; }
+  .youtube .inner .pop span {
+    position: absolute;
+    top: 3vw;
+    right: 5vw;
+    font: bold 14px/1 "arial";
+    color: #fff;
+    cursor: pointer; }
+
+@media screen and (max-width: 620px) {
+  .youtube .inner .news article {
+    margin-bottom: 40px; }
+    .youtube .inner .news article .inner {
+      flex-wrap: wrap; }
+      .youtube .inner .news article .inner .circle {
+        width: 10%; }
+      .youtube .inner .news article .inner .num {
+        width: 20%; }
+      .youtube .inner .news article .inner .txt {
+        width: 70%;
+        word-break: break-all; }
+      .youtube .inner .news article .inner .pic {
+        width: 100%;
+        margin-top: 20px; }
+  .youtube .inner .library .inner {
+    flex-direction: column; }
+    .youtube .inner .library .inner .left {
+      width: 100%;
+      height: 300px; }
+    .youtube .inner .library .inner .right {
+      width: 100%; }
+  .youtube .inner .issue .inner {
+    flex-direction: column; }
+    .youtube .inner .issue .inner .text {
+      width: 100%;
+      margin-bottom: 40px; } }
+.gallery .inner {
+  position: relative; }
+  .gallery .inner h1 {
+    cursor: pointer; }
+  .gallery .inner .intro {
+    display: flex;
+    align-items: top;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 60px;
+    animation: fade 1s ease-in-out; }
+    .gallery .inner .intro .intro-left {
+      width: 50%;
+      padding-right: 20px; }
+      .gallery .inner .intro .intro-left h2 {
+        font: 20px/1 'Roboto';
+        margin-bottom: 10px;
+        color: #555; }
+      .gallery .inner .intro .intro-left h3 {
+        font: 18px/1 'Roboto';
+        margin-bottom: 20px;
+        color: #bbb; }
+      .gallery .inner .intro .intro-left p {
+        font: 300 14px/1.2 'Roboto';
+        padding-bottom: 40px;
+        width: 100%; }
+    .gallery .inner .intro .intro-right {
+      width: 50%; }
+      .gallery .inner .intro .intro-right p {
+        font: 300 14px/1.2 'Roboto';
+        padding-bottom: 40px; }
+      .gallery .inner .intro .intro-right .searchbox {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .gallery .inner .intro .intro-right .searchbox input {
+          height: 25px;
+          margin-right: 5px;
+          background: #f5f5f5;
+          border: none;
+          outline: none; }
+        .gallery .inner .intro .intro-right .searchbox button {
+          outline: none;
+          border: none;
+          padding: 4px 10px;
+          background-color: #324b4c;
+          color: #fff;
+          cursor: pointer;
+          font-family: 'Roboto'; }
+  .gallery .inner .loading {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .gallery .inner .list {
     opacity: 0;
-    transform: translateY(-10px); }
-  to {
-    opacity: 1;
-    transform: translateY(0px); } }
+    transform: translateY(-100px);
+    transition: 1s;
+    position: relative; }
+    .gallery .inner .list.on {
+      opacity: 1;
+      transform: translateY(0px); }
+    .gallery .inner .list ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .gallery .inner .list ul .pic {
+        width: 25%;
+        padding: 10px;
+        transition: all 0.3s;
+        margin-bottom: 20px; }
+        .gallery .inner .list ul .pic:hover {
+          transform: scale(1.02);
+          z-index: 10; }
+        .gallery .inner .list ul .pic .inner {
+          width: 100%;
+          padding: 20px;
+          background: #fff;
+          box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.1);
+          word-break: break-all;
+          cursor: pointer; }
+          .gallery .inner .list ul .pic .inner:hover {
+            background: #efefef; }
+            .gallery .inner .list ul .pic .inner:hover .click {
+              display: block; }
+          .gallery .inner .list ul .pic .inner img {
+            width: 100%;
+            margin-bottom: 30px;
+            position: relative; }
+          .gallery .inner .list ul .pic .inner .click {
+            display: block;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #efefef;
+            font: 12px/1 'Roboto';
+            z-index: 2;
+            display: none;
+            transition: all 3s; }
+          .gallery .inner .list ul .pic .inner .type {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #777; }
+            .gallery .inner .list ul .pic .inner .type span {
+              font: 12px/1 'Roboto'; }
+              .gallery .inner .list ul .pic .inner .type span i {
+                padding: 2px;
+                font-size: 10px;
+                color: #777;
+                margin-left: 4px;
+                cursor: pointer; }
+          .gallery .inner .list ul .pic .inner h2 {
+            padding: 4px;
+            font: bold 12px/1.2 'Roboto';
+            color: #000;
+            margin-bottom: 20px;
+            text-align: left;
+            background-color: #c6c1c334; }
+          .gallery .inner .list ul .pic .inner p {
+            font: 300 12px/1.2 'Roboto';
+            margin-bottom: 20px; }
+          .gallery .inner .list ul .pic .inner strong {
+            display: block;
+            font: normal 10px/1 'Roboto';
+            color: #999; }
+.gallery .popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  padding: 7vw;
+  display: flex;
+  align-items: flex-end; }
+  .gallery .popup .pic {
+    width: 60%;
+    height: 100%;
+    padding: 0 20px; }
+    .gallery .popup .pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .gallery .popup .text {
+    width: 40%;
+    padding: 0 20px; }
+    .gallery .popup .text h2 {
+      font: bold 20px 'Roboto';
+      color: #fff;
+      margin-bottom: 30px; }
+    .gallery .popup .text p {
+      font: 300 14px/1.2 'Roboto';
+      color: #fff;
+      margin-top: 10px; }
+  .gallery .popup span {
+    font: bold 14px/1 "arial";
+    color: #fff;
+    position: absolute;
+    top: 3vw;
+    right: 5vw;
+    cursor: pointer; }
+
+@media screen and (max-width: 1179px) {
+  .gallery .inner .list ul .pic {
+    width: 33.3333%; } }
+@media screen and (max-width: 700px) {
+  .gallery .inner .intro {
+    flex-direction: column; }
+    .gallery .inner .intro .intro-left, .gallery .inner .intro .intro-right {
+      width: 100%; }
+  .gallery .inner .list ul .pic {
+    width: 50%; } }
+@media screen and (max-width: 539px) {
+  .gallery .inner .list ul .pic {
+    width: 100%; } }
+.community .inner .faq {
+  animation: fade 1s ease-in-out; }
+  .community .inner .faq h1 {
+    font: 20px/1 'Roboto';
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    color: #555; }
+  .community .inner .faq article {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #999;
+    cursor: pointer; }
+    .community .inner .faq article:hover {
+      background: #efefef;
+      border-radius: 4px; }
+    .community .inner .faq article.active .answer {
+      max-height: 300px;
+      animation: fade 1s ease-in-out; }
+    .community .inner .faq article.active i {
+      transform: rotate(180deg); }
+    .community .inner .faq article .question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      cursor: pointer; }
+      .community .inner .faq article .question .question-front {
+        display: flex; }
+        .community .inner .faq article .question .question-front h2 {
+          margin-left: 20px;
+          font: bold 16px/1 'Roboto';
+          cursor: pointer; }
+        .community .inner .faq article .question .question-front i {
+          margin-left: 10px;
+          cursor: pointer; }
+      .community .inner .faq article .question i {
+        transition: transform 0.8s ease-in-out;
+        margin-right: 10px;
+        cursor: pointer; }
+    .community .inner .faq article .answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.8s ease-in-out; }
+      .community .inner .faq article .answer p {
+        padding-top: 2rem;
+        padding-left: 40px;
+        font: 300 14px/1.4 'Roboto';
+        color: #aaa; }
+
+.joinForm .joinForm-inner .signUp {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc; }
+  .joinForm .joinForm-inner .signUp .signUp-left {
+    width: 50%;
+    background: #c6a6a6;
+    padding: 4vh 4vw;
+    position: relative; }
+    .joinForm .joinForm-inner .signUp .signUp-left .logo {
+      font: 300 16px/1 'Roboto';
+      color: #fff;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #fff; }
+      .joinForm .joinForm-inner .signUp .signUp-left .logo i {
+        font-size: 16px;
+        margin-right: 10px; }
+    .joinForm .joinForm-inner .signUp .signUp-left .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .joinForm .joinForm-inner .signUp .signUp-left .text h2 {
+        font: bold 32px/1 'Roboto';
+        margin-bottom: 20px;
+        color: #fff; }
+      .joinForm .joinForm-inner .signUp .signUp-left .text p {
+        font: 300 16px/1.2 'Roboto';
+        margin-bottom: 40px;
+        color: #fff; }
+      .joinForm .joinForm-inner .signUp .signUp-left .text a {
+        width: 180px;
+        margin: 0 auto;
+        padding: 10px 0px;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        transition: all 0.3s; }
+        .joinForm .joinForm-inner .signUp .signUp-left .text a span {
+          font: 14px/1 'Roboto';
+          color: #fff; }
+        .joinForm .joinForm-inner .signUp .signUp-left .text a:hover {
+          background: #fff; }
+          .joinForm .joinForm-inner .signUp .signUp-left .text a:hover span {
+            color: #c6a6a6; }
+  .joinForm .joinForm-inner .signUp .signUp-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4vh 4vw; }
+    .joinForm .joinForm-inner .signUp .signUp-right h2 {
+      font: bold 20px/1 'Roboto';
+      margin-bottom: 20px; }
+    .joinForm .joinForm-inner .signUp .signUp-right .platforms i {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      margin: 4px;
+      margin-bottom: 20px;
+      cursor: pointer; }
+    .joinForm .joinForm-inner .signUp .signUp-right p {
+      font: 300 14px/1.2 'Roboto';
+      margin-bottom: 20px; }
+    .joinForm .joinForm-inner .signUp .signUp-right table {
+      width: 100%; }
+      .joinForm .joinForm-inner .signUp .signUp-right table span {
+        font: 14px/1 'Roboto';
+        margin-right: 10px; }
+      .joinForm .joinForm-inner .signUp .signUp-right table td {
+        width: 100%;
+        padding: 5px 20px;
+        font: 14px/1 'Roboto'; }
+        .joinForm .joinForm-inner .signUp .signUp-right table td input[type=text], .joinForm .joinForm-inner .signUp .signUp-right table td input[type=password] {
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          background: #efefef;
+          border: none; }
+        .joinForm .joinForm-inner .signUp .signUp-right table td .err {
+          font: 300 12px/1 'Roboto';
+          color: red;
+          margin: 5px 0 0 0; }
+        .joinForm .joinForm-inner .signUp .signUp-right table td label {
+          font: 14px/1 'Roboto'; }
+        .joinForm .joinForm-inner .signUp .signUp-right table td input[type=radio] {
+          margin: 0 10px; }
+      .joinForm .joinForm-inner .signUp .signUp-right table input[type=submit] {
+        width: 180px;
+        margin: 0 auto;
+        padding: 10px 0;
+        border-radius: 30px;
+        font: 14px/1 'Roboto';
+        margin-top: 30px;
+        background: #c6a6a6;
+        color: #fff;
+        border: none;
+        cursor: pointer; }
+.joinForm .joinForm-inner .signIn {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc; }
+  .joinForm .joinForm-inner .signIn .signIn-left {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    text-align: center; }
+    .joinForm .joinForm-inner .signIn .signIn-left .inner {
+      width: 100%;
+      padding: 4vh 4vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .joinForm .joinForm-inner .signIn .signIn-left .inner h2 {
+        font: bold 20px/1 'Roboto';
+        margin-bottom: 20px; }
+      .joinForm .joinForm-inner .signIn .signIn-left .inner .platforms i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        margin: 4px;
+        margin-bottom: 20px;
+        cursor: pointer; }
+      .joinForm .joinForm-inner .signIn .signIn-left .inner p {
+        font: 300 14px/1.2 'Roboto';
+        margin-bottom: 30px; }
+      .joinForm .joinForm-inner .signIn .signIn-left .inner table {
+        width: 100%; }
+        .joinForm .joinForm-inner .signIn .signIn-left .inner table span {
+          font: 14px/1 'Roboto';
+          margin-right: 10px; }
+        .joinForm .joinForm-inner .signIn .signIn-left .inner table td {
+          width: 100%;
+          padding: 5px 20px;
+          font: 14px/1 'Roboto'; }
+          .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=text], .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=password] {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            background: #efefef;
+            border: none; }
+          .joinForm .joinForm-inner .signIn .signIn-left .inner table td .err {
+            font: 300 12px/1 'Roboto';
+            color: red;
+            margin: 5px 0 0 0; }
+          .joinForm .joinForm-inner .signIn .signIn-left .inner table td label {
+            font: 14px/1 'Roboto'; }
+          .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=radio] {
+            margin: 0 10px; }
+        .joinForm .joinForm-inner .signIn .signIn-left .inner table input[type=submit] {
+          width: 180px;
+          margin: 0 auto;
+          padding: 10px 0;
+          border-radius: 30px;
+          font: 14px/1 'Roboto';
+          margin-top: 30px;
+          background: #c6a6a6;
+          color: #fff;
+          border: none;
+          cursor: pointer; }
+      .joinForm .joinForm-inner .signIn .signIn-left .inner a {
+        display: block;
+        margin-top: 10px; }
+        .joinForm .joinForm-inner .signIn .signIn-left .inner a span {
+          font: 14px/1 'Roboto';
+          text-decoration: underline; }
+  .joinForm .joinForm-inner .signIn .signIn-right {
+    width: 50%;
+    height: 100%;
+    padding: 4vh 4vw;
+    position: relative;
+    background: #c6a6a6; }
+    .joinForm .joinForm-inner .signIn .signIn-right .logo {
+      font: 300 16px/1 'Roboto';
+      color: #fff;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #fff;
+      text-align: right; }
+      .joinForm .joinForm-inner .signIn .signIn-right .logo i {
+        font-size: 16px;
+        margin-right: 10px; }
+    .joinForm .joinForm-inner .signIn .signIn-right .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .joinForm .joinForm-inner .signIn .signIn-right .text h2 {
+        font: bold 32px/1 'Roboto';
+        margin-bottom: 20px;
+        color: #fff; }
+      .joinForm .joinForm-inner .signIn .signIn-right .text p {
+        font: 300 16px/1.2 'Roboto';
+        margin-bottom: 40px;
+        color: #fff; }
+      .joinForm .joinForm-inner .signIn .signIn-right .text a {
+        width: 180px;
+        margin: 0 auto;
+        padding: 10px 0px;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        transition: all 0.3s; }
+        .joinForm .joinForm-inner .signIn .signIn-right .text a span {
+          font: 14px/1 'Roboto';
+          color: #fff; }
+        .joinForm .joinForm-inner .signIn .signIn-right .text a:hover {
+          background: #fff; }
+          .joinForm .joinForm-inner .signIn .signIn-right .text a:hover span {
+            color: #c6a6a6; }
 
 /*# sourceMappingURL=style.css.map */

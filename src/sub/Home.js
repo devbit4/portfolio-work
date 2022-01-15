@@ -378,19 +378,19 @@ const Home = (props) => {
                         <img src={`${process.env.PUBLIC_URL}/img/home/logo3.png`} alt="logo3" />
                     </div>
                     <div className="company">
-                        <img src="" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/img/home/logo4.png`} alt="logo4" />
                     </div>
                     <div className="company">
-                        <img src="" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/img/home/logo5.png`} alt="logo5" />
                     </div>
                     <div className="company">
-                        <img src="" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/img/home/logo7.png`} alt="logo6" />
                     </div>
                     <div className="company">
-                        <img src="" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/img/home/logo8.jpg`} alt="logo7" />
                     </div>
                     <div className="company">
-                        <img src="" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/img/home/logo6.jpg`} alt="logo8" />
                     </div>
 
                 </div>
