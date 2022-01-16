@@ -1284,7 +1284,7 @@ header {
   .contact .inner .inner-text .times {
     display: flex;
     justify-content: space-between;
-    padding: 4vh 4vw; }
+    padding: 6vh 4vw; }
     .contact .inner .inner-text .times .time {
       width: 32%;
       display: flex;
@@ -1376,12 +1376,10 @@ header {
   margin-top: 60px; }
   .join .inner .joinForm .joinForm-inner .signUp {
     width: 100%;
-    height: 500px;
     display: flex;
     border: 1px solid #ccc; }
     .join .inner .joinForm .joinForm-inner .signUp .signUp-left {
       width: 50%;
-      height: 100%;
       background: url(/public/img/join/bg.png) no-repeat center/cover;
       padding: 4vh 4vw;
       position: relative; }
@@ -1424,7 +1422,6 @@ header {
               color: #c6a6a6; }
     .join .inner .joinForm .joinForm-inner .signUp .signUp-right {
       width: 50%;
-      height: 100%;
       display: flex;
       flex-direction: column;
       text-align: center;

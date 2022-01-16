@@ -138,6 +138,10 @@ const Home = (props) => {
                             pagination={{
                                 clickable: true,
                             }}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
                             className="mySwiper"
                         >
                             <SwiperSlide>Slide 1</SwiperSlide>
@@ -257,13 +261,13 @@ const Home = (props) => {
                         </div>
                         <div className="right-text">
                             <h2>FIRST STEP</h2>
-                            <h1>BRAINSTORM & WRITE YOUR DREAM</h1>
+                            <h1>BRAINSTORM & WRITE YOUR STORY</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Corrupti hic neque ex, dolore distinctio voluptate repudiandae a
                                 vitae, alias, obcaecati ullam? Tenetur tempora placeat velit.
                             </p>
-                            <span>VIEW IDEAS</span>
+                            <span>VIEW IDEAS </span>
                         </div>
                     </div>
                     <div className="round">
@@ -275,7 +279,7 @@ const Home = (props) => {
                         </div>
                         <div className="right-text">
                             <h2>SECOND STEP</h2>
-                            <h1>SHARE YOUR GOALS WITH OTHERS</h1>
+                            <h1>SHARE YOUR STORIES WITH OTHERS</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Corrupti hic neque ex, dolore distinctio voluptate repudiandae a
@@ -293,7 +297,7 @@ const Home = (props) => {
                         </div>
                         <div className="right-text">
                             <h2>THIRD STEP</h2>
-                            <h1>ACHIEVE YOUR DREAM & REFLECT</h1>
+                            <h1>PUSH LIKE BUTTONS</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Corrupti hic neque ex, dolore distinctio voluptate repudiandae a

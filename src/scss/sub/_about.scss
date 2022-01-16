@@ -1,5 +1,7 @@
 .about{
+
 .inner {
+
 
 	.about-content{
 		animation: fade 1s ease-in-out;
@@ -173,6 +175,7 @@
 		}
 	}
 	.people {
+
 		.text {
 			h2 {
 				font: 20px/1 'Roboto';
@@ -185,6 +188,7 @@
 		.list {
 			display: flex;
 			justify-content: space-between;
+
 			.card-container {
 				width: 28%;
 				height: 24rem;
