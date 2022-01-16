@@ -16,6 +16,7 @@ const Gallery = (props) => {
     let [enableClick, setEnableClick] = useState(true);
     let [popup, setPopup] = useState(false);
     let [index, setIndex] = useState();
+    let [like, setLike] = useState(0);
     let input = useRef();
     let list = useRef();
 
@@ -152,7 +153,7 @@ const Gallery = (props) => {
         </section>
     );
 
-    //이미지 검색 후 불러오기
+
     async function getPhotos(opt) {
         let url = '';
 
@@ -181,7 +182,7 @@ const Gallery = (props) => {
             }, 1000);
         }, 1000);
     }
-    //팝업창
+
     function Popup() {
         const imgB = `https://live.staticflickr.com/${pics[index].server}/${pics[index].id}_${pics[index].secret}_b.jpg`;
 
@@ -191,7 +192,10 @@ const Gallery = (props) => {
                     <img src={imgB} alt="big image" />
                 </div>
                 <div className="text">
+
                     <h2>{pics[index].title.toUpperCase()}</h2>
+                    <button onClick={() => { setLike(++like) }}><i className="far fa-heart"></i></button>
+                    <strong>{like}</strong>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
                         exercitationem rem? Quis similique sint iste, explicabo architecto.

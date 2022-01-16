@@ -195,6 +195,25 @@
 		font: bold 20px 'Roboto';
 		color: #fff;
 		margin-bottom: 30px;}
+	button{
+		border: none;
+		background: #000;
+		margin-right: 10px;
+		margin-bottom: 20px;
+		i{
+			color:#fff;
+			font-size: 25px;
+			&:hover{
+				color: red;
+				transform: scale(1.2);
+			}
+		}
+
+	}
+	strong{
+		color: #fff;
+		font: 18px/1 'Roboto';
+	}
 	p{
 		font: 300 14px/1.2 'Roboto';
 		color: #fff;

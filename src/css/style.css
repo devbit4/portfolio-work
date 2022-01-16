@@ -1188,6 +1188,20 @@ header {
       font: bold 20px 'Roboto';
       color: #fff;
       margin-bottom: 30px; }
+    .gallery .popup .text button {
+      border: none;
+      background: #000;
+      margin-right: 10px;
+      margin-bottom: 20px; }
+      .gallery .popup .text button i {
+        color: #fff;
+        font-size: 25px; }
+        .gallery .popup .text button i:hover {
+          color: red;
+          transform: scale(1.2); }
+    .gallery .popup .text strong {
+      color: #fff;
+      font: 18px/1 'Roboto'; }
     .gallery .popup .text p {
       font: 300 14px/1.2 'Roboto';
       color: #fff;
