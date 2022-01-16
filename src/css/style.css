@@ -448,41 +448,41 @@ header {
       margin-bottom: 10px; }
     .testimonials .inner h1 {
       font: bold 18px/1 'Roboto'; }
-    .testimonials .inner .reviews {
+    .testimonials .inner .reviews .swiper-slide {
       display: flex;
-      justify-content: space-around; }
-      .testimonials .inner .reviews .review {
-        width: 30%;
+      justify-content: space-between; }
+      .testimonials .inner .reviews .swiper-slide .review {
+        width: 31%;
         padding: 60px 30px;
         background: #f5f5f5;
         border-radius: 10px; }
-        .testimonials .inner .reviews .review i {
+        .testimonials .inner .reviews .swiper-slide .review i {
           font-size: 25px;
           margin-bottom: 40px; }
-        .testimonials .inner .reviews .review p {
+        .testimonials .inner .reviews .swiper-slide .review p {
           font: 300 14px/1.2 'Roboto';
           margin-bottom: 40px; }
-        .testimonials .inner .reviews .review .writer {
+        .testimonials .inner .reviews .swiper-slide .review .writer {
           display: flex;
           justify-content: center;
           align-items: center; }
-          .testimonials .inner .reviews .review .writer .left-pic {
+          .testimonials .inner .reviews .swiper-slide .review .writer .left-pic {
             width: 50px;
             height: 50px;
             border-radius: 10px;
             overflow: hidden;
             background-color: #000; }
-            .testimonials .inner .reviews .review .writer .left-pic img {
+            .testimonials .inner .reviews .swiper-slide .review .writer .left-pic img {
               width: 100%;
               height: 100%;
               object-fit: cover; }
-          .testimonials .inner .reviews .review .writer .right-name {
+          .testimonials .inner .reviews .swiper-slide .review .writer .right-name {
             width: 50%;
             display: flex;
             flex-direction: column; }
-            .testimonials .inner .reviews .review .writer .right-name strong {
+            .testimonials .inner .reviews .swiper-slide .review .writer .right-name strong {
               font: 14px/1 'Roboto'; }
-            .testimonials .inner .reviews .review .writer .right-name span {
+            .testimonials .inner .reviews .swiper-slide .review .writer .right-name span {
               font: 300 12px/1 'Roboto'; }
 
 .sponsor {
@@ -522,16 +522,16 @@ header {
   .banner .banner-inner p {
     padding: 0 40px; }
 
-  .testimonials .inner .reviews {
+  .testimonials .inner .reviews .swiper-slide {
     flex-wrap: wrap;
     flex-direction: column; }
-    .testimonials .inner .reviews .review {
+    .testimonials .inner .reviews .swiper-slide .review {
       width: 100%;
       padding: 40px 30px;
       margin-bottom: 20px; }
-      .testimonials .inner .reviews .review .writer {
+      .testimonials .inner .reviews .swiper-slide .review .writer {
         justify-content: center; }
-        .testimonials .inner .reviews .review .writer .right-name {
+        .testimonials .inner .reviews .swiper-slide .review .writer .right-name {
           width: 30%; } }
 @media screen and (max-width: 539px) {
   .main article p {
@@ -1263,95 +1263,97 @@ header {
         font: 300 14px/1.4 'Roboto';
         color: #aaa; }
 
-.contact .inner .intro {
-  display: flex;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #ddd; }
-  .contact .inner .intro .intro-left {
-    width: 25%; }
-    .contact .inner .intro .intro-left h2 {
-      font: 20px/1 'Roboto';
-      margin-bottom: 10px; }
-    .contact .inner .intro .intro-left h3 {
-      font: 18px/1 'Roboto';
-      color: #bbb; }
-  .contact .inner .intro .intro-right {
-    width: 75%; }
-    .contact .inner .intro .intro-right p {
-      font: 300 14px/1.2 'Roboto'; }
-.contact .inner .times {
-  display: flex;
-  justify-content: space-between;
-  padding: 4vh 4vw; }
-  .contact .inner .times .time {
-    width: 32%;
+.contact .inner .inner-text {
+  animation: fade 1s ease-in-out; }
+  .contact .inner .inner-text .intro {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 4vh 0;
-    transition: all 0.3s; }
-    .contact .inner .times .time:nth-of-type(2) {
-      background: #efefef;
-      border-radius: 10px; }
-    .contact .inner .times .time strong {
-      font: bold 16px/1 'Roboto';
-      margin-bottom: 20px; }
-    .contact .inner .times .time span {
-      font: 300 14px/1 'Roboto';
-      margin-bottom: 10px; }
-    .contact .inner .times .time:hover {
-      background: #efefef;
-      border-radius: 10px;
-      transform: scale(1.04); }
-.contact .inner .locations {
-  padding: 0 0 4vh 0;
-  border-bottom: 1px solid #ddd; }
-  .contact .inner .locations .location {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd; }
+    .contact .inner .inner-text .intro .intro-left {
+      width: 25%; }
+      .contact .inner .inner-text .intro .intro-left h2 {
+        font: 20px/1 'Roboto';
+        margin-bottom: 10px; }
+      .contact .inner .inner-text .intro .intro-left h3 {
+        font: 18px/1 'Roboto';
+        color: #bbb; }
+    .contact .inner .inner-text .intro .intro-right {
+      width: 75%; }
+      .contact .inner .inner-text .intro .intro-right p {
+        font: 300 14px/1.2 'Roboto'; }
+  .contact .inner .inner-text .times {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
-    .contact .inner .locations .location .location-left {
-      width: 50%; }
-    .contact .inner .locations .location .location-right {
-      width: 50%; }
-    .contact .inner .locations .location .pic {
-      padding: 2vh 2vw; }
-      .contact .inner .locations .location .pic #map {
-        width: 100%;
-        height: 300px; }
-    .contact .inner .locations .location .text {
-      padding: 0 2vw; }
-      .contact .inner .locations .location .text h2 {
-        font: bold 18px/1 'Roboto';
+    padding: 4vh 4vw; }
+    .contact .inner .inner-text .times .time {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 4vh 0;
+      transition: all 0.3s; }
+      .contact .inner .inner-text .times .time:nth-of-type(2) {
+        background: #efefef;
+        border-radius: 10px; }
+      .contact .inner .inner-text .times .time strong {
+        font: bold 16px/1 'Roboto';
         margin-bottom: 20px; }
-      .contact .inner .locations .location .text p {
-        font: 300 14px/1.2 'Roboto';
-        margin-bottom: 40px; }
-      .contact .inner .locations .location .text span {
-        display: block;
-        margin-bottom: 10px;
-        font: 300 14px/1 'Roboto'; }
-        .contact .inner .locations .location .text span i {
-          margin-right: 10px; }
+      .contact .inner .inner-text .times .time span {
+        font: 300 14px/1 'Roboto';
+        margin-bottom: 10px; }
+      .contact .inner .inner-text .times .time:hover {
+        background: #efefef;
+        border-radius: 10px;
+        transform: scale(1.04); }
+  .contact .inner .inner-text .locations {
+    padding: 0 0 4vh 0;
+    border-bottom: 1px solid #ddd; }
+    .contact .inner .inner-text .locations .location {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .contact .inner .inner-text .locations .location .location-left {
+        width: 50%; }
+      .contact .inner .inner-text .locations .location .location-right {
+        width: 50%; }
+      .contact .inner .inner-text .locations .location .pic {
+        padding: 2vh 2vw; }
+        .contact .inner .inner-text .locations .location .pic #map {
+          width: 100%;
+          height: 300px; }
+      .contact .inner .inner-text .locations .location .text {
+        padding: 0 2vw; }
+        .contact .inner .inner-text .locations .location .text h2 {
+          font: bold 18px/1 'Roboto';
+          margin-bottom: 20px; }
+        .contact .inner .inner-text .locations .location .text p {
+          font: 300 14px/1.2 'Roboto';
+          margin-bottom: 40px; }
+        .contact .inner .inner-text .locations .location .text span {
+          display: block;
+          margin-bottom: 10px;
+          font: 300 14px/1 'Roboto'; }
+          .contact .inner .inner-text .locations .location .text span i {
+            margin-right: 10px; }
 
 @media screen and (max-width: 900px) {
-  .contact .inner .intro {
+  .contact .inner .inner-text .intro {
     flex-direction: column; }
-    .contact .inner .intro .intro-left {
+    .contact .inner .inner-text .intro .intro-left {
       width: 100%;
       margin-bottom: 20px; }
-    .contact .inner .intro .intro-right {
+    .contact .inner .inner-text .intro .intro-right {
       width: 100%; }
-  .contact .inner .locations .location {
+  .contact .inner .inner-text .locations .location {
     flex-direction: column;
     margin-bottom: 40px; }
-    .contact .inner .locations .location .location-left {
+    .contact .inner .inner-text .locations .location .location-left {
       width: 100%; }
-    .contact .inner .locations .location .location-right {
+    .contact .inner .inner-text .locations .location .location-right {
       width: 100%; }
-    .contact .inner .locations .location .pic {
+    .contact .inner .inner-text .locations .location .pic {
       padding: 2vh 0vw; }
-    .contact .inner .locations .location .text {
+    .contact .inner .inner-text .locations .location .text {
       padding: 0 0vw; } }
 .join .inner .btns {
   border-bottom: 1px solid #ddd; }
@@ -1380,7 +1382,7 @@ header {
     .join .inner .joinForm .joinForm-inner .signUp .signUp-left {
       width: 50%;
       height: 100%;
-      background: #c6a6a6;
+      background: url(/public/img/join/bg.png) no-repeat center/cover;
       padding: 4vh 4vw;
       position: relative; }
       .join .inner .joinForm .joinForm-inner .signUp .signUp-left .logo {
@@ -1555,7 +1557,7 @@ header {
       height: 100%;
       padding: 4vh 4vw;
       position: relative;
-      background: #c6a6a6; }
+      background: url(/public/img/join/bg2.png) no-repeat center/cover; }
       .join .inner .joinForm .joinForm-inner .signIn .signIn-right .logo {
         font: 300 16px/1 'Roboto';
         color: #fff;

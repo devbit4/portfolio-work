@@ -3,12 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import SwiperCore, { Pagination } from 'swiper';
-
+import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import Particles from 'react-tsparticles';
 
-// install Swiper modules
-SwiperCore.use([Pagination]);
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Home = (props) => {
     return (
@@ -56,8 +54,8 @@ const Home = (props) => {
                             },
                             repulse: {
                                 distance: 100,
-                                duration: 0.4
-                            }
+                                duration: 0.4,
+                            },
                         },
                     },
                     particles: {
@@ -189,7 +187,13 @@ const Home = (props) => {
             </section>
             <section className="intrdouction">
                 <div className="left-video">
-                    <video src={`${process.env.PUBLIC_URL}/img/home/vid1.mov`} muted autoPlay loop controls></video>
+                    <video
+                        src={`${process.env.PUBLIC_URL}/img/home/vid1.mov`}
+                        muted
+                        autoPlay
+                        loop
+                        controls
+                    ></video>
                 </div>
                 <div className="right-text">
                     <h2>CREATIVE IN MIND</h2>
@@ -246,7 +250,10 @@ const Home = (props) => {
                     <h1>OUR AMAZING WORKS</h1>
                     <div className="round">
                         <div className="left-pic">
-                            <img src={`${process.env.PUBLIC_URL}/img/home/process1.jpg`} alt="process1" />
+                            <img
+                                src={`${process.env.PUBLIC_URL}/img/home/process1.jpg`}
+                                alt="process1"
+                            />
                         </div>
                         <div className="right-text">
                             <h2>FIRST STEP</h2>
@@ -261,7 +268,10 @@ const Home = (props) => {
                     </div>
                     <div className="round">
                         <div className="left-pic">
-                            <img src={`${process.env.PUBLIC_URL}/img/home/process2.jpg`} alt="process2" />
+                            <img
+                                src={`${process.env.PUBLIC_URL}/img/home/process2.jpg`}
+                                alt="process2"
+                            />
                         </div>
                         <div className="right-text">
                             <h2>SECOND STEP</h2>
@@ -276,7 +286,10 @@ const Home = (props) => {
                     </div>
                     <div className="round">
                         <div className="left-pic">
-                            <img src={`${process.env.PUBLIC_URL}/img/home/process3.jpg`} alt="process3" />
+                            <img
+                                src={`${process.env.PUBLIC_URL}/img/home/process3.jpg`}
+                                alt="process3"
+                            />
                         </div>
                         <div className="right-text">
                             <h2>THIRD STEP</h2>
@@ -295,9 +308,9 @@ const Home = (props) => {
                 <div className="banner-inner">
                     <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br></br> Provident
-                        ipsa nulla libero perferendis corporis excepturi! Nostrum sequi aut
-                        provident voluptatem.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br></br>{' '}
+                        Provident ipsa nulla libero perferendis corporis excepturi! Nostrum
+                        sequi aut provident voluptatem.
                     </p>
                 </div>
             </section>
@@ -306,93 +319,218 @@ const Home = (props) => {
                     <h2>TESTIMONIALS</h2>
                     <h1>WHAT PEOPLE SAY</h1>
                     <div className="reviews">
-                        <div className="review">
-                            <i className="fas fa-quote-right"></i>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Similique tempora repellat aspernatur nam libero sit quis
-                                repudiandae cum id consectetur! Eum repellendus, sit ipsa, iste
-                                alias odit similique consectetur velit sequi dolorem pariatur
-                                quidem voluptatum natus libero exercitationem quaerat! Maxime!
-                            </p>
-                            <div className="writer">
-                                <div className="left-pic">
-                                    <img src={`${process.env.PUBLIC_URL}/img/home/person1.jpg`} alt="person1" />
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={30}
+                            // navigation={true}
+                            loop={true}
+                            loopFillGroupWithBlank={true}
+                            pagination={true}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide>
+                                <div className="review">
+                                    <i className="fas fa-quote-right"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Similique tempora repellat aspernatur nam libero sit quis
+                                        repudiandae cum id consectetur! Eum repellendus, sit ipsa,
+                                        iste alias odit similique consectetur velit sequi dolorem
+                                        pariatur quidem voluptatum natus libero exercitationem
+                                        quaerat! Maxime!
+                                    </p>
+                                    <div className="writer">
+                                        <div className="left-pic">
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/img/home/person1.jpg`}
+                                                alt="person1"
+                                            />
+                                        </div>
+                                        <div className="right-name">
+                                            <strong>Tim</strong>
+                                            <span>STUDENTS</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="right-name">
-                                    <strong>Tim</strong>
-                                    <span>STUDENTS</span>
+                                <div className="review">
+                                    <i className="fas fa-quote-right"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Similique tempora repellat aspernatur nam libero sit quis
+                                        repudiandae cum id consectetur! Eum repellendus, sit ipsa,
+                                        iste alias odit similique consectetur velit sequi dolorem
+                                        pariatur quidem voluptatum natus libero exercitationem
+                                        quaerat! Maxime!
+                                    </p>
+                                    <div className="writer">
+                                        <div className="left-pic">
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/img/home/person2.jpg`}
+                                                alt="person2"
+                                            />
+                                        </div>
+                                        <div className="right-name">
+                                            <strong>Tim</strong>
+                                            <span>STUDENTS</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="review">
-                            <i className="fas fa-quote-right"></i>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Similique tempora repellat aspernatur nam libero sit quis
-                                repudiandae cum id consectetur! Eum repellendus, sit ipsa, iste
-                                alias odit similique consectetur velit sequi dolorem pariatur
-                                quidem voluptatum natus libero exercitationem quaerat! Maxime!
-                            </p>
-                            <div className="writer">
-                                <div className="left-pic">
-                                    <img src={`${process.env.PUBLIC_URL}/img/home/person2.jpg`} alt="person2" />
+                                <div className="review">
+                                    <i className="fas fa-quote-right"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Similique tempora repellat aspernatur nam libero sit quis
+                                        repudiandae cum id consectetur! Eum repellendus, sit ipsa,
+                                        iste alias odit similique consectetur velit sequi dolorem
+                                        pariatur quidem voluptatum natus libero exercitationem
+                                        quaerat! Maxime!
+                                    </p>
+                                    <div className="writer">
+                                        <div className="left-pic">
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/img/home/person3.jpg`}
+                                                alt="person3"
+                                            />
+                                        </div>
+                                        <div className="right-name">
+                                            <strong>Tim</strong>
+                                            <span>STUDENTS</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="right-name">
-                                    <strong>Alex</strong>
-                                    <span>STUDENTS</span>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="review">
+                                    <i className="fas fa-quote-right"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Similique tempora repellat aspernatur nam libero sit quis
+                                        repudiandae cum id consectetur! Eum repellendus, sit ipsa,
+                                        iste alias odit similique consectetur velit sequi dolorem
+                                        pariatur quidem voluptatum natus libero exercitationem
+                                        quaerat! Maxime!
+                                    </p>
+                                    <div className="writer">
+                                        <div className="left-pic">
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/img/home/person4.jpg`}
+                                                alt="person4"
+                                            />
+                                        </div>
+                                        <div className="right-name">
+                                            <strong>Tim</strong>
+                                            <span>STUDENTS</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="review">
-                            <i className="fas fa-quote-right"></i>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Similique tempora repellat aspernatur nam libero sit quis
-                                repudiandae cum id consectetur! Eum repellendus, sit ipsa, iste
-                                alias odit similique consectetur velit sequi dolorem pariatur
-                                quidem voluptatum natus libero exercitationem quaerat! Maxime!
-                            </p>
-                            <div className="writer">
-                                <div className="left-pic">
-                                    <img src={`${process.env.PUBLIC_URL}/img/home/person3.jpg`} alt="person3" />
+                                <div className="review">
+                                    <i className="fas fa-quote-right"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Similique tempora repellat aspernatur nam libero sit quis
+                                        repudiandae cum id consectetur! Eum repellendus, sit ipsa,
+                                        iste alias odit similique consectetur velit sequi dolorem
+                                        pariatur quidem voluptatum natus libero exercitationem
+                                        quaerat! Maxime!
+                                    </p>
+                                    <div className="writer">
+                                        <div className="left-pic">
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/img/home/person5.jpg`}
+                                                alt="person5"
+                                            />
+                                        </div>
+                                        <div className="right-name">
+                                            <strong>Tim</strong>
+                                            <span>STUDENTS</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="right-name">
-                                    <strong>SOPHIA LIM</strong>
-                                    <span>STUDENTS</span>
+                                <div className="review">
+                                    <i className="fas fa-quote-right"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Similique tempora repellat aspernatur nam libero sit quis
+                                        repudiandae cum id consectetur! Eum repellendus, sit ipsa,
+                                        iste alias odit similique consectetur velit sequi dolorem
+                                        pariatur quidem voluptatum natus libero exercitationem
+                                        quaerat! Maxime!
+                                    </p>
+                                    <div className="writer">
+                                        <div className="left-pic">
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/img/home/person6.jpg`}
+                                                alt="person6"
+                                            />
+                                        </div>
+                                        <div className="right-name">
+                                            <strong>Tim</strong>
+                                            <span>STUDENTS</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </SwiperSlide>
+
+
+
+                        </Swiper>
                     </div>
                 </div>
             </section>
             <section className="content sponsor">
                 <div className="inner companies">
                     <div className="company">
-                        <img src={`${process.env.PUBLIC_URL}/img/home/logo1.png`} alt="logo1" />
+                        <img
+                            src={`${process.env.PUBLIC_URL}/img/home/logo1.png`}
+                            alt="logo1"
+                        />
                     </div>
                     <div className="company">
-                        <img src={`${process.env.PUBLIC_URL}/img/home/logo2.png`} alt="logo2" />
+                        <img
+                            src={`${process.env.PUBLIC_URL}/img/home/logo2.png`}
+                            alt="logo2"
+                        />
                     </div>
                     <div className="company">
-                        <img src={`${process.env.PUBLIC_URL}/img/home/logo3.png`} alt="logo3" />
+                        <img
+                            src={`${process.env.PUBLIC_URL}/img/home/logo3.png`}
+                            alt="logo3"
+                        />
                     </div>
                     <div className="company">
-                        <img src={`${process.env.PUBLIC_URL}/img/home/logo4.png`} alt="logo4" />
+                        <img
+                            src={`${process.env.PUBLIC_URL}/img/home/logo4.png`}
+                            alt="logo4"
+                        />
                     </div>
                     <div className="company">
-                        <img src={`${process.env.PUBLIC_URL}/img/home/logo5.png`} alt="logo5" />
+                        <img
+                            src={`${process.env.PUBLIC_URL}/img/home/logo5.png`}
+                            alt="logo5"
+                        />
                     </div>
                     <div className="company">
-                        <img src={`${process.env.PUBLIC_URL}/img/home/logo7.png`} alt="logo6" />
+                        <img
+                            src={`${process.env.PUBLIC_URL}/img/home/logo7.png`}
+                            alt="logo6"
+                        />
                     </div>
                     <div className="company">
-                        <img src={`${process.env.PUBLIC_URL}/img/home/logo8.jpg`} alt="logo7" />
+                        <img
+                            src={`${process.env.PUBLIC_URL}/img/home/logo8.jpg`}
+                            alt="logo7"
+                        />
                     </div>
                     <div className="company">
-                        <img src={`${process.env.PUBLIC_URL}/img/home/logo6.jpg`} alt="logo8" />
+                        <img
+                            src={`${process.env.PUBLIC_URL}/img/home/logo6.jpg`}
+                            alt="logo8"
+                        />
                     </div>
-
                 </div>
             </section>
         </>

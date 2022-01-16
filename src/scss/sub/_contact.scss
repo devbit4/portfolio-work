@@ -1,141 +1,138 @@
 .contact {
+	.inner {
+		.inner-text {
+			animation: fade 1s ease-in-out;
+			.intro {
+				display: flex;
+				padding-bottom: 40px;
+				border-bottom: 1px solid #ddd;
+				.intro-left {
+					width: 25%;
+					h2 {
+						font: 20px/1 'Roboto';
+						margin-bottom: 10px;
+					}
+					h3 {
+						font: 18px/1 'Roboto';
+						color: #bbb;
+					}
+				}
+				.intro-right {
+					width: 75%;
 
-    .inner {
-        .intro{
-            display: flex;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #ddd;
-            .intro-left{
-                width: 25%;
-                h2{
-                    font: 20px/1 'Roboto';
-                    margin-bottom: 10px;
-                }
-                h3{
-                    font: 18px/1 'Roboto';
-                    color: #bbb;
-                }
-            }
-            .intro-right{
-                width: 75%;
+					p {
+						font: 300 14px/1.2 'Roboto';
+					}
+				}
+			}
+			.times {
+				display: flex;
+				justify-content: space-between;
+				padding: 4vh 4vw;
+				.time {
+					width: 32%;
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					padding: 4vh 0;
+					transition: all 0.3s;
+					&:nth-of-type(2) {
+						background: #efefef;
+						border-radius: 10px;
+					}
+					strong {
+						font: bold 16px/1 'Roboto';
+						margin-bottom: 20px;
+					}
+					span {
+						font: 300 14px/1 'Roboto';
+						margin-bottom: 10px;
+					}
+					&:hover {
+						background: #efefef;
+						border-radius: 10px;
+						transform: scale(1.04);
+					}
+				}
+			}
+			.locations {
+				padding: 0 0 4vh 0;
+				border-bottom: 1px solid #ddd;
+				.location {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.location-left {
+						width: 50%;
+					}
+					.location-right {
+						width: 50%;
+					}
+					.pic {
+						padding: 2vh 2vw;
+						#map {
+							width: 100%;
+							height: 300px;
+						}
+					}
+					.text {
+						padding: 0 2vw;
+						h2 {
+							font: bold 18px/1 'Roboto';
+							margin-bottom: 20px;
+						}
+						p {
+							font: 300 14px/1.2 'Roboto';
+							margin-bottom: 40px;
+						}
+						span {
+							display: block;
+							margin-bottom: 10px;
+							font: 300 14px/1 'Roboto';
+							i {
+								margin-right: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
-                p{
-                    font: 300 14px/1.2 'Roboto';
-                }
-            }
-        }
-        .times{
-            display: flex;
-            justify-content: space-between;
-            padding: 4vh 4vw;
-            .time{
-                width: 32%;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                padding: 4vh 0;
-                transition: all 0.3s;
-                &:nth-of-type(2){
-                    background: #efefef;
-                    border-radius: 10px;
-                }
-                strong{
-                    font: bold 16px/1 'Roboto';
-                    margin-bottom: 20px;
-                }
-                span{
-                    font: 300 14px/1 'Roboto';
-                    margin-bottom: 10px;
-                }
-                &:hover{
-                    background: #efefef;
-                    border-radius: 10px;
-                    transform: scale(1.04);
-                }
-            }
-        }
-        .locations{
-            padding: 0 0 4vh 0;
-            border-bottom: 1px solid #ddd;
-            .location{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .location-left{
-                    width: 50%;
-                }
-                .location-right{
-                    width: 50%;
-                }
-                .pic{
-                    padding: 2vh 2vw;
-                    #map{
-                        width: 100%;
-                        height: 300px;
-
-                    }
-
-                }
-                .text{
-                    padding: 0 2vw;
-                    h2{
-                        font: bold 18px/1 'Roboto';
-                        margin-bottom: 20px;
-                    }
-                    p{
-                        font: 300 14px/1.2 'Roboto';
-                        margin-bottom: 40px;
-                    }
-                    span{
-                        display: block;
-                        margin-bottom: 10px;
-                        font: 300 14px/1 'Roboto';
-                        i{
-                            margin-right: 10px;
-                        }
-                    }
-                }
-            }
-        }
-
-    }
-  }
-
-@media screen and (max-width:900px){
-    .contact {
-
-        .inner {
-            .intro{
-               flex-direction: column;
-                .intro-left{
-                    width: 100%;
-                    margin-bottom: 20px;
-
-                }
-                .intro-right{
-                    width: 100%;
-                }
-            }
-            .locations{
-                .location{
-                    flex-direction: column;
-                    margin-bottom: 40px;
-                    .location-left{
-                        width: 100%;
-                    }
-                    .location-right{
-                        width: 100%;
-                    }
-                    .pic{
-                        padding: 2vh 0vw;
-
-                    }
-                    .text{
-                        padding: 0 0vw;
-                    }
-                }
-            }
-
-        }
-      }
+@media screen and (max-width: 900px) {
+	.contact {
+		.inner {
+			.inner-text {
+				.intro {
+					flex-direction: column;
+					.intro-left {
+						width: 100%;
+						margin-bottom: 20px;
+					}
+					.intro-right {
+						width: 100%;
+					}
+				}
+				.locations {
+					.location {
+						flex-direction: column;
+						margin-bottom: 40px;
+						.location-left {
+							width: 100%;
+						}
+						.location-right {
+							width: 100%;
+						}
+						.pic {
+							padding: 2vh 0vw;
+						}
+						.text {
+							padding: 0 0vw;
+						}
+					}
+				}
+			}
+		}
+	}
 }
