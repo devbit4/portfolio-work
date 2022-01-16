@@ -1,31 +1,40 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import SignUpForm from './SignUpForm';
 import SignInForm from './SignInForm';
 const Join = (props) => {
-
+    const signUpBtn = useRef(null);
+    const signInBtn = useRef(null);
     const [signUp, setSignUp] = useState(true);
 
+    const signUpChange = () => {
+        setSignUp(true);
+        signUpBtn.current.classList.add("on");
+        signInBtn.current.classList.remove("on");
+    }
+    const signInChange = () => {
+        setSignUp(false);
+        signUpBtn.current.classList.remove("on");
+        signInBtn.current.classList.add("on");
+    }
 
     return (<section className='content join'>
         <div className="inner">
             <h1>JOIN</h1>
-            <span onClick={() => {
-                setSignUp(false);
-            }}>signIn</span>
-            <span onClick={() => {
-                setSignUp(true);
-            }}>signUp</span>
+            <div className='btns'>
+                <button ref={signUpBtn} className="on" onClick={() => {
+                    signUpChange()
+                }}># SIGN UP</button>
+                <button ref={signInBtn} onClick={() => {
+                    signInChange()
+                }}># SIGN IN</button>
+            </div>
 
             {
                 signUp === true ?
-                    <SignUpForm></SignUpForm>
-                    : <SignInForm></SignInForm>
+                    <SignUpForm signInChange={signInChange}></SignUpForm>
+                    : <SignInForm signUpChange={signUpChange}></SignInForm>
 
             }
-
-
-
-
 
         </div>
     </section >

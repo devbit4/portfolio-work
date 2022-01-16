@@ -70,7 +70,10 @@ const SignInForm = (props) => {
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Delectus iusto totam laudantium.
                             </p>
-                            <a href="#">
+                            <a href="#" onClick={(e) => {
+                                e.preventDefault();
+                                props.signUpChange();
+                            }}>
                                 <span>SIGN UP</span>
                             </a>
                         </div>

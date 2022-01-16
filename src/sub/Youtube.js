@@ -100,31 +100,35 @@ function Youtube() {
                     <div className='inner'>
                         <div className='text'>
                             <h1># Featured<span><i className="fas fa-ellipsis-h"></i></span></h1>
-                            {
-                                features.map((feature, index) => {
-                                    return (
-                                        <article key={index}>
-                                            <h2>{feature.title}</h2>
-                                            <p>{feature.desc}</p>
-                                            <span>{feature.date}</span>
-                                        </article>
-                                    )
-                                })
-                            }
+                            <div className="articles">
+                                {
+                                    features.map((feature, index) => {
+                                        return (
+                                            <article key={index}>
+                                                <h2>{feature.title}</h2>
+                                                <p>{feature.desc}</p>
+                                                <span>{feature.date}</span>
+                                            </article>
+                                        )
+                                    })
+                                }
+                            </div>
                         </div>
                         <div className='text'>
                             <h1># Trending<span><i className="fas fa-ellipsis-h"></i></span></h1>
-                            {
-                                trends.map((trend, index) => {
-                                    return (
-                                        <article key={index}>
-                                            <h2>{trend.title}</h2>
-                                            <p>{trend.desc}</p>
-                                            <span>{trend.date}</span>
-                                        </article>
-                                    )
-                                })
-                            }
+                            <div className="articles">
+                                {
+                                    trends.map((trend, index) => {
+                                        return (
+                                            <article key={index}>
+                                                <h2>{trend.title}</h2>
+                                                <p>{trend.desc}</p>
+                                                <span>{trend.date}</span>
+                                            </article>
+                                        )
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
 

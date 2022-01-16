@@ -146,6 +146,7 @@
                .text{
                    width: 48%;
 
+
                 h1{
                     font: 20px/1 'Roboto';
                     margin-bottom: 40px;
@@ -159,6 +160,10 @@
                         }
                     }
                 }
+                .articles{
+                    height: 320px;
+                    overflow-y: scroll;
+
                 article{
                     margin-bottom: 20px;
                     padding: 2px;
@@ -181,6 +186,7 @@
 
                     }
                 }
+            }
                }
            }
         }

@@ -653,7 +653,8 @@ header {
           font: 300 12px/1 'Roboto';
           color: #777; }
         .about .inner .about-content .history .items .item:hover::before {
-          box-shadow: 0px 0px 25px 3px rgba(253, 237, 90, 0.363); }
+          box-shadow: 0px 0px 25px 3px rgba(253, 237, 90, 0.363);
+          transform: translate(-50%, -50%) scale(1.1); }
         .about .inner .about-content .history .items .item::before {
           content: '';
           width: 100px;
@@ -966,20 +967,23 @@ header {
           .youtube .inner .issue .inner .text h1 span i {
             color: #ddd;
             cursor: pointer; }
-      .youtube .inner .issue .inner .text article {
-        margin-bottom: 20px;
-        padding: 2px; }
-        .youtube .inner .issue .inner .text article:hover {
-          background: #efefef;
-          border-radius: 4px; }
-        .youtube .inner .issue .inner .text article h2 {
-          font: bold 16px/1 'Roboto';
-          margin-bottom: 10px; }
-        .youtube .inner .issue .inner .text article p {
-          font: 300 14px/1.4 'Roboto';
-          margin-bottom: 10px; }
-        .youtube .inner .issue .inner .text article span {
-          font: 12px/1.4 'Roboto'; }
+      .youtube .inner .issue .inner .text .articles {
+        height: 320px;
+        overflow-y: scroll; }
+        .youtube .inner .issue .inner .text .articles article {
+          margin-bottom: 20px;
+          padding: 2px; }
+          .youtube .inner .issue .inner .text .articles article:hover {
+            background: #efefef;
+            border-radius: 4px; }
+          .youtube .inner .issue .inner .text .articles article h2 {
+            font: bold 16px/1 'Roboto';
+            margin-bottom: 10px; }
+          .youtube .inner .issue .inner .text .articles article p {
+            font: 300 14px/1.4 'Roboto';
+            margin-bottom: 10px; }
+          .youtube .inner .issue .inner .text .articles article span {
+            font: 12px/1.4 'Roboto'; }
 .youtube .inner .pop {
   width: 100%;
   height: 100vh;
@@ -1257,16 +1261,33 @@ header {
         font: 300 14px/1.4 'Roboto';
         color: #aaa; }
 
+.join .inner .btns {
+  border-bottom: 1px solid #ddd; }
+  .join .inner .btns button {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    margin-right: 10px;
+    line-height: 40px;
+    font: 14px/1 'Roboto';
+    color: #ccc;
+    cursor: pointer; }
+    .join .inner .btns button.on {
+      background: #ccc;
+      color: #fff; }
 .join .inner .joinForm {
-  animation: fade 1s ease-in-out; }
+  animation: fade 1s ease-in-out;
+  margin-top: 60px; }
   .join .inner .joinForm .joinForm-inner .signUp {
     width: 100%;
+    height: 500px;
     display: flex;
-    border-radius: 10px;
-    overflow: hidden;
     border: 1px solid #ccc; }
     .join .inner .joinForm .joinForm-inner .signUp .signUp-left {
       width: 50%;
+      height: 100%;
       background: #c6a6a6;
       padding: 4vh 4vw;
       position: relative; }
@@ -1279,12 +1300,11 @@ header {
           font-size: 16px;
           margin-right: 10px; }
       .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center; }
         .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text h2 {
           font: bold 32px/1 'Roboto';
@@ -1310,6 +1330,7 @@ header {
               color: #c6a6a6; }
     .join .inner .joinForm .joinForm-inner .signUp .signUp-right {
       width: 50%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -1338,7 +1359,8 @@ header {
           width: 100%;
           padding: 5px 20px;
           font: 14px/1 'Roboto'; }
-          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type=text], .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type=password] {
+          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type='text'],
+          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type='password'] {
             width: 100%;
             height: 100%;
             padding: 10px;
@@ -1350,9 +1372,9 @@ header {
             margin: 5px 0 0 0; }
           .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td label {
             font: 14px/1 'Roboto'; }
-          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type=radio] {
+          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type='radio'] {
             margin: 0 10px; }
-        .join .inner .joinForm .joinForm-inner .signUp .signUp-right table input[type=submit] {
+        .join .inner .joinForm .joinForm-inner .signUp .signUp-right table input[type='submit'] {
           width: 180px;
           margin: 0 auto;
           padding: 10px 0;
@@ -1367,8 +1389,6 @@ header {
     width: 100%;
     height: 500px;
     display: flex;
-    border-radius: 10px;
-    overflow: hidden;
     border: 1px solid #ccc; }
     .join .inner .joinForm .joinForm-inner .signIn .signIn-left {
       width: 50%;
@@ -1379,10 +1399,9 @@ header {
         width: 100%;
         height: 100%;
         padding: 4vh 4vw;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
         .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner h2 {
           font: bold 20px/1 'Roboto';
           margin-bottom: 20px; }
@@ -1407,7 +1426,8 @@ header {
             width: 100%;
             padding: 5px 20px;
             font: 14px/1 'Roboto'; }
-            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=text], .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=password] {
+            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type='text'],
+            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type='password'] {
               width: 100%;
               height: 100%;
               padding: 10px;
@@ -1419,9 +1439,9 @@ header {
               margin: 5px 0 0 0; }
             .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td label {
               font: 14px/1 'Roboto'; }
-            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type=radio] {
+            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type='radio'] {
               margin: 0 10px; }
-          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table input[type=submit] {
+          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table input[type='submit'] {
             width: 180px;
             margin: 0 auto;
             padding: 10px 0;
@@ -1454,12 +1474,11 @@ header {
           font-size: 16px;
           margin-right: 10px; }
       .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center; }
         .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text h2 {
           font: bold 32px/1 'Roboto';
@@ -1483,5 +1502,33 @@ header {
             background: #fff; }
             .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text a:hover span {
               color: #c6a6a6; }
+
+@media screen and (max-width: 850px) {
+  .join .inner .btns {
+    display: flex;
+    justify-content: space-between; }
+    .join .inner .btns button {
+      margin-right: 0; }
+  .join .inner .joinForm .joinForm-inner .signUp {
+    height: auto;
+    flex-direction: column; }
+    .join .inner .joinForm .joinForm-inner .signUp .signUp-left {
+      width: 100%; }
+      .join .inner .joinForm .joinForm-inner .signUp .signUp-left .logo {
+        margin-bottom: 20px; }
+      .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text {
+        width: 100%; }
+    .join .inner .joinForm .joinForm-inner .signUp .signUp-right {
+      width: 100%; }
+  .join .inner .joinForm .joinForm-inner .signIn {
+    width: 100%;
+    height: auto;
+    flex-direction: column; }
+    .join .inner .joinForm .joinForm-inner .signIn .signIn-left {
+      width: 100%; }
+    .join .inner .joinForm .joinForm-inner .signIn .signIn-right {
+      width: 100%; }
+      .join .inner .joinForm .joinForm-inner .signIn .signIn-right .logo {
+        margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
-function SignUpForm() {
+function SignUpForm(props) {
     const frame = useRef(null);
-
 
     const initVal = {
         userid: '',
@@ -93,7 +92,10 @@ function SignUpForm() {
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Delectus iusto totam laudantium.
                             </p>
-                            <a href="#">
+                            <a href="#" onClick={(e) => {
+                                e.preventDefault();
+                                props.signInChange();
+                            }}>
                                 <span>SIGN IN</span>
                             </a>
                         </div>
