@@ -84,7 +84,7 @@ const Contact = (props) => {
                             <h2>STORY PLACE1</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis modi quam, sequi architecto officia!</p>
                             <span><i className="fas fa-map-marker-alt"></i> 31 Walker St, New York, NY 10013, USA</span>
-                            <span><i className="fas fa-phone-alt"></i> +365 / 4369- 35656, +3615 / 36954- 35625</span>
+                            <span><i className="fas fa-phone-alt"></i> +365 / 4369- 35656, +3615</span>
                             <span><i className="far fa-envelope"></i> cinemabridge@qodeinteractive.com</span>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ const Contact = (props) => {
                             <h2>STORY PLACE2</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis modi quam, sequi architecto officia!</p>
                             <span><i className="fas fa-map-marker-alt"></i> 31 Walker St, New York, NY 10013, USA</span>
-                            <span><i className="fas fa-phone-alt"></i> +365 / 4369- 35656, +3615 / 36954- 35625</span>
+                            <span><i className="fas fa-phone-alt"></i> +365 / 4369- 35656, +3615 </span>
                             <span><i className="far fa-envelope"></i> cinemabridge@qodeinteractive.com</span>
                         </div>
                         <div className="location-right pic">

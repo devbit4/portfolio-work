@@ -1288,7 +1288,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2vh 0;
+    padding: 4vh 0;
     transition: all 0.3s; }
     .contact .inner .times .time:nth-of-type(2) {
       background: #efefef;
@@ -1314,9 +1314,11 @@ header {
       width: 50%; }
     .contact .inner .locations .location .location-right {
       width: 50%; }
-    .contact .inner .locations .location .pic #map {
-      width: 100%;
-      height: 300px; }
+    .contact .inner .locations .location .pic {
+      padding: 2vh 2vw; }
+      .contact .inner .locations .location .pic #map {
+        width: 100%;
+        height: 300px; }
     .contact .inner .locations .location .text {
       padding: 0 2vw; }
       .contact .inner .locations .location .text h2 {
@@ -1332,6 +1334,25 @@ header {
         .contact .inner .locations .location .text span i {
           margin-right: 10px; }
 
+@media screen and (max-width: 900px) {
+  .contact .inner .intro {
+    flex-direction: column; }
+    .contact .inner .intro .intro-left {
+      width: 100%;
+      margin-bottom: 20px; }
+    .contact .inner .intro .intro-right {
+      width: 100%; }
+  .contact .inner .locations .location {
+    flex-direction: column;
+    margin-bottom: 40px; }
+    .contact .inner .locations .location .location-left {
+      width: 100%; }
+    .contact .inner .locations .location .location-right {
+      width: 100%; }
+    .contact .inner .locations .location .pic {
+      padding: 2vh 0vw; }
+    .contact .inner .locations .location .text {
+      padding: 0 0vw; } }
 .join .inner .btns {
   border-bottom: 1px solid #ddd; }
   .join .inner .btns button {
