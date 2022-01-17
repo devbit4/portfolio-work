@@ -23,7 +23,7 @@ function Youtube() {
                 setData(json.data.items);
             })
 
-        axios.get("./dbs/youtube.json")
+        axios.get(`${process.env.PUBLIC_URL}/dbs/youtube.json`)
             .then(json => {
                 setFeatures(json.data.featured);
                 setTrends(json.data.trend);
@@ -79,7 +79,9 @@ function Youtube() {
                 <div className="library">
                     <h1># LIBRARY</h1>
                     <div className='inner'>
-                        <div className="left"></div>
+                        <div className="left">
+
+                        </div>
                         <div className="right">
                             <div className="right-upper"></div>
                             <div className="right-lower">

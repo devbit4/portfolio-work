@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 const About = (props) => {
     let [people, setPeople] = useState([]);
     useEffect(() => {
-        axios.get("./dbs/influencer.json")
+        axios.get(`${process.env.PUBLIC_URL}/dbs/influencer.json`)
             .then(data => {
                 setPeople(data.data.people)
             })

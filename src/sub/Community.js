@@ -5,7 +5,7 @@ const Community = (props) => {
 
     let [problems, setProblems] = useState([]);
     useEffect(() => {
-        axios.get("./dbs/board.json")
+        axios.get(`${process.env.PUBLIC_URL}/dbs/board.json`)
             .then(data => {
                 setProblems(data.data.data)
             })
