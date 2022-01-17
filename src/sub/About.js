@@ -100,7 +100,7 @@ const About = (props) => {
                                             <figure className="card">
                                                 <div className="front">
                                                     <div className='pic'>
-                                                        <img src="#" alt="" />
+                                                        <img src={process.env.PUBLIC_URL+person.pic} alt="" />
                                                     </div>
                                                     <div className='txt'>
                                                         <h3>{person.name}</h3>

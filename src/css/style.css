@@ -28,7 +28,7 @@ fieldset {
 @keyframes fade {
   from {
     opacity: 0;
-    transform: translateY(-10px); }
+    transform: translateY(20px); }
   to {
     opacity: 1;
     transform: translateY(0px); } }
@@ -217,7 +217,7 @@ header {
       height: 420px;
       background-color: yellow;
       overflow: hidden;
-      top: 401px;
+      top: 402px;
       left: 89px; }
       .main .phone .screen .mySwiper {
         width: 100%;
@@ -229,9 +229,14 @@ header {
         left: 0;
         overflow: hidden; }
         .main .phone .screen .mySwiper .swiper-slide {
+          filter: grayscale(10%);
           z-index: 1; }
           .main .phone .screen .mySwiper .swiper-slide:nth-of-type(1) {
-            background: #312c2c; }
+            background: url("/public/img/home/screen1.jpeg") center/cover; }
+          .main .phone .screen .mySwiper .swiper-slide:nth-of-type(2) {
+            background: url("/public/img/home/screen2.jpeg") center/cover; }
+          .main .phone .screen .mySwiper .swiper-slide:nth-of-type(3) {
+            background: url("/public/img/home/screen3.jpeg") center/cover; }
     .main .phone .big-speech {
       position: absolute;
       top: 180px;
@@ -750,11 +755,24 @@ header {
             width: 100%;
             height: 60%;
             margin-bottom: 20px;
+            position: relative;
             overflow: hidden; }
             .about .inner .about-content .people .list .card-container .card .front .pic img,
             .about .inner .about-content .people .list .card-container .card .back .pic img {
               width: 100%;
-              height: 100%; }
+              height: 100%;
+              object-fit: cover; }
+            .about .inner .about-content .people .list .card-container .card .front .pic::after,
+            .about .inner .about-content .people .list .card-container .card .back .pic::after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 100%;
+              background: #333;
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 0.05; }
         .about .inner .about-content .people .list .card-container .card .front {
           display: flex;
           flex-direction: column;
@@ -1091,7 +1109,7 @@ header {
     transform: translate(-50%, -50%); }
   .gallery .inner .list {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(100px);
     transition: 1s;
     position: relative; }
     .gallery .inner .list.on {

@@ -76,7 +76,7 @@
 			height: 420px;
 			background-color: yellow;
 			overflow: hidden;
-			top: 401px;
+			top: 402px;
 			left: 89px;
 			.mySwiper {
 				width: 100%;
@@ -88,9 +88,15 @@
 				left: 0;
 				overflow: hidden;
 				.swiper-slide {
+					filter: grayscale(10%);
 					&:nth-of-type(1) {
-						// background: url('/src/img/bg2.jpeg') center/cover;
-						background:rgb(49, 44, 44);
+						background: url('/public/img/home/screen1.jpeg') center/cover;
+					}
+					&:nth-of-type(2) {
+						background: url('/public/img/home/screen2.jpeg') center/cover;
+					}
+					&:nth-of-type(3) {
+						background: url('/public/img/home/screen3.jpeg') center/cover;
 					}
 					z-index: 1;
 				}

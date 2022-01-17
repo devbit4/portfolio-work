@@ -105,7 +105,7 @@ const Home = (props) => {
                             },
                             value: {
                                 min: 1,
-                                max: 5,
+                                max: 6,
                             },
                             animation: {
                                 speed: 40,
@@ -143,10 +143,11 @@ const Home = (props) => {
                                 disableOnInteraction: false,
                             }}
                             className="mySwiper"
+
                         >
-                            <SwiperSlide>Slide 1</SwiperSlide>
-                            <SwiperSlide>Slide 2</SwiperSlide>
-                            <SwiperSlide>Slide 3</SwiperSlide>
+                            <SwiperSlide></SwiperSlide>
+                            <SwiperSlide></SwiperSlide>
+                            <SwiperSlide></SwiperSlide>
                         </Swiper>
                     </article>
                     <i className="far fa-comment-dots big-speech"></i>
