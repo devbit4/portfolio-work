@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import Particles from 'react-tsparticles';
+import Fade from 'react-reveal/Fade';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -143,15 +144,18 @@ const Home = (props) => {
                                 disableOnInteraction: false,
                             }}
                             className="mySwiper"
-
                         >
                             <SwiperSlide></SwiperSlide>
                             <SwiperSlide></SwiperSlide>
                             <SwiperSlide></SwiperSlide>
                         </Swiper>
                     </article>
-                    <i className="far fa-comment-dots big-speech"></i>
-                    <i className="far fa-comment-dots small-speech"></i>
+                    <Fade top delay={500}>
+                        <strong className='big-speech'><i className="far fa-comment-dots"></i></strong>
+                    </Fade>
+                    <Fade top delay={1000}>
+                        <strong className='small-speech'><i className="far fa-comment-dots"></i></strong>
+                    </Fade>
                 </figure>
             </section>
 
@@ -253,60 +257,70 @@ const Home = (props) => {
                 <div className="inner">
                     <h2>DREAM BIG INC</h2>
                     <h1>OUR AMAZING WORKS</h1>
-                    <div className="round">
-                        <div className="left-pic">
-                            <img
-                                src={`${process.env.PUBLIC_URL}/img/home/process1.jpg`}
-                                alt="process1"
-                            />
+                    <Fade left delay={300}>
+                        <div className="round">
+                            <div className="left-pic">
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/img/home/process1.jpg`}
+                                    alt="process1"
+                                />
+                            </div>
+
+                            <div className="right-text">
+                                <h2>FIRST STEP</h2>
+                                <h1>BRAINSTORM & WRITE YOUR STORY</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Corrupti hic neque ex, dolore distinctio voluptate repudiandae
+                                    a vitae, alias, obcaecati ullam? Tenetur tempora placeat
+                                    velit.
+                                </p>
+                                <span>VIEW IDEAS </span>
+                            </div>
                         </div>
-                        <div className="right-text">
-                            <h2>FIRST STEP</h2>
-                            <h1>BRAINSTORM & WRITE YOUR STORY</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Corrupti hic neque ex, dolore distinctio voluptate repudiandae a
-                                vitae, alias, obcaecati ullam? Tenetur tempora placeat velit.
-                            </p>
-                            <span>VIEW IDEAS </span>
+                    </Fade>
+                    <Fade right delay={300}>
+                        <div className="round">
+                            <div className="left-pic">
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/img/home/process2.jpg`}
+                                    alt="process2"
+                                />
+                            </div>
+                            <div className="right-text">
+                                <h2>SECOND STEP</h2>
+                                <h1>SHARE YOUR STORIES WITH OTHERS</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Corrupti hic neque ex, dolore distinctio voluptate repudiandae
+                                    a vitae, alias, obcaecati ullam? Tenetur tempora placeat
+                                    velit.
+                                </p>
+                                <span>VIEW IDEAS</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="round">
-                        <div className="left-pic">
-                            <img
-                                src={`${process.env.PUBLIC_URL}/img/home/process2.jpg`}
-                                alt="process2"
-                            />
+                    </Fade>
+                    <Fade left delay={300}>
+                        <div className="round">
+                            <div className="left-pic">
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/img/home/process3.jpg`}
+                                    alt="process3"
+                                />
+                            </div>
+                            <div className="right-text">
+                                <h2>THIRD STEP</h2>
+                                <h1>PUSH LIKE BUTTONS</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Corrupti hic neque ex, dolore distinctio voluptate repudiandae
+                                    a vitae, alias, obcaecati ullam? Tenetur tempora placeat
+                                    velit.
+                                </p>
+                                <span>VIEW IDEAS</span>
+                            </div>
                         </div>
-                        <div className="right-text">
-                            <h2>SECOND STEP</h2>
-                            <h1>SHARE YOUR STORIES WITH OTHERS</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Corrupti hic neque ex, dolore distinctio voluptate repudiandae a
-                                vitae, alias, obcaecati ullam? Tenetur tempora placeat velit.
-                            </p>
-                            <span>VIEW IDEAS</span>
-                        </div>
-                    </div>
-                    <div className="round">
-                        <div className="left-pic">
-                            <img
-                                src={`${process.env.PUBLIC_URL}/img/home/process3.jpg`}
-                                alt="process3"
-                            />
-                        </div>
-                        <div className="right-text">
-                            <h2>THIRD STEP</h2>
-                            <h1>PUSH LIKE BUTTONS</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Corrupti hic neque ex, dolore distinctio voluptate repudiandae a
-                                vitae, alias, obcaecati ullam? Tenetur tempora placeat velit.
-                            </p>
-                            <span>VIEW IDEAS</span>
-                        </div>
-                    </div>
+                    </Fade>
                 </div>
             </section>
             <section className="content banner">
@@ -479,9 +493,6 @@ const Home = (props) => {
                                     </div>
                                 </div>
                             </SwiperSlide>
-
-
-
                         </Swiper>
                     </div>
                 </div>

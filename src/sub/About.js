@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Jump from 'react-reveal/Jump';
 
 const About = (props) => {
     let [people, setPeople] = useState([]);
@@ -35,26 +36,34 @@ const About = (props) => {
                             <h3>Lorem ipsum dolor sit.</h3>
                         </div>
                         <ul className="items">
-                            <li className="item num">
-                                <i className="fas fa-map-signs"></i>
-                                <strong>20.5</strong>
-                                <span>YEARS</span>
-                            </li>
-                            <li className="item">
-                                <i className="fas fa-map-signs"></i>
-                                <strong>20.5</strong>
-                                <span>YEARS</span>
-                            </li>
-                            <li className="item">
-                                <i className="fas fa-map-signs"></i>
-                                <strong>20.5</strong>
-                                <span>YEARS</span>
-                            </li>
-                            <li className="item last">
-                                <i className="fas fa-map-signs"></i>
-                                <strong>20.5</strong>
-                                <span>YEARS</span>
-                            </li>
+                            <Jump>
+                                <li className="item num">
+                                    <i className="fas fa-map-signs"></i>
+                                    <strong>20.5</strong>
+                                    <span>YEARS</span>
+                                </li>
+                            </Jump>
+                            <Jump>
+                                <li className="item">
+                                    <i className="fas fa-map-signs"></i>
+                                    <strong>20.5</strong>
+                                    <span>YEARS</span>
+                                </li>
+                            </Jump>
+                            <Jump>
+                                <li className="item">
+                                    <i className="fas fa-map-signs"></i>
+                                    <strong>20.5</strong>
+                                    <span>YEARS</span>
+                                </li>
+                            </Jump>
+                            <Jump>
+                                <li className="item last">
+                                    <i className="fas fa-map-signs"></i>
+                                    <strong>20.5</strong>
+                                    <span>YEARS</span>
+                                </li>
+                            </Jump>
                         </ul>
                     </div>
                     <div className="description">
@@ -100,7 +109,7 @@ const About = (props) => {
                                             <figure className="card">
                                                 <div className="front">
                                                     <div className='pic'>
-                                                        <img src={process.env.PUBLIC_URL+person.pic} alt="" />
+                                                        <img src={process.env.PUBLIC_URL + person.pic} alt="" />
                                                     </div>
                                                     <div className='txt'>
                                                         <h3>{person.name}</h3>

@@ -1,6 +1,7 @@
 .gallery{
 .inner {
 	position: relative;
+	animation: fade 1s ease-in-out;
 	h1{
 		cursor: pointer;
 	}

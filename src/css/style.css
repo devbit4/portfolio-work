@@ -243,9 +243,10 @@ header {
       left: -80px;
       font-size: 180px;
       color: #fff;
-      transform: scaleX(-1);
       text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
       z-index: 30; }
+      .main .phone .big-speech i {
+        transform: scaleX(-1); }
     .main .phone .small-speech {
       position: absolute;
       top: 400px;
@@ -258,7 +259,7 @@ header {
 
 .welcome {
   background-color: #fff;
-  padding: 100px 0; }
+  padding: 120px 0; }
   .welcome .inner {
     text-align: center; }
     .welcome .inner h2 {
@@ -592,7 +593,7 @@ header {
     padding: 0 0 50px 0; }
     .sponsor .companies .company {
       width: 50%; } }
-.about .inner .about-content {
+.about .inner {
   animation: fade 1s ease-in-out; }
   .about .inner .about-content .intro {
     display: flex;
@@ -661,12 +662,12 @@ header {
           color: #777; }
         .about .inner .about-content .history .items .item:hover::before {
           box-shadow: 0px 0px 25px 3px rgba(253, 237, 90, 0.363);
-          transform: translate(-50%, -50%) scale(1.1); }
+          transform: translate(-50%, -50%) scale(1.1);
+          opacity: 1; }
         .about .inner .about-content .history .items .item::before {
           content: '';
           width: 100px;
           height: 100px;
-          border: 1px solid #ccc;
           transition: all 0.5s;
           border-radius: 50%;
           position: absolute;
@@ -674,6 +675,7 @@ header {
           left: 50%;
           transform: translate(-50%, -50%);
           z-index: -1;
+          border: 1px solid #ccc;
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); }
       .about .inner .about-content .history .items .last strong {
         border-right: none; }
@@ -710,10 +712,10 @@ header {
         border-top: 1px solid #ddd; }
       .about .inner .about-content .description .boxes .top-right {
         border-top: 1px solid #ddd;
-        background: url(/public/img/208.jpg) center/cover; }
+        background: url(/public/img/208.jpg) center/cover fixed; }
       .about .inner .about-content .description .boxes .lower-left {
         text-align: right;
-        background: linear-gradient(to left, #eee, #fff); }
+        background: url(/public/img/208.jpg) center/cover fixed; }
         .about .inner .about-content .description .boxes .lower-left h2 {
           color: #ccc; }
       .about .inner .about-content .description .boxes .lower-right {
@@ -869,7 +871,7 @@ header {
       width: 100%;
       height: 340px;
       margin-bottom: 40px; } }
-.youtube .inner .news {
+.youtube .inner {
   animation: fade 1s ease-in-out; }
   .youtube .inner .news h1 {
     font: 20px/1 'Roboto';
@@ -933,96 +935,96 @@ header {
           color: #fff;
           font-size: 40px;
           cursor: pointer; }
-.youtube .inner .library {
-  animation: fade 1s ease-in-out;
-  margin-bottom: 60px; }
-  .youtube .inner .library h1 {
-    font: 20px/1 'Roboto';
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd; }
-  .youtube .inner .library .inner {
-    display: flex; }
-    .youtube .inner .library .inner .left {
-      width: 50%;
-      background: linear-gradient(to right, #fff, #ccc); }
-    .youtube .inner .library .inner .right {
-      width: 50%;
-      display: flex;
-      flex-direction: column; }
-      .youtube .inner .library .inner .right .right-upper {
-        width: 100%;
-        height: 150px;
-        background: url(/public/img/youtube/youtube2.jpg) center/cover no-repeat; }
-      .youtube .inner .library .inner .right .right-lower {
-        width: 100%;
-        height: 150px;
+  .youtube .inner .library {
+    animation: fade 1s ease-in-out;
+    margin-bottom: 60px; }
+    .youtube .inner .library h1 {
+      font: 20px/1 'Roboto';
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd; }
+    .youtube .inner .library .inner {
+      display: flex; }
+      .youtube .inner .library .inner .left {
+        width: 40%;
+        background: linear-gradient(to right, #fff, #eee); }
+      .youtube .inner .library .inner .right {
+        width: 60%;
         display: flex;
-        background: #333; }
-        .youtube .inner .library .inner .right .right-lower .box {
+        flex-direction: column; }
+        .youtube .inner .library .inner .right .right-upper {
+          width: 100%;
+          height: 150px;
+          background: url(/public/img/youtube/youtube2.jpg) center/cover no-repeat; }
+        .youtube .inner .library .inner .right .right-lower {
+          width: 100%;
+          height: 150px;
           display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          color: #fff;
-          border-right: 1px solid #fff;
-          padding: 10px; }
-          .youtube .inner .library .inner .right .right-lower .box h2 {
-            font: 16px/1 'Roboto'; }
-          .youtube .inner .library .inner .right .right-lower .box span {
-            font: 300 12px/1 'Roboto'; }
-.youtube .inner .issue {
-  animation: fade 1s ease-in-out; }
-  .youtube .inner .issue .inner {
-    display: flex;
-    justify-content: space-between; }
-    .youtube .inner .issue .inner .text {
-      width: 48%; }
-      .youtube .inner .issue .inner .text h1 {
-        font: 20px/1 'Roboto';
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #ddd; }
-        .youtube .inner .issue .inner .text h1 span {
-          float: right; }
-          .youtube .inner .issue .inner .text h1 span i {
-            color: #ddd;
-            cursor: pointer; }
-      .youtube .inner .issue .inner .text .articles {
-        height: 320px;
-        overflow-y: scroll; }
-        .youtube .inner .issue .inner .text .articles article {
-          margin-bottom: 20px;
-          padding: 2px; }
-          .youtube .inner .issue .inner .text .articles article:hover {
-            background: #efefef;
-            border-radius: 4px; }
-          .youtube .inner .issue .inner .text .articles article h2 {
-            font: bold 16px/1 'Roboto';
-            margin-bottom: 10px; }
-          .youtube .inner .issue .inner .text .articles article p {
-            font: 300 14px/1.4 'Roboto';
-            margin-bottom: 10px; }
-          .youtube .inner .issue .inner .text .articles article span {
-            font: 12px/1.4 'Roboto'; }
-.youtube .inner .pop {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.9);
-  padding: 5vw; }
-  .youtube .inner .pop iframe {
-    border: none;
+          background: #333; }
+          .youtube .inner .library .inner .right .right-lower .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #fff;
+            border-right: 1px solid #fff;
+            padding: 10px; }
+            .youtube .inner .library .inner .right .right-lower .box h2 {
+              font: 16px/1 'Roboto'; }
+            .youtube .inner .library .inner .right .right-lower .box span {
+              font: 300 12px/1 'Roboto'; }
+  .youtube .inner .issue {
+    animation: fade 1s ease-in-out; }
+    .youtube .inner .issue .inner {
+      display: flex;
+      justify-content: space-between; }
+      .youtube .inner .issue .inner .text {
+        width: 48%; }
+        .youtube .inner .issue .inner .text h1 {
+          font: 20px/1 'Roboto';
+          margin-bottom: 40px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #ddd; }
+          .youtube .inner .issue .inner .text h1 span {
+            float: right; }
+            .youtube .inner .issue .inner .text h1 span i {
+              color: #ddd;
+              cursor: pointer; }
+        .youtube .inner .issue .inner .text .articles {
+          height: 320px;
+          overflow-y: scroll; }
+          .youtube .inner .issue .inner .text .articles article {
+            margin-bottom: 20px;
+            padding: 2px; }
+            .youtube .inner .issue .inner .text .articles article:hover {
+              background: #efefef;
+              border-radius: 4px; }
+            .youtube .inner .issue .inner .text .articles article h2 {
+              font: bold 16px/1 'Roboto';
+              margin-bottom: 10px; }
+            .youtube .inner .issue .inner .text .articles article p {
+              font: 300 14px/1.4 'Roboto';
+              margin-bottom: 10px; }
+            .youtube .inner .issue .inner .text .articles article span {
+              font: 12px/1.4 'Roboto'; }
+  .youtube .inner .pop {
     width: 100%;
-    height: 100%; }
-  .youtube .inner .pop span {
-    position: absolute;
-    top: 3vw;
-    right: 5vw;
-    font: bold 14px/1 "arial";
-    color: #fff;
-    cursor: pointer; }
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 5vw; }
+    .youtube .inner .pop iframe {
+      border: none;
+      width: 100%;
+      height: 100%; }
+    .youtube .inner .pop span {
+      position: absolute;
+      top: 3vw;
+      right: 5vw;
+      font: bold 14px/1 "arial";
+      color: #fff;
+      cursor: pointer; }
 
 @media screen and (max-width: 620px) {
   .youtube .inner .news article {
@@ -1052,7 +1054,8 @@ header {
       width: 100%;
       margin-bottom: 40px; } }
 .gallery .inner {
-  position: relative; }
+  position: relative;
+  animation: fade 1s ease-in-out; }
   .gallery .inner h1 {
     cursor: pointer; }
   .gallery .inner .intro {
@@ -1245,57 +1248,112 @@ header {
 @media screen and (max-width: 539px) {
   .gallery .inner .list ul .pic {
     width: 100%; } }
-.community .inner .faq {
+.community .inner {
   animation: fade 1s ease-in-out; }
-  .community .inner .faq h1 {
+  .community .inner .faq {
+    margin-bottom: 60px; }
+    .community .inner .faq h1 {
+      font: 20px/1 'Roboto';
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      color: #555; }
+    .community .inner .faq article {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #999;
+      cursor: pointer; }
+      .community .inner .faq article:hover {
+        background: #efefef;
+        border-radius: 4px; }
+      .community .inner .faq article.active .answer {
+        max-height: 300px;
+        animation: fade 1s ease-in-out; }
+      .community .inner .faq article.active i {
+        transform: rotate(180deg); }
+      .community .inner .faq article .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        cursor: pointer; }
+        .community .inner .faq article .question .question-front {
+          display: flex; }
+          .community .inner .faq article .question .question-front h2 {
+            margin-left: 20px;
+            font: bold 16px/1 'Roboto';
+            cursor: pointer; }
+          .community .inner .faq article .question .question-front i {
+            margin-left: 10px;
+            cursor: pointer; }
+        .community .inner .faq article .question i {
+          transition: transform 0.8s ease-in-out;
+          margin-right: 10px;
+          cursor: pointer; }
+      .community .inner .faq article .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease-in-out; }
+        .community .inner .faq article .answer p {
+          padding-top: 2rem;
+          padding-left: 40px;
+          font: 300 14px/1.4 'Roboto';
+          color: #aaa; }
+  .community .inner .help h1 {
     font: 20px/1 'Roboto';
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
     color: #555; }
-  .community .inner .faq article {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #999;
-    cursor: pointer; }
-    .community .inner .faq article:hover {
-      background: #efefef;
-      border-radius: 4px; }
-    .community .inner .faq article.active .answer {
-      max-height: 300px;
-      animation: fade 1s ease-in-out; }
-    .community .inner .faq article.active i {
-      transform: rotate(180deg); }
-    .community .inner .faq article .question {
+  .community .inner .help .boxes {
+    display: flex; }
+    .community .inner .help .boxes .inputBox {
+      width: 50%;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      padding-top: 1rem;
-      cursor: pointer; }
-      .community .inner .faq article .question .question-front {
-        display: flex; }
-        .community .inner .faq article .question .question-front h2 {
-          margin-left: 20px;
-          font: bold 16px/1 'Roboto';
-          cursor: pointer; }
-        .community .inner .faq article .question .question-front i {
-          margin-left: 10px;
-          cursor: pointer; }
-      .community .inner .faq article .question i {
-        transition: transform 0.8s ease-in-out;
-        margin-right: 10px;
-        cursor: pointer; }
-    .community .inner .faq article .answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.8s ease-in-out; }
-      .community .inner .faq article .answer p {
-        padding-top: 2rem;
-        padding-left: 40px;
-        font: 300 14px/1.4 'Roboto';
-        color: #aaa; }
+      padding-right: 20px; }
+      .community .inner .help .boxes .inputBox input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        background: #efefef;
+        border: 1px solid #ccc;
+        font: 300 14px/1 'Roboto'; }
+      .community .inner .help .boxes .inputBox textarea {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 10px;
+        padding: 10px;
+        resize: none;
+        overflow-y: hidden;
+        background: #efefef;
+        border: 1px solid #ccc;
+        font: 300 14px/1 'Roboto'; }
+      .community .inner .help .boxes .inputBox .btns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; }
+        .community .inner .help .boxes .inputBox .btns button {
+          width: 150px;
+          border: none;
+          padding: 5px;
+          background: #ccc;
+          color: #000;
+          font: 14px/1 'Roboto'; }
+    .community .inner .help .boxes .showBox {
+      width: 50%;
+      background: #efefef;
+      overflow-y: hidden;
+      padding: 5px 10px; }
+      .community .inner .help .boxes .showBox article .post {
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        background: #fff; }
 
-.contact .inner .inner-text {
+.contact .inner {
   animation: fade 1s ease-in-out; }
   .contact .inner .inner-text .intro {
     display: flex;
@@ -1387,148 +1445,82 @@ header {
       padding: 2vh 0vw; }
     .contact .inner .inner-text .locations .location .text {
       padding: 0 0vw; } }
-.join .inner .btns {
-  border-bottom: 1px solid #ddd; }
-  .join .inner .btns button {
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 1px solid #ddd;
-    border-bottom: none;
-    margin-right: 10px;
-    line-height: 40px;
-    font: 14px/1 'Roboto';
-    color: #ccc;
-    cursor: pointer; }
-    .join .inner .btns button.on {
-      background: #ccc;
-      color: #fff; }
-.join .inner .joinForm {
-  animation: fade 1s ease-in-out;
-  margin-top: 60px; }
-  .join .inner .joinForm .joinForm-inner .signUp {
-    width: 100%;
-    display: flex;
-    border: 1px solid #ccc; }
-    .join .inner .joinForm .joinForm-inner .signUp .signUp-left {
-      width: 50%;
-      background: url(/public/img/join/bg.png) no-repeat center/cover;
-      padding: 4vh 4vw;
-      position: relative; }
-      .join .inner .joinForm .joinForm-inner .signUp .signUp-left .logo {
-        font: 300 16px/1 'Roboto';
-        color: #fff;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #fff; }
-        .join .inner .joinForm .joinForm-inner .signUp .signUp-left .logo i {
-          font-size: 16px;
-          margin-right: 10px; }
-      .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center; }
-        .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text h2 {
-          font: bold 32px/1 'Roboto';
-          margin-bottom: 20px;
-          color: #fff; }
-        .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text p {
-          font: 300 16px/1.2 'Roboto';
-          margin-bottom: 40px;
-          color: #fff; }
-        .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text a {
-          width: 180px;
-          margin: 0 auto;
-          padding: 10px 0px;
-          border: 1px solid #fff;
-          border-radius: 30px;
-          transition: all 0.3s; }
-          .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text a span {
-            font: 14px/1 'Roboto';
-            color: #fff; }
-          .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text a:hover {
-            background: #fff; }
-            .join .inner .joinForm .joinForm-inner .signUp .signUp-left .text a:hover span {
-              color: #c6a6a6; }
-    .join .inner .joinForm .joinForm-inner .signUp .signUp-right {
-      width: 50%;
+.join > .inner {
+  animation: fade 1s ease-in-out; }
+  .join > .inner .btns {
+    border-bottom: 1px solid #ddd; }
+    .join > .inner .btns button {
+      width: 200px;
+      height: 40px;
+      background: transparent;
+      border: 1px solid #ddd;
+      border-bottom: none;
+      margin-right: 10px;
+      line-height: 40px;
+      font: 14px/1 'Roboto';
+      color: #ccc;
+      cursor: pointer; }
+      .join > .inner .btns button.on {
+        background: #ccc;
+        color: #fff; }
+  .join > .inner .joinForm {
+    margin-top: 60px; }
+    .join > .inner .joinForm .joinForm-inner .signUp {
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding: 4vh 4vw; }
-      .join .inner .joinForm .joinForm-inner .signUp .signUp-right h2 {
-        font: bold 20px/1 'Roboto';
-        margin-bottom: 20px; }
-      .join .inner .joinForm .joinForm-inner .signUp .signUp-right .platforms i {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        border: 1px solid #ccc;
-        border-radius: 50%;
-        margin: 4px;
-        margin-bottom: 20px;
-        cursor: pointer; }
-      .join .inner .joinForm .joinForm-inner .signUp .signUp-right p {
-        font: 300 14px/1.2 'Roboto';
-        margin-bottom: 20px; }
-      .join .inner .joinForm .joinForm-inner .signUp .signUp-right table {
-        width: 100%; }
-        .join .inner .joinForm .joinForm-inner .signUp .signUp-right table span {
-          font: 14px/1 'Roboto';
-          margin-right: 10px; }
-        .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td {
-          width: 100%;
-          padding: 5px 20px;
-          font: 14px/1 'Roboto'; }
-          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type='text'],
-          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type='password'] {
-            width: 100%;
-            height: 100%;
-            padding: 10px;
-            background: #efefef;
-            border: none; }
-          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td .err {
-            font: 300 12px/1 'Roboto';
-            color: red;
-            margin: 5px 0 0 0; }
-          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td label {
-            font: 14px/1 'Roboto'; }
-          .join .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type='radio'] {
-            margin: 0 10px; }
-        .join .inner .joinForm .joinForm-inner .signUp .signUp-right table input[type='submit'] {
-          width: 180px;
-          margin: 0 auto;
-          padding: 10px 0;
-          border-radius: 30px;
-          font: 14px/1 'Roboto';
-          margin-top: 30px;
-          background: #c6a6a6;
-          color: #fff;
-          border: none;
-          cursor: pointer; }
-  .join .inner .joinForm .joinForm-inner .signIn {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    border: 1px solid #ccc; }
-    .join .inner .joinForm .joinForm-inner .signIn .signIn-left {
-      width: 50%;
-      height: 100%;
-      position: relative;
-      text-align: center; }
-      .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner {
-        width: 100%;
-        height: 100%;
+      border: 1px solid #ccc; }
+      .join > .inner .joinForm .joinForm-inner .signUp .signUp-left {
+        width: 50%;
+        background: url(/public/img/join/bg.png) no-repeat center/cover;
         padding: 4vh 4vw;
+        position: relative; }
+        .join > .inner .joinForm .joinForm-inner .signUp .signUp-left .logo {
+          font: 300 16px/1 'Roboto';
+          color: #fff;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #fff; }
+          .join > .inner .joinForm .joinForm-inner .signUp .signUp-left .logo i {
+            font-size: 16px;
+            margin-right: 10px; }
+        .join > .inner .joinForm .joinForm-inner .signUp .signUp-left .text {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center; }
+          .join > .inner .joinForm .joinForm-inner .signUp .signUp-left .text h2 {
+            font: bold 32px/1 'Roboto';
+            margin-bottom: 20px;
+            color: #fff; }
+          .join > .inner .joinForm .joinForm-inner .signUp .signUp-left .text p {
+            font: 300 16px/1.2 'Roboto';
+            margin-bottom: 40px;
+            color: #fff; }
+          .join > .inner .joinForm .joinForm-inner .signUp .signUp-left .text a {
+            width: 180px;
+            margin: 0 auto;
+            padding: 10px 0px;
+            border: 1px solid #fff;
+            border-radius: 30px;
+            transition: all 0.3s; }
+            .join > .inner .joinForm .joinForm-inner .signUp .signUp-left .text a span {
+              font: 14px/1 'Roboto';
+              color: #fff; }
+            .join > .inner .joinForm .joinForm-inner .signUp .signUp-left .text a:hover {
+              background: #fff; }
+              .join > .inner .joinForm .joinForm-inner .signUp .signUp-left .text a:hover span {
+                color: #c6a6a6; }
+      .join > .inner .joinForm .joinForm-inner .signUp .signUp-right {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center; }
-        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner h2 {
+        text-align: center;
+        padding: 4vh 4vw; }
+        .join > .inner .joinForm .joinForm-inner .signUp .signUp-right h2 {
           font: bold 20px/1 'Roboto';
           margin-bottom: 20px; }
-        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner .platforms i {
+        .join > .inner .joinForm .joinForm-inner .signUp .signUp-right .platforms i {
           width: 30px;
           height: 30px;
           line-height: 30px;
@@ -1537,34 +1529,34 @@ header {
           margin: 4px;
           margin-bottom: 20px;
           cursor: pointer; }
-        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner p {
+        .join > .inner .joinForm .joinForm-inner .signUp .signUp-right p {
           font: 300 14px/1.2 'Roboto';
-          margin-bottom: 30px; }
-        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table {
+          margin-bottom: 20px; }
+        .join > .inner .joinForm .joinForm-inner .signUp .signUp-right table {
           width: 100%; }
-          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table span {
+          .join > .inner .joinForm .joinForm-inner .signUp .signUp-right table span {
             font: 14px/1 'Roboto';
             margin-right: 10px; }
-          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td {
+          .join > .inner .joinForm .joinForm-inner .signUp .signUp-right table td {
             width: 100%;
             padding: 5px 20px;
             font: 14px/1 'Roboto'; }
-            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type='text'],
-            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type='password'] {
+            .join > .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type='text'],
+            .join > .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type='password'] {
               width: 100%;
               height: 100%;
               padding: 10px;
               background: #efefef;
               border: none; }
-            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td .err {
+            .join > .inner .joinForm .joinForm-inner .signUp .signUp-right table td .err {
               font: 300 12px/1 'Roboto';
               color: red;
               margin: 5px 0 0 0; }
-            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td label {
+            .join > .inner .joinForm .joinForm-inner .signUp .signUp-right table td label {
               font: 14px/1 'Roboto'; }
-            .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type='radio'] {
+            .join > .inner .joinForm .joinForm-inner .signUp .signUp-right table td input[type='radio'] {
               margin: 0 10px; }
-          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table input[type='submit'] {
+          .join > .inner .joinForm .joinForm-inner .signUp .signUp-right table input[type='submit'] {
             width: 180px;
             margin: 0 auto;
             padding: 10px 0;
@@ -1575,56 +1567,123 @@ header {
             color: #fff;
             border: none;
             cursor: pointer; }
-        .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner a {
-          display: block;
-          margin-top: 10px; }
-          .join .inner .joinForm .joinForm-inner .signIn .signIn-left .inner a span {
-            font: 14px/1 'Roboto';
-            text-decoration: underline; }
-    .join .inner .joinForm .joinForm-inner .signIn .signIn-right {
-      width: 50%;
-      height: 100%;
-      padding: 4vh 4vw;
-      position: relative;
-      background: url(/public/img/join/bg2.png) no-repeat center/cover; }
-      .join .inner .joinForm .joinForm-inner .signIn .signIn-right .logo {
-        font: 300 16px/1 'Roboto';
-        color: #fff;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #fff;
-        text-align: right; }
-        .join .inner .joinForm .joinForm-inner .signIn .signIn-right .logo i {
-          font-size: 16px;
-          margin-right: 10px; }
-      .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text {
-        width: 100%;
+    .join > .inner .joinForm .joinForm-inner .signIn {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      border: 1px solid #ccc; }
+      .join > .inner .joinForm .joinForm-inner .signIn .signIn-left {
+        width: 50%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        position: relative;
         text-align: center; }
-        .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text h2 {
-          font: bold 32px/1 'Roboto';
-          margin-bottom: 20px;
-          color: #fff; }
-        .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text p {
-          font: 300 16px/1.2 'Roboto';
-          margin-bottom: 40px;
-          color: #fff; }
-        .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text a {
-          width: 180px;
-          margin: 0 auto;
-          padding: 10px 0px;
-          border: 1px solid #fff;
-          border-radius: 30px;
-          transition: all 0.3s; }
-          .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text a span {
-            font: 14px/1 'Roboto';
+        .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner {
+          width: 100%;
+          height: 100%;
+          padding: 4vh 4vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner h2 {
+            font: bold 20px/1 'Roboto';
+            margin-bottom: 20px; }
+          .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner .platforms i {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            margin: 4px;
+            margin-bottom: 20px;
+            cursor: pointer; }
+          .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner p {
+            font: 300 14px/1.2 'Roboto';
+            margin-bottom: 30px; }
+          .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table {
+            width: 100%; }
+            .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table span {
+              font: 14px/1 'Roboto';
+              margin-right: 10px; }
+            .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td {
+              width: 100%;
+              padding: 5px 20px;
+              font: 14px/1 'Roboto'; }
+              .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type='text'],
+              .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type='password'] {
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                background: #efefef;
+                border: none; }
+              .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td .err {
+                font: 300 12px/1 'Roboto';
+                color: red;
+                margin: 5px 0 0 0; }
+              .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td label {
+                font: 14px/1 'Roboto'; }
+              .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table td input[type='radio'] {
+                margin: 0 10px; }
+            .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner table input[type='submit'] {
+              width: 180px;
+              margin: 0 auto;
+              padding: 10px 0;
+              border-radius: 30px;
+              font: 14px/1 'Roboto';
+              margin-top: 30px;
+              background: #c6a6a6;
+              color: #fff;
+              border: none;
+              cursor: pointer; }
+          .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner a {
+            display: block;
+            margin-top: 10px; }
+            .join > .inner .joinForm .joinForm-inner .signIn .signIn-left .inner a span {
+              font: 14px/1 'Roboto';
+              text-decoration: underline; }
+      .join > .inner .joinForm .joinForm-inner .signIn .signIn-right {
+        width: 50%;
+        height: 100%;
+        padding: 4vh 4vw;
+        position: relative;
+        background: url(/public/img/join/bg2.png) no-repeat center/cover; }
+        .join > .inner .joinForm .joinForm-inner .signIn .signIn-right .logo {
+          font: 300 16px/1 'Roboto';
+          color: #fff;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #fff;
+          text-align: right; }
+          .join > .inner .joinForm .joinForm-inner .signIn .signIn-right .logo i {
+            font-size: 16px;
+            margin-right: 10px; }
+        .join > .inner .joinForm .joinForm-inner .signIn .signIn-right .text {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center; }
+          .join > .inner .joinForm .joinForm-inner .signIn .signIn-right .text h2 {
+            font: bold 32px/1 'Roboto';
+            margin-bottom: 20px;
             color: #fff; }
-          .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text a:hover {
-            background: #fff; }
-            .join .inner .joinForm .joinForm-inner .signIn .signIn-right .text a:hover span {
-              color: #c6a6a6; }
+          .join > .inner .joinForm .joinForm-inner .signIn .signIn-right .text p {
+            font: 300 16px/1.2 'Roboto';
+            margin-bottom: 40px;
+            color: #fff; }
+          .join > .inner .joinForm .joinForm-inner .signIn .signIn-right .text a {
+            width: 180px;
+            margin: 0 auto;
+            padding: 10px 0px;
+            border: 1px solid #fff;
+            border-radius: 30px;
+            transition: all 0.3s; }
+            .join > .inner .joinForm .joinForm-inner .signIn .signIn-right .text a span {
+              font: 14px/1 'Roboto';
+              color: #fff; }
+            .join > .inner .joinForm .joinForm-inner .signIn .signIn-right .text a:hover {
+              background: #fff; }
+              .join > .inner .joinForm .joinForm-inner .signIn .signIn-right .text a:hover span {
+                color: #c6a6a6; }
 
 @media screen and (max-width: 850px) {
   .join .inner .btns {

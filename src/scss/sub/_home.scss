@@ -108,9 +108,11 @@
 			left: -80px;
 			font-size: 180px;
 			color: #fff;
-			transform: scaleX(-1);
 			text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
 			z-index: 30;
+			i{
+				transform: scaleX(-1);
+			}
 		}
 		.small-speech {
 			position: absolute;
@@ -126,7 +128,7 @@
 }
 .welcome {
 	background-color: #fff;
-	padding: 100px 0;
+	padding: 120px 0;
 	.inner {
 		text-align: center;
 		h2 {

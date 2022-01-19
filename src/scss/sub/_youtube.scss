@@ -1,7 +1,8 @@
 .youtube{
     .inner{
+        animation: fade 1s ease-in-out;
         .news{
-            animation: fade 1s ease-in-out;
+
             h1{
                 font: 20px/1 'Roboto';
                 margin-bottom: 30px;
@@ -99,14 +100,14 @@
             .inner{
                 display: flex;
                 .left{
-                    width: 50%;
-                    background: linear-gradient(to right,#fff,#ccc);
-                    
+                    width: 40%;
+                    background: linear-gradient(to right,#fff,#eee);
+
 
 
                 }
                 .right{
-                    width: 50%;
+                    width: 60%;
 
                     display: flex;
                     flex-direction: column;

@@ -1,7 +1,8 @@
 .community{
     .inner{
+        animation: fade 1s ease-in-out;
         .faq{
-            animation: fade 1s ease-in-out;
+            margin-bottom: 60px;
             h1{
                 font: 20px/1 'Roboto';
                 margin-bottom: 40px;
@@ -62,6 +63,74 @@
 
             }
 
+        }
+        .help{
+            h1{
+                font: 20px/1 'Roboto';
+                margin-bottom: 40px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+                color: #555;
+            }
+           .boxes{
+               display: flex;
+               .inputBox{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-right: 20px;
+                input{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 5px 10px;
+                    background: #efefef;
+                    border: 1px solid #ccc;
+                    font: 300 14px/1 'Roboto';
+
+                }
+                textarea{
+                    width: 100%;
+                    height: 240px;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    resize: none;
+                    overflow-y: hidden;
+                    background: #efefef;
+                    border: 1px solid #ccc;
+                    font: 300 14px/1 'Roboto';
+                }
+                .btns{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    button{
+                        width: 150px;
+                        border: none;
+                        padding: 5px;
+                        background: #ccc;
+                        color: #000;
+                        font: 14px/1 'Roboto';
+                    }
+                }
+               }
+               .showBox{
+                width: 50%;
+                background: #efefef;
+                overflow-y: hidden;
+                padding: 5px 10px;
+                article{
+                    .post{
+                        padding: 5px 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        background: #fff;
+
+                    }
+                }
+               }
+           }
         }
 
     }
