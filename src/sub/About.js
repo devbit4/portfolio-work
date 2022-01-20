@@ -43,21 +43,21 @@ const About = (props) => {
                                     <span>YEARS</span>
                                 </li>
                             </Jump>
-                            <Jump>
+                            <Jump delay={200}>
                                 <li className="item">
                                     <i className="fas fa-map-signs"></i>
                                     <strong>20.5</strong>
                                     <span>YEARS</span>
                                 </li>
                             </Jump>
-                            <Jump>
+                            <Jump delay={400}>
                                 <li className="item">
                                     <i className="fas fa-map-signs"></i>
                                     <strong>20.5</strong>
                                     <span>YEARS</span>
                                 </li>
                             </Jump>
-                            <Jump>
+                            <Jump delay={600}>
                                 <li className="item last">
                                     <i className="fas fa-map-signs"></i>
                                     <strong>20.5</strong>

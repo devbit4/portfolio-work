@@ -12,7 +12,7 @@ const Header = (props) => {
         gnb.current.classList.toggle("on");
     }
     return (
-        <div className='head'>
+        <div className='head scroll'>
             <header>
                 {/* <div className="inner"> */}
                 <h1><NavLink exact to="/">STORIES</NavLink></h1>

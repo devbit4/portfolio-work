@@ -1,17 +1,60 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
+import Anime from '../class/anime.js';
 import Particles from 'react-tsparticles';
 import Fade from 'react-reveal/Fade';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Home = (props) => {
+    const home = useRef(null);
+    const [index, setIndex] = useState(0);
+    const pos = useRef([]);
+    const base = 200;
+    const getIndex = index => {
+        setIndex(index);
+    }
+    const handleResize = () => {
+        const secs = document.querySelectorAll('.scroll');
+        let arr = [];
+        for (let sec of secs) arr.push(sec.offsetTop);
+        pos.current = arr;
+    }
+    const handleScroll = () => {
+        let scroll = window.scrollY;
+        const btns = home.current.querySelectorAll('.btns li');
+
+        pos.current.map((pos, index) => {
+            if (scroll >= pos - base) {
+                for (const btn of btns) btn.classList.remove('on');
+                btns[index].classList.add('on');
+            }
+        })
+
+    }
+    useEffect(() => {
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('scroll', handleScroll);
+
+        new Anime(window, {
+            prop: 'scroll',
+            value: pos.current[index],
+            duration: 500
+        })
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [index]);
+
     return (
-        <>
+        <div className='home' ref={home}>
             <Particles
                 params={{
                     background: {
@@ -150,16 +193,15 @@ const Home = (props) => {
                             <SwiperSlide></SwiperSlide>
                         </Swiper>
                     </article>
-                    <Fade top delay={500}>
+                    <Fade top>
                         <strong className='big-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
-                    <Fade top delay={1000}>
+                    <Fade top delay={500}>
                         <strong className='small-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
                 </figure>
             </section>
-
-            <section className="content welcome">
+            <section className="content welcome scroll">
                 <div className="inner">
                     <h2>DREAM BIG INC</h2>
                     <h1>YOU ARE WELCOME</h1>
@@ -253,11 +295,11 @@ const Home = (props) => {
                     </div>
                 </div>
             </section>
-            <section className="content process">
+            <section className="content process scroll">
                 <div className="inner">
                     <h2>DREAM BIG INC</h2>
                     <h1>OUR AMAZING WORKS</h1>
-                    <Fade left delay={300}>
+                    <Fade left>
                         <div className="round">
                             <div className="left-pic">
                                 <img
@@ -300,7 +342,7 @@ const Home = (props) => {
                             </div>
                         </div>
                     </Fade>
-                    <Fade left delay={300}>
+                    <Fade left delay={600}>
                         <div className="round">
                             <div className="left-pic">
                                 <img
@@ -327,13 +369,13 @@ const Home = (props) => {
                 <div className="banner-inner">
                     <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br></br>{' '}
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br></br>
                         Provident ipsa nulla libero perferendis corporis excepturi! Nostrum
                         sequi aut provident voluptatem.
                     </p>
                 </div>
             </section>
-            <section className="content testimonials">
+            <section className="content testimonials scroll">
                 <div className="inner">
                     <h2>TESTIMONIALS</h2>
                     <h1>WHAT PEOPLE SAY</h1>
@@ -549,7 +591,21 @@ const Home = (props) => {
                     </div>
                 </div>
             </section>
-        </>
+            <section className='scrollBtns'>
+                <ul className="btns">
+                    <li className='on' onClick={() =>
+                        getIndex(0)
+                    }></li>
+                    <li onClick={() =>
+                        getIndex(1)
+                    }></li>
+                    <li onClick={() => getIndex(2)
+
+                    }></li>
+                    <li onClick={() => getIndex(3)}></li>
+                </ul>
+            </section>
+        </div>
     );
 };
 

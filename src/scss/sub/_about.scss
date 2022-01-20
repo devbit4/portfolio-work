@@ -47,6 +47,7 @@
 		align-items: center;
 		padding: 60px 0;
 		text-align: center;
+		border-bottom: 1px solid #ddd;
 		.text {
 			text-align: left;
 			width: 25%;
@@ -117,7 +118,7 @@
 		}
 	}
 	.description {
-		padding-bottom: 80px;
+		margin: 60px 0;
 		.boxes {
 			display: flex;
 			justify-content: space-between;
@@ -153,25 +154,23 @@
 			}
 			.top-left {
 				text-align: right;
-				border-top: 1px solid #ddd;
+
 			}
 			.top-right {
 				border-top: 1px solid #ddd;
 
-				background: url(/public/img/208.jpg) center/cover fixed;
+				background: url(/public/img/203.jpg) center/cover fixed;
 			}
 			.lower-left {
 				text-align: right;
-				background: url(/public/img/208.jpg) center/cover fixed;
+				background: url(/public/img/203.jpg) center/cover fixed;
 
 
 				h2 {
 					color: #ccc;
 				}
 			}
-			.lower-right {
-				border-bottom: 1px solid #ddd;
-			}
+
 		}
 	}
 	.people {
@@ -180,7 +179,7 @@
 			h2 {
 				font: 20px/1 'Roboto';
 				color: #555;
-				margin-bottom: 40px;
+				margin-bottom: 60px;
 				padding-bottom: 20px;
 				border-bottom: 1px solid #ddd;
 			}
@@ -191,7 +190,7 @@
 
 			.card-container {
 				width: 28%;
-				height: 24rem;
+				height: 25rem;
 				perspective: 1000px;
 				&:hover .card {
 					transform: rotateY(180deg);

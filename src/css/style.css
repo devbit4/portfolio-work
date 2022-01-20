@@ -32,6 +32,20 @@ fieldset {
   to {
     opacity: 1;
     transform: translateY(0px); } }
+@keyframes slide {
+  from {
+    transform: translateX(-600px);
+    opacity: 0; }
+  to {
+    transform: translateX(0px);
+    opacity: 1; } }
+@keyframes disappear {
+  from {
+    transform: translateX(0px);
+    opacity: 1; }
+  to {
+    transform: translateX(-600px);
+    opacity: 0; } }
 header {
   width: 100%;
   height: 10vh;
@@ -176,7 +190,7 @@ header {
     transform: translateY(-50%);
     z-index: 20; }
     .main article p {
-      font: bold 64px/1 'Roboto';
+      font: bold 8vh/1 'Roboto';
       color: #fff;
       margin-bottom: 20px;
       text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); }
@@ -211,6 +225,10 @@ header {
     right: 13%;
     transform: translateY(-35%);
     background: url("/src/img/bgPhone.png") no-repeat center/contain; }
+    .main .phone.on .big-speech {
+      opacity: 1; }
+    .main .phone.on .small-speech {
+      opacity: 1; }
     .main .phone .screen {
       position: absolute;
       width: 240px;
@@ -244,7 +262,8 @@ header {
       font-size: 180px;
       color: #fff;
       text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
-      z-index: 30; }
+      z-index: 30;
+      opacity: 0; }
       .main .phone .big-speech i {
         transform: scaleX(-1); }
     .main .phone .small-speech {
@@ -255,7 +274,8 @@ header {
       color: #fff;
       transform: scaleX(1);
       text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
-      z-index: 30; }
+      z-index: 30;
+      opacity: 0; }
 
 .welcome {
   background-color: #fff;
@@ -508,6 +528,23 @@ header {
         height: 100%;
         object-fit: contain; }
 
+.scrollBtns .btns {
+  position: fixed;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%); }
+  .scrollBtns .btns li {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #efefef;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s; }
+    .scrollBtns .btns li.on {
+      height: 80px;
+      background: rgba(253, 237, 90, 0.363); }
+
 @media screen and (max-width: 1179px) {
   .main article p span {
     -webkit-text-fill-color: #fded5a; }
@@ -627,7 +664,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
-    text-align: center; }
+    text-align: center;
+    border-bottom: 1px solid #ddd; }
     .about .inner .about-content .history .text {
       text-align: left;
       width: 25%; }
@@ -680,7 +718,7 @@ header {
       .about .inner .about-content .history .items .last strong {
         border-right: none; }
   .about .inner .about-content .description {
-    padding-bottom: 80px; }
+    margin: 60px 0; }
     .about .inner .about-content .description .boxes {
       display: flex;
       justify-content: space-between; }
@@ -708,22 +746,19 @@ header {
           font: 12px/1 'Roboto';
           cursor: pointer; }
       .about .inner .about-content .description .boxes .top-left {
-        text-align: right;
-        border-top: 1px solid #ddd; }
+        text-align: right; }
       .about .inner .about-content .description .boxes .top-right {
         border-top: 1px solid #ddd;
-        background: url(/public/img/208.jpg) center/cover fixed; }
+        background: url(/public/img/203.jpg) center/cover fixed; }
       .about .inner .about-content .description .boxes .lower-left {
         text-align: right;
-        background: url(/public/img/208.jpg) center/cover fixed; }
+        background: url(/public/img/203.jpg) center/cover fixed; }
         .about .inner .about-content .description .boxes .lower-left h2 {
           color: #ccc; }
-      .about .inner .about-content .description .boxes .lower-right {
-        border-bottom: 1px solid #ddd; }
   .about .inner .about-content .people .text h2 {
     font: 20px/1 'Roboto';
     color: #555;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd; }
   .about .inner .about-content .people .list {
@@ -731,7 +766,7 @@ header {
     justify-content: space-between; }
     .about .inner .about-content .people .list .card-container {
       width: 28%;
-      height: 24rem;
+      height: 25rem;
       perspective: 1000px; }
       .about .inner .about-content .people .list .card-container:hover .card {
         transform: rotateY(180deg); }
@@ -873,68 +908,70 @@ header {
       margin-bottom: 40px; } }
 .youtube .inner {
   animation: fade 1s ease-in-out; }
-  .youtube .inner .news h1 {
-    font: 20px/1 'Roboto';
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    color: #555; }
-  .youtube .inner .news article {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #efefef; }
-    .youtube .inner .news article:hover {
-      background: #efefef;
-      border-radius: 4px; }
-    .youtube .inner .news article .inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start; }
-      .youtube .inner .news article .inner .circle {
-        padding-top: 10px;
-        padding-left: 5px;
-        width: 5%;
-        font-size: 16px; }
-      .youtube .inner .news article .inner .num {
-        padding-top: 10px;
-        width: 10%;
+  .youtube .inner .news {
+    margin-bottom: 60px; }
+    .youtube .inner .news h1 {
+      font: 20px/1 'Roboto';
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      color: #555; }
+    .youtube .inner .news article {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #efefef; }
+      .youtube .inner .news article:hover {
+        background: #efefef;
+        border-radius: 4px; }
+      .youtube .inner .news article .inner {
         display: flex;
-        flex-direction: column;
-        text-align: center; }
-        .youtube .inner .news article .inner .num strong {
-          font: bold 28px/1 'Roboto';
-          margin-bottom: 4px; }
-        .youtube .inner .news article .inner .num span {
-          font: 12px/1 'Roboto'; }
-      .youtube .inner .news article .inner .txt {
-        width: 60%;
-        padding: 10px 20px; }
-        .youtube .inner .news article .inner .txt h2 {
-          font: bold 16px/1 'Roboto';
-          margin-bottom: 10px;
-          cursor: pointer; }
-        .youtube .inner .news article .inner .txt p {
-          font: 300 14px/1.4 'Roboto'; }
-      .youtube .inner .news article .inner .pic {
-        width: 25%;
-        height: 150px;
-        position: relative;
-        overflow: hidden; }
-        .youtube .inner .news article .inner .pic img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          cursor: pointer;
-          transition: all 0.5s; }
-          .youtube .inner .news article .inner .pic img:hover {
-            transform: scale(1.1); }
-        .youtube .inner .news article .inner .pic i {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: #fff;
-          font-size: 40px;
-          cursor: pointer; }
+        justify-content: space-between;
+        align-items: flex-start; }
+        .youtube .inner .news article .inner .circle {
+          padding-top: 10px;
+          padding-left: 5px;
+          width: 5%;
+          font-size: 16px; }
+        .youtube .inner .news article .inner .num {
+          padding-top: 10px;
+          width: 10%;
+          display: flex;
+          flex-direction: column;
+          text-align: center; }
+          .youtube .inner .news article .inner .num strong {
+            font: bold 28px/1 'Roboto';
+            margin-bottom: 4px; }
+          .youtube .inner .news article .inner .num span {
+            font: 12px/1 'Roboto'; }
+        .youtube .inner .news article .inner .txt {
+          width: 60%;
+          padding: 10px 20px; }
+          .youtube .inner .news article .inner .txt h2 {
+            font: bold 16px/1 'Roboto';
+            margin-bottom: 10px;
+            cursor: pointer; }
+          .youtube .inner .news article .inner .txt p {
+            font: 300 14px/1.4 'Roboto'; }
+        .youtube .inner .news article .inner .pic {
+          width: 25%;
+          height: 150px;
+          position: relative;
+          overflow: hidden; }
+          .youtube .inner .news article .inner .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: all 0.5s; }
+            .youtube .inner .news article .inner .pic img:hover {
+              transform: scale(1.1); }
+          .youtube .inner .news article .inner .pic i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 40px;
+            cursor: pointer; }
   .youtube .inner .library {
     animation: fade 1s ease-in-out;
     margin-bottom: 60px; }
@@ -1464,6 +1501,7 @@ header {
         background: #ccc;
         color: #fff; }
   .join > .inner .joinForm {
+    animation: fade 1s ease-in-out;
     margin-top: 60px; }
     .join > .inner .joinForm .joinForm-inner .signUp {
       width: 100%;

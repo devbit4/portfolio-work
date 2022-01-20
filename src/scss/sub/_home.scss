@@ -19,7 +19,7 @@
 		transform: translateY(-50%);
 		z-index: 20;
 		p {
-			font: bold 64px/1 'Roboto';
+			font: bold 8vh/1 'Roboto';
 			color: #fff;
 			margin-bottom: 20px;
 			text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
@@ -69,6 +69,14 @@
 		right: 13%;
 		transform: translateY(-35%);
 		background: url('/src/img/bgPhone.png') no-repeat center/contain;
+		&.on{
+			.big-speech{
+				opacity:1;
+			}
+			.small-speech{
+				opacity: 1;
+			}
+		}
 		// overflow: hidden;
 		.screen {
 			position: absolute;
@@ -110,6 +118,7 @@
 			color: #fff;
 			text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
 			z-index: 30;
+			opacity: 0;
 			i{
 				transform: scaleX(-1);
 			}
@@ -123,6 +132,7 @@
 			transform: scaleX(1);
 			text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
 			z-index: 30;
+			opacity: 0;
 		}
 	}
 }
@@ -276,6 +286,8 @@
 			align-items: center;
 			justify-content: center;
 			margin-bottom: 20px;
+
+
 			&:nth-of-type(2) {
 				flex-direction: row-reverse;
 			}
@@ -456,6 +468,30 @@
 		}
 	}
 }
+.scrollBtns{
+.btns {
+	position: fixed;
+	top: 50%;
+	right: 50px;
+	transform: translateY(-50%);
+
+	li {
+	  width: 10px;
+	  height: 10px;
+	  border-radius: 5px;
+	  background: #efefef;
+	  margin-bottom: 20px;
+	  cursor: pointer;
+	  transition: 0.5s;
+
+	  &.on {
+		height: 80px;
+		background: rgba(253, 237, 90, 0.363);
+	  }
+	}
+  }
+}
+
 
 @media screen and (max-width: 1179px) {
 	.main {

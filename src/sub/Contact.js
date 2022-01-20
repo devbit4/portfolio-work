@@ -33,7 +33,10 @@ const Contact = (props) => {
         const mapSet2 = () => map2.setCenter(options2.center);
         window.addEventListener('resize', mapSet);
         window.addEventListener('resize', mapSet2);
-
+        const mapTypeControl = new kakao.maps.MapTypeControl();
+        const mapTypeControl2 = new kakao.maps.MapTypeControl();
+        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+        map2.addControl(mapTypeControl2, kakao.maps.ControlPosition.TOPRIGHT);
 
     }, []);
 

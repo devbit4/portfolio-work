@@ -7,17 +7,28 @@ const Community = (props) => {
     const request = useRef(null);
     const updateWriter = useRef(null);
     const updateRequest = useRef(null);
-    const [posts, setPosts] = useState([
-        { writer: "Lena", request: "I need your help" },
-        { writer: "Lena", request: "I need your help" }
-    ]);
+
+
+    const getLocalItems = () => {
+        let data = localStorage.getItem("posts");
+        if (data) {
+            return JSON.parse(data);
+        } else {
+            return [];
+        }
+    }
+    const [posts, setPosts] = useState(getLocalItems);
 
     useEffect(() => {
         axios.get(`${process.env.PUBLIC_URL}/dbs/board.json`)
             .then(data => {
                 setProblems(data.data.data)
             })
-    }, [])
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem("posts", JSON.stringify(posts));
+    }, [posts]);
 
     const addPost = () => {
         if (!writer.current.value || !request.current.value) {
@@ -68,7 +79,7 @@ const Community = (props) => {
                     {
                         problems.map((problem, index) => {
                             return (
-                                <article key={index}>
+                                <article key={index} className='active'>
                                     <div className="question" onClick={(e) => {
                                         e.target.closest("article").classList.toggle("active");
                                     }}>
