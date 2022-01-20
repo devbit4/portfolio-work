@@ -82,6 +82,7 @@
                 justify-content: center;
                 align-items: center;
                 padding-right: 20px;
+
                 input{
                     width: 100%;
                     margin-bottom: 10px;
@@ -90,6 +91,15 @@
                     border: 1px solid #ccc;
                     font: 300 14px/1 'Roboto';
 
+                }
+                select{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 5px 10px;
+                    background: #efefef;
+                    outline: none;
+                    border: 1px solid #ccc;
+                    color: #999;
                 }
                 textarea{
                     width: 100%;
@@ -110,25 +120,68 @@
                         width: 150px;
                         border: none;
                         padding: 5px;
-                        background: #ccc;
-                        color: #000;
+                        background: #aaa;
+                        color: #fff;
                         font: 14px/1 'Roboto';
+                        cursor: pointer;
                     }
                 }
                }
                .showBox{
                 width: 50%;
+                height: 350px;
                 background: #efefef;
                 overflow-y: hidden;
-                padding: 5px 10px;
+                padding: 10px;
+                overflow-y: scroll;
 
                 article{
                     .post{
-                        padding: 5px 10px;
+                        width: 100%;
+                        padding: 20px 10px;
                         display: flex;
                         justify-content: space-between;
                         background: #fff;
+                        select{
+                            width: 25%;
+                        }
+                        input{
+                            width: 75%;
+                            font: 300 14px/1 'Roboto';
+                            padding-left: 5px;
 
+                            &:nth-of-type(1){
+                                width: 50%;
+                            }
+                            &:nth-of-type(2){
+                                width: 25%;
+                            }
+                        }
+                        strong{
+                            width: 25%;
+                            font: 300 14px/1 'Roboto';
+                        }
+                        p{
+                            width: 50%;
+                            font: 300 14px/1 'Roboto';
+                        }
+                        span{
+                            width: 25%;
+                            font: 300 14px/1 'Roboto';
+                        }
+
+                    }
+                    .btns{
+                        margin: 5px 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        li{
+                            margin: 5px;
+                            i{
+                                font-size: 16px;
+                                cursor: pointer;
+                            }
+                        }
                     }
                 }
                }
@@ -138,3 +191,28 @@
     }
 }
 
+@media screen and (max-width:1179px){
+    .community{
+        .inner{
+
+            .help{
+
+               .boxes{
+                   flex-direction: column;
+                   .inputBox{
+                    width: 100%;
+                    padding-right: 0px;
+                    .btns{
+                        margin-bottom: 40px;
+                    }
+                   }
+                   .showBox{
+                    width: 100%;
+                   }
+               }
+            }
+
+        }
+    }
+
+}

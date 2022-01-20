@@ -104,6 +104,15 @@
                     width:50%;
                     background: linear-gradient(to right,#fff,#eee);
                     position: relative;
+                    transition: all 0.3s;
+                    &:hover{
+                        background: #ddd;
+                        .time{
+                            .month{
+                                color: #fff;
+                            }
+                        }
+                    }
                     .time{
                         position: absolute;
                         top: 0;

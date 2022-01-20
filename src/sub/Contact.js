@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useRef } from "react";
 
+
 const Contact = (props) => {
     const { kakao } = window;
     const container = useRef(null);

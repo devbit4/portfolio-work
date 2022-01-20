@@ -85,15 +85,16 @@ function Youtube() {
                 <div className="library">
                     <h1># LIBRARY</h1>
                     <div className='inner'>
-                        <div className="left">
-                            <Fade left>
+                        <Fade left>
+                            <div className="left">
+
                                 <div className='time'>
                                     <strong className='date'>{d}</strong>
                                     <strong className='month'>{monthNames[m]}</strong>
                                 </div>
-                            </Fade>
-                        </div>
 
+                            </div>
+                        </Fade>
                         <div className="right">
                             <div className="right-upper"></div>
                             <div className="right-lower">

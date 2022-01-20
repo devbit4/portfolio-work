@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Jump from 'react-reveal/Jump';
+import Fade from 'react-reveal/Fade';
 
 const About = (props) => {
     let [people, setPeople] = useState([]);
@@ -101,34 +102,37 @@ const About = (props) => {
                         <div className="text">
                             <h2>#INFLUENCERS</h2>
                         </div>
+
                         <div className="list">
                             {
                                 people.map((person, index) => {
                                     return (
-                                        <div className="card-container" key={index}>
-                                            <figure className="card">
-                                                <div className="front">
-                                                    <div className='pic'>
-                                                        <img src={process.env.PUBLIC_URL + person.pic} alt="" />
+                                        <Fade bottom>
+                                            <div className="card-container" key={index}>
+                                                <figure className="card">
+                                                    <div className="front">
+                                                        <div className='pic'>
+                                                            <img src={process.env.PUBLIC_URL + person.pic} alt="" />
+                                                        </div>
+                                                        <div className='txt'>
+                                                            <h3>{person.name}</h3>
+                                                            <h4>{person.job}</h4>
+                                                            <p>{person.say}</p>
+                                                            <button>Read More <i className="fas fa-angle-double-right"></i></button>
+                                                        </div>
                                                     </div>
-                                                    <div className='txt'>
-                                                        <h3>{person.name}</h3>
-                                                        <h4>{person.job}</h4>
-                                                        <p>{person.say}</p>
-                                                        <button>Read More <i className="fas fa-angle-double-right"></i></button>
+                                                    <div className="back">
+                                                        <h3>{person.say}</h3>
+                                                        <p>{person.intro}</p>
+                                                        <div className="sns">
+                                                            <i className="fab fa-facebook-square"></i>
+                                                            <i className="fab fa-instagram"></i>
+                                                            <i className="fab fa-twitter"></i>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div className="back">
-                                                    <h3>{person.say}</h3>
-                                                    <p>{person.intro}</p>
-                                                    <div className="sns">
-                                                        <i className="fab fa-facebook-square"></i>
-                                                        <i className="fab fa-instagram"></i>
-                                                        <i className="fab fa-twitter"></i>
-                                                    </div>
-                                                </div>
-                                            </figure>
-                                        </div>
+                                                </figure>
+                                            </div>
+                                        </Fade>
                                     )
                                 })
                             }

@@ -161,6 +161,7 @@ const Home = (props) => {
             />
             <section className="main">
                 <div className="inner"></div>
+                {/* <Fade left> */}
                 <article>
                     <p>
                         <strong>Share</strong> <br></br>
@@ -175,6 +176,7 @@ const Home = (props) => {
                         Read More <i className="fas fa-plus"></i>
                     </a>
                 </article>
+                {/* </Fade> */}
                 <figure className="phone">
                     <article className="screen">
                         <Swiper
@@ -196,7 +198,7 @@ const Home = (props) => {
                     <Fade top>
                         <strong className='big-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
-                    <Fade top delay={500}>
+                    <Fade top delay={400}>
                         <strong className='small-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
                 </figure>

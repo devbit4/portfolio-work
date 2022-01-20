@@ -4,17 +4,27 @@ import React, { useEffect, useState, useRef } from 'react';
 const Community = (props) => {
     const [problems, setProblems] = useState([]);
     const writer = useRef(null);
+    const type = useRef(null);
     const request = useRef(null);
     const updateWriter = useRef(null);
+    const updateType = useRef(null);
     const updateRequest = useRef(null);
 
 
     const getLocalItems = () => {
         let data = localStorage.getItem("posts");
+        console.log(data);
         if (data) {
+
             return JSON.parse(data);
         } else {
-            return [];
+            return [
+                { writer: 'Lena', type: "type2", request: 'Here comes requests.' },
+                { writer: 'Tim', type: "type1", request: 'Here comes requests.' },
+                { writer: 'Helen', type: "type3", request: 'Here comes requests.' },
+                { writer: 'Tom', type: "type3", request: 'Here comes requests.' },
+
+            ];
         }
     }
     const [posts, setPosts] = useState(getLocalItems);
@@ -35,9 +45,11 @@ const Community = (props) => {
             alert("Please Type Your Request");
             return;
         }
-        setPosts([{ writer: writer.current.value, request: request.current.value }, ...posts]);
+        setPosts([{ writer: writer.current.value, type: type.current.value, request: request.current.value }, ...posts]);
         writer.current.value = "";
+        type.current.value = "Type 1";
         request.current.value = "";
+
 
     }
     const deletePost = (deletedIndex) => {
@@ -61,6 +73,7 @@ const Community = (props) => {
         setPosts(posts.map((post, postIndex) => {
             if (postIndex === index) {
                 post.writer = updateWriter.current.value;
+                post.type = updateType.current.value;
                 post.request = updateRequest.current.value;
                 post.enableUpdate = false;
             }
@@ -104,6 +117,12 @@ const Community = (props) => {
                     <div className='boxes'>
                         <section className="inputBox">
                             <input type="text" placeholder="Your Name Here" ref={writer} />
+                            <select ref={type}>
+                                <option>Type 1</option>
+                                <option>Type 2</option>
+                                <option>Type 3</option>
+
+                            </select>
                             <textarea cols="30" rows="10" placeholder="Your Request Here" ref={request}></textarea>
                             <div className="btns">
                                 <button onClick={() => {
@@ -123,24 +142,32 @@ const Community = (props) => {
 
                                                 <>
                                                     <div className="post">
+
+                                                        <select defaultValue={post.type} ref={updateType}>
+                                                            <option>Type1</option>
+                                                            <option>Type2</option>
+                                                            <option>Type3</option>
+
+                                                        </select>
                                                         <input type="text" defaultValue={post.request} ref={updateRequest} /><br />
-                                                        <textarea defaultValue={post.writer} ref={updateWriter}></textarea>
+                                                        <input defaultValue={post.writer} ref={updateWriter}></input>
                                                     </div>
                                                     <ul className="btns">
-                                                        <li onClick={() => updatePost(index)}>입력</li>
-                                                        <li onClick={() => disableUpdate(index)}>취소</li>
+                                                        <li onClick={() => updatePost(index)}><i className="fas fa-highlighter"></i></li>
+                                                        <li onClick={() => disableUpdate(index)}><i className="far fa-window-close"></i></li>
                                                     </ul>
                                                 </>
 
                                                 :
                                                 <>
                                                     <div className="post">
+                                                        <strong>{post.type}</strong>
                                                         <p>{post.request}</p>
                                                         <span>{post.writer}</span>
                                                     </div>
                                                     <ul className="btns">
-                                                        <li onClick={() => enableUpdate(index)}>Edit</li>
-                                                        <li onClick={() => deletePost(index)}>Del</li>
+                                                        <li onClick={() => enableUpdate(index)}><i className="far fa-edit"></i></li>
+                                                        <li onClick={() => deletePost(index)}><i className="far fa-trash-alt"></i></li>
                                                     </ul>
                                                 </>
 
