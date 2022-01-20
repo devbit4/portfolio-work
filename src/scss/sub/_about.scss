@@ -192,6 +192,15 @@
 				width: 28%;
 				height: 25rem;
 				perspective: 1000px;
+				&:nth-last-of-type(1){
+					animation-delay: 0.6s !important;
+				}
+				&:nth-last-of-type(2){
+					animation-delay: 0.3s !important;
+				}
+				&:nth-last-of-type(3){
+					animation-delay: 0s !important;
+				}
 				&:hover .card {
 					transform: rotateY(180deg);
 				}

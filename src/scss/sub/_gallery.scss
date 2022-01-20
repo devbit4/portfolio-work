@@ -71,10 +71,12 @@
 		transform: translate(-50%, -50%);
 	}
 	.list {
+		min-height: 400px;
 		opacity: 0;
 		transform: translateY(100px);
 		transition: 1s;
 		position: relative;
+
 
 		&.on{
 			opacity: 1;

@@ -133,6 +133,7 @@ const About = (props) => {
                                                 </figure>
                                             </div>
                                         </Fade>
+
                                     )
                                 })
                             }

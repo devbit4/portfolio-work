@@ -161,22 +161,22 @@ const Home = (props) => {
             />
             <section className="main">
                 <div className="inner"></div>
-                {/* <Fade left> */}
-                <article>
-                    <p>
-                        <strong>Share</strong> <br></br>
-                        <span>Your Stories</span>
-                    </p>
-                    <em>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                        incidunt quidem veritatis corrupti quam et fugiat excepturi
-                        explicabo laboriosam nisi?
-                    </em>
-                    <a href="#">
-                        Read More <i className="fas fa-plus"></i>
-                    </a>
-                </article>
-                {/* </Fade> */}
+                <Fade left>
+                    <article>
+                        <p>
+                            <strong>Share</strong> <br></br>
+                            <span>Your Stories</span>
+                        </p>
+                        <em>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                            incidunt quidem veritatis corrupti quam et fugiat excepturi
+                            explicabo laboriosam nisi?
+                        </em>
+                        <a href="#">
+                            Read More <i className="fas fa-plus"></i>
+                        </a>
+                    </article>
+                </Fade>
                 <figure className="phone">
                     <article className="screen">
                         <Swiper
@@ -195,10 +195,10 @@ const Home = (props) => {
                             <SwiperSlide></SwiperSlide>
                         </Swiper>
                     </article>
-                    <Fade top>
+                    <Fade top delay={300}>
                         <strong className='big-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
-                    <Fade top delay={400}>
+                    <Fade top delay={600}>
                         <strong className='small-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
                 </figure>
