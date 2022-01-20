@@ -22,7 +22,7 @@
 
                 &.active .answer{
                     max-height: 300px;
-                    animation: fade 1s ease-in-out;
+                    // animation: fade 1s ease-in-out;
                 }
                 &.active i{
                     transform: rotate(180deg);
@@ -56,6 +56,7 @@
                     p{
                         padding-top: 2rem;
                         padding-left: 40px;
+                        padding-right: 10px;
                         font: 300 14px/1.4 'Roboto';
                         color: #aaa;
                     }
@@ -120,6 +121,7 @@
                 background: #efefef;
                 overflow-y: hidden;
                 padding: 5px 10px;
+
                 article{
                     .post{
                         padding: 5px 10px;

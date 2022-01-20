@@ -30,7 +30,7 @@ table {
 @keyframes fade{
     from{
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(60px);
     }
     to{
         opacity: 1;
@@ -38,23 +38,3 @@ table {
     }
 }
 
-@keyframes slide{
-  from {
-    transform : translateX(-600px);
-    opacity: 0;
-  }
-  to{
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-@keyframes disappear{
-  from {
-    transform : translateX(0px);
-    opacity: 1;
-  }
-  to{
-    transform: translateX(-600px);
-    opacity: 0;
-  }
-}

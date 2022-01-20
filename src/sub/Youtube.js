@@ -1,14 +1,20 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Fade from 'react-reveal/Fade';
 
 function Youtube() {
     let [data, setData] = useState([]);
     let [isPop, setIsPop] = useState(false);
     let [index, setIndex] = useState(0);
-
     let [features, setFeatures] = useState([]);
     let [trends, setTrends] = useState([]);
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
 
+    const time = new Date();
+    const m = time.getMonth();
+    const d = time.getDate();
 
     const api_key = "AIzaSyDsfN60C3q050t7aRRi2gw5CcR9CkegDz8";
     const playListId = "PL1fBkO2q3tOee1NUg1rw49pFNBK-uCEI1";
@@ -16,6 +22,7 @@ function Youtube() {
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${playListId}&maxResults=${num}`;
 
     useEffect(() => {
+
         axios
             .get(url)
             .then(json => {
@@ -28,7 +35,6 @@ function Youtube() {
                 setFeatures(json.data.featured);
                 setTrends(json.data.trend);
             })
-
 
 
     }, []);
@@ -52,8 +58,8 @@ function Youtube() {
                                     <div className="inner">
                                         <div className="circle"><i className="far fa-circle"></i></div>
                                         <div className="num">
-                                            <strong>{index + 20}</strong>
-                                            <span>March</span>
+                                            <strong>{index + 10}</strong>
+                                            <span>{monthNames[m]}</span>
                                         </div>
                                         <div className="txt">
                                             <h2 onClick={() => {
@@ -80,19 +86,29 @@ function Youtube() {
                     <h1># LIBRARY</h1>
                     <div className='inner'>
                         <div className="left">
-
+                            <Fade left>
+                                <div className='time'>
+                                    <strong className='date'>{d}</strong>
+                                    <strong className='month'>{monthNames[m]}</strong>
+                                </div>
+                            </Fade>
                         </div>
+
                         <div className="right">
                             <div className="right-upper"></div>
                             <div className="right-lower">
-                                <div className="box">
-                                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
-                                    <span>31.03.2022</span>
-                                </div>
-                                <div className="box">
-                                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
-                                    <span>31.03.2022</span>
-                                </div>
+                                <Fade bottom>
+                                    <div className="box">
+                                        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                                        <span>31.03.2022</span>
+                                    </div>
+                                </Fade>
+                                <Fade bottom>
+                                    <div className="box">
+                                        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                                        <span>31.03.2022</span>
+                                    </div>
+                                </Fade>
                             </div>
                         </div>
                     </div>

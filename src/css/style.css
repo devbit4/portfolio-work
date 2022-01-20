@@ -28,24 +28,10 @@ fieldset {
 @keyframes fade {
   from {
     opacity: 0;
-    transform: translateY(20px); }
+    transform: translateY(60px); }
   to {
     opacity: 1;
     transform: translateY(0px); } }
-@keyframes slide {
-  from {
-    transform: translateX(-600px);
-    opacity: 0; }
-  to {
-    transform: translateX(0px);
-    opacity: 1; } }
-@keyframes disappear {
-  from {
-    transform: translateX(0px);
-    opacity: 1; }
-  to {
-    transform: translateX(-600px);
-    opacity: 0; } }
 header {
   width: 100%;
   height: 10vh;
@@ -749,16 +735,16 @@ header {
         text-align: right; }
       .about .inner .about-content .description .boxes .top-right {
         border-top: 1px solid #ddd;
-        background: url(/public/img/203.jpg) center/cover fixed; }
+        background: url(/public/img/204.jpg) center/cover fixed; }
       .about .inner .about-content .description .boxes .lower-left {
         text-align: right;
-        background: url(/public/img/203.jpg) center/cover fixed; }
+        background: url(/public/img/204.jpg) center/cover fixed; }
         .about .inner .about-content .description .boxes .lower-left h2 {
           color: #ccc; }
   .about .inner .about-content .people .text h2 {
     font: 20px/1 'Roboto';
     color: #555;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd; }
   .about .inner .about-content .people .list {
@@ -909,7 +895,8 @@ header {
 .youtube .inner {
   animation: fade 1s ease-in-out; }
   .youtube .inner .news {
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    min-height: 600px; }
     .youtube .inner .news h1 {
       font: 20px/1 'Roboto';
       margin-bottom: 30px;
@@ -983,10 +970,26 @@ header {
     .youtube .inner .library .inner {
       display: flex; }
       .youtube .inner .library .inner .left {
-        width: 40%;
-        background: linear-gradient(to right, #fff, #eee); }
+        width: 50%;
+        background: linear-gradient(to right, #fff, #eee);
+        position: relative; }
+        .youtube .inner .library .inner .left .time {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 30px 40px; }
+          .youtube .inner .library .inner .left .time .date {
+            font: 80px/1 'Roboto';
+            color: #fff; }
+          .youtube .inner .library .inner .left .time .month {
+            font: 32px/1 'Roboto';
+            color: #bbb; }
       .youtube .inner .library .inner .right {
-        width: 60%;
+        width: 50%;
         display: flex;
         flex-direction: column; }
         .youtube .inner .library .inner .right .right-upper {
@@ -1161,7 +1164,7 @@ header {
       flex-wrap: wrap; }
       .gallery .inner .list ul .pic {
         width: 25%;
-        padding: 10px;
+        padding: 10px 15px;
         transition: all 0.3s;
         margin-bottom: 20px; }
         .gallery .inner .list ul .pic:hover {
@@ -1304,8 +1307,7 @@ header {
         background: #efefef;
         border-radius: 4px; }
       .community .inner .faq article.active .answer {
-        max-height: 300px;
-        animation: fade 1s ease-in-out; }
+        max-height: 300px; }
       .community .inner .faq article.active i {
         transform: rotate(180deg); }
       .community .inner .faq article .question {
@@ -1334,6 +1336,7 @@ header {
         .community .inner .faq article .answer p {
           padding-top: 2rem;
           padding-left: 40px;
+          padding-right: 10px;
           font: 300 14px/1.4 'Roboto';
           color: #aaa; }
   .community .inner .help h1 {
@@ -1421,7 +1424,7 @@ header {
       transition: all 0.3s; }
       .contact .inner .inner-text .times .time:nth-of-type(2) {
         background: #efefef;
-        border-radius: 10px; }
+        border-radius: 4px; }
       .contact .inner .inner-text .times .time strong {
         font: bold 16px/1 'Roboto';
         margin-bottom: 20px; }
@@ -1430,7 +1433,7 @@ header {
         margin-bottom: 10px; }
       .contact .inner .inner-text .times .time:hover {
         background: #efefef;
-        border-radius: 10px;
+        border-radius: 4px;
         transform: scale(1.04); }
   .contact .inner .inner-text .locations {
     padding: 0 0 4vh 0;
@@ -1452,7 +1455,9 @@ header {
         padding: 0 2vw; }
         .contact .inner .inner-text .locations .location .text h2 {
           font: bold 18px/1 'Roboto';
-          margin-bottom: 20px; }
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #ddd; }
         .contact .inner .inner-text .locations .location .text p {
           font: 300 14px/1.2 'Roboto';
           margin-bottom: 40px; }

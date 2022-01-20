@@ -38,7 +38,7 @@
 					transition: all 0.3s;
 					&:nth-of-type(2) {
 						background: #efefef;
-						border-radius: 10px;
+						border-radius: 4px;
 					}
 					strong {
 						font: bold 16px/1 'Roboto';
@@ -50,7 +50,7 @@
 					}
 					&:hover {
 						background: #efefef;
-						border-radius: 10px;
+						border-radius: 4px;
 						transform: scale(1.04);
 					}
 				}
@@ -79,7 +79,9 @@
 						padding: 0 2vw;
 						h2 {
 							font: bold 18px/1 'Roboto';
-							margin-bottom: 20px;
+							padding-bottom: 10px;
+							margin-bottom: 10px;
+							border-bottom: 1px solid #ddd;
 						}
 						p {
 							font: 300 14px/1.2 'Roboto';
