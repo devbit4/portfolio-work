@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import Fade from 'react-reveal/Fade';
 
 function Youtube() {
-    let [data, setData] = useState([]);
     let [isPop, setIsPop] = useState(false);
     let [index, setIndex] = useState(0);
     let [features, setFeatures] = useState([]);
@@ -16,28 +16,17 @@ function Youtube() {
     const m = time.getMonth();
     const d = time.getDate();
 
-    const api_key = "AIzaSyDsfN60C3q050t7aRRi2gw5CcR9CkegDz8";
-    const playListId = "PL1fBkO2q3tOee1NUg1rw49pFNBK-uCEI1";
-    const num = 4;
-    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${playListId}&maxResults=${num}`;
+    const youtube = useSelector(state => state.youtubeReducer.youtube);
 
     useEffect(() => {
-
-        axios
-            .get(url)
-            .then(json => {
-                console.log(json.data.items);
-                setData(json.data.items);
-            })
-
         axios.get(`${process.env.PUBLIC_URL}/dbs/youtube.json`)
             .then(json => {
                 setFeatures(json.data.featured);
                 setTrends(json.data.trend);
             })
-
-
     }, []);
+
+
 
     return (
         <section className="content youtube">
@@ -47,7 +36,7 @@ function Youtube() {
                 <div className="news">
                     <h1># WHAT'S NEWS?</h1>
                     {
-                        data.map((item, index) => {
+                        youtube.map((item, index) => {
                             let tit = item.snippet.title;
                             let tit_len = tit.length;
                             let desc = item.snippet.description;
@@ -161,7 +150,7 @@ function Youtube() {
         return (
             <aside className="pop">
                 <iframe
-                    src={"https://www.youtube.com/embed/" + data[index].snippet.resourceId.videoId} width='100%' height='100%' allowFullScreen
+                    src={"https://www.youtube.com/embed/" + youtube[index].snippet.resourceId.videoId} width='100%' height='100%' allowFullScreen
                 ></iframe>
                 <span onClick={() => {
                     setIsPop(false);

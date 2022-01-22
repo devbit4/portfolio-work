@@ -107,7 +107,7 @@ const About = (props) => {
                             {
                                 people.map((person, index) => {
                                     return (
-                                        <Fade bottom>
+                                        <Fade bottom key={index}>
                                             <div className="card-container" key={index}>
                                                 <figure className="card">
                                                     <div className="front">

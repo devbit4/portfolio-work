@@ -1,11 +1,15 @@
 import React from 'react';
 import { useEffect, useRef } from "react";
-
+import { useSelector } from 'react-redux';
 
 const Contact = (props) => {
     const { kakao } = window;
     const container = useRef(null);
     const container2 = useRef(null);
+
+    const youtube = useSelector(state => state.youtubeReducer.youtube);
+
+    console.log(youtube);
 
     useEffect(() => {
         const options = {
@@ -105,6 +109,17 @@ const Contact = (props) => {
                                 <div id="map" ref={container2}></div>
                             </div>
                         </div>
+                    </div>
+                    <div className="youtubes">
+                        {
+                            youtube.map((item, index) => {
+                                return (<article>
+                                    <h2>txt</h2>
+                                    <p></p>
+                                    <img src={item.snippet.thumbnails.medium.url} alt="" />
+                                </article>)
+                            })
+                        }
                     </div>
                 </div>
             </div>

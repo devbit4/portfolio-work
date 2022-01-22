@@ -8,9 +8,16 @@ import Anime from '../class/anime.js';
 import Particles from 'react-tsparticles';
 import Fade from 'react-reveal/Fade';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { setYoutube } from '../redux/actions';
+import axios from 'axios';
+
+
+
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Home = (props) => {
+
     const home = useRef(null);
     const [index, setIndex] = useState(0);
     const pos = useRef([]);
@@ -52,6 +59,30 @@ const Home = (props) => {
             window.removeEventListener('scroll', handleScroll);
         }
     }, [index]);
+
+    // youtube redux fetch
+    const youtube = useSelector(state => state.youtubeReducer.youtube);
+    const dispatch = useDispatch();
+    console.log(youtube);
+
+    const api_key = "AIzaSyDsfN60C3q050t7aRRi2gw5CcR9CkegDz8";
+    const playListId = "PL1fBkO2q3tOee1NUg1rw49pFNBK-uCEI1";
+    const num = 4;
+    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${playListId}&maxResults=${num}`;
+
+    useEffect(() => {
+
+        fetchYoutube();
+
+    }, []);
+
+    const fetchYoutube = async () => {
+        const response = await axios
+            .get(url)
+            .catch(err => console.error(err))
+
+        dispatch(setYoutube(response.data.items));
+    }
 
     return (
         <div className='home' ref={home}>

@@ -20,7 +20,7 @@ const Community = (props) => {
     const updateRequest = useRef(null);
 
     const getLocalItems = () => {
-        let data = localStorage.getItem('posts');
+        let data = localStorage.getItem('helps');
         console.log(data);
         if (data) {
             return JSON.parse(data);
@@ -33,7 +33,7 @@ const Community = (props) => {
             ];
         }
     };
-    const [posts, setPosts] = useState(getLocalItems);
+    const [helps, setHelps] = useState(getLocalItems);
 
     useEffect(() => {
         axios.get(`${process.env.PUBLIC_URL}/dbs/board.json`).then((data) => {
@@ -42,49 +42,49 @@ const Community = (props) => {
     }, []);
 
     useEffect(() => {
-        localStorage.setItem('posts', JSON.stringify(posts));
-    }, [posts]);
+        localStorage.setItem('helps', JSON.stringify(helps));
+    }, [helps]);
 
     const addPost = () => {
         if (!writer.current.value || !request.current.value) {
             alert('Please Type Your Request');
             return;
         }
-        setPosts([
+        setHelps([
             {
                 writer: writer.current.value,
                 type: type.current.value,
                 request: request.current.value,
             },
-            ...posts,
+            ...helps,
         ]);
         writer.current.value = '';
         type.current.value = 'Type 1';
         request.current.value = '';
     };
     const deletePost = (deletedIndex) => {
-        setPosts(posts.filter((post, postIndex) => postIndex !== deletedIndex));
+        setHelps(helps.filter((post, postIndex) => postIndex !== deletedIndex));
     };
     const disableUpdate = (index) => {
-        setPosts(
-            posts.map((post, postIndex) => {
+        setHelps(
+            helps.map((post, postIndex) => {
                 if (postIndex === index) post.enableUpdate = false;
                 return post;
             })
         );
     };
     const enableUpdate = (index) => {
-        setPosts(
-            posts.map((post, postIndex) => {
+        setHelps(
+            helps.map((post, postIndex) => {
                 if (postIndex === index) post.enableUpdate = true;
                 return post;
             })
         );
-        console.log(posts);
+        console.log(helps);
     };
     const updatePost = (index) => {
-        setPosts(
-            posts.map((post, postIndex) => {
+        setHelps(
+            helps.map((post, postIndex) => {
                 if (postIndex === index) {
                     post.writer = updateWriter.current.value;
                     post.type = updateType.current.value;
@@ -195,7 +195,7 @@ const Community = (props) => {
                             </div>
                         </section>
                         <section className="showBox">
-                            {posts.map((post, index) => {
+                            {helps.map((post, index) => {
                                 return (
                                     <article key={index}>
                                         {post.enableUpdate ? (
