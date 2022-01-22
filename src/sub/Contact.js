@@ -1,14 +1,18 @@
 import React from 'react';
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSelector } from 'react-redux';
 
 const Contact = (props) => {
+    const body = document.querySelector("body");
+
+    let [isPop, setIsPop] = useState(false);
+    let [index, setIndex] = useState(0);
+
     const { kakao } = window;
     const container = useRef(null);
     const container2 = useRef(null);
 
     const youtube = useSelector(state => state.youtubeReducer.youtube);
-
 
     useEffect(() => {
         const options = {
@@ -121,7 +125,11 @@ const Contact = (props) => {
                         <div className='articles'>
                             {
                                 youtube.slice(0, 3).map((item, index) => {
-                                    return (<article key={index}>
+                                    return (<article key={index} onClick={() => {
+                                        setIsPop(true);
+                                        setIndex(index);
+                                        body.style.overflow = "hidden";
+                                    }}>
                                         <img src={item.snippet.thumbnails.medium.url} alt="vid" />
                                         <div className="txt">
                                             <i className="far fa-play-circle"></i>
@@ -133,9 +141,26 @@ const Contact = (props) => {
                         </div>
                     </div>
                 </div>
+                {isPop ? <Pop /> : null}
             </div>
         </section>
     )
+
+    function Pop() {
+        return (
+            <aside className="pop">
+                <iframe
+                    src={"https://www.youtube.com/embed/" + youtube[index].snippet.resourceId.videoId} width='100%' height='100%' allowFullScreen
+                ></iframe>
+                <span onClick={() => {
+                    setIsPop(false);
+                    body.style.overflow = "auto";
+                }}>close</span>
+            </aside>
+        )
+    }
+
+
 };
 
 export default Contact;

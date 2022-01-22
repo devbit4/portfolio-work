@@ -11,6 +11,8 @@ import SwiperCore, { EffectCoverflow, Pagination } from 'swiper';
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 const Community = (props) => {
+
+
     const [problems, setProblems] = useState([]);
     const writer = useRef(null);
     const type = useRef(null);

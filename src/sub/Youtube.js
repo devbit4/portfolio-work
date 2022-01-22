@@ -4,6 +4,9 @@ import { useSelector } from 'react-redux';
 import Fade from 'react-reveal/Fade';
 
 function Youtube() {
+
+    const body = document.querySelector("body");
+
     let [isPop, setIsPop] = useState(false);
     let [index, setIndex] = useState(0);
     let [features, setFeatures] = useState([]);
@@ -60,6 +63,8 @@ function Youtube() {
                                         <div className="pic" onClick={() => {
                                             setIsPop(true);
                                             setIndex(index);
+                                            console.log(body);
+                                            body.style.overflow = "hidden";
                                         }}>
                                             <img src={item.snippet.thumbnails.medium.url} />
                                             <i className="far fa-play-circle"></i>
@@ -154,6 +159,7 @@ function Youtube() {
                 ></iframe>
                 <span onClick={() => {
                     setIsPop(false);
+                    body.style.overflow = "auto";
                 }}>close</span>
             </aside>
         )
