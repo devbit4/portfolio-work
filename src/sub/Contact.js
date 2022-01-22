@@ -9,7 +9,6 @@ const Contact = (props) => {
 
     const youtube = useSelector(state => state.youtubeReducer.youtube);
 
-    console.log(youtube);
 
     useEffect(() => {
         const options = {
@@ -111,15 +110,27 @@ const Contact = (props) => {
                         </div>
                     </div>
                     <div className="youtubes">
-                        {
-                            youtube.map((item, index) => {
-                                return (<article>
-                                    <h2>txt</h2>
-                                    <p></p>
-                                    <img src={item.snippet.thumbnails.medium.url} alt="" />
-                                </article>)
-                            })
-                        }
+                        <div className='bigVid'>
+                            <iframe
+                                src={"https://www.youtube.com/embed/" + youtube[3].snippet.resourceId.videoId} width='100%' height='100%' allowFullScreen
+                            >
+                            </iframe>
+                            <h1>Touch</h1>
+
+                        </div>
+                        <div className='articles'>
+                            {
+                                youtube.slice(0, 3).map((item, index) => {
+                                    return (<article key={index}>
+                                        <img src={item.snippet.thumbnails.medium.url} alt="vid" />
+                                        <div className="txt">
+                                            <i className="far fa-play-circle"></i>
+                                            <h2>{item.snippet.title}</h2>
+                                        </div>
+                                    </article>)
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
