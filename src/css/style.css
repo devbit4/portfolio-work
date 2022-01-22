@@ -210,7 +210,7 @@ header {
     top: 50%;
     right: 13%;
     transform: translateY(-35%);
-    background: url("/src/img/bgPhone.png") no-repeat center/contain; }
+    background: url("/public/img/home/bgPhone.png") no-repeat center/contain; }
     .main .phone.on .big-speech {
       opacity: 1; }
     .main .phone.on .small-speech {
@@ -1300,7 +1300,18 @@ header {
     width: 50%; } }
 @media screen and (max-width: 539px) {
   .gallery .inner .list ul .pic {
-    width: 100%; } }
+    width: 100%; }
+  .gallery .popup {
+    flex-direction: column;
+    justify-content: space-between; }
+    .gallery .popup .pic {
+      width: 100%;
+      height: 50%;
+      padding: 20px 20px; }
+    .gallery .popup .text {
+      width: 100%;
+      height: 50%;
+      padding: 20px 20px; } }
 .community .inner {
   animation: fade 1s ease-in-out; }
   .community .inner .faq {
@@ -1559,13 +1570,19 @@ header {
     .contact .inner .inner-text .youtubes .articles {
       display: flex;
       justify-content: space-between;
-      padding: 0 2vw; }
+      padding: 0 2vw;
+      background: #efefef; }
       .contact .inner .inner-text .youtubes .articles article {
         width: 32%;
         position: relative;
-        cursor: pointer; }
+        cursor: pointer;
+        overflow: hidden; }
+        .contact .inner .inner-text .youtubes .articles article:hover img {
+          transform: scale(1.1); }
         .contact .inner .inner-text .youtubes .articles article img {
-          width: 100%; }
+          width: 100%;
+          height: 100%;
+          transition: all 0.3s; }
         .contact .inner .inner-text .youtubes .articles article .txt {
           position: absolute;
           bottom: 20px;

@@ -11,6 +11,7 @@ const masonryOptions = {
 };
 
 const Gallery = (props) => {
+    const body = document.querySelector("body");
     let [pics, setPics] = useState([]);
     let [loading, setLoading] = useState([]);
     let [enableClick, setEnableClick] = useState(true);
@@ -120,6 +121,7 @@ const Gallery = (props) => {
                                 <li key={index} className="pic" onClick={() => {
                                     setPopup(true);
                                     setIndex(index);
+                                    body.style.overflow = "hidden";
                                 }}>
                                     <div className="inner">
                                         <div className="type">
@@ -209,6 +211,7 @@ const Gallery = (props) => {
                 <span
                     onClick={() => {
                         setPopup(false);
+                        body.style.overflow = "auto";
                     }}
                 >
                     Close

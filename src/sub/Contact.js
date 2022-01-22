@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useRef, useState } from "react";
 import { useSelector } from 'react-redux';
+import Fade from 'react-reveal/Fade';
 
 const Contact = (props) => {
     const body = document.querySelector("body");
@@ -88,30 +89,34 @@ const Contact = (props) => {
                         </div>
                     </div>
                     <div className="locations">
-                        <div className="location">
-                            <div className="location-left pic">
-                                <div id="map" ref={container}></div>
+                        <Fade left>
+                            <div className="location">
+                                <div className="location-left pic">
+                                    <div id="map" ref={container}></div>
+                                </div>
+                                <div className="location-right text">
+                                    <h2>STORY PLACE1</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis modi quam, sequi architecto officia!</p>
+                                    <span><i className="fas fa-map-marker-alt"></i> 31 Walker St, New York, NY 10013, USA</span>
+                                    <span><i className="fas fa-phone-alt"></i> +365 / 4369- 35656, +3615</span>
+                                    <span><i className="far fa-envelope"></i> cinemabridge@qodeinteractive.com</span>
+                                </div>
                             </div>
-                            <div className="location-right text">
-                                <h2>STORY PLACE1</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis modi quam, sequi architecto officia!</p>
-                                <span><i className="fas fa-map-marker-alt"></i> 31 Walker St, New York, NY 10013, USA</span>
-                                <span><i className="fas fa-phone-alt"></i> +365 / 4369- 35656, +3615</span>
-                                <span><i className="far fa-envelope"></i> cinemabridge@qodeinteractive.com</span>
+                        </Fade>
+                        <Fade right>
+                            <div className="location">
+                                <div className="location-left text">
+                                    <h2>STORY PLACE2</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis modi quam, sequi architecto officia!</p>
+                                    <span><i className="fas fa-map-marker-alt"></i> 31 Walker St, New York, NY 10013, USA</span>
+                                    <span><i className="fas fa-phone-alt"></i> +365 / 4369- 35656, +3615 </span>
+                                    <span><i className="far fa-envelope"></i> cinemabridge@qodeinteractive.com</span>
+                                </div>
+                                <div className="location-right pic">
+                                    <div id="map" ref={container2}></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="location">
-                            <div className="location-left text">
-                                <h2>STORY PLACE2</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis modi quam, sequi architecto officia!</p>
-                                <span><i className="fas fa-map-marker-alt"></i> 31 Walker St, New York, NY 10013, USA</span>
-                                <span><i className="fas fa-phone-alt"></i> +365 / 4369- 35656, +3615 </span>
-                                <span><i className="far fa-envelope"></i> cinemabridge@qodeinteractive.com</span>
-                            </div>
-                            <div className="location-right pic">
-                                <div id="map" ref={container2}></div>
-                            </div>
-                        </div>
+                        </Fade>
                     </div>
                     <div className="youtubes">
                         <div className='bigVid'>

@@ -114,6 +114,10 @@
 						transform: rotate(90deg) translateY(210px);
 						font: bold 80px/1 'Roboto';
 						color: #ddd;
+						// transition: all 1s;
+						// &:hover{
+						// 	transform: rotate(90deg) translateY(-200px);
+						// }
 					}
 
 				}
@@ -123,13 +127,22 @@
 				display: flex;
 				justify-content: space-between;
 				padding: 0 2vw;
+			background: #efefef;
 
 				article{
 					width: 32%;
 					position: relative;
 					cursor: pointer;
+					overflow: hidden;
+					&:hover{
+						img{
+							transform: scale(1.1);
+						}
+					}
 					img{
 						width: 100%;
+						height: 100%;
+						transition: all 0.3s;
 
 					}
 					.txt{
