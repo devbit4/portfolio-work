@@ -172,7 +172,7 @@ const About = (props) => {
                     <div className="description">
                         <div className="boxes upper">
                             <div className="box top-left">
-                                <span>FALL 2016</span>
+                                <span>SPRING 2022</span>
                                 <h2>Lorem, ipsum dolor</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -181,7 +181,7 @@ const About = (props) => {
                                 <button>READ MORE</button>
                             </div>
                             <div className="box top-right">
-                                <span>FALL 2016</span>
+                                <span>SUMMER 2022</span>
                                 <h2>Lorem, ipsum dolor</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -192,7 +192,7 @@ const About = (props) => {
                         </div>
                         <div className="boxes lower">
                             <div className="box lower-left">
-                                <span>FALL 2016</span>
+                                <span>FALL 2022</span>
                                 <h2>Lorem, ipsum dolor</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -202,7 +202,7 @@ const About = (props) => {
                                 <button>SEND</button>
                             </div>
                             <div className="box lower-right">
-                                <span>FALL 2016</span>
+                                <span>WINTER 2022</span>
                                 <h2>Lorem, ipsum dolor</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

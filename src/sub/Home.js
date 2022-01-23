@@ -300,28 +300,28 @@ const Home = (props) => {
                         <div className="block">
                             <i className="fas fa-angle-right"></i>
                             <div className="text">
-                                <span>2016</span>
+                                <span>2018</span>
                                 <strong>PLUGINS</strong>
                             </div>
                         </div>
                         <div className="block">
                             <i className="fas fa-angle-right"></i>
                             <div className="text">
-                                <span>2016</span>
+                                <span>2019</span>
                                 <strong>PLUGINS</strong>
                             </div>
                         </div>
                         <div className="block">
                             <i className="fas fa-angle-right"></i>
                             <div className="text">
-                                <span>2016</span>
+                                <span>2020</span>
                                 <strong>PLUGINS</strong>
                             </div>
                         </div>
                         <div className="block">
                             <i className="fas fa-angle-right"></i>
                             <div className="text">
-                                <span>2016</span>
+                                <span>2021</span>
                                 <strong>PLUGINS</strong>
                             </div>
                         </div>

@@ -1522,7 +1522,7 @@ header {
           .contact .inner .inner-text .locations .location .text span i {
             margin-right: 10px; }
   .contact .inner .inner-text .youtubes {
-    padding: 60px 0 0 0; }
+    padding: 60px 0 20px 0; }
     .contact .inner .inner-text .youtubes .bigVid {
       margin-bottom: 20px;
       display: flex; }
