@@ -66,6 +66,14 @@
 			width: 75%;
 			display: flex;
 			justify-content: space-around;
+			.item{
+				span{
+					display: block;
+					font: 14px/1 'Roboto';
+					padding-top: 10px;
+
+				}
+			}
 
 
 		}

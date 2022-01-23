@@ -10,6 +10,8 @@ import {
     buildStyles
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { easeQuadInOut } from "d3-ease";
+import AnimatedProgressProvider from "./AnimatedProgressProvider.js";
 
 const About = (props) => {
 
@@ -61,37 +63,107 @@ const About = (props) => {
                         <ul className="items">
                             <Jump>
                                 <div className="item" style={{ width: 100, height: 100 }}>
-                                    <CircularProgressbar value={66} text={"66%"} styles={buildStyles({
-                                        textColor: "#000",
-                                        pathColor: "#7db9e4"
-                                    })} />
+
+                                    <AnimatedProgressProvider
+                                        valueStart={0}
+                                        valueEnd={66}
+                                        duration={1.5}
+                                        easingFunction={easeQuadInOut}
+                                        repeat
+                                    >
+                                        {value => {
+                                            const roundedValue = Math.round(value);
+                                            return (
+                                                <CircularProgressbar
+                                                    value={value}
+                                                    text={`${roundedValue}%`}
+                                                    styles={buildStyles({
+                                                        pathTransition: "none", textColor: "#000",
+                                                        pathColor: "#7db9e4"
+                                                    })}
+                                                />
+                                            );
+                                        }}
+                                    </AnimatedProgressProvider>
                                     <span>Lorem</span>
                                 </div>
                             </Jump>
                             <Jump delay={200}>
                                 <div className="item" style={{ width: 100, height: 100 }}>
-                                    <CircularProgressbar value={67} text={"67%"} styles={buildStyles({
-                                        textColor: "#000",
-                                        pathColor: "#888"
-                                    })} />
+
+                                    <AnimatedProgressProvider
+                                        valueStart={0}
+                                        valueEnd={52}
+                                        duration={1.5}
+                                        easingFunction={easeQuadInOut}
+                                        repeat
+                                    >
+                                        {value => {
+                                            const roundedValue = Math.round(value);
+                                            return (
+                                                <CircularProgressbar
+                                                    value={value}
+                                                    text={`${roundedValue}%`}
+                                                    styles={buildStyles({
+                                                        pathTransition: "none", textColor: "#000",
+                                                        pathColor: "#888"
+                                                    })}
+                                                />
+                                            );
+                                        }}
+                                    </AnimatedProgressProvider>
                                     <span>Lorem</span>
                                 </div>
                             </Jump>
                             <Jump delay={400}>
                                 <div className="item" style={{ width: 100, height: 100 }}>
-                                    <CircularProgressbar value={50} text={"50%"} styles={buildStyles({
-                                        textColor: "#000",
-                                        pathColor: "#7db9e4"
-                                    })} />
+                                    <AnimatedProgressProvider
+                                        valueStart={0}
+                                        valueEnd={82}
+                                        duration={1.5}
+                                        easingFunction={easeQuadInOut}
+                                        repeat
+                                    >
+                                        {value => {
+                                            const roundedValue = Math.round(value);
+                                            return (
+                                                <CircularProgressbar
+                                                    value={value}
+                                                    text={`${roundedValue}%`}
+                                                    styles={buildStyles({
+                                                        pathTransition: "none", textColor: "#000",
+                                                        pathColor: "#7db9e4"
+                                                    })}
+                                                />
+                                            );
+                                        }}
+                                    </AnimatedProgressProvider>
                                     <span>Lorem</span>
                                 </div>
                             </Jump>
                             <Jump delay={600}>
                                 <div className="item" style={{ width: 100, height: 100 }}>
-                                    <CircularProgressbar value={87} text={"87%"} styles={buildStyles({
-                                        textColor: "#000",
-                                        pathColor: "#888"
-                                    })} />
+                                    <AnimatedProgressProvider
+                                        valueStart={0}
+                                        valueEnd={46}
+                                        duration={1.5}
+                                        easingFunction={easeQuadInOut}
+                                        repeat
+                                    >
+                                        {value => {
+                                            const roundedValue = Math.round(value);
+                                            return (
+                                                <CircularProgressbar
+                                                    value={value}
+                                                    text={`${roundedValue}%`}
+                                                    styles={buildStyles({
+                                                        pathTransition: "none", textColor: "#000",
+                                                        pathColor: "#888"
+                                                    })}
+                                                />
+                                            );
+                                        }}
+                                    </AnimatedProgressProvider>
                                     <span>Lorem</span>
                                 </div>
                             </Jump>
