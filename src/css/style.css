@@ -1490,12 +1490,13 @@ header {
         border-radius: 4px;
         transform: scale(1.04); }
   .contact .inner .inner-text .locations {
-    padding: 0 0 4vh 0;
+    padding: 2vh 0 6vh 0;
     border-bottom: 1px solid #ddd; }
     .contact .inner .inner-text .locations .location {
       display: flex;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      margin-bottom: 2vh; }
       .contact .inner .inner-text .locations .location .location-left {
         width: 50%; }
       .contact .inner .inner-text .locations .location .location-right {
@@ -1504,7 +1505,7 @@ header {
         padding: 2vh 2vw; }
         .contact .inner .inner-text .locations .location .pic #map {
           width: 100%;
-          height: 300px; }
+          height: 260px; }
       .contact .inner .inner-text .locations .location .text {
         padding: 0 2vw; }
         .contact .inner .inner-text .locations .location .text h2 {
@@ -1528,7 +1529,7 @@ header {
       display: flex; }
       .contact .inner .inner-text .youtubes .bigVid iframe {
         width: 50%;
-        height: 300px;
+        height: 260px;
         padding: 0 2vw 2vh 2vw;
         border: none; }
       .contact .inner .inner-text .youtubes .bigVid h1 {
