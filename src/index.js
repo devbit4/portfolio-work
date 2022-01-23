@@ -5,12 +5,15 @@ import App from './App';
 
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import AuthService from './service/auth_service';
+
+const authService = new AuthService();
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
       <Provider store={store}>
-        <App />
+        <App authService={authService} />
       </Provider>
     </HashRouter>
   </React.StrictMode>,

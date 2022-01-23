@@ -2,33 +2,55 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Jump from 'react-reveal/Jump';
 import Fade from 'react-reveal/Fade';
+import { setLogLevel } from 'firebase';
+import 'react-circular-progressbar/dist/styles.css';
+import {
+    CircularProgressbar,
+    CircularProgressbarWithChildren,
+    buildStyles
+} from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 const About = (props) => {
+
     let [people, setPeople] = useState([]);
     useEffect(() => {
-        axios.get(`${process.env.PUBLIC_URL}/dbs/influencer.json`)
-            .then(data => {
-                setPeople(data.data.people)
-            })
-    }, [])
+        axios.get(`${process.env.PUBLIC_URL}/dbs/influencer.json`).then((data) => {
+            setPeople(data.data.people);
+        });
+    }, []);
 
     return (
-
-        <section className='content about'>
+        <section className="content about">
             <div className="inner">
                 <h1>ABOUT</h1>
-                <div className='about-content'>
-                    <div className='intro'>
+                <div className="about-content">
+                    <div className="intro">
                         <div className="intro-first">
                             <h2># ABOUT US</h2>
                             <h3>Lorem, ipsum dolor.</h3>
                         </div>
                         <div className="intro-second">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus dolore ad voluptatem. Facere optio repellendus totam. </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatibus tempora sint in vitae autem voluptate possimus eligendi veritatis magnam itaque facere voluptas dolorem quasi!</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Accusamus dolore ad voluptatem. Facere optio repellendus totam.{' '}
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                                voluptatibus tempora sint in vitae autem voluptate possimus
+                                eligendi veritatis magnam itaque facere voluptas dolorem quasi!
+                            </p>
                         </div>
                         <div className="intro-third">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus dolore ad voluptatem. Facere optio repellendus totam, repudiandae dolore qui eaque doloribus explicabo vero id quia debitis accusantium blanditiis voluptates ipsum temporibus eligendi dolores! Provident laborum pariatur dolores dicta debitis officiis veniam esse libero reprehenderit incidunt nesciunt minus, mollitia quam soluta.</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Accusamus dolore ad voluptatem. Facere optio repellendus totam,
+                                repudiandae dolore qui eaque doloribus explicabo vero id quia
+                                debitis accusantium blanditiis voluptates ipsum temporibus
+                                eligendi dolores! Provident laborum pariatur dolores dicta
+                                debitis officiis veniam esse libero reprehenderit incidunt
+                                nesciunt minus, mollitia quam soluta.
+                            </p>
                         </div>
                     </div>
                     <div className="history">
@@ -38,32 +60,40 @@ const About = (props) => {
                         </div>
                         <ul className="items">
                             <Jump>
-                                <li className="item num">
-                                    <i className="fas fa-map-signs"></i>
-                                    <strong>20.5</strong>
-                                    <span>YEARS</span>
-                                </li>
+                                <div className="item" style={{ width: 100, height: 100 }}>
+                                    <CircularProgressbar value={66} text={"66%"} styles={buildStyles({
+                                        textColor: "#000",
+                                        pathColor: "#7db9e4"
+                                    })} />
+                                    <span>Lorem</span>
+                                </div>
                             </Jump>
                             <Jump delay={200}>
-                                <li className="item">
-                                    <i className="fas fa-map-signs"></i>
-                                    <strong>20.5</strong>
-                                    <span>YEARS</span>
-                                </li>
+                                <div className="item" style={{ width: 100, height: 100 }}>
+                                    <CircularProgressbar value={67} text={"67%"} styles={buildStyles({
+                                        textColor: "#000",
+                                        pathColor: "#888"
+                                    })} />
+                                    <span>Lorem</span>
+                                </div>
                             </Jump>
                             <Jump delay={400}>
-                                <li className="item">
-                                    <i className="fas fa-map-signs"></i>
-                                    <strong>20.5</strong>
-                                    <span>YEARS</span>
-                                </li>
+                                <div className="item" style={{ width: 100, height: 100 }}>
+                                    <CircularProgressbar value={50} text={"50%"} styles={buildStyles({
+                                        textColor: "#000",
+                                        pathColor: "#7db9e4"
+                                    })} />
+                                    <span>Lorem</span>
+                                </div>
                             </Jump>
                             <Jump delay={600}>
-                                <li className="item last">
-                                    <i className="fas fa-map-signs"></i>
-                                    <strong>20.5</strong>
-                                    <span>YEARS</span>
-                                </li>
+                                <div className="item" style={{ width: 100, height: 100 }}>
+                                    <CircularProgressbar value={87} text={"87%"} styles={buildStyles({
+                                        textColor: "#000",
+                                        pathColor: "#888"
+                                    })} />
+                                    <span>Lorem</span>
+                                </div>
                             </Jump>
                         </ul>
                     </div>
@@ -72,13 +102,19 @@ const About = (props) => {
                             <div className="box top-left">
                                 <span>FALL 2016</span>
                                 <h2>Lorem, ipsum dolor</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea nemo inventore nobis perferendis eveniet!</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repellat ea nemo inventore nobis perferendis eveniet!
+                                </p>
                                 <button>READ MORE</button>
                             </div>
                             <div className="box top-right">
                                 <span>FALL 2016</span>
                                 <h2>Lorem, ipsum dolor</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea nemo inventore nobis perferendis eveniet!</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repellat ea nemo inventore nobis perferendis eveniet!
+                                </p>
                                 <button>READ MORE</button>
                             </div>
                         </div>
@@ -86,14 +122,20 @@ const About = (props) => {
                             <div className="box lower-left">
                                 <span>FALL 2016</span>
                                 <h2>Lorem, ipsum dolor</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea nemo inventore nobis perferendis eveniet!</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repellat ea nemo inventore nobis perferendis eveniet!
+                                </p>
                                 <input type="text" />
                                 <button>SEND</button>
                             </div>
                             <div className="box lower-right">
                                 <span>FALL 2016</span>
                                 <h2>Lorem, ipsum dolor</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea nemo inventore nobis perferendis eveniet!</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repellat ea nemo inventore nobis perferendis eveniet!
+                                </p>
                                 <button>READ MORE</button>
                             </div>
                         </div>
@@ -104,50 +146,48 @@ const About = (props) => {
                         </div>
 
                         <div className="list">
-                            {
-                                people.map((person, index) => {
-                                    return (
-                                        <Fade bottom key={index}>
-                                            <div className="card-container" key={index}>
-                                                <figure className="card">
-                                                    <div className="front">
-                                                        <div className='pic'>
-                                                            <img src={process.env.PUBLIC_URL + person.pic} alt="" />
-                                                        </div>
-                                                        <div className='txt'>
-                                                            <h3>{person.name}</h3>
-                                                            <h4>{person.job}</h4>
-                                                            <p>{person.say}</p>
-                                                            <button>Read More <i className="fas fa-angle-double-right"></i></button>
-                                                        </div>
+                            {people.map((person, index) => {
+                                return (
+                                    <Fade bottom key={index}>
+                                        <div className="card-container" key={index}>
+                                            <figure className="card">
+                                                <div className="front">
+                                                    <div className="pic">
+                                                        <img
+                                                            src={process.env.PUBLIC_URL + person.pic}
+                                                            alt=""
+                                                        />
                                                     </div>
-                                                    <div className="back">
-                                                        <h3>{person.say}</h3>
-                                                        <p>{person.intro}</p>
-                                                        <div className="sns">
-                                                            <i className="fab fa-facebook-square"></i>
-                                                            <i className="fab fa-instagram"></i>
-                                                            <i className="fab fa-twitter"></i>
-                                                        </div>
+                                                    <div className="txt">
+                                                        <h3>{person.name}</h3>
+                                                        <h4>{person.job}</h4>
+                                                        <p>{person.say}</p>
+                                                        <button>
+                                                            Read More{' '}
+                                                            <i className="fas fa-angle-double-right"></i>
+                                                        </button>
                                                     </div>
-                                                </figure>
-                                            </div>
-                                        </Fade>
-
-                                    )
-                                })
-                            }
+                                                </div>
+                                                <div className="back">
+                                                    <h3>{person.say}</h3>
+                                                    <p>{person.intro}</p>
+                                                    <div className="sns">
+                                                        <i className="fab fa-facebook-square"></i>
+                                                        <i className="fab fa-instagram"></i>
+                                                        <i className="fab fa-twitter"></i>
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </Fade>
+                                );
+                            })}
                         </div>
-
-
-
-
-
                     </div>
                 </div>
-            </div >
-        </section >
-    )
+            </div>
+        </section>
+    );
 };
 
 export default About;

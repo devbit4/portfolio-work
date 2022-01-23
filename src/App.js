@@ -13,7 +13,7 @@ import Contact from './sub/Contact';
 import Join from './sub/Join';
 
 
-function App() {
+function App(props) {
   return (
     <>
       <Header></Header>
@@ -23,7 +23,7 @@ function App() {
       <Route exact path="/gallery" component={Gallery}></Route>
       <Route exact path="/community" component={Community}></Route>
       <Route exact path="/contact" component={Contact}></Route>
-      <Route exact path="/join" component={Join}></Route>
+      <Route exact path="/join" render={() => <Join authService={props.authService} />} ></Route>
       <Footer></Footer>
     </>
   );

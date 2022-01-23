@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
 function SignUpForm(props) {
+    const onLogin = (event) => {
+        props.authService.login("Google")
+            .then(console.log);
+    }
+
     const frame = useRef(null);
 
     const initVal = {
@@ -104,7 +109,7 @@ function SignUpForm(props) {
                         <h2>Create Account</h2>
                         <div className="platforms">
                             <i className="fab fa-facebook-f"></i>
-                            <i className="fab fa-google"></i>
+                            <i className="fab fa-google" onClick={onLogin}></i>
                             <i className="fab fa-linkedin-in"></i>
                         </div>
                         <p>

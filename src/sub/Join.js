@@ -31,7 +31,7 @@ const Join = (props) => {
 
             {
                 signUp === true ?
-                    <SignUpForm signInChange={signInChange}></SignUpForm>
+                    <SignUpForm signInChange={signInChange} authService={props.authService}></SignUpForm>
                     : <SignInForm signUpChange={signUpChange}></SignInForm>
 
             }

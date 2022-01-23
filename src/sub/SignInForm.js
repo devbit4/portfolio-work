@@ -1,6 +1,7 @@
 import React from 'react';
 
 const SignInForm = (props) => {
+
     return (
         <section className="joinForm">
             <div className="joinForm-inner">
