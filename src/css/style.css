@@ -359,9 +359,10 @@ header {
         display: flex;
         flex-direction: column; }
         .achievement .inner .blocks .block .text span {
-          font: 300 14px/1 'Roboto'; }
+          font: 300 16px/1 'Roboto'; }
         .achievement .inner .blocks .block .text strong {
-          font: bold 16px/1 'Roboto'; }
+          font: bold 16px/1 'Roboto';
+          letter-spacing: 3px; }
 
 .process {
   background-color: #fff;
@@ -1643,7 +1644,40 @@ header {
         color: #fff; }
   .join > .inner .joinForm {
     animation: fade 1s ease-in-out;
-    margin-top: 60px; }
+    margin-top: 60px;
+    position: relative; }
+    .join > .inner .joinForm .joinForm-inner .welcome {
+      width: 300px;
+      height: 150px;
+      color: #fff;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .join > .inner .joinForm .joinForm-inner .welcome span {
+        font: bold 18px/1 'Roboto';
+        margin-bottom: 20px; }
+      .join > .inner .joinForm .joinForm-inner .welcome p {
+        font: 300 14px/1.4 'Roboto';
+        margin-bottom: 20px;
+        padding: 0 40px; }
+      .join > .inner .joinForm .joinForm-inner .welcome button {
+        display: block;
+        margin: 0 auto;
+        background: none;
+        padding: 5px 10px;
+        border-radius: 10px;
+        color: #fff;
+        border: 1px solid #fff;
+        cursor: pointer; }
     .join > .inner .joinForm .joinForm-inner .signUp {
       width: 100%;
       display: flex;

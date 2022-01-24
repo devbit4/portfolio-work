@@ -229,7 +229,7 @@ const Home = (props) => {
                     <Fade top delay={300}>
                         <strong className='big-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
-                    <Fade top delay={600}>
+                    <Fade top delay={700}>
                         <strong className='small-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
                 </figure>
@@ -298,28 +298,28 @@ const Home = (props) => {
                 <div className="inner">
                     <div className="blocks">
                         <div className="block">
-                            <i className="fas fa-angle-right"></i>
+                            <i className="fas fa-child"></i>
                             <div className="text">
                                 <span>2018</span>
-                                <strong>PLUGINS</strong>
+                                <strong>CLIENTS</strong>
                             </div>
                         </div>
                         <div className="block">
-                            <i className="fas fa-angle-right"></i>
+                            <i className="fas fa-sliders-h"></i>
                             <div className="text">
                                 <span>2019</span>
-                                <strong>PLUGINS</strong>
+                                <strong>PROJECTS</strong>
                             </div>
                         </div>
                         <div className="block">
-                            <i className="fas fa-angle-right"></i>
+                            <i className="fas fa-award"></i>
                             <div className="text">
                                 <span>2020</span>
-                                <strong>PLUGINS</strong>
+                                <strong>AWARDS</strong>
                             </div>
                         </div>
                         <div className="block">
-                            <i className="fas fa-angle-right"></i>
+                            <i className="fas fa-cogs"></i>
                             <div className="text">
                                 <span>2021</span>
                                 <strong>PLUGINS</strong>

@@ -7,6 +7,7 @@ function SignUpForm(props) {
     }
 
     const frame = useRef(null);
+    const welcome = useRef(null);
 
     const initVal = {
         userid: '',
@@ -84,7 +85,9 @@ function SignUpForm(props) {
     return (
         <section className="joinForm" ref={frame}>
             <div className="joinForm-inner">
-                {success ? <div>회원가입을 축하합니다.</div> : null}
+                {success ? <div className="welcome" ref={welcome}><span>Welcome New Members !</span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ducimus!</p> <button onClick={() => {
+                    welcome.current.style.display = "none";
+                }}>X</button></div> : null}
 
                 <div className="signUp">
                     <div className="signUp-left">

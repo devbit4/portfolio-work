@@ -257,10 +257,11 @@
 					display: flex;
 					flex-direction: column;
 					span {
-						font: 300 14px/1 'Roboto';
+						font: 300 16px/1 'Roboto';
 					}
 					strong {
 						font: bold 16px/1 'Roboto';
+						letter-spacing: 3px;
 					}
 				}
 			}
