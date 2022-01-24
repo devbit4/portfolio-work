@@ -3,7 +3,6 @@
 		animation: fade 1s ease-in-out;
 		.btns {
 			border-bottom: 1px solid #ddd;
-
 			button {
 				width: 200px;
 				height: 40px;
@@ -16,7 +15,7 @@
 				color: #ccc;
 				cursor: pointer;
 				&.on {
-					background: #aaa;
+					background: #999;
 					color: #fff;
 				}
 			}

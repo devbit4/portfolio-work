@@ -149,19 +149,19 @@ const Community = (props) => {
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <img src="#" />
+                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="#" />
+                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
                         </SwiperSlide>
                         <SwiperSlide>
                             <img src={`${process.env.PUBLIC_URL}/img/203.jpg`} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="#" />
+                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="#" />
+                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
                         </SwiperSlide>
 
 
