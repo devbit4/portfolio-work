@@ -173,6 +173,7 @@
 					transition: transform 0.7s ease;
 					.front,
 					.back {
+						transform: rotate(5deg);
 						width: 100%;
 						height: 100%;
 						backface-visibility: hidden;
@@ -223,7 +224,7 @@
 							font: 300 14px/1 'Roboto';
 							padding-bottom: 1rem;
 							margin-bottom: 20px;
-							border-bottom: 3px dashed #fff;
+							border-bottom: 3px dashed #eee;
 						}
 						p {
 							font: 300 12px/1 'Roboto';

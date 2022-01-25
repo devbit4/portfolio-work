@@ -15,14 +15,14 @@ const Header = (props) => {
         <div className='head scroll'>
             <header>
                 {/* <div className="inner"> */}
-                <h1><NavLink exact to="/">STORIES</NavLink></h1>
+                <h1><NavLink exact to="/"><span className='s'>S</span><span className='t'>T</span><span className='o'>O</span><span className='r'>R</span><span className='i'>I</span><span className='e'>E</span><span className='s'>S</span></NavLink></h1>
                 <ul id="gnb" ref={gnb}>
                     <li><NavLink exact activeStyle={active} to="/about">ABOUT</NavLink></li>
                     <li><NavLink exact activeStyle={active} to="/youtube">YOUTUBE</NavLink></li>
                     <li><NavLink exact activeStyle={active} to="/gallery">GALLERY</NavLink></li>
                     <li><NavLink exact activeStyle={active} to="/community">COMMUNITY</NavLink></li>
                     <li><NavLink exact activeStyle={active} to="/contact">CONTACT</NavLink></li>
-                    <li><NavLink exact activeStyle={active} to="/join"><i className="fas fa-sign-in-alt"></i></NavLink></li>
+                    <li><NavLink exact activeStyle={active} to="/join"><i className="fas fa-sign-in-alt"></i> JOIN</NavLink></li>
                 </ul>
 
 

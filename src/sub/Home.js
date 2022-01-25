@@ -229,7 +229,7 @@ const Home = (props) => {
                     <Fade top delay={300}>
                         <strong className='big-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
-                    <Fade top delay={700}>
+                    <Fade top delay={600}>
                         <strong className='small-speech'><i className="far fa-comment-dots"></i></strong>
                     </Fade>
                 </figure>

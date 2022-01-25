@@ -180,6 +180,7 @@ const About = (props) => {
                                 </p>
                                 <button>READ MORE</button>
                             </div>
+                            {/* <Fade right> */}
                             <div className="box top-right">
                                 <span>SUMMER 2022</span>
                                 <h2>Lorem, ipsum dolor</h2>
@@ -189,8 +190,10 @@ const About = (props) => {
                                 </p>
                                 <button>READ MORE</button>
                             </div>
+                            {/* </Fade> */}
                         </div>
                         <div className="boxes lower">
+                            {/* <Fade left delay={300}> */}
                             <div className="box lower-left">
                                 <span>FALL 2022</span>
                                 <h2>Lorem, ipsum dolor</h2>
@@ -201,6 +204,7 @@ const About = (props) => {
                                 <input type="text" />
                                 <button>SEND</button>
                             </div>
+                            {/* </Fade> */}
                             <div className="box lower-right">
                                 <span>WINTER 2022</span>
                                 <h2>Lorem, ipsum dolor</h2>
@@ -221,7 +225,7 @@ const About = (props) => {
                             {people.map((person, index) => {
                                 return (
                                     <Fade bottom key={index}>
-                                        <div className="card-container" key={index}>
+                                        <div className="card-container" key={index} >
                                             <figure className="card">
                                                 <div className="front">
                                                     <div className="pic">
@@ -258,7 +262,7 @@ const About = (props) => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

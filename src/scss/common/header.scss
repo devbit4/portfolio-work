@@ -7,13 +7,14 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	z-index: 999;
+	z-index: 100;
 	h1 {
 		a {
 			font: bold 22px/1 'Roboto';
 			letter-spacing: 4px;
 			color: #000;
 			cursor: pointer;
+
 		}
 	}
 
