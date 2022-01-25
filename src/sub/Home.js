@@ -57,7 +57,7 @@ const Home = (props) => {
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${playListId}&maxResults=${num}`;
 
     useEffect(() => {
-        setTimeout(() => setLoading(false), 3000);
+        setTimeout(() => setLoading(false), 4000);
         fetchYoutube();
 
     }, []);
