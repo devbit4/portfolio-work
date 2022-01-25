@@ -173,6 +173,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .loadingScreen h1 {
+    font: bold 28px/1 'Roboto';
+    letter-spacing: 5px; }
 
 .main {
   width: 100%;
@@ -1143,8 +1146,8 @@ header {
           cursor: pointer;
           font-family: 'Roboto'; }
   .gallery .inner .loading {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     position: fixed;
     top: 50%;
     left: 50%;
