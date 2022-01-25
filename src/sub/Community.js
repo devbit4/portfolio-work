@@ -102,72 +102,6 @@ const Community = (props) => {
         <section className="content community">
             <div className="inner">
                 <h1>COMMUNITY</h1>
-                <div className="faq">
-                    <h1 className="title"># FAQ</h1>
-                    {problems.map((problem, index) => {
-                        return (
-                            <article key={index} className="active">
-                                <div
-                                    className="question"
-                                    onClick={(e) => {
-                                        e.target.closest('article').classList.toggle('active');
-                                    }}
-                                >
-                                    <div className="question-front">
-                                        <i className="far fa-circle"></i>
-                                        <h2>{problem.question}</h2>
-                                    </div>
-                                    <i className="fas fa-chevron-down"></i>
-                                </div>
-                                <div
-                                    className="answer"
-                                    onClick={(e) => {
-                                        e.target.closest('article').classList.toggle('active');
-                                    }}
-                                >
-                                    <p>{problem.answer}</p>
-                                </div>
-                            </article>
-                        );
-                    })}
-                </div>
-                <div className='pics'>
-                    <Swiper
-                        effect={'coverflow'}
-                        grabCursor={true}
-                        centeredSlides={true}
-                        slidesPerView={'auto'}
-                        initialSlide={2}
-                        coverflowEffect={{
-                            rotate: 30,
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 1,
-                            slideShadows: true,
-                        }}
-                        pagination={true}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide>
-                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={`${process.env.PUBLIC_URL}/img/203.jpg`} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
-                        </SwiperSlide>
-
-
-
-                    </Swiper>
-                </div>
                 <div className="help">
                     <h1 className="title"># HELP</h1>
                     <div className="boxes">
@@ -251,6 +185,73 @@ const Community = (props) => {
                         </section>
                     </div>
                 </div>
+                <div className='pics'>
+                    <Swiper
+                        effect={'coverflow'}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView={'auto'}
+                        initialSlide={2}
+                        coverflowEffect={{
+                            rotate: 30,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: true,
+                        }}
+                        pagination={true}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={`${process.env.PUBLIC_URL}/img/203.jpg`} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={`${process.env.PUBLIC_URL}/img/4.jpg`} />
+                        </SwiperSlide>
+
+
+
+                    </Swiper>
+                </div>
+                <div className="faq">
+                    <h1 className="title"># FAQ</h1>
+                    {problems.map((problem, index) => {
+                        return (
+                            <article key={index} className="active">
+                                <div
+                                    className="question"
+                                    onClick={(e) => {
+                                        e.target.closest('article').classList.toggle('active');
+                                    }}
+                                >
+                                    <div className="question-front">
+                                        <i className="far fa-circle"></i>
+                                        <h2>{problem.question}</h2>
+                                    </div>
+                                    <i className="fas fa-chevron-down"></i>
+                                </div>
+                                <div
+                                    className="answer"
+                                    onClick={(e) => {
+                                        e.target.closest('article').classList.toggle('active');
+                                    }}
+                                >
+                                    <p>{problem.answer}</p>
+                                </div>
+                            </article>
+                        );
+                    })}
+                </div>
+
             </div>
         </section>
     );

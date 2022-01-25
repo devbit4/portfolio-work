@@ -21,6 +21,7 @@ function Youtube() {
 
     const youtube = useSelector(state => state.youtubeReducer.youtube);
 
+
     useEffect(() => {
         axios.get(`${process.env.PUBLIC_URL}/dbs/youtube.json`)
             .then(json => {
@@ -28,6 +29,7 @@ function Youtube() {
                 setTrends(json.data.trend);
             })
     }, []);
+
 
 
 
