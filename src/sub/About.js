@@ -79,7 +79,7 @@ const About = (props) => {
                                                     text={`${roundedValue}%`}
                                                     styles={buildStyles({
                                                         pathTransition: "none", textColor: "#000",
-                                                        pathColor: "#7db9e4"
+                                                        pathColor: "#ebd76f"
                                                     })}
                                                 />
                                             );

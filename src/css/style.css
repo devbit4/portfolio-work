@@ -177,6 +177,23 @@ header {
     font: bold 28px/1 'Roboto';
     letter-spacing: 5px; }
 
+@media screen and (max-width: 800px) {
+  .loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; }
+    .loadingScreen h1 {
+      font: bold 28px/1 'Roboto';
+      letter-spacing: 5px;
+      margin-top: 30px; } }
 .main {
   width: 100%;
   height: 90vh;
