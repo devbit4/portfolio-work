@@ -93,6 +93,7 @@ const Home = (props) => {
                 loading === false ? (
                     <div className='home' ref={home}>
                         <section className="main">
+                            <div className="border"></div>
                             <Particles
                                 params={{
                                     background: {
@@ -239,6 +240,7 @@ const Home = (props) => {
                                 </Fade>
                             </figure>
                         </section>
+
                         <section className="content welcome scroll">
                             <div className="inner">
                                 <h2>DREAM BIG INC</h2>
