@@ -17,7 +17,6 @@ import Join from './sub/Join';
 function App(props) {
   useEffect(() => {
 
-
     const mask = document.querySelector('.mask');
     if (mask) {
       setTimeout(() => {

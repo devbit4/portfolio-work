@@ -166,7 +166,8 @@ header {
   width: 100%;
   height: 90vh;
   padding: 4vh 0;
-  position: relative; }
+  position: relative;
+  background-color: black; }
   .main .border {
     width: 100%;
     height: 82vh;
@@ -174,7 +175,7 @@ header {
   .main article {
     width: 40vw;
     position: absolute;
-    top: 35%;
+    top: 28%;
     padding-left: 12vw;
     transform: translateY(-50%);
     z-index: 20; }
@@ -423,7 +424,8 @@ header {
   height: 300px;
   position: relative;
   display: inline-block;
-  cursor: pointer; }
+  cursor: pointer;
+  background: #000; }
   .banner .banner-inner {
     text-align: center;
     color: #fff; }
