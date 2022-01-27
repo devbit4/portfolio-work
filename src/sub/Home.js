@@ -5,9 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Anime from '../class/anime.js';
-import Particles from 'react-tsparticles';
 import Fade from 'react-reveal/Fade';
-
+import Particles from 'react-tsparticles';
 import { useSelector, useDispatch } from 'react-redux';
 import { setYoutube } from '../redux/actions';
 import axios from 'axios';
@@ -89,30 +88,19 @@ const Home = (props) => {
         <>
             <div className='home' ref={home}>
                 <section className="main">
-                    <div className="border"></div>
-                    <Particles
+                    <Particles className="bg"
                         params={{
                             background: {
                                 color: {
                                     value: '#d5b3b3',
                                 },
-                                position: '50% 50%',
-                                repeat: 'no-repeat',
-                                size: 'cover',
                             },
                             fullScreen: {
-                                zIndex: -1,
+                                enable: false,
+                                zIndex: -1
                             },
                             interactivity: {
                                 events: {
-                                    // onClick: {
-                                    //     enable: true,
-                                    //     mode: 'push',
-                                    // },
-                                    onClick: {
-                                        selectors: '#repulse-div',
-                                        mode: 'repulse',
-                                    },
                                     onHover: {
                                         enable: true,
                                         mode: 'repulse',
@@ -122,15 +110,6 @@ const Home = (props) => {
                                     },
                                 },
                                 modes: {
-                                    bubble: {
-                                        distance: 400,
-                                        duration: 2,
-                                        opacity: 0.8,
-                                        size: 40,
-                                    },
-                                    grab: {
-                                        distance: 400,
-                                    },
                                     repulse: {
                                         distance: 100,
                                         duration: 0.4,
@@ -141,13 +120,6 @@ const Home = (props) => {
                                 color: {
                                     value: 'random',
                                 },
-                                links: {
-                                    color: {
-                                        value: '#ffffff',
-                                    },
-                                    distance: 150,
-                                    opacity: 0.4,
-                                },
                                 move: {
                                     attract: {
                                         rotate: {
@@ -156,12 +128,6 @@ const Home = (props) => {
                                         },
                                     },
                                     enable: true,
-                                    outModes: {
-                                        bottom: 'out',
-                                        left: 'out',
-                                        right: 'out',
-                                        top: 'out',
-                                    },
                                     speed: 1,
                                 },
                                 number: {
@@ -193,7 +159,9 @@ const Home = (props) => {
                                 },
                             },
                         }}
-                    />
+                    ></Particles>
+                    <div className="border"></div>
+
                     <Fade left delay={300}>
                         <article>
                             <p>
@@ -402,6 +370,78 @@ const Home = (props) => {
                     </div>
                 </section>
                 <section className="content banner">
+                    <Particles className="bg"
+                        params={{
+                            background: {
+                                color: {
+                                    value: '#d5b3b3',
+                                },
+                            },
+                            fullScreen: {
+                                enable: false,
+                                zIndex: -1
+                            },
+                            interactivity: {
+                                events: {
+                                    onHover: {
+                                        enable: true,
+                                        mode: 'repulse',
+                                        parallax: {
+                                            force: 1,
+                                        },
+                                    },
+                                },
+                                modes: {
+                                    repulse: {
+                                        distance: 100,
+                                        duration: 0.4,
+                                    },
+                                },
+                            },
+                            particles: {
+                                color: {
+                                    value: 'random',
+                                },
+                                move: {
+                                    attract: {
+                                        rotate: {
+                                            x: 600,
+                                            y: 1200,
+                                        },
+                                    },
+                                    enable: true,
+                                    speed: 1,
+                                },
+                                number: {
+                                    density: {
+                                        enable: true,
+                                    },
+                                    limit: 500,
+                                    value: 300,
+                                },
+                                opacity: {
+                                    value: 0.5,
+                                    animation: {
+                                        speed: 3,
+                                        minimumValue: 0.1,
+                                    },
+                                },
+                                size: {
+                                    random: {
+                                        enable: true,
+                                    },
+                                    value: {
+                                        min: 1,
+                                        max: 6,
+                                    },
+                                    animation: {
+                                        speed: 40,
+                                        minimumValue: 0.1,
+                                    },
+                                },
+                            },
+                        }}
+                    ></Particles>
                     <div className="banner-inner">
                         <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                         <p>
@@ -410,7 +450,7 @@ const Home = (props) => {
                             sequi aut provident voluptatem.
                         </p>
                     </div>
-                </section>
+                </section>)
                 <section className="content testimonials scroll">
                     <div className="inner">
                         <h2>TESTIMONIALS</h2>

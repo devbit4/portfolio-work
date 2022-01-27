@@ -24,8 +24,8 @@ function App(props) {
         mask.classList.add('off');
         setTimeout(() => {
           mask.remove();
-        }, 2000); //transiton 1초동안 fadeout될때까지 기다리는 시간
-      }, 1000);//처음 App컴포넌트가 index.html에 연결될때까지의 시간 지연
+        }, 2000);
+      }, 1000);
     }
 
   }, []);
