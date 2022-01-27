@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import Anime from '../class/anime.js';
 import Particles from 'react-tsparticles';
 import Fade from 'react-reveal/Fade';
@@ -57,7 +57,7 @@ const Home = (props) => {
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${playListId}&maxResults=${num}`;
 
     useEffect(() => {
-        setTimeout(() => setLoading(false), 4000);
+        setTimeout(() => setLoading(false), 3500);
         fetchYoutube();
 
     }, []);

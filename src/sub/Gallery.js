@@ -158,7 +158,6 @@ const Gallery = (props) => {
 
     async function getPhotos(opt) {
         let url = '';
-
         const base = 'https://www.flickr.com/services/rest/?';
         const method = 'flickr.interestingness.getList';
         const method2 = 'flickr.photos.search';
