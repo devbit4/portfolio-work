@@ -327,7 +327,7 @@ header {
   border-bottom: 1px solid #eee; }
   .intrdouction .left-video {
     width: 50%;
-    height: 360px;
+    height: 340px;
     background: #f5f3f5; }
     .intrdouction .left-video video {
       width: 100%;
@@ -337,6 +337,7 @@ header {
       opacity: 0.8; }
   .intrdouction .right-text {
     width: 50%;
+    height: 340px;
     padding: 80px 40px; }
     .intrdouction .right-text h2 {
       font: 300 16px/1 'Roboto';
