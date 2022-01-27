@@ -96,7 +96,7 @@ const Home = (props) => {
                                 },
                             },
                             fullScreen: {
-                                enable: false,
+                                // enable: false,
                                 zIndex: -1
                             },
                             interactivity: {
