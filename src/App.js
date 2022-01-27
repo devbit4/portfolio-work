@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import './css/style.css';
 
@@ -14,6 +15,20 @@ import Join from './sub/Join';
 
 
 function App(props) {
+  useEffect(() => {
+
+
+    const mask = document.querySelector('.mask');
+    if (mask) {
+      setTimeout(() => {
+        mask.classList.add('off');
+        setTimeout(() => {
+          mask.remove();
+        }, 2000); //transiton 1초동안 fadeout될때까지 기다리는 시간
+      }, 1000);//처음 App컴포넌트가 index.html에 연결될때까지의 시간 지연
+    }
+
+  }, []);
   return (
     <>
       <Header></Header>
