@@ -257,7 +257,7 @@ header {
             background: url("/public/img/home/screen3.jpeg") center/cover; }
     .main .phone .big-speech {
       position: absolute;
-      top: 180px;
+      top: 120px;
       left: -80px;
       font-size: 180px;
       color: #fff;
