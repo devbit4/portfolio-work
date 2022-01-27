@@ -24,7 +24,7 @@ function App(props) {
         setTimeout(() => {
           load.remove();
         }, 2000);
-      }, 1000);
+      }, 0);
     }
 
   }, []);

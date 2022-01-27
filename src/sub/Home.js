@@ -97,7 +97,7 @@ const Home = (props) => {
                                 },
                             },
                             fullScreen: {
-                                enable: false,
+                                // enable: false,
                                 zIndex: -1
                             },
                             interactivity: {
@@ -391,7 +391,7 @@ const Home = (props) => {
                                 loopFillGroupWithBlank={true}
                                 pagination={true}
                                 autoplay={{
-                                    delay: 2000,
+                                    delay: 2500,
                                     disableOnInteraction: false,
                                 }}
                                 className="mySwiper"
