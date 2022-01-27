@@ -17,12 +17,12 @@ import Join from './sub/Join';
 function App(props) {
   useEffect(() => {
 
-    const mask = document.querySelector('.mask');
-    if (mask) {
+    const load = document.querySelector('.load');
+    if (load) {
       setTimeout(() => {
-        mask.classList.add('off');
+        load.classList.add('off');
         setTimeout(() => {
-          mask.remove();
+          load.remove();
         }, 2000);
       }, 1000);
     }
