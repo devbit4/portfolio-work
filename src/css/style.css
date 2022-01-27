@@ -162,6 +162,33 @@ header {
       padding-bottom: 20px;
       border-bottom: 1px solid #ccc; }
 
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .load h1 {
+    font: bold 4vh/1 'arial';
+    letter-spacing: 5px;
+    color: #000;
+    animation: disappear 1s ease-in-out; }
+  .load img {
+    animation: disappear 1s ease-in-out; }
+
+@keyframes disappear {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@media screen and (max-width: 800px) {
+  .load {
+    flex-direction: column; } }
 .main {
   width: 100%;
   height: 90vh;

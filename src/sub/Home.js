@@ -10,17 +10,19 @@ import Particles from 'react-tsparticles';
 import { useSelector, useDispatch } from 'react-redux';
 import { setYoutube } from '../redux/actions';
 import axios from 'axios';
-
+import Loading from "./Loading";
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Home = (props) => {
 
 
+    const [loading, setLoading] = useState(true);
     const home = useRef(null);
     const [index, setIndex] = useState(0);
     const pos = useRef([]);
     const base = 200;
+
     const getIndex = index => {
         setIndex(index);
     }
@@ -54,6 +56,10 @@ const Home = (props) => {
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${playListId}&maxResults=${num}`;
 
     useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+
+        }, 1000)
 
         fetchYoutube();
 
@@ -85,8 +91,8 @@ const Home = (props) => {
     }
 
     return (
-        <>
-            <div className='home' ref={home}>
+        <>{
+            (loading) ? <Loading ></Loading> : <div className='home' ref={home}>
                 <section className="main">
                     <div className="border"></div>
                     <Particles className="bg"
@@ -609,6 +615,8 @@ const Home = (props) => {
                     </ul>
                 </section>
             </div>
+        }
+
 
         </>
 

@@ -15,19 +15,7 @@ import Join from './sub/Join';
 
 
 function App(props) {
-  useEffect(() => {
 
-    const load = document.querySelector('.load');
-    if (load) {
-      setTimeout(() => {
-        load.classList.add('off');
-        setTimeout(() => {
-          load.remove();
-        }, 2000);
-      }, 0);
-    }
-
-  }, []);
   return (
     <>
       <Header></Header>
