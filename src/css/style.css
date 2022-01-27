@@ -166,12 +166,22 @@ header {
   width: 100%;
   height: 90vh;
   padding: 4vh 0;
-  position: relative;
-  background-color: black; }
+  position: relative; }
   .main .border {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 82vh;
-    border-bottom: 5px solid #fff; }
+    height: 86vh;
+    border-bottom: 5px solid #fff;
+    z-index: 1; }
+  .main #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: -1; }
   .main article {
     width: 40vw;
     position: absolute;
@@ -209,7 +219,7 @@ header {
   .main .phone {
     width: 420px;
     height: 800px;
-    z-index: 0;
+    z-index: 2;
     position: absolute;
     top: 50%;
     right: 13%;
@@ -425,13 +435,14 @@ header {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  background: #000; }
+  background: url(/public/img/home/banner_bg.png); }
   .banner .banner-inner {
     text-align: center;
     color: #fff; }
     .banner .banner-inner h1 {
       font: bold 20px/1 'Roboto';
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      transition: all 0.3s; }
     .banner .banner-inner p {
       font: 300 14px/1.2 'Roboto'; }
   .banner::before, .banner::after {
@@ -455,6 +466,8 @@ header {
     width: calc(95% + 10px); }
   .banner:hover::after {
     height: calc(80% + 10px); }
+  .banner:hover h1 {
+    color: #fded5a; }
 
 .testimonials {
   background-color: #fff;

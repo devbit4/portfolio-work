@@ -89,7 +89,78 @@ const Home = (props) => {
             <div className='home' ref={home}>
                 <section className="main">
                     <div className="border"></div>
-
+                    <Particles className="bg"
+                        params={{
+                            background: {
+                                color: {
+                                    value: '#d5b3b3',
+                                },
+                            },
+                            fullScreen: {
+                                enable: false,
+                                zIndex: -1
+                            },
+                            interactivity: {
+                                events: {
+                                    onHover: {
+                                        enable: true,
+                                        mode: 'repulse',
+                                        parallax: {
+                                            force: 1,
+                                        },
+                                    },
+                                },
+                                modes: {
+                                    repulse: {
+                                        distance: 100,
+                                        duration: 0.4,
+                                    },
+                                },
+                            },
+                            particles: {
+                                color: {
+                                    value: 'random',
+                                },
+                                move: {
+                                    attract: {
+                                        rotate: {
+                                            x: 600,
+                                            y: 1200,
+                                        },
+                                    },
+                                    enable: true,
+                                    speed: 1,
+                                },
+                                number: {
+                                    density: {
+                                        enable: true,
+                                    },
+                                    limit: 500,
+                                    value: 300,
+                                },
+                                opacity: {
+                                    value: 0.5,
+                                    animation: {
+                                        speed: 3,
+                                        minimumValue: 0.1,
+                                    },
+                                },
+                                size: {
+                                    random: {
+                                        enable: true,
+                                    },
+                                    value: {
+                                        min: 1,
+                                        max: 6,
+                                    },
+                                    animation: {
+                                        speed: 40,
+                                        minimumValue: 0.1,
+                                    },
+                                },
+                            },
+                        }}
+                    ></Particles>
                     <Fade left delay={300}>
                         <article>
                             <p>
@@ -320,7 +391,7 @@ const Home = (props) => {
                                 loopFillGroupWithBlank={true}
                                 pagination={true}
                                 autoplay={{
-                                    delay: 2500,
+                                    delay: 2000,
                                     disableOnInteraction: false,
                                 }}
                                 className="mySwiper"
