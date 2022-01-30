@@ -2,7 +2,7 @@
 
 ---
 
-### 1. 0프로젝트 제목(Title) : STORIES WEBSITE (BUSINESS)
+### 1. 🧑‍🤝‍🧑프로젝트 제목(Title) : STORIES WEBSITE (BUSINESS)
 
 ---
 
