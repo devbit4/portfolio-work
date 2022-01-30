@@ -177,9 +177,9 @@ header {
     font: bold 4vh/1 'arial';
     letter-spacing: 5px;
     color: #000;
-    animation: disappear 1s ease-in-out; }
+    animation: disappear 1s ease-in-out infinite; }
   .load img {
-    animation: disappear 1s ease-in-out; }
+    animation: disappear 1s ease-in-out infinite; }
 
 @keyframes disappear {
   from {
@@ -462,8 +462,7 @@ header {
   height: 300px;
   position: relative;
   display: inline-block;
-  cursor: pointer;
-  background: url(/public/img/home/banner_bg.png) fixed; }
+  cursor: pointer; }
   .banner .banner-inner {
     text-align: center;
     color: #fff; }

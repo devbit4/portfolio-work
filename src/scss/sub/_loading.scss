@@ -14,10 +14,10 @@
       font: bold 4vh/1 'arial';
       letter-spacing: 5px;
       color: #000;
-      animation: disappear 1s ease-in-out;
+      animation: disappear 1s ease-in-out infinite;
     }
     img{
-      animation: disappear 1s ease-in-out;
+      animation: disappear 1s ease-in-out infinite;
     }
 
   }

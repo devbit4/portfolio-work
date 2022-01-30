@@ -59,7 +59,7 @@ const Home = (props) => {
         setTimeout(() => {
             setLoading(false);
 
-        }, 1000)
+        }, 1500)
 
         fetchYoutube();
 
@@ -103,7 +103,7 @@ const Home = (props) => {
                                 },
                             },
                             fullScreen: {
-                                enable: false,
+                                // enable: false,
                                 zIndex: -1
                             },
                             interactivity: {
