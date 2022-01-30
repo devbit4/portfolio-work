@@ -180,7 +180,7 @@ react-router-dom 을 이용하여 페이지 이동
     - SignUpForm/ SingInForm components 연결해서 버튼에 따라 해당 컴포넌트 불러옴
     - firebase 를 활용해 google signUp 적용
 
-### 10. 😄추가 및 수정 해야 할 사항:
+### 10. 😄추가 및 수정 해야 할 사항 (What to do more):
 
 ---
 
