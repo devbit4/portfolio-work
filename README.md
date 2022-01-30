@@ -9,7 +9,8 @@
 ### 2. 🗣️프로젝트 소개(Intro):
 
 ---
-
+\*I participated in making this website from designing to developing.
+ 
 React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코드를 작성하였으며 디자인(design)부터 초안(draft), 개발(development)까지 참여함.
 
 ### 3. 👷‍사용된 스킬(Skill):
