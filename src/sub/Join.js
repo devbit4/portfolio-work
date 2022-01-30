@@ -1,7 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import SignUpForm from './SignUpForm';
 import SignInForm from './SignInForm';
 const Join = (props) => {
+
+    useEffect(() => {
+        console.log(process.env.REACT_APP_FIREBASE_API_KEY)
+    })
     const signUpBtn = useRef(null);
     const signInBtn = useRef(null);
     const [signUp, setSignUp] = useState(true);

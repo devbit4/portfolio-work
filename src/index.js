@@ -8,6 +8,7 @@ import AuthService from './service/auth_service';
 import { PersistGate } from 'redux-persist/integration/react';
 import store, { Persistor } from './redux/store';
 
+
 const authService = new AuthService();
 
 ReactDOM.render(

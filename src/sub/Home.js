@@ -50,8 +50,8 @@ const Home = (props) => {
     const dispatch = useDispatch();
     console.log(youtube);
 
-    const api_key = "AIzaSyDsfN60C3q050t7aRRi2gw5CcR9CkegDz8";
-    const playListId = "PL1fBkO2q3tOee1NUg1rw49pFNBK-uCEI1";
+    const api_key = process.env.REACT_APP_YOUTUBE_API_KEY;
+    const playListId = process.env.REACT_APP_YOUTUBE_PLAY_ID;
     const num = 4;
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${playListId}&maxResults=${num}`;
 

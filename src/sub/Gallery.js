@@ -4,6 +4,7 @@ import Masonry from 'react-masonry-component';
 
 const path = process.env.PUBLIC_URL;
 
+
 const masonryOptions = {
     fitWidth: false,
     gutter: 0,
@@ -161,7 +162,7 @@ const Gallery = (props) => {
         const base = 'https://www.flickr.com/services/rest/?';
         const method = 'flickr.interestingness.getList';
         const method2 = 'flickr.photos.search';
-        const key = '7867f2d006615cd9c7c79d1275688a01';
+        const key = process.env.REACT_APP_FLICKR_APP_KEY;
         const per_page = 12;
         const format = 'json';
 
