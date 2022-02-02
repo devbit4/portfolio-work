@@ -10,6 +10,7 @@
 
 ---
 \*I participated in making this website from designing to developing.
+I developed this website using React/Redux.
  
 React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코드를 작성하였으며 디자인(design)부터 초안(draft), 개발(development)까지 참여함.
 
@@ -55,7 +56,7 @@ React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코
 
 ---
 SPA
-react-router-dom 을 이용하여 페이지 이동
+react-router-dom 을 이용하여 페이지 이동 
 
 - Home (main page)
 - About (sub page)
@@ -68,6 +69,7 @@ react-router-dom 을 이용하여 페이지 이동
 ### 8. 각 페이지 구성:
 
 ---
+Each page shares the same header and footer
 
 공통적으로 헤더와 푸터 컴포넌트 적용
 -src/common/header.js
@@ -126,20 +128,20 @@ react-router-dom 을 이용하여 페이지 이동
 
 - Home
 
-    - getIndex() : 버튼 클릭 시 해당 섹션의 index값 가져오기
-    - handleResize() : 리사이즈 시 변하는 섹션들의 offsetTop값 불러오기
-    - handleScroll() : 스크롤 시 해당 버튼 활성화
-    - fetchYoutube() : axios를 통해 유튜브 데이터 불러오기 함수 정의
-    - youtube redux dispatch : 유튜브 데이터 불러와 redux로 관리
-    - tsparticles library 활용 background 생성
-    - swiper 슬라이더 효과 적용 (휴대폰 스크린과 testimonials)
+    - getIndex() : 버튼 클릭 시 해당 섹션의 index값 가져오기 / If you click the button, you can get section's index.
+    - handleResize() : 리사이즈 시 변하는 섹션들의 offsetTop값 불러오기 / 
+    - handleScroll() : 스크롤 시 해당 버튼 활성화 / If you scroll, the button will be active
+    - fetchYoutube() : axios를 통해 유튜브 데이터 불러오기 함수 정의 / You can get data using axios
+    - youtube redux dispatch : 유튜브 데이터 불러와 redux로 관리 / You can save youtube data using redux
+    - tsparticles library 활용 background 생성 / customizable background
+    - swiper 슬라이더 효과 적용 (휴대폰 스크린과 testimonials) / swiper slider
     - loading true 시 로딩화면, false 시 home 화면 적용
-    - react-reveal fade 효과를 활용한 애니매이션 적용
+    - react-reveal fade 효과를 활용한 애니매이션 적용 / animation using react-reveal fade
 
 - About
 
-    - axios를 통해 public/dbs로부터 데이터 불러오기
-    - react-reveal fade 효과를 활용한 애니매이션 적용
+    - axios를 통해 public/dbs로부터 데이터 불러오기 / You can get data(public/dbs) using axios
+    - react-reveal fade 효과를 활용한 애니매이션 적용 
     - AnimatedProgressProvider(react-circular-progressbar 라이브러리) 활용
     원형 프로그래스바 적용
 
@@ -172,7 +174,7 @@ react-router-dom 을 이용하여 페이지 이동
     - toggle 효과 적용을 통해 q&a ui 생성
 
 - Contact
-    - kakao api 활용 location 표시/ map controller / 마커 표시
+    - kakao api 활용 location 표시/ map controller / marker
     - 리사이즈 시 센터 변경
     - react-reaveal library를 활용한 애니메이션 효과
     - redux useSelector를 통해 저장된 youtube 데이터 불러오기
@@ -185,4 +187,4 @@ react-router-dom 을 이용하여 페이지 이동
 
 ---
 
-- join 부분에 firebase를 통하 아이디/비밀번호 저장 및 로그인 기능
+- join 부분에 firebase를 통해 아이디/비밀번호 저장 및 로그인 기능 / I'd like to add login/sign up function using firebase
