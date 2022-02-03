@@ -12,14 +12,14 @@ import store, { Persistor } from './redux/store';
 const authService = new AuthService();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <HashRouter>
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={Persistor}>
-          <App authService={authService} />
-        </PersistGate>
-      </Provider>
-    </HashRouter>
-  </React.StrictMode>,
+
+  <HashRouter>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={Persistor}>
+        <App authService={authService} />
+      </PersistGate>
+    </Provider>
+  </HashRouter>
+  ,
   document.getElementById('root')
 );
