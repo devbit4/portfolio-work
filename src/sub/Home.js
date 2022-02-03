@@ -48,7 +48,6 @@ const Home = (props) => {
     // youtube redux fetch
     const youtube = useSelector(state => state.youtubeReducer.youtube);
     const dispatch = useDispatch();
-    console.log(youtube);
 
     const api_key = process.env.REACT_APP_YOUTUBE_API_KEY;
     const playListId = process.env.REACT_APP_YOUTUBE_PLAY_ID;

@@ -36,7 +36,6 @@ function SignUpForm(props) {
         e.preventDefault();
         setIsSubmit(true);
         setErr(check(val));
-        console.log(val);
     };
 
     const check = (val) => {
@@ -71,7 +70,6 @@ function SignUpForm(props) {
 
     useEffect(() => {
         frame.current.classList.add('on');
-        console.log(err);
         const len = Object.keys(err).length;
         if (len === 0 && isSubmit) {
             console.log('succeed');
