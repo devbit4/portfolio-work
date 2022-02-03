@@ -6,7 +6,7 @@
 
 ---
 
-### 2. 🗣️프로젝트 소개(Intro):
+### 2. 🗣️프로젝트 소개(Overview):
 
 ---
 \*I participated in making this website from designing to developing.
@@ -14,7 +14,16 @@ I developed this website using React/Redux.
  
 React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코드를 작성하였으며 디자인(design)부터 초안(draft), 개발(development)까지 참여함.
 
-### 3. 👷‍사용된 스킬(Skill):
+### 3. 프로젝트 작동법(Running this project locally):
+
+---
+```
+1. Clone this project locally
+2. Run npm install or yarn install in your bash/command line
+3. Run npm start or yarn start in your bash/command line
+```
+
+### 4. 👷‍사용된 스킬(Skill):
 
 ---
 
@@ -23,7 +32,7 @@ React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코
 - CSS(SCSS)
 - Firebase
 
-### 4. 🌈 🔤사용된 주요색상(Color) 및 폰트(Font):
+### 5. 🌈 🔤사용된 주요색상(Color) 및 폰트(Font):
 
 ---
 
@@ -32,7 +41,7 @@ React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코
 
 - Roboto
 
-### 5. 📖사용된 라이브러리(Library/API/PLUGIN):
+### 6. 📖사용된 라이브러리(Library/API/PLUGIN):
 
 ---
 
@@ -46,13 +55,13 @@ React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코
 - [kakao api](https://masonry.desandro.com/) (contact)
 - [google font](https://fonts.google.com/)
 
-### 6. 🔢미디어 쿼리(media query for responsive website):
+### 7. 🔢미디어 쿼리(media query for responsive website):
 
 ---
 
 미디어 쿼리 적용을 통한 반응형 사이트 구현
 
-### 7. 🧑‍🏫프로젝트 구성:
+### 8. 🧑‍🏫프로젝트 구성:
 
 ---
 SPA
@@ -66,7 +75,7 @@ react-router-dom 을 이용하여 페이지 이동
 - Contact (sub page)
 - Join (sub page)
 
-### 8. 각 페이지 구성:
+### 9. 각 페이지 구성:
 
 ---
 Each page shares the same header and footer
@@ -122,7 +131,7 @@ Each page shares the same header and footer
   - src/service/firebase.js
   - public/img/join
 
-### 9. 😄주요 기능(main function & prototype method):
+### 10. 😄주요 기능(main function & prototype method):
 
 ---
 
@@ -183,8 +192,13 @@ Each page shares the same header and footer
     - SignUpForm/ SingInForm components 연결해서 버튼에 따라 해당 컴포넌트 불러옴
     - firebase 를 활용해 google signUp 적용
 
-### 10. 😄추가 및 수정 해야 할 사항 (What to do more):
+### 11. 😄추가 및 수정 해야 할 사항 (What to do more):
 
 ---
-
+- src/class/AnimatedProgressProvider.js 함수형 컴포넌트/ 리액트 훅 으로 바꾸기
 - join 부분에 firebase를 통해 아이디/비밀번호 저장 및 로그인 기능 / I'd like to add login/sign up function using firebase
+
+### 12. 프로젝트하면서 부족한 점/ 어려웠던 점
+
+---
+- 
