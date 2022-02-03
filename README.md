@@ -1,8 +1,8 @@
 ### 🗺️ Guide Book 🗺️
 
 ---
-
-### 1. 🧑‍🤝‍🧑프로젝트 제목(Title) : STORIES WEBSITE (BUSINESS)
+![website2](https://user-images.githubusercontent.com/88700967/152277129-3c864050-db1b-4db6-a434-31dc2353cd5c.png)
+### 1. 🧑‍🤝‍🧑프로젝트 제목(Title) : BUSINESS WEBSITE
 
 ---
 
