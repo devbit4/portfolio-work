@@ -197,7 +197,7 @@ Each page shares the same header and footer
 ---
 - src/class/AnimatedProgressProvider.js 함수형 컴포넌트/ 리액트 훅 으로 바꾸기
 - join 부분에 firebase를 통해 아이디/비밀번호 저장 및 로그인 기능 / I'd like to add login/sign up function using firebase
-
+- 협업 시 커밋 메시지 descriptive하게 쓸 것 참고 [commit message](https://chiamakaikeanyi.dev/how-to-write-good-git-commit-messages/)
 ### 12. 프로젝트하면서 부족한 점/ 어려웠던 점
 
 ---
