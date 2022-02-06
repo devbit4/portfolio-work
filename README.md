@@ -201,7 +201,7 @@ Each page shares the same header and footer
 ### 12. 프로젝트하면서 부족한 점/ 어려웠던 점
 
 ---
-- csr + tsparicles library(?) 문제 때문인지 랜딩페이지 로딩 시 시간이 걸림. 로딩페이지 만들기
+- csr + tsparicles library(?) 문제 때문인지 랜딩페이지 로딩 시 시간이 걸림. 로딩페이지 만들기 ok -> next.js 로 해결가능한 문제인가??/ tsparticles를 제거 시 해결 가능한 문제인가??
 - public 폴더 절대경로를 이용하고 싶다면 html 에서는 %PUBLIC_URL, js 에서는 process.env.PUBLIC_URL 써야 한다는 것
 - kakao api cors 에러 
 - 새로고침 시에도 state 유지를 위해 redux-persist 
