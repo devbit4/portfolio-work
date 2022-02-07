@@ -10,7 +10,6 @@ import store, { Persistor } from './redux/store';
 
 
 const authService = new AuthService();
-
 ReactDOM.render(
 
   <HashRouter>
@@ -22,4 +21,5 @@ ReactDOM.render(
   </HashRouter>
   ,
   document.getElementById('root')
+
 );
