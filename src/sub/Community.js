@@ -46,7 +46,7 @@ const Community = (props) => {
     useEffect(() => {
         localStorage.setItem('helps', JSON.stringify(helps));
     }, [helps]);
-
+    // 추가
     const addPost = () => {
         if (!writer.current.value || !request.current.value) {
             alert('Please Type Your Request');
@@ -64,6 +64,7 @@ const Community = (props) => {
         type.current.value = 'Type 1';
         request.current.value = '';
     };
+    // 삭제
     const deletePost = (deletedIndex) => {
         setHelps(helps.filter((post, postIndex) => postIndex !== deletedIndex));
     };
@@ -84,6 +85,7 @@ const Community = (props) => {
         );
         console.log(helps);
     };
+    // 수정
     const updatePost = (index) => {
         setHelps(
             helps.map((post, postIndex) => {

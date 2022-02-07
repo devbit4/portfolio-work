@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
 import App from './App';
-
 import { Provider } from "react-redux";
 import AuthService from './service/auth_service';
 import { PersistGate } from 'redux-persist/integration/react';
