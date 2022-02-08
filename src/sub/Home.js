@@ -84,7 +84,6 @@ const Home = (props) => {
     const fetchYoutube = async () => {
         const response = await axios
             .get(url)
-            .catch(err => console.error(err))
 
         dispatch(setYoutube(response.data.items));
     }
