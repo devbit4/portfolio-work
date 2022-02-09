@@ -205,3 +205,4 @@ Each page shares the same header and footer
 - public 폴더 절대경로를 이용하고 싶다면 html 에서는 %PUBLIC_URL, js 에서는 process.env.PUBLIC_URL 써야 한다는 것
 - kakao api cors 에러 
 - 새로고침 시에도 state 유지를 위해 redux-persist 
+- 배웠는데 이해가 되지 않는 코드 작성 부분은 다시 연습하거나 따로 보관해 둠.
