@@ -2,7 +2,7 @@
 
 ---
 ![website2](https://user-images.githubusercontent.com/88700967/152277129-3c864050-db1b-4db6-a434-31dc2353cd5c.png)
-### 1. 🧑‍🤝‍🧑프로젝트 제목(Title) : BUSINESS WEBSITE
+### 1. 🧑‍🤝‍🧑프로젝트 제목(Title) : BUSINESS WEBSITE(비즈니스 웹사이트)
 
 ---
 
@@ -13,6 +13,7 @@
 I developed this website using React/Redux.
  
 React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코드를 작성하였으며 디자인(design)부터 초안(draft), 개발(development)까지 참여함.
+구글링/강의/스터디 등을 통해 배운 코드를 바탕으로 이해/수정/적용하여 커스터마이징함.
 
 ### 3. 프로젝트 작동법(Running this project locally):
 
@@ -30,7 +31,7 @@ React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코
 - React
 - Redux
 - CSS(SCSS)
-- Firebase
+- Firebase->적용 중
 
 ### 5. 🌈 🔤사용된 주요색상(Color) 및 폰트(Font):
 
@@ -38,7 +39,6 @@ React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코
 
 - #fff
 - #d5b3b3
-
 - Roboto
 
 ### 6. 📖사용된 라이브러리(Library/API/PLUGIN):
@@ -59,7 +59,7 @@ React/Redux를 활용한 소셜 플랫폼 테마의 웹앱 사이트. 직접 코
 
 ---
 
-미디어 쿼리 적용을 통한 반응형 사이트 구현
+미디어 쿼리 적용을 통한 반응형 사이트 구현 (모바일과 웹에서 작동)
 
 ### 8. 🧑‍🏫프로젝트 구성:
 
